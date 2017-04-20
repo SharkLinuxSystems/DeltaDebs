@@ -80,29 +80,6 @@ Description: Process viewer and system resource monitor for MATE (common files)
  .
  This package contains the architecture independent files.
 
-Package: libmatepolkit-dev
-Architecture: amd64
-Version: 1.18.0-0ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mate-polkit
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 37
-Depends: libpolkit-gobject-1-dev, libpolkit-gtk-mate-1-0 (= 1.18.0-0ubuntu1~16.04.york0), mate-polkit, policykit-1
-Filename: ./libmatepolkit-dev_1.18.0-0ubuntu1~16.04.york0_amd64.deb
-Size: 8744
-MD5sum: 2fe03a9efd05041c46bbd3956eccbe3d
-SHA1: eef35137f38913c3b6a47a0b5e22c95e1e8e786d
-SHA256: 59707702b0b08c46768942a61a6b01f7a4a018880f637241c39777e54d7e232c
-SHA512: ddfb57b119763a17eb52179c5aea693078e02420440040b016e3efa8410fe6d83368e95be318e1c9682a753a51c5d29d5c0523b03343a34ed738bac7ef24bc51
-Homepage: http://www.mate-desktop.org/
-Description: MATE authentication agent for PolicyKit-1 (development files)
- The mate-polkit package provides a D-Bus session bus service that is used to
- bring up authentication dialogs used for obtaining privileges.
- .
- This package contains the development files for mate-polkit.
-
 Package: mate-menu
 Architecture: all
 Version: 17.04.3-0ubuntu1~16.04.york0
@@ -156,28 +133,6 @@ Description: Library with common API for various MATE modules (documentation fil
  .
  This package contains the documentation files.
 
-Package: ubuntu-mate-default-settings
-Architecture: all
-Version: 17.04.7~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-settings
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 161
-Depends: desktop-file-utils, im-config, libglib2.0-bin, ttf-ubuntu-font-family, dconf-gsettings-backend | gsettings-backend
-Suggests: mate-desktop-environment-core (>= 1.14.0)
-Conflicts: debian-mate-default-settings, mint-mate-default-settings
-Replaces: policykit-desktop-privileges-ubuntu-mate
-Filename: ./ubuntu-mate-default-settings_17.04.7~16.04.york0_all.deb
-Size: 20674
-MD5sum: 6df58305e135ceeed81f98db804244ab
-SHA1: e7e37156bf371b8f6e5310064d0d16d24a7f7ae5
-SHA256: 79e3bf1c6b21a17fb1e7d4aa7708e441ab14d1d487555c8b28edcf594a09fbfd
-SHA512: 94b2a19ad761d0c78f38acce4bce92b8514cb57477debaf035e7f26a9d7e13921612691cc6f6e13994ce250645dbe6e37075a04376f383c020a672a50173e452
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Default settings for Ubuntu MATE
- Various system settings tailored for Ubuntu MATE.
-
 Package: engrampa-common
 Architecture: all
 Version: 1.18.1-0ubuntu1~16.04.york0
@@ -204,24 +159,6 @@ Description: archive manager for MATE (common files)
   * Extract files from the archive.
  .
  This package contains the architecture independent files.
-
-Package: ubuntu-mate-wallpapers-yakkety
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 3650
-Filename: ./ubuntu-mate-wallpapers-yakkety_17.04.12~16.04.york0_all.deb
-Size: 3492044
-MD5sum: ce9dc2af58b40864b6d23aa0eefdc051
-SHA1: beacd091c4b6ab139f1ab0acb07f8f6b6c88a9b7
-SHA256: cf92b075d9a9723bd1c1bec45f420a56ecf200dd2f9a49dcc149af540a8e04d8
-SHA512: d2fa8b0641edc0b09fa408f216fb74dccbda9d2ec25f83d61b571df68c5384d72d391382f7fcd0fbe1a7f8abb459c5ede71b08928f738d252e48896a8296365e
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE 16.10 Wallpapers
- Wallpapers from the Ubuntu MATE community for Ubuntu MATE 16.10
 
 Package: mate-power-manager-common
 Architecture: all
@@ -307,24 +244,6 @@ Description: MATE screen saver and locker
   * translation into other languages
   * user switching
 
-Package: ubuntu-mate-wallpapers-vivid
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 11771
-Filename: ./ubuntu-mate-wallpapers-vivid_17.04.12~16.04.york0_all.deb
-Size: 11782990
-MD5sum: b8dbf04053e61edce7ad208d689d47ed
-SHA1: 1fdb427418c3701c1aaea911df98042d8a503543
-SHA256: efbdaa24f78260afd2e240a93f5a3f43c027a498a98af0bfef2c3173b9dd26d5
-SHA512: 765179d71201b4d21c5f450f4bd93f81aae82b06b7c7bbe7a7fb2a40f013792cf65f6daa29f491b946336ba0b79b86c882645ad7ca14dae758219ca5cf87ad5f
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE 15.04 Wallpapers
- Wallpapers from the Ubuntu MATE community for Ubuntu MATE 15.04
-
 Package: mate-notification-daemon
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -400,24 +319,6 @@ Description: Mixer library for MATE Desktop (common files)
  .
  This package contains the architecture-independent files.
 
-Package: ubuntu-mate-wallpapers-xenial
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 23413
-Filename: ./ubuntu-mate-wallpapers-xenial_17.04.12~16.04.york0_all.deb
-Size: 23594026
-MD5sum: 9ba983a51ea2f81b72737beeefe22850
-SHA1: 0c83f83dcd37f1d40d138165a077fc6277eed9a5
-SHA256: 120bb65362ecc2de6866be52c0bfe4e845efaa7e87163b7f25b80d73085a8779
-SHA512: 421fd64dcb406ab2703c2ba665a3800f0b6b9193bb2739a660c3ab81a1246e8c4a389ac9cefc13be2283c66d3cc19a588e710538617f0cd4b3bf238483f910f8
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE 16.04 Wallpapers
- Wallpapers from the Ubuntu MATE community for Ubuntu MATE 16.04
-
 Package: mate-common
 Architecture: all
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -458,36 +359,6 @@ Description: MATE desktop calculator
  mate-calc is a powerful graphical calculator with financial, logical and
  scientific modes. It uses a multiple precision package to do its arithmetic
  to give a high degree of accuracy.
-
-Package: libmate-panel-applet-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu2~16.04.york0
-Priority: optional
-Section: libdevel
-Source: mate-panel
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 52
-Provides: libmatepanelapplet-dev
-Depends: libglib2.0-dev, libgtk-3-dev, libmate-panel-applet-4-1 (= 1.18.1-0ubuntu2~16.04.york0)
-Conflicts: libmatepanelapplet-dev
-Replaces: libmatepanelapplet-dev
-Filename: ./libmate-panel-applet-dev_1.18.1-0ubuntu2~16.04.york0_amd64.deb
-Size: 13628
-MD5sum: 183eb15ccf8b20bafa2a35e574e1fe53
-SHA1: a6fad9ed21cd891d2b9e8e353bd5575b7574f38b
-SHA256: 356d3961f980ce5351bc47a51af5b8e481e25db0f9a9c0018f3dc52c88f8be88
-SHA512: bfe130b73dbd0453fde02c30afa5c868e90b6f8ab59b2eab770d50005f6d96bd7079f1e5e1a1d3285ce12b0be3216ecfdcbcfba18496e46a25b80bf49ed43d5e
-Homepage: http://www.mate-desktop.org/
-Description: library for MATE Panel applets (development files)
- The MATE Panel is an essential part of the MATE Desktop, providing
- toolbar-like “panels” which can be attached to the sides of your desktop.
- They are used to launch applications and embed a number of other
- functions, such as quick launch icons, the clock, the notification area,
- volume controls and the battery charge indicator, and utilities ranging
- from weather forecast to system monitoring.
- .
- This package contains the development files of the MATE panel applet
- library.
 
 Package: mate-desktop-environment-extras
 Architecture: all
@@ -572,31 +443,6 @@ Description: utilities to configure the MATE desktop (window settings library)
  This package contains the MATE window settings library for MATE control
  center.
 
-Package: libatrilview-dev
-Architecture: amd64
-Version: 1.18.0-0ubuntu1~16.04.york0
-Priority: optional
-Section: libdevel
-Source: atril
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 93
-Depends: libatrilview3 (= 1.18.0-0ubuntu1~16.04.york0)
-Breaks: libatril-dev (<< 1.9.0)
-Filename: ./libatrilview-dev_1.18.0-0ubuntu1~16.04.york0_amd64.deb
-Size: 16366
-MD5sum: 78621c7373d6081cc907af68f2fcec5e
-SHA1: 153e700924278002ad98cf3cc522f5086e9c58b0
-SHA256: a564b67a74600598942a32174373db18ba574a746653f2f021f04ae508778a68
-SHA512: 3915ef37c297a97b07e4d23321a7ea6ab2fa91b93a1ff2511897dc930c8cb70b3c0566b6276cf5784117cd23e4d3a2668b96eeb74816e0aec877e38d9949fc9c
-Homepage: http://www.mate-desktop.org/
-Description: MATE document viewing library (development files)
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- This package contains the development files for the libatrilview
- library.
-
 Package: python-caja-common
 Architecture: all
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -624,30 +470,6 @@ Description: Python binding for Caja components (common files)
  and menu item extensions in Python.
  .
  This package contains the architecture independent files.
-
-Package: libmatemixer-dev
-Architecture: amd64
-Version: 1.18.0-0ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: libmatemixer
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 97
-Depends: libglib2.0-dev, libmatemixer0 (= 1.18.0-0ubuntu1~16.04.york0)
-Filename: ./libmatemixer-dev_1.18.0-0ubuntu1~16.04.york0_amd64.deb
-Size: 12044
-MD5sum: eee0b30e74e9a0571279d4c3217f8094
-SHA1: 9c463df07dc5fe0002b01780653f8de840178ce1
-SHA256: f90b141df8bf9cfe7f3152c7c81bbdcca016f94c9d8a158f90c618905cc251dc
-SHA512: f97f39c357687bb889339d733e88ab37b7d5f851a228373b105720f43f7af6fc30269bc935d490e0d19aba6013ea9caa06295224b1aad5519d12c7d0bb30fc78
-Homepage: http://www.mate-desktop.org/
-Description: Mixer library for MATE Desktop (development files)
- Mixer library for MATE Desktop. It provides an abstract API allowing
- access to mixer functionality available in the PulseAudio, ALSA and OSS
- sound systems.
- .
- This package contains the development files.
 
 Package: python-caja
 Architecture: amd64
@@ -699,24 +521,6 @@ Description: MATE terminal emulator application
  .
  MATE Terminal features the ability to use multiple terminals in a single
  window (tabs) and profiles support.
-
-Package: ubuntu-mate-wallpapers-wily
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 19050
-Filename: ./ubuntu-mate-wallpapers-wily_17.04.12~16.04.york0_all.deb
-Size: 19338778
-MD5sum: 13fd0126355a8b7d0ee874f685e3eb2f
-SHA1: 1be49f0df6eb70dd26368ae658d0ecaf456aff91
-SHA256: 12af712c821ce59dac9dbac7b3d60d7ffd8e7544750a435491a88afb76da474c
-SHA512: 12d5fbc78c53c852923ebdcb731e1045fa1335eed06129e5effae2bb570f5af3b34d04b43b5a8ec5a6ff492a94db0f0e947fc24db6728f360eaccf0924aa8fca
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE 15.10 Wallpapers
- Wallpapers from the Ubuntu MATE community for Ubuntu MATE 15.10
 
 Package: libmate-desktop-2-17
 Architecture: amd64
@@ -1182,35 +986,6 @@ Description: MATE authentication agent for PolicyKit-1 (executable wrapper scrip
  non-MATE desktop environments that don't auto-launch their own authentication
  agent (e.g., i3, awesome, ratpoison and alike).
 
-Package: libmate-desktop-dev
-Architecture: amd64
-Version: 1.18.0-0ubuntu2~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mate-desktop
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 108
-Depends: libdconf-dev, libgdk-pixbuf2.0-dev, libgtk-3-dev, libmate-desktop-2-17 (= 1.18.0-0ubuntu2~16.04.york0), libstartup-notification0-dev
-Breaks: libmatedesktop-dev
-Replaces: libmatedesktop-dev
-Filename: ./libmate-desktop-dev_1.18.0-0ubuntu2~16.04.york0_amd64.deb
-Size: 20836
-MD5sum: 907c9a47953e6c5b64f915575db673c1
-SHA1: 67dd4fbbd92ae31cc1f5a20882477810fa344414
-SHA256: 48aac30e962cb023cd3ea5566a8944ab2ba2c45d27040f884075d85927b0947c
-SHA512: 8681981c7202a6552e2e1e4da278aa889f45c4420a1510e1f3524b7050e2dac7d23045bc7869180388d0ae2fda5f11cf0826ffbfcde041c5b8fcb3e6f4f4e144
-Homepage: http://www.mate-desktop.org/
-Description: Library with common API for various MATE modules (development files)
- The MATE component mate-desktop contains the libmate-desktop library, the
- mate-about program, as well as some desktop-wide documents.
- .
- The libmate-desktop library provides an API shared by several applications
- on the desktop, but that cannot live in the platform for various
- reasons.
- .
- This package contains the mate-desktop development files.
-
 Package: libmatepolkit-doc
 Architecture: all
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -1255,25 +1030,6 @@ Description: MATE Desktop icon theme
  .
  This icon theme provides icon artwork for representing the different
  applications, files, directories, and devices found on the MATE desktop.
-
-Package: ubuntu-mate-icon-themes
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 13579
-Depends: ubuntu-mono
-Filename: ./ubuntu-mate-icon-themes_17.04.12~16.04.york0_all.deb
-Size: 687672
-MD5sum: eb6866a44729d211c335f2cd95b0dce1
-SHA1: bcd73b6cb24ab5cb217a486fecf43c6c8549a8a4
-SHA256: fab61e37f8c57ee684e493e31b05bf0e42f712f075a6d8d9db138433ceb1b620
-SHA512: f9fc33fac512d9717ba421f3aef5f3e27d45ada1502499787271e575a191921e4e0ecf3dcbaf77b91adc2333add7111de6b23a796cdcd6ffc64aa750285ed7b4
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Icon themes for Ubuntu MATE
- This package contains icon themes for Ubuntu MATE.
 
 Package: mate-utils-common
 Architecture: all
@@ -1394,31 +1150,6 @@ Description: Caja plugin for opening terminals in arbitrary local paths
  .
  caja-open-terminal is a proof-of-concept Caja extension
  which allows you to open a terminal in arbitrary local folders.
-
-Package: libmatekbd-dev
-Architecture: amd64
-Version: 1.18.2-0ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: libmatekbd
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 44
-Depends: libglib2.0-dev, libgtk-3-dev, libmatekbd4 (= 1.18.2-0ubuntu1~16.04.york0), libx11-dev, libxklavier-dev
-Filename: ./libmatekbd-dev_1.18.2-0ubuntu1~16.04.york0_amd64.deb
-Size: 8298
-MD5sum: 1f061552eaeaae7b89b1b853631bf23e
-SHA1: 5e0ddadc9074f6aec4ce4f853a244580ae0713fd
-SHA256: 6d1128e27de803e1d69dc88a76bb81acb622e12b63665973b2be5197c167369b
-SHA512: 1403144b15c1fd9134bfe347427ed0a2231db393b2119a385f9132ec993aa4256bbd2549b6a7b343d54a3a55a14d324d85a630e0a985a397a77f12d96f999342
-Homepage: http://www.mate-desktop.org/
-Description: MATE library to manage keyboard configuration (development files)
- libmatekbd offers an API to manage the keyboard in MATE applications.
- .
- libmatekbdui offers an API to display a graphical user interface for
- libmatekbd operations.
- .
- This package contains the development files.
 
 Package: libcaja-extension1
 Architecture: amd64
@@ -1684,65 +1415,6 @@ Description: MATE desktop utilities
   - mate-screenshot, a tool to take desktop screenshots and save them into
     a file
 
-Package: ubuntu-mate-wallpapers
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: metapackages
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 56
-Depends: ubuntu-mate-wallpapers-common, ubuntu-mate-wallpapers-zesty
-Suggests: mate-backgrounds
-Filename: ./ubuntu-mate-wallpapers_17.04.12~16.04.york0_all.deb
-Size: 18564
-MD5sum: 95dd50e37ac67a775c908d48993a8ded
-SHA1: 4bc59f66cffea5795307fc01e41f1c0bb3e856c6
-SHA256: aa451ea61ff8b7e7d808ce8e1695f6a4a4f1078989664377b43a4b14887a2db1
-SHA512: 1ee6e5913b6addc2f3d939820a9890995e1fd5b3d92fe197f4f367719b79d60f17c434c17535db7d5e96b55c24eb312edbfad7502125c15b9d4c7567b08bf05e
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Wallpaper and background images for Ubuntu MATE
- The default Ubuntu MATE wallpapers. This is also a metapackage
- depending on the other default wallpapers for the current Ubuntu MATE
- release.
- .
- It is a metapackage.
-
-Package: pluma-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: devel
-Source: pluma
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 135
-Depends: pluma (= 1.18.1-0ubuntu1~16.04.york0)
-Breaks: mate-text-editor (<< 1.5.0)
-Filename: ./pluma-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 23514
-MD5sum: a99d7ac0d2fd1fab1e2c17122d5cea8e
-SHA1: 9b69c96465de92166e7c76176ae160435adb6664
-SHA256: aa8ab2b429ec3f90a71abc5ce88288967a42f045fb26c1677218bbce7732c4df
-SHA512: 929e9c6565bb3aac66bc014fdac6709f32d276a46d4775346db7e4b3273135122f008ba28b5821a2ac161a3f557c89edab2270c89a38c2e214bb77a827b1afb1
-Homepage: http://www.mate-desktop.org/
-Description: official text editor of the MATE desktop environment (development files)
- Pluma is a text editor which supports most standard editor features,
- extending this basic functionality with other features not usually
- found in simple text editors. Pluma is a graphical application which
- supports editing multiple text files in one window (known sometimes as
- tabs or MDI).
- .
- Pluma fully supports international text through its use of the
- Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
- highlighting of source code, auto indentation and printing and print preview
- support.
- .
- Pluma is also extensible through its plugin system, which currently
- includes support for spell checking, comparing files, viewing CVS
- ChangeLogs, and adjusting indentation levels.
- .
- This package contains the development files for building Pluma plugins.
-
 Package: mate-polkit-common
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -1766,30 +1438,6 @@ Description: MATE authentication agent for PolicyKit-1 (common files)
  .
  This package contains common files for the MATE policy kit authentication
  agent.
-
-Package: debian-mate-default-settings
-Architecture: all
-Version: 1.18.0-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Source: mate-session-manager
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 48
-Depends: desktop-file-utils
-Suggests: mate-desktop-environment-core (>= 1.10.0)
-Conflicts: mint-mate-default-settings, ubuntu-mate-default-settings
-Breaks: mate-session-manager (<< 1.10.2-4~)
-Filename: ./debian-mate-default-settings_1.18.0-0ubuntu1~16.04.york0_all.deb
-Size: 10888
-MD5sum: bf0c93d043e46f1d55c503888f9bd9a7
-SHA1: e29d4b4eb6e1e441a6f2c03b244530ab14f1d7fd
-SHA256: 2fb7b7349d35b6ed47cec4439a5e83e7556d5b581cc7426970e3a69fdb4630a3
-SHA512: 1e0e1b5d3413c2910f366a3fb7177bfd82256522fe20e6caa7d11c0a706e7ac1f61a0ead249b10ae2e2094c1f123d8a707e97139cf98a6cd18919f05f0de87c2
-Homepage: http://www.mate-desktop.org/
-Description: Default settings for MATE on Debian
- This package comes together with mate-session-manager as provided by upstream
- but does a little tweaking here and there to provide best experience of the
- MATE desktop environment on Debian systems.
 
 Package: gir1.2-caja
 Architecture: amd64
@@ -1977,29 +1625,6 @@ Description: Display readings from hardware sensors in your MATE panel (NVIDIA s
  .
  This package contains plugin for NVIDIA graphics cards.
 
-Package: ubuntu-mate-lightdm-theme
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 65
-Depends: lightdm-gtk-greeter, ubuntu-mate-icon-themes, ubuntu-mate-themes, ubuntu-mate-wallpapers
-Filename: ./ubuntu-mate-lightdm-theme_17.04.12~16.04.york0_all.deb
-Size: 19520
-MD5sum: 503f4ab48d52337c450215307a198553
-SHA1: 6c7482c9ef00db2a3d1476b5590292789db199d0
-SHA256: 8196eeb152afcbc3d70b9fa487463e8c2a240cec2a35287856a7ab380cede85f
-SHA512: a698e65a8cf65234c625300ef747d931684c2c5ed6fd915f2d89afd0f0f6c8fc5ba4d574ba93731b61018528eeb93bc762c719703b97b1fdbbd41946affde209
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: LightDM theme and default configuration for Ubuntu MATE
- This is the lightdm greeter theme and configuration
- used for Ubuntu MATE.
- .
- This package can also be installed on other Ubuntu desktops desiring
- to use this theme, but it will replace the LightDM theme.
-
 Package: marco
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -2103,43 +1728,6 @@ Description: Various applets for the MATE panel (common files)
  .
  This package contains the architecture independent files.
 
-Package: mate-settings-daemon-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: extra
-Section: devel
-Source: mate-settings-daemon
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 41
-Depends: mate-settings-daemon (= 1.18.1-0ubuntu1~16.04.york0)
-Breaks: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
-Replaces: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
-Filename: ./mate-settings-daemon-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 10192
-MD5sum: df71f9fa1cabe8957c261d7285d4c81f
-SHA1: 6ffa82919cba9405ecc5a4275ff07197b1d92804
-SHA256: 4235cced4c4117cebd8adb0c560d7685e91d1579417bfe3320b74939e4e01227
-SHA512: 777266526f5980928adafb780e3c481bab80c48d5a690524030e238269859ed5ab8e682325f577183fa2d32592860293e8b778def720cc680b296fc4777e86fe
-Homepage: http://www.mate-desktop.org/
-Description: daemon handling the MATE session settings (development files)
- This package contains the daemon which is responsible for setting the
- various parameters of a MATE session and the applications that run
- under it. It handles the following kinds of settings:
- .
-  * Keyboard: layout, accessibility options, shortcuts, media keys
-  * Clipboard management
-  * Theming: background, icons, GTK+ applications
-  * Cleanup of unused files
-  * Mouse: cursors, speed, accessibility options
-  * Startup of other daemons: screensaver, sound daemon
-  * Typing break
- .
- It also sets various application settings through X resources and
- freedesktop.org XSETTINGS.
- .
- This package contains the development files for building
- mate-settings-daemon plugins.
-
 Package: mate-polkit
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -2162,57 +1750,6 @@ Description: MATE authentication agent for PolicyKit-1
  bring up authentication dialogs used for obtaining privileges.
  .
  This package contains the MATE policy kit authentication agent.
-
-Package: ubuntu-mate-themes
-Architecture: all
-Version: 17.04.12~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 49502
-Depends: gtk2-engines-murrine (>= 0.90.3+git20100810), ubuntu-mate-icon-themes
-Breaks: libgtk-3-0 (<< 3.19)
-Filename: ./ubuntu-mate-themes_17.04.12~16.04.york0_all.deb
-Size: 1053520
-MD5sum: 448f865226bf53b6021be8b60ec27ba7
-SHA1: 496a78c050bd137061d2d9902abba088c39b7a6e
-SHA256: 07e922445887d8604d42e52656eb201966f302349fa6b1955992417539f11c1b
-SHA512: 9962f4c6f27ab0af3d1c0203c9b6eb363e7c509c388be2c0684a2e872f8fafe40cea78adf6d9c26d65c94389311882019e60b91ab3860a3ab2e838d6c41c47b4
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: GTK2 and GTK3 themes for Ubuntu MATE
- Includes matching Ambiant and Radiant themes
- .
- * Ambiant-MATE is a light-on-dark theme
- * Ambiant-MATE-Dark is a dark-on-dark theme
- * Radiant-MATE is a dark-on-light theme
-
-Package: libmate-sensors-applet-plugin-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: libdevel
-Source: mate-sensors-applet
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 27
-Depends: libglib2.0-dev, libmate-sensors-applet-plugin0 (= 1.18.1-0ubuntu1~16.04.york0)
-Breaks: libmatesensorsappletplugin-dev
-Replaces: libmatesensorsappletplugin-dev
-Filename: ./libmate-sensors-applet-plugin-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 6072
-MD5sum: 1f9df546aec1a835047cfb19d4bbdfd4
-SHA1: 3ae97fc7e8323d860eb514c3557ffb3d5e16b92a
-SHA256: 945c5f8a528897955446bf6ac781a942530b053d30a101e3a40a73db5edca7fc
-SHA512: b9b936409f6d5243018635dc09d9eee9a8ad2d26d969f6b1465f33d05957de1e9dc359f5281ee3a2da1e403682ffb8c41c158e38dd6cbad2afaff288f5dd6481
-Homepage: http://www.mate-desktop.org/
-Description: Library for plugins for the mate-sensors-applet package (development files)
- MATE Sensors Applet is an applet for the MATE panel that displays
- readings from hardware sensors, including temperatures, fan speeds and
- voltage readings.
- .
- This package contains the files necessary to develop plugins for the
- applet.
 
 Package: mate-control-center
 Architecture: amd64
@@ -2432,32 +1969,6 @@ Description: MateWeather shared library (common files)
  .
  This package contains the architecture independent files.
 
-Package: libmate-window-settings-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mate-control-center
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 50
-Depends: libmate-window-settings1 (= 1.18.1-0ubuntu1~16.04.york0)
-Filename: ./libmate-window-settings-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 13420
-MD5sum: b6f8245c0e40560d24a65af3860147c1
-SHA1: 94b7f407921d6c593ba5c69acb98922cde23f895
-SHA256: 496bb397e23da7d0f2e5898a112d082fb925f23868bc53db4fd2d909e3018a5e
-SHA512: 3ab5acb7ffa94a42c23e66e748edd37946f914fc3bd471aaf990dab6aff4371a191cb3e82b0fc8e05eca56e4436140d887b3924ddede3b5976ae729758af7693
-Homepage: http://www.mate-desktop.org/
-Description: utilities to configure the MATE desktop (window settings headers)
- The MATE control center contains configuration applets for the MATE desktop,
- allowing to set accessibility configuration, desktop fonts, keyboard
- and mouse properties, sound setup, desktop theme and background, user
- interface properties, screen resolution, and other MATE parameters.
- .
- This package contains the development files for the MATE window settings
- library.
-
 Package: mate-user-share
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -2571,51 +2082,6 @@ Description: file manager for the MATE desktop
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
 
-Package: libmatedict-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: libdevel
-Source: mate-utils
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 95
-Depends: libmatedict6 (= 1.18.1-0ubuntu1~16.04.york0)
-Breaks: mate-utils (<< 1.5.0), mate-utils-dev (<< 1.8.0)
-Replaces: mate-utils-dev (<< 1.8.0)
-Filename: ./libmatedict-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 13814
-MD5sum: e600e659a5361a35ed22da759afb813e
-SHA1: e02bf6a0dfd9f19d9b2f5c2e0d562d4a788a6f62
-SHA256: b6acd2e514c4cb82702730ce61dcacaed60291ed6aac801b376739c4eee7ceee
-SHA512: 940aa2a9461b5d85ab57d7d6525b9bc74bc66b8129765f5eda88f043d6ab23f3c0d9853a482f940e67a8ded3b061e37cad04ab753b28b01f24a9caeea0a374a5
-Homepage: http://www.mate-desktop.org/
-Description: MATE desktop utilities (matedict development files)
- The MATE dictionary is a program which can look up the definition of words
- over the internet (including a panel applet to do the same). MATE
- dictionary is included in the MATE utilities bundle.
- .
- This package provides the development files of the MATE dictionary library.
-
-Package: ubuntu-mate-artwork
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: metapackages
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 56
-Depends: ubuntu-mate-icon-themes, ubuntu-mate-themes, ubuntu-mate-wallpapers
-Filename: ./ubuntu-mate-artwork_17.04.12~16.04.york0_all.deb
-Size: 18492
-MD5sum: 6171aef49f85c8403defb9606b75afa1
-SHA1: 8d4f6a65fe5852364bf03e3aca80cbefca75a326
-SHA256: 2be7b169d7ee3386ab82e9276ad543b43708d336e1eb5dcbf3f5684849d68f02
-SHA512: 4f1582a436251af24f80bfd286e744d0a86835e9eb14d1f7fd71526916abd2074362ebb7267ce9841f31fd88f3ce21d2ea9f594debc9e07999019f09f0bd7f07
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE themes and artwork
- This package contains Ubuntu MATE themes and artwork.
- .
- It is a metapackage.
-
 Package: libmatemixer-doc
 Architecture: all
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -2715,25 +2181,6 @@ Description: Allows one to quickly set a wallpaper from folders
  Caja Wallpaper allows you to quickly set a wallpaper directly from
  file browser folders.
 
-Package: ubuntu-mate-live-settings
-Architecture: all
-Version: 17.04.7~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-settings
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 18
-Depends: dconf-gsettings-backend | gsettings-backend
-Filename: ./ubuntu-mate-live-settings_17.04.7~16.04.york0_all.deb
-Size: 6404
-MD5sum: 755d90ac8229bddbbf7e903080e8ebd2
-SHA1: 3e046f7309eab1d846d41fae0bca875b0b4dd1ed
-SHA256: eb157d6f7da56953078c183d3ce9967d2bec1672bde99095580e810546edfc82
-SHA512: c8543a7dda4c601dabd68c58201a721cd9a38eb734467413dfeec592b457cece30adc2eb0bf716920b858fa09a78e0bdad42531baac86d4a29339f986dc3054d
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Default settings for Ubuntu MATE live CD
- Various system settings tailored for Ubuntu MATE live CD.
-
 Package: gir1.2-atril
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -2826,28 +2273,6 @@ Description: MATE Panel dock applet
     can be applied to all panels or just the panel containing the
     dock.
 
-Package: ubuntu-mate-wallpapers-complete
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: metapackages
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 56
-Depends: ubuntu-mate-wallpapers-common, ubuntu-mate-wallpapers-utopic, ubuntu-mate-wallpapers-vivid, ubuntu-mate-wallpapers-wily, ubuntu-mate-wallpapers-xenial, ubuntu-mate-wallpapers-yakkety, ubuntu-mate-wallpapers-zesty
-Filename: ./ubuntu-mate-wallpapers-complete_17.04.12~16.04.york0_all.deb
-Size: 18564
-MD5sum: 628b85771bcea5421b2e54385308eee3
-SHA1: 6833637bb8c157a3fea3a88f644ee4d6447856c5
-SHA256: 49f2ecddb619d99e05ad00c0f7add22eee45c9e6dd31d8a8bb32ac9e8c631293
-SHA512: 96a6748f99b7c681be3382d2c332f2447e0048901b61c774825c4380a0fc26e096dbb42564a92a0bd12e8c0570877369620dcdfe59ffd920a162f9950247b27a
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Complete set of all Ubuntu MATE wallpapers
- A complete set of all the wallpapers contributed to Ubuntu MATE by the
- Ubuntu MATE community.
- .
- It is a metapackage.
-
 Package: mate-icon-theme-faenza
 Architecture: all
 Version: 1.18.0+dfsg1-0ubuntu1~16.04.york0
@@ -2894,32 +2319,6 @@ Description: MATE document viewer (common files)
  Portable Document Format (PDF) files.
  .
  This package contains the architecture independent files.
-
-Package: libcaja-extension-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: caja
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 84
-Depends: libcaja-extension1 (= 1.18.1-0ubuntu1~16.04.york0), libgtk-3-dev
-Filename: ./libcaja-extension-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 14488
-MD5sum: ae33085d3ffa9094f66d0246c6896b7d
-SHA1: c64937846e23d506bc2fb52d9672f968cbc3bd6a
-SHA256: b817477efdd76a689861a6ba5c2057fc4b914818be56f0738e1394ddc20a1e98
-SHA512: 81bb98abc914a12e14e7349188aa71f2ef7a7d66a969835c289365c60c7eb0270e04c7be29f62711b3ab18281144473ff4c0159b70fcd33453fc211fb1d3a70c
-Homepage: http://www.mate-desktop.org/
-Description: libraries for Caja components (development files)
- Caja is the official file manager for the MATE desktop. It allows one
- to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
- desktop. It works on local and remote filesystems.
- .
- This package contains the development files for the libraries needed
- by Caja's extensions.
 
 Package: caja-share
 Architecture: amd64
@@ -2971,31 +2370,6 @@ Description: launcher and docking facility for MATE (common files)
  from weather forecast to system monitoring.
  .
  This package contains the architecture independent files.
-
-Package: plymouth-theme-ubuntu-mate-logo
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 174
-Provides: plymouth-theme
-Depends: plymouth, plymouth-label
-Breaks: plymouth (<< 0.9.2-3ubuntu1~)
-Filename: ./plymouth-theme-ubuntu-mate-logo_17.04.12~16.04.york0_all.deb
-Size: 53588
-MD5sum: f2c7dd8ea3dc62764ff0f43219d7d90d
-SHA1: e38d8b75edf61cec04dbdd374c6adbf9cd20797d
-SHA256: f9ef86af01183084c6a72856243ccd5791b2b38e4f024cea44e6d8915ca9f0f7
-SHA512: 6acae89405984b2e627bae427b6792ac17c94315ee0ad02d95dee850c4c91102d671e580c9378b3f1f51de3dbca4df7233458b57139b50e5ce5de704645ba2a1
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: graphical boot animation and logger - ubuntu-mate-logo theme
- Plymouth is an application that runs very early in the boot process
- (even before the root filesystem is mounted!) that provides a graphical
- boot animation while the boot process happens in the background.
- .
- This package contains the default ubuntu-mate-logo theme.
 
 Package: mate-desktop-environment-core
 Architecture: all
@@ -3052,29 +2426,6 @@ Description: beautification app library
  .
  This library has been forked from GNOMEv2 by the MATE project.
 
-Package: libmateweather-dev
-Architecture: amd64
-Version: 1.18.0-0ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: libmateweather
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 49
-Depends: libglib2.0-dev, libgtk-3-dev, libmateweather1 (= 1.18.0-0ubuntu1~16.04.york0), libsoup-gnome2.4-dev, libsoup2.4-dev, libxml2-dev
-Filename: ./libmateweather-dev_1.18.0-0ubuntu1~16.04.york0_amd64.deb
-Size: 9518
-MD5sum: 33d8ad740bfdd53d705f76334cb05af7
-SHA1: 39141eadbe0f1d0ff9dd05dc777b505ec67bb8c4
-SHA256: 0bea7b1d6e411047c66804b633598b19c5114e057ddaf3e9c1654ee5906bed54
-SHA512: 16ac207be2bf1d405d3ee899315969c3a09f3226652ebcccaf3477c4d92721a3674049ce74d15f8b2c09aa03746aa0df2a6ae029a990851cbc6bd0d3c10ef428
-Homepage: http://www.mate-desktop.org/
-Description: MateWeather shared library (development files)
- libmateweather is a library to access weather information from online
- services for numerous locations.
- .
- This package contains the development files.
-
 Package: mate-netbook
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -3096,56 +2447,6 @@ Description: MATE utilities for netbooks
  .
  Installing these utilities is recommended for netbooks and similar
  devices with low resolution displays.
-
-Package: libatrildocument-dev
-Architecture: amd64
-Version: 1.18.0-0ubuntu1~16.04.york0
-Priority: optional
-Section: libdevel
-Source: atril
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 194
-Depends: libatrildocument3 (= 1.18.0-0ubuntu1~16.04.york0)
-Breaks: libatril-dev (<< 1.9.0)
-Replaces: libatril-dev (<< 1.9.0)
-Filename: ./libatrildocument-dev_1.18.0-0ubuntu1~16.04.york0_amd64.deb
-Size: 25942
-MD5sum: 37731c9bbb0ee1ae60c2c933e9446f48
-SHA1: a4b09048654c610b5433a08ff7d01d18f6ce613f
-SHA256: 67edf1de1d6c2af765fca6dc334122b5d44e83c02fa66490a16d14b0469f4b40
-SHA512: 23d17df79ddc16e0631c4c3e1ba2457d5519ed828a9a1193c5119f28299c61db234b876c4d5a747cd9ef0f0e859e267a87884e9ae64080fb836db7b4e8612563
-Homepage: http://www.mate-desktop.org/
-Description: MATE document rendering library (development files)
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- This package contains the development files for the libatrildocument
- library.
-
-Package: libmate-slab-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mate-control-center
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 105
-Provides: libmate-slab0-dev
-Depends: libmate-slab0 (= 1.18.1-0ubuntu1~16.04.york0)
-Filename: ./libmate-slab-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 20820
-MD5sum: b921e2f0595645250346d9cce3a579c3
-SHA1: b9cf79350e07bc905b67134331a167afd66a0a50
-SHA256: a7bebe0a3b75fe5e05de0df337664d1a41b838169dd13d24a3cc5f0b4852aaf7
-SHA512: f7d34fb48314e14e33f4e0189e2d8f067b488c7cd1e6c26eb0b7ccaa4d4019b51a452a67f90b376a084a97ab3bd2093a770fcf6a4a9e3fb8d0b70d049e51c5f4
-Homepage: http://www.mate-desktop.org/
-Description: beautification app library (development headers)
- The libmate-slab library provides functionality to create applications
- like MATE control center and the application-browser from gnome-main-menu.
- .
- This package contains the development files for libmate-slab.
 
 Package: pluma
 Architecture: amd64
@@ -3239,48 +2540,6 @@ Description: MATE media utilities
  This package utilizes the libmatemixer library which provides
  support for ALSA and Pulseaudio as audio backends.
 
-Package: libmarco-dev
-Architecture: amd64
-Version: 1.18.0-0ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: marco
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 112
-Depends: libmarco-private1 (= 1.18.0-0ubuntu1~16.04.york0)
-Breaks: mate-window-manager (<= 1.0.0-2)
-Filename: ./libmarco-dev_1.18.0-0ubuntu1~16.04.york0_amd64.deb
-Size: 23242
-MD5sum: 990b61525654df31fac8b0e76975b00d
-SHA1: 67d7be64f2ced791c2f1fb7e2ee706bd4867b089
-SHA256: 2752eb1fb01c93c853f537d2ad029fc94a01091ecd9cb0e99e6d988bf93778a5
-SHA512: bfa7f9a70541eb99f523b7f8aec97c8107970501d174cab650543bf04ccd506e6c8b93669d22f74688f09046ddb81eaa3bbba836632447159059219dcd6c4cc4
-Homepage: http://www.mate-desktop.org/
-Description: library for Marco window manager (development files)
- Marco is a small window manager, using GTK+ to do everything. It is
- developed mainly for the MATE Desktop.
- .
- This package contains the development files.
-
-Package: ubuntu-mate-wallpapers-common
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 18130
-Filename: ./ubuntu-mate-wallpapers-common_17.04.12~16.04.york0_all.deb
-Size: 14311300
-MD5sum: eaedd687b0dd294d6de03efdda16c08b
-SHA1: 834b6dfd761dcb916e79beb51a564c2ede4538e9
-SHA256: 12d7725dfa415d2ba02a7a366ff57127cd98552dbc5b63327cb80a6a03a7dcfc
-SHA512: 064357d88bdffc185a571185178b5da894d3947de13c720a5ae588fb7b3fc395371a6d09944d637b4e539358c7c0910ad4a45c06801babb1dee919c5759b3f6a
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Common Ubuntu MATE wallpapers
- Common wallpapers for Ubuntu MATE contributed by the community.
-
 Package: libmatemixer0
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -3304,34 +2563,6 @@ Description: Mixer library for MATE Desktop
  sound systems.
  .
  This package contains the shared libraries.
-
-Package: libmate-menu-dev
-Architecture: amd64
-Version: 1.18.0-0ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mate-menus
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 38
-Provides: libmatemenu-dev
-Depends: libglib2.0-dev, libmate-menu2 (= 1.18.0-0ubuntu1~16.04.york0)
-Breaks: libmatemenu-dev
-Replaces: libmatemenu-dev
-Filename: ./libmate-menu-dev_1.18.0-0ubuntu1~16.04.york0_amd64.deb
-Size: 9882
-MD5sum: 0648fde267079e2834d1cc79c6fd84c9
-SHA1: 1ebbeaa55c3a12fb6d2527dfe32a482310bea252
-SHA256: 624e6bf6addb7a009fc79f66ed16fcf5538cfe7b23f8b703d5cfd83520be74a8
-SHA512: bd51c1c8a41617ea6a96da0f1ed37c9aeaafc96a22833a23aa48505735509fba041e7dd761f7c796396a2ae1fd2b9e52f256aefaf582669073db496e7e023df5
-Homepage: http://www.mate-desktop.org/
-Description: implementation of the freedesktop menu specification for MATE (development files)
- The package contains an implementation of the draft
- "Desktop Menu Specification" from freedesktop.org:
- .
- http://www.freedesktop.org/Standards/menu-spec
- .
- This package contains the development files.
 
 Package: mate-user-share-common
 Architecture: all
@@ -3390,24 +2621,6 @@ Description: MATE screen saver and locker (common files)
  sane and secure defaults, and be well integrated with the MATE desktop.
  .
  This package contains the architecture independent files.
-
-Package: ubuntu-mate-wallpapers-zesty
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 5705
-Filename: ./ubuntu-mate-wallpapers-zesty_17.04.12~16.04.york0_all.deb
-Size: 5338848
-MD5sum: 58889126ef60ebc7eee7d8926654a1cf
-SHA1: 7f7d1a4f77915fc9f44c805d76829f70bf6296a1
-SHA256: 7c230b12aabf9a773d017616fc49173e1ea755e8ce3d51a3ad70beefbfaf0a4d
-SHA512: d5769cfa5a46a53530f61817746ae89d0bf0d955830c4227dc790fe74265ffdd0bf63380f0d1b111a34bd4db7a8d9f68d52232e01a2c7276d8054ba736676f43
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE 17.04 Wallpapers
- Wallpapers from the Ubuntu MATE community for Ubuntu MATE 17.04
 
 Package: gir1.2-mate-panel
 Architecture: amd64
@@ -3492,32 +2705,6 @@ Description: GObject introspection data for the mate-desktop library
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
-Package: plymouth-theme-ubuntu-mate-text
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 64
-Provides: plymouth-theme
-Depends: plymouth, plymouth-theme-ubuntu-text
-Breaks: plymouth (<< 0.9.2-3ubuntu1~)
-Filename: ./plymouth-theme-ubuntu-mate-text_17.04.12~16.04.york0_all.deb
-Size: 19546
-MD5sum: 18305f3549a1db037a2dddca86fe8e9e
-SHA1: 02e89726b4a332c397b7688b8b4b5c159b46a6c7
-SHA256: f363f534ccdc2b7936bee33162568f6dc6e8b56a2a9963a2f64bc08386ef0272
-SHA512: 0ceb87192eadf7b9b747ca4fbb1f427b3056841970d3f6f2139b25986081c6801df80a91a91cdb5fd1754aa8de2b9fd30ef7860a450f3785ac835530200926dd
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: graphical boot animation and logger - ubuntu-mate-text theme
- Plymouth is an application that runs very early in the boot process
- (even before the root filesystem is mounted!) that provides a graphical
- boot animation while the boot process happens in the background.
- .
- This package contains the default ubuntu-mate-text theme used when no
- support for a graphical theme is found on your system.
-
 Package: eom-common
 Architecture: all
 Version: 1.18.1-0ubuntu1~16.04.york0
@@ -3572,24 +2759,6 @@ Description: MATE terminal emulator application (common files)
  window (tabs) and profiles support.
  .
  This package contains the architecture independent files.
-
-Package: ubuntu-mate-wallpapers-utopic
-Architecture: all
-Version: 17.04.12~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-artwork
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 901
-Filename: ./ubuntu-mate-wallpapers-utopic_17.04.12~16.04.york0_all.deb
-Size: 853940
-MD5sum: 201163cbf90f26775e3f6142f51cda93
-SHA1: 4fa484d479aacfb140d639be2e4c6f5306451535
-SHA256: 529b9e23c2ea000355306afe0d740c1172a76be84d8ecabc9cb3d220fa557849
-SHA512: 8a75d299e20da2b95d5a42ebdaecae2252487e860256e3c7dd121c3f92d70570022909819aae09e15f2bf8c83ceb31917134120a53531098123fdef5933cc105
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE 14.10 Wallpapers
- Wallpapers from the Ubuntu MATE community for Ubuntu MATE 14.10
 
 Package: libmate-panel-applet-doc
 Architecture: all
@@ -3697,32 +2866,6 @@ Description: Various applets for the MATE panel
  Weather report: downloads weather information from the U.S National Weather
  Service (NWS) servers, including the Interactive Weather Information
  Network (IWIN).
-
-Package: eom-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: libdevel
-Source: eom
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 110
-Depends: eom (= 1.18.1-0ubuntu1~16.04.york0)
-Breaks: mate-image-viewer (<= 1.0.0-1)
-Replaces: mate-image-viewer (<= 1.0.0-1)
-Filename: ./eom-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 18216
-MD5sum: 603a88cb0655eed1e358cbe9af72a97f
-SHA1: 3e79c79d1e22b4d0f1bbe42f51ef906a7f1c4252
-SHA256: cbc4548903627a9fcfcc4823d065e3c531972cc22d3f8472995aec933b3ba924
-SHA512: cf65203ebd5b5facbcb93822d012736dbbe6e95c663287f787d4539dda7729e1b009be20ceaab61b3df3b0782d3a84eda5683b96aefd495ab104ad2879cad4d9
-Homepage: http://www.mate-desktop.org/
-Description: Eye of MATE graphics viewer program (development files)
- eom or the Eye of MATE is a simple graphics viewer for the MATE
- desktop which uses the gdk-pixbuf library. It can deal with large
- images, and zoom and scroll with constant memory usage. Its goals are
- simplicity and standards compliance.
- .
- This package contains the development files for building eom plugins.
 
 Package: mate-panel
 Architecture: amd64
