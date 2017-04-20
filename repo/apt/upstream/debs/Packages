@@ -1,36 +1,3 @@
-Package: pango1.0-tests
-Architecture: amd64
-Version: 1.40.4-1~16.04.york0
-Priority: optional
-Section: libs
-Source: pango1.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 724
-Depends: libc6 (>= 2.4), libcairo2 (>= 1.12.10), libglib2.0-0 (>= 2.37.2), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.22.0), libpangoft2-1.0-0 (>= 1.18.0), fonts-cantarell
-Filename: ./pango1.0-tests_1.40.4-1~16.04.york0_amd64.deb
-Size: 106664
-MD5sum: c4214c41e1b338c23039d455aa7f5c4b
-SHA1: 4eb49007990b430025ba763cc5dd08011a4a5c68
-SHA256: 3b116572be5df9cf42c92d35279fad928c36ea544c4af0cfedba82be68ed4c04
-SHA512: 24bf0e1b3e0025917c6c121ab004e2dafc728eeda956001b086faa2e18b1954282460cec40a9fa75b8263d1672dbe38d4baeb25d529e4a320d4cd817c958eca6
-Homepage: http://www.pango.org/
-Description: Layout and rendering of internationalized text - installed tests
- Pango is a library for layout and rendering of text, with an emphasis
- on internationalization. Pango can be used anywhere that text layout is
- needed. however, most of the work on Pango-1.0 was done using the GTK+
- widget toolkit as a test platform. Pango forms the core of text and
- font handling for GTK+-2.0.
- .
- Pango is designed to be modular; the core Pango layout can be used with
- four different font backends:
-  - Core X windowing system fonts
-  - Client-side fonts on X using the Xft library
-  - Direct rendering of scalable fonts using the FreeType library
-  - Native fonts on Microsoft backends
- .
- This package contains test programs, designed to be run as part of a
- regression testsuite.
-
 Package: pluma-common
 Architecture: all
 Version: 1.18.1-0ubuntu1~16.04.york0
@@ -65,55 +32,6 @@ Description: official text editor of the MATE desktop environment (common files)
  ChangeLogs, and adjusting indentation levels.
  .
  This package contains the architecture independent files.
-
-Package: libglib2.0-doc
-Architecture: all
-Version: 2.50.3-1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: doc
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 21557
-Suggests: devhelp
-Filename: ./libglib2.0-doc_2.50.3-1~16.04.york0_all.deb
-Size: 2909522
-MD5sum: e40f0bb541b474df963ee2dfe02a699d
-SHA1: 08d6feac5e614f02ec1eaa914c17826957c939f3
-SHA256: b79d5611e29b764d5641e2959f1288c3c4ca5fe715212d35a054d63176160cc4
-SHA512: 15b0415fbd9c975a729895ada24e1a5d09b348cf1f4c99e47e30b741433f608c181c7348d88f0b7509bd1ac99999c23fdc9997bffd7fbdc90fdb0c15d1e71341
-Homepage: http://www.gtk.org/
-Description: Documentation files for the GLib library
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package contains the HTML documentation for the GLib library
- in /usr/share/doc/libglib2.0-doc/ .
-
-Package: mir-demos
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Priority: optional
-Section: x11
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 1152
-Depends: libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.14), libegl1-mesa (>= 7.8.1) | libegl1-x11, libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.3.1), libgflags2v5, libgles2-mesa (>= 7.8.1) | libgles2, libgoogle-glog0v5, libmirclient9 (>= 0.24.0+16.10.20160815.3), libmircommon6 (>= 0.24.0+16.10.20160815.3), libmirplatform13 (>= 0.24.0+16.10.20160815.3), libmirserver41 (>= 0.24.0+16.10.20160815.3), libstdc++6 (>= 5.2)
-Recommends: fonts-liberation
-Filename: ./mir-demos_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 272638
-MD5sum: 7d08e033dfc55b6e54e24ea71f8816d6
-SHA1: 2722306be384ef10e4c6c14561a1731397253bd4
-SHA256: 89a8a3c9d36c3929c0922243790ec08094216bc7b2821a8fe52c842fa6971660
-SHA512: 55c5ecf1df6baa610857a8116d4959d3330d8a32047745af91673f591eb0935d3259eb11a86e4125574c77adc71f7ea2964fac9f13491e9e40a94b72e7570743
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - demonstration programs
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains demo applications that use the Mir display server
 
 Package: mate-backgrounds
 Architecture: all
@@ -210,57 +128,6 @@ Description: Advanced MATE menu
  been ported to other distros that ship the MATE Desktop
  Environment.
 
-Package: libgail-3-doc
-Architecture: all
-Version: 3.22.7-1ubuntu2~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: doc
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 173
-Suggests: devhelp
-Filename: ./libgail-3-doc_3.22.7-1ubuntu2~16.04.york0_all.deb
-Size: 72014
-MD5sum: 6d3944f177162056245b1a50982b6c89
-SHA1: b75e88d41984fb6ec945a755abaae5e962af3a6c
-SHA256: 6c64ce7213dd35c712aa1cd36c7f1228c1e22eaea3dcf9644ad343bfca29432b
-SHA512: d59d4d295c31f0a6311c62ee384a7e2e0834e2b195be29815ba8320c1cca0a6dae3845c6eb02bd38039271135ecb08588f91712eef78c9fcdb2740aed126f61e
-Homepage: http://www.gtk.org/
-Description: documentation files of the Gail library
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
- of accessibility, without the need to modify the application at all.
- .
- This package contains the documentation files for Gail.
-
-Package: mir-platform-graphics-mesa-kms10
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 335
-Depends: libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.15), libdrm2 (>= 2.4.38), libegl1-mesa (>= 7.8.1) | libegl1-x11, libgbm1 (>= 8.1~0), libgcc1 (>= 1:3.3.1), libgles2-mesa (>= 7.8.1) | libgles2, libmircommon6 (>= 0.24.0+16.10.20160815.3), libmirplatform13 (>= 0.24.0+16.10.20160815.3), libstdc++6 (>= 5.2)
-Filename: ./mir-platform-graphics-mesa-kms10_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 143446
-MD5sum: 0424a9c22a941a89f3f9658f19f080a9
-SHA1: c851f6e5dab0ee5a7e475b2c7b1abbf23f107797
-SHA256: 63f13fe8b6c05dcb554545ba3dda003395b9c2142615427893e750c84d6e085c
-SHA512: 7e31d301ef1693f9332a86699227b09546a2eef088fe9ee180fa1aa3c27c8abe5440f31013cb87af4b0f277cc4576bc5763fc283ae655a78d07e65cda7ba7087
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - platform library for KMS Mesa
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared libraries required for the Mir server to interact with
- the hardware platform using the Mesa drivers.
-
 Package: libmate-desktop-doc
 Architecture: all
 Version: 1.18.0-0ubuntu2~16.04.york0
@@ -288,33 +155,6 @@ Description: Library with common API for various MATE modules (documentation fil
  reasons.
  .
  This package contains the documentation files.
-
-Package: libgail-3-dev
-Architecture: amd64
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 138
-Depends: libgail-3-0 (= 3.20.9-1ubuntu2.1~16.04.york0), libgtk-3-dev (= 3.20.9-1ubuntu2.1~16.04.york0), pkg-config, libatk1.0-dev (>= 2.2.0)
-Suggests: libgail-3-doc
-Filename: ./libgail-3-dev_3.20.9-1ubuntu2.1~16.04.york0_amd64.deb
-Size: 89238
-MD5sum: 2005b8d448b100cff1df8c9bb122224d
-SHA1: 16889ebd922ee3cbe1b867962dfbb1494fdb4415
-SHA256: 3f0d1ce42f039319f8a5530dd9e0e250781d4c7c899a45b2a98fcee581552b56
-SHA512: eb1c1c4f1c7169aa17304acefd5727e8c4144754db5ad68c6c381e87038d29f3cd7e383a58ae5a9192c180644bb794c50bf9d8fc82c52b7973f03ee9a1c811af
-Homepage: http://www.gtk.org/
-Description: GNOME Accessibility Implementation Library -- development files
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
- of accessibility, without the need to modify the application at all.
- .
- This package contains the development files for Gail.
 
 Package: ubuntu-mate-default-settings
 Architecture: all
@@ -365,56 +205,6 @@ Description: archive manager for MATE (common files)
  .
  This package contains the architecture independent files.
 
-Package: libglib2.0-dev
-Architecture: amd64
-Version: 2.50.3-1~16.04.york0
-Priority: optional
-Section: libdevel
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 10376
-Depends: libc6 (>= 2.4), libglib2.0-0 (= 2.50.3-1~16.04.york0), python3:any (>= 3.3.2-2~), libglib2.0-bin (= 2.50.3-1~16.04.york0), libpcre3-dev (>= 1:8.31), pkg-config, zlib1g-dev
-Suggests: libglib2.0-doc
-Filename: ./libglib2.0-dev_2.50.3-1~16.04.york0_amd64.deb
-Size: 2954956
-MD5sum: 379f98bcbec7c910e7916d5850f2526b
-SHA1: b9c849e67afa0aac10ecc2047ca2018d1dc4a155
-SHA256: 383d35149257de799a9598a01dfcb7f7bfe73a54c24d43993c96d949d5d1e132
-SHA512: 09d96b574d236526e7209fed51b722802d11f553aa32219b9df6626dd8413d2ddb1352d56dbc1154378a4a7aca04ee5e4ea38494ee605940bd922159769720a0
-Homepage: http://www.gtk.org/
-Description: Development files for the GLib library
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package is needed to compile programs against libglib2.0-0,
- as only it includes the header files and static libraries (optionally)
- needed for compiling.
-
-Package: libmirserver-dev
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 304
-Depends: libmirserver41 (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0), libmirplatform-dev (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0), libmircommon-dev (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0), libglm-dev
-Filename: ./libmirserver-dev_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 89902
-MD5sum: 864e21239ddd9782b2956be853c16379
-SHA1: 4100de1dbdcd2d4129fc3f26d84e5580ddf57ef8
-SHA256: 01374c4e01ac8de8994013036e935a336fd5b0c1af422d8cf7e52ef66d00c468
-SHA512: fa14f9dd1b5da5d662ae1e35ba9a839a3ffa2c43d4edd8a12d192a981d99421b3ed6a97372e05cf8ccba7cee22aadffdd1ef3ad1fbba027194e1bde3d5c430bb
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - development headers
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains header files required to build Mir servers.
-
 Package: ubuntu-mate-wallpapers-yakkety
 Architecture: all
 Version: 17.04.12~16.04.york0
@@ -464,57 +254,6 @@ Description: power management tool for the MATE desktop (common files)
  .
  This package contains the architecture independent files.
 
-Package: libglib2.0-dev
-Architecture: amd64
-Version: 2.50.0-1~ubuntu16.04.1york0
-Priority: optional
-Section: libdevel
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 10362
-Depends: libc6 (>= 2.4), libglib2.0-0 (= 2.50.0-1~ubuntu16.04.1york0), python3:any (>= 3.3.2-2~), libglib2.0-bin (= 2.50.0-1~ubuntu16.04.1york0), libpcre3-dev (>= 1:8.31), pkg-config, zlib1g-dev
-Suggests: libglib2.0-doc
-Filename: ./libglib2.0-dev_2.50.0-1~ubuntu16.04.1york0_amd64.deb
-Size: 2949554
-MD5sum: ae70b1b996289c442702a74b42e543ae
-SHA1: bb064ed4c6bd4b8fdbfb1dd801a3526a409fbec2
-SHA256: 48fcea68bb8521175afd7ebacce8db5eef52fc9f82286004a1eed3beae7b923a
-SHA512: e8e2be3e898a8fbd8dc0458ca1b16e9b7e3ffdf1047d743e287b20e5c0060db7e6afa0180cc866f8c494aafb60b28e36eb71030b032552bc4c082e9530e3d4d5
-Homepage: http://www.gtk.org/
-Description: Development files for the GLib library
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package is needed to compile programs against libglib2.0-0,
- as only it includes the header files and static libraries (optionally)
- needed for compiling.
-
-Package: mir-client-platform-mesa5
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 137
-Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.3.1), libmirclient9 (>= 0.24.0+16.10.20160815.3), libmircommon6 (>= 0.24.0+16.10.20160815.3), libstdc++6 (>= 5.2)
-Filename: ./mir-client-platform-mesa5_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 83998
-MD5sum: 9008bfa6b52dbe04f0823fdfc7e173cc
-SHA1: 71c830e0b4dce2ee79818eefb92b4848a56a238b
-SHA256: 6ada03b696f3354b03d7eb7c7cf5e297041b177bb2f9b9fb7d52eaad67371cfc
-SHA512: 4b1fe9cfa4965a6e68c25e205313fa45a9f744ac05cc774f8f9281f4f920f73019fb6c62db4065f9d57a42e7c21882d2bd55590162e098a3252bb4fa3afecb72
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - client platform library for Mesa
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared libraries required for the Mir clients to interact with
- the underlying hardware platform using the Mesa drivers.
-
 Package: gir1.2-mate-menu
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -538,30 +277,6 @@ Description: GObject introspection data for the MATE menu specification
  .
  It can be used by packages using the GIRepository format to generate dynamic
  bindings.
-
-Package: libglib2.0-data
-Architecture: all
-Version: 2.50.3-1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: libs
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 9461
-Filename: ./libglib2.0-data_2.50.3-1~16.04.york0_all.deb
-Size: 2519320
-MD5sum: 53d1b13649e64505ea5ae856474549d9
-SHA1: bc338cf529ded0e22fbf810ae022b2e9695ef3c7
-SHA256: f406a8eba3724f38515a8e28262eb9043d612edc6dab4c3120ec6b85d255b283
-SHA512: e6f64af144754d034ee7c4d3bd21cc1e9baed0a88db074faa7cfcc3fe65cf30c9efdf0ba49bb9f00d21cf8e225eb0f8eca698b6c09d62b4bc4236a1a674f9863
-Homepage: http://www.gtk.org/
-Description: Common files for GLib library
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package is needed for the runtime libraries to display messages in
- languages other than English.
 
 Package: mate-screensaver
 Architecture: amd64
@@ -592,91 +307,6 @@ Description: MATE screen saver and locker
   * translation into other languages
   * user switching
 
-Package: gtk-update-icon-cache
-Architecture: amd64
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: misc
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 163
-Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.45.8)
-Breaks: libgtk-3-bin (<< 3.20.6-1), libgtk2.0-bin (<< 2.24.30-2)
-Replaces: libgtk-3-bin (<< 3.20.6-1), libgtk2.0-bin (<< 2.24.30-2)
-Filename: ./gtk-update-icon-cache_3.20.9-1ubuntu2.1~16.04.york0_amd64.deb
-Size: 100734
-MD5sum: dc16fc039cf24482e13be21f6fb7e737
-SHA1: c7da1dde6f84158af27bd1a049653aa80e50f709
-SHA256: f56f60896aa667c21fe2e904694ad7cbd7abe271c81c3c13e18423b9c829b583
-SHA512: a3478cc229ca11242ea139093ee5f0474ea65e517562f81741716954b7ded87020c287ba0a593d2b421e1eb0ef0f512b57f3221dc885cd937570032933e443ea
-Homepage: http://www.gtk.org/
-Description: icon theme caching utility
- gtk-update-icon-cache creates mmap()able cache files for icon themes.
- .
- GTK+ can use the cache files created by gtk-update-icon-cache to avoid a lot
- of system call and disk seek overhead when the application starts. Since the
- format of the cache files allows them to be mmap()ed shared between multiple
- applications, the overall memory consumption is reduced as well.
-
-Package: libgtk-3-common
-Architecture: all
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: misc
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 23799
-Depends: dconf-gsettings-backend | gsettings-backend
-Recommends: libgtk-3-0
-Breaks: libgtk-3-0 (<< 3.5.4)
-Replaces: libgtk-3-0 (<< 3.5.4)
-Filename: ./libgtk-3-common_3.20.9-1ubuntu2.1~16.04.york0_all.deb
-Size: 3497844
-MD5sum: 14ef111ff3dbb7529a2d10ee0d978e55
-SHA1: 54b0ab89adaeaef2eef77cf96963e66ef3036f0d
-SHA256: 67017a2263cf6732f263ad8b6ee2b3bed83978009a40556820a1c42bde18832d
-SHA512: 4e781c79cd4d4f1988b4a7d3701dc27b49f006b24776609d59c0b95d425d187415b28e3f7ea35be2bac487afe40ba432a68a0cdbea4acab1bcf468cb8c196af6
-Homepage: http://www.gtk.org/
-Description: common files for the GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the common files which the libraries need.
-
-Package: libwayland-dev
-Architecture: amd64
-Version: 1.12.0-1~16.04.york0
-Multi-Arch: same
-Priority: extra
-Section: libdevel
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 715
-Depends: libwayland-client0 (= 1.12.0-1~16.04.york0), libwayland-server0 (= 1.12.0-1~16.04.york0), libwayland-cursor0 (= 1.12.0-1~16.04.york0), libwayland-bin (= 1.12.0-1~16.04.york0)
-Filename: ./libwayland-dev_1.12.0-1~16.04.york0_amd64.deb
-Size: 95480
-MD5sum: 19fcf6139b2e5a32cf912f5406606d54
-SHA1: 8ff79881d9fa486f4e1f0c836fec28eef0acc8a4
-SHA256: 6aa5b6983fb304bf0c90e1c6df683e8fa57688e6c0b171d255b069f7ada871c4
-SHA512: 483e65cb217858a9460690166356f76e13bd92146774884b0969a8a47e3eabdf9a43ff2f37b02557144dc096543258bde31b68d06912460fd912a7f3eccbaa59
-Homepage: https://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - development files
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package contains the development headers for the Wayland libraries.
- Non-developers likely have little use for this package.
-
 Package: ubuntu-mate-wallpapers-vivid
 Architecture: all
 Version: 17.04.12~16.04.york0
@@ -694,31 +324,6 @@ SHA512: 765179d71201b4d21c5f450f4bd93f81aae82b06b7c7bbe7a7fb2a40f013792cf65f6daa
 Homepage: https://launchpad.net/ubuntu-mate/
 Description: Ubuntu MATE 15.04 Wallpapers
  Wallpapers from the Ubuntu MATE community for Ubuntu MATE 15.04
-
-Package: mir-client-platform-mesa-dev
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 86
-Depends: libmirclient-dev
-Filename: ./mir-client-platform-mesa-dev_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 65570
-MD5sum: fbc098e007de3877b7425992793f11be
-SHA1: ffa0bcd84a27234a3e1864b28f70ade1e914cb0b
-SHA256: 1dec73246ddbfb21d55c02761f12d081af8c09831ef970b7cc1401dfe4a2ccfe
-SHA512: 4d3ff73d3157bca0600bdd9a61c31ffdf02760075c6937b2e175ca14d7003e3ed1e3e9f47315e8518b05bece6714ac0d8dff030c16be81599737a88032d6a32c
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - client platform library for Mesa development files
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains header files required to use the platform specific capabilities of
- the Mir Mesa backend.
 
 Package: mate-notification-daemon
 Architecture: amd64
@@ -746,35 +351,6 @@ Description: daemon to display passive popup notifications
  work with a dialog box that they must close.  Passive popups can
  automatically disappear after a short period of time, as per the
  Desktop Notifications spec.
-
-Package: dh-strip-nondeterminism
-Architecture: all
-Version: 0.029-2~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: devel
-Source: strip-nondeterminism
-Maintainer: Reproducible builds folks <reproducible-builds@lists.alioth.debian.org>
-Installed-Size: 21
-Depends: debhelper, libfile-stripnondeterminism-perl (= 0.029-2~16.04.york0), libtimedate-perl, perl:any
-Filename: ./dh-strip-nondeterminism_0.029-2~16.04.york0_all.deb
-Size: 9408
-MD5sum: 6e5108d79781c0f61d3f9d5e7dec2b41
-SHA1: da67fe1052efd83c9f9a8554181cf8d59106fbc0
-SHA256: 690b03d9f56642591141ff6b75647d97bea215ddc5d990dff5cd63e94d32168b
-SHA512: 0aee4fd645cde13de977b4aff946ebecd0b68998cd105f6192e7b6bb82ef07125737cb9bdc7477312d60ef06dd21d879ebd9aeb0e7c36ac24b4745b1da5cb8af
-Homepage: https://reproducible-builds.org/
-Description: file non-deterministic information stripper — Debhelper add-on
- StripNondeterminism is a library for stripping non-deterministic
- information, such as timestamps and file system order, from files. It
- is used as part of the Reproducible Builds project.
- .
- This can be used as a post-processing step to improve the
- reproducibility of a build product, when the build process itself
- cannot be made deterministic.
- .
- This package installs the ‘dh_strip_nondeterminism’ Debhelper command
- that strips nondeterminism as part of a Debian package build process.
 
 Package: libmatedict6
 Architecture: amd64
@@ -862,34 +438,6 @@ Description: common scripts and macros to develop with MATE
  mate-common is an extension to autoconf, automake and libtool for the MATE
  environment and MATE using applications. Included are mate-autogen.sh and
  several macros to help in MATE source trees.
-
-Package: libgtk-3-dev
-Architecture: amd64
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 10697
-Depends: libgtk-3-0 (= 3.20.9-1ubuntu2.1~16.04.york0), gir1.2-gtk-3.0 (= 3.20.9-1ubuntu2.1~16.04.york0), libgtk-3-common, dconf-gsettings-backend | gsettings-backend, libglib2.0-dev (>= 2.43.4), libgdk-pixbuf2.0-dev (>= 2.30.0), libpango1.0-dev (>= 1.37.3), libatk1.0-dev (>= 2.15.1), libatk-bridge2.0-dev, libcairo2-dev (>= 1.14.0), libepoxy-dev (>= 1.0), libharfbuzz-dev (>= 0.9), libx11-dev, libxext-dev, libxinerama-dev, libxi-dev, libxrandr-dev, libxcursor-dev, libxfixes-dev, libxcomposite-dev, libxdamage-dev, pkg-config, libegl1-mesa-dev, libwayland-dev (>= 1.9.91), wayland-protocols (>= 1.1), libxkbcommon-dev, libmirclient-dev (>= 0.13.3), libmircookie-dev (>= 0.17.0)
-Suggests: libgtk-3-doc
-Filename: ./libgtk-3-dev_3.20.9-1ubuntu2.1~16.04.york0_amd64.deb
-Size: 955708
-MD5sum: 264a9a68b5cf5fce79f1f4402b93efce
-SHA1: e6d74b553cb17a76c26fd3070bdfe82f2c1d8d79
-SHA256: 21e3aca3df85191c33e04c21fb28c26c63bfd346c3a504bcfcf241ce87c232b1
-SHA512: 1ef1e8fa40b656826b33f3a73fbce0a28c98fffd3d01f12c4ca9fc19cc383a506cdb2e2e705a14dddca0507e4132b5ae6d1a7cdec4dc1b1fc9acc08e0aa1b6d7
-Homepage: http://www.gtk.org/
-Description: development files for the GTK+ library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the header and development files which are
- needed for building GTK+ applications.
 
 Package: mate-calc
 Architecture: amd64
@@ -997,108 +545,6 @@ Description: library for Marco window manager
  .
  This package contains the library.
 
-Package: mir-platform-graphics-android10
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 388
-Depends: libandroid-properties1, libboost-program-options1.58.0, libc6 (>= 2.14), libegl1-mesa (>= 7.8.1) | libegl1-x11, libgcc1 (>= 1:3.3.1), libgles2-mesa (>= 7.8.1) | libgles2, libhardware2, libmircommon6 (>= 0.24.0+16.10.20160815.3), libmirplatform13 (>= 0.24.0+16.10.20160815.3), libstdc++6 (>= 5.2)
-Filename: ./mir-platform-graphics-android10_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 156614
-MD5sum: 9cf88a1fed97fc484ef9a29c3ead932f
-SHA1: fa0a6f47be8c4740ce6804890ddca21e51f15f60
-SHA256: b4a0e1b7991f16614f3dbb397f5e64e47c99f2c69bafc9310fc7d231481cee3b
-SHA512: 619ea03a3b1d6db4c29166915181230779fda91d9aa44b671c8e3066a1e083d9dbecb4d23a6fef856922dbfc14fdfc1f975fc7204aea4168e206e84d037e8c0d
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - platform library for Android
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared libraries required for the Mir server to interact with
- the hardware platform using the Android drivers.
-
-Package: libglib2.0-tests
-Architecture: amd64
-Version: 2.50.0-1~ubuntu16.04.1york0
-Priority: optional
-Section: libs
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 7718
-Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.49.7), libpcre3, libstdc++6 (>= 4.1.1), shared-mime-info
-Filename: ./libglib2.0-tests_2.50.0-1~ubuntu16.04.1york0_amd64.deb
-Size: 2529636
-MD5sum: 62bae62c3d3e3aa1c2e1cba650d19fd1
-SHA1: c48b14f52cf1653d37962bd060ca8cc1270ed947
-SHA256: d2ee6a62ec67ee8fa8e1a0c4b537ead2bcc93d1df3bf0995153690ef6b5a8d67
-SHA512: 995f5e02ae2762c64a3360761e08c6c83db9f5de6ecb851965cf4eb041fee5d589301b4facbf62bb3ea92a101004f717cf7111ff09404448d6100b36b9eb3b2c
-Homepage: http://www.gtk.org/
-Description: GLib library of C routines - installed tests
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package contains test programs, designed to be run as part of a
- regression testsuite.
-
-Package: libmirclient9
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 657
-Depends: libboost-system1.58.0, libc6 (>= 2.14), libgcc1 (>= 1:3.3.1), libmircommon6 (>= 0.24.0+16.10.20160815.3), libmirprotobuf3 (>= 0.24.0+16.10.20160815.3), libprotobuf-lite9v5, libstdc++6 (>= 5.2), libxkbcommon0 (>= 0.5.0)
-Filename: ./libmirclient9_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 233504
-MD5sum: 3694f52418dda6b65a75cd6d3463ea04
-SHA1: f9b61a89e7adc814ffd20bc6d2f8fe8b8180a1c8
-SHA256: 19d93f189d5aec149c6d2e0cb574b63906850f86e8686c0cf9c9acd447ad8b60
-SHA512: b2ef03ece8859ed176fbbebab0e22c0101f3378eeea22fada38a994ed097588d3c714285abf314407320127667e82a83ccfe24fdd10147ee2d63f6dff4bcfa1d
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - client library
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared library needed by client applications for Mir.
-
-Package: libwayland-cursor0
-Architecture: amd64
-Version: 1.11.0-2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 48
-Depends: libc6 (>= 2.14), libwayland-client0 (>= 1.3.92)
-Conflicts: libwayland0 (<< 1.1.0-1)
-Replaces: libwayland0 (<< 1.1.0-1)
-Filename: ./libwayland-cursor0_1.11.0-2~ubuntu16.04.1york0_amd64.deb
-Size: 13114
-MD5sum: 1ac456a437f4ec7fead6a7d727c3f852
-SHA1: f9b6dfb79c8d6cc1f29ad7d4c557f627a73bc0b1
-SHA256: 3c4f5867716b9397480800476270b67176e1b61dbd74f5d0a704fc3bdf7f6748
-SHA512: 08399dd9ecba0e17664b6510930dbcd02f478e97799509c1ef27258fd8d0080839fb4ec75a77e048162417a19d4d2894e5700a367daa043984f545733c8a9d66
-Homepage: http://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - cursor library
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package ships a helper library to manage cursors.
-
 Package: libmate-window-settings1
 Architecture: amd64
 Version: 1.18.1-0ubuntu1~16.04.york0
@@ -1125,62 +571,6 @@ Description: utilities to configure the MATE desktop (window settings library)
  .
  This package contains the MATE window settings library for MATE control
  center.
-
-Package: mate-themes
-Architecture: all
-Version: 3.22.10-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 18728
-Depends: gtk2-engines, gtk2-engines-murrine, gtk2-engines-pixbuf, librsvg2-common, mate-icon-theme
-Recommends: dmz-cursor-theme
-Conflicts: mate-themes-gnome
-Filename: ./mate-themes_3.22.10-0ubuntu1~16.04.york0_all.deb
-Size: 4135218
-MD5sum: cd0f7860d29505d5cde0f6d71e516e71
-SHA1: 2b516e32e7410fe526a6c76d0f1fdd7dd960d908
-SHA256: 93c1e62813354ab605ecec7f75118b5da0330ac92d97b3a02c24ea5e7db82fac
-SHA512: 8c4a1cf369a374cf6704fa94ce3bb09088970ff79e0a814866ba1cf1bb92593a24fe30eb527e70849d4c701ca000ddd6a2ca807dbee130d1c1d677478635dfb9
-Homepage: http://www.mate-desktop.org/
-Description: Official themes for the MATE desktop
- This package contains the official desktop themes of the MATE desktop
- environment.
- .
- The themes provided for the MATE desktop partially resemble themes that
- are well known from GNOMEv2 desktops. However, the MATE team also prepared
- some new themes esp. for MATE (Menta, GreenLaguna, TraditionalGreen,
- TraditionalOk, and BlackMate).
-
-Package: libgtk-3-0
-Architecture: amd64
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 8741
-Provides: gtk3-binver-3.0.0
-Depends: libgtk-3-common (>= 3.20.9-1ubuntu2.1~16.04.york0), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.15.1), libc6 (>= 2.14), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.14.0), libcolord2 (>= 0.1.10), libcups2 (>= 1.6.2), libepoxy0 (>= 1.0), libfontconfig1 (>= 2.11.94), libgdk-pixbuf2.0-0 (>= 2.30.1), libglib2.0-0 (>= 2.49.2), libjson-glib-1.0-0 (>= 0.12.0), libmirclient9 (>= 0.24.0+16.10.20160815.3), libpango-1.0-0 (>= 1.37.5), libpangocairo-1.0-0 (>= 1.37.3), libpangoft2-1.0-0 (>= 1.37.3), librest-0.7-0 (>= 0.7), libwayland-client0 (>= 1.9.91), libwayland-cursor0 (>= 1.9.91), libwayland-egl1-mesa (>= 10.0.2) | libwayland-egl1, libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0), hicolor-icon-theme, adwaita-icon-theme, shared-mime-info
-Recommends: libgtk-3-bin
-Suggests: librsvg2-common, gvfs
-Breaks: gnome-themes-standard (<< 3.6), gtk3-engines-oxygen (<< 1.4.1-3)
-Filename: ./libgtk-3-0_3.20.9-1ubuntu2.1~16.04.york0_amd64.deb
-Size: 2461944
-MD5sum: 0b8d5a814a877adbab74a44b0ea8a9c0
-SHA1: 1a346f6516e9873acbc98ff143389f657584a5e0
-SHA256: 57f4abac289b0b05540e8e1a0643732c52f482e0b2a5e753cbc0c7e12ef1783e
-SHA512: 35823eccf9bae13a2395da0ae70c85463b5f194abf3eeb8b96a4000bc1fa6ba96c8dde634572315eb0b0afc7b1ce9cda0e892a4656e1ac16a1f2217f2e0ff3f0
-Homepage: http://www.gtk.org/
-Description: GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the shared libraries.
 
 Package: libatrilview-dev
 Architecture: amd64
@@ -1282,55 +672,6 @@ Description: Python binding for Caja components
  .
  The Python binding for Caja allows one to write Caja property page
  and menu item extensions in Python.
-
-Package: adwaita-icon-theme-full
-Architecture: all
-Version: 3.20-3ubuntu2~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: gnome
-Source: adwaita-icon-theme
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 22446
-Depends: adwaita-icon-theme (= 3.20-3ubuntu2~16.04.york0), libgtk-3-bin, librsvg2-common
-Breaks: adwaita-icon-theme (<< 3.20-3ubuntu2~16.04.york0), gnome-themes-standard-data (<< 3.18.0-2~)
-Replaces: adwaita-icon-theme (<< 3.20-3ubuntu2~16.04.york0), gnome-themes-standard-data (<< 3.18.0-2~)
-Filename: ./adwaita-icon-theme-full_3.20-3ubuntu2~16.04.york0_all.deb
-Size: 8453128
-MD5sum: 72992d6e5cad636a8d18e388d957386c
-SHA1: fac32a3a2b0ace189d735b933bc894b874401a4d
-SHA256: 9e4fe2f6a41b3fcfa0bcc1ffc0eba150e08bdb2e1d9718cc3918a80728728a80
-SHA512: a129bddcdd2593c11ba1c5150290b6191db5f2bbd241681f612a3259b150604be7b7829664b7a09ed75c67d7d6c3604f4ff84bd28eed11183338ea8566e51bc9
-Description: default icon theme of GNOME
- This package contains the default icon theme used by the GNOME desktop.
- The icons are used in many of the official GNOME applications like eog,
- Evince, system monitor, and many more.
-
-Package: libmirplatform13
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 250
-Depends: libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.4), libegl1-mesa (>= 7.8.1) | libegl1-x11, libgcc1 (>= 1:3.3.1), libmircommon6 (>= 0.24.0+16.10.20160815.3), libstdc++6 (>= 5.2), libudev1 (>= 183)
-Filename: ./libmirplatform13_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 115822
-MD5sum: 193ddacad1955dbb3fb9b57b5e258413
-SHA1: ec5b981e7dd285b01f7e0cd6dd32773be2d8c291
-SHA256: ac67a410fe489fe1e77604df601ce79af56352774af523a28874dcab70906a79
-SHA512: dba734e465f82d68fd10814c0495eee2b14e7f9b7e476c4c4a39352c77e25c0d65a0497f6475acf2dd4faa9d202d07e16426fe23e850d330c75e115472cdb45e
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - platform library
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared libraries required for the Mir server to interact with
- the underlying hardware platform.
 
 Package: mate-terminal
 Architecture: amd64
@@ -1459,55 +800,6 @@ Description: implementation of the freedesktop menu specification for MATE (libr
  http://www.freedesktop.org/Standards/menu-spec
  .
  This package contains the actual library files.
-
-Package: libglib2.0-bin
-Architecture: amd64
-Version: 2.50.3-1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: misc
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 1729
-Depends: libc6 (>= 2.4), libelf1 (>= 0.142), libglib2.0-0 (= 2.50.3-1~16.04.york0), libglib2.0-data
-Filename: ./libglib2.0-bin_2.50.3-1~16.04.york0_amd64.deb
-Size: 1612344
-MD5sum: a3d0c8e3c5ca0a7e52a9c79ee5391d1d
-SHA1: 43ec81c69f9d419e595914374ca25415dd7fc547
-SHA256: 64d9193a621c464a3b7b22d11f09da00a66feddf6101e91e825be12bb39d0093
-SHA512: 178e750780c7e215b2af4e8b6278477169419d25e0c431b9e3cd44bc3c6ffcf9cc4ebbf30931567327135803546269617f7d13769dcd3fdd473b2dc62382c55f
-Homepage: http://www.gtk.org/
-Description: Programs for the GLib library
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package contains the program files which is used for the libraries
- and others.
-
-Package: libmirserver41
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 1654
-Depends: libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.14), libegl1-mesa (>= 7.8.1) | libegl1-x11, libgcc1 (>= 1:3.3.1), libgles2-mesa (>= 7.8.1) | libgles2, libglib2.0-0 (>= 2.35.8), libmirclient9 (>= 0.24.0+16.10.20160815.3), libmircommon6 (>= 0.24.0+16.10.20160815.3), libmircookie2 (>= 0.24.0+16.10.20160815.3), libmirplatform13 (>= 0.24.0+16.10.20160815.3), libmirprotobuf3 (>= 0.24.0+16.10.20160815.3), libprotobuf-lite9v5, libstdc++6 (>= 5.2), libuuid1 (>= 2.16)
-Filename: ./libmirserver41_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 474454
-MD5sum: 67f5670739c3151273e0a09d3d8f2927
-SHA1: 8fd94f26247cd3f000798ddfe313b6072213fd82
-SHA256: 237dd7873d820969a00e9a9aae56a72f2003fb62b608bdadb190b55bb4f5acb5
-SHA512: 5e191e09bc0ae1a66d248d29c4ec0252a46cc8f5821a1aa5d6fdcfe3f2e97e0f661f7a081ee7a89ecf075a40f7fe2ba7680c2b8e8ded6700ed77824e829970e1
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - server library
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared library needed by server applications for Mir.
 
 Package: gir1.2-pluma
 Architecture: amd64
@@ -1757,34 +1049,6 @@ Description: Caja extensions (common files)
  This package contains the architecture independent files for
  various available Caja extensions.
 
-Package: gtk-3-examples
-Architecture: amd64
-Version: 3.22.7-1ubuntu2~16.04.york0
-Priority: extra
-Section: x11
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 4043
-Depends: libatk1.0-0 (>= 2.15.1), libc6 (>= 2.4), libcairo2 (>= 1.14.0), libepoxy0 (>= 1.0), libgdk-pixbuf2.0-0 (>= 2.25.2), libglib2.0-0 (>= 2.49.4), libgtk-3-0 (= 3.22.7-1ubuntu2~16.04.york0), libharfbuzz0b (>= 0.9.9), libpango-1.0-0 (>= 1.37.3), libpangocairo-1.0-0 (>= 1.37.3), libpangoft2-1.0-0 (>= 1.37.3), dconf-gsettings-backend | gsettings-backend
-Breaks: libgtk-3-common (<< 3.5.4)
-Replaces: libgtk-3-common (<< 3.5.4)
-Filename: ./gtk-3-examples_3.22.7-1ubuntu2~16.04.york0_amd64.deb
-Size: 968596
-MD5sum: 2e19d88cc01bc703cf2ce1b96498fa4d
-SHA1: cc6a40bc193d90bd033c9dceb7d041f1797262a1
-SHA256: 2cca298d83ba9864ea7a9224e5c530d866ed71014778112bcedcfc582885fbe1
-SHA512: a07718be89ded216c39c3f99870ecba4c0067d4cb92e1f972194e944c847b0bdc7e5580ca71f907221c8e0a2a3ff668843c2ab2d60d951f2a89ef72ffd897c11
-Homepage: http://www.gtk.org/
-Description: example files for GTK+ 3
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the example files and a demonstration program
- for GTK+3.
-
 Package: libmate-panel-applet-4-1
 Architecture: amd64
 Version: 1.18.1-0ubuntu2~16.04.york0
@@ -1813,66 +1077,6 @@ Description: library for MATE Panel applets
  from weather forecast to system monitoring.
  .
  This package contains the MATE Panel applet library.
-
-Package: libpangoft2-1.0-0
-Architecture: amd64
-Version: 1.40.4-1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: pango1.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 123
-Depends: libc6 (>= 2.4), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.2.1), libglib2.0-0 (>= 2.37.3), libharfbuzz0b (>= 0.9.30), libpango-1.0-0 (>= 1.37.2)
-Breaks: libpango1.0-0 (<< 1.32.5-2)
-Replaces: libpango1.0-0 (<< 1.32.5-2)
-Filename: ./libpangoft2-1.0-0_1.40.4-1~16.04.york0_amd64.deb
-Size: 53780
-MD5sum: 04734376785cd5608c99629a749ce325
-SHA1: 1fab0165869ccf4e00f8e1f2376321fa9074b2cc
-SHA256: b4d5c34a154471419350a2baedb2f6094afc4b3830fb128bcd419b2baf3c815b
-SHA512: fc5dc5284ce31c0f3862b75fdeac0bc218116ff705cf0664bebefba860a07684f0ef41d4b468221c23a2306e2b0cd2ba07acfadd9eaf53a426b0b8a9befb3619
-Homepage: http://www.pango.org/
-Description: Layout and rendering of internationalized text
- Pango is a library for layout and rendering of text, with an emphasis
- on internationalization. Pango can be used anywhere that text layout is
- needed. however, most of the work on Pango-1.0 was done using the GTK+
- widget toolkit as a test platform. Pango forms the core of text and
- font handling for GTK+-2.0.
- .
- Pango is designed to be modular; the core Pango layout can be used with
- four different font backends:
-  - Core X windowing system fonts
-  - Client-side fonts on X using the Xft library
-  - Direct rendering of scalable fonts using the FreeType library
-  - Native fonts on Microsoft backends
- .
- This package contains the shared libraries.
-
-Package: libmirprotobuf3
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 489
-Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.3.1), libprotobuf-lite9v5, libstdc++6 (>= 5.2)
-Filename: ./libmirprotobuf3_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 160548
-MD5sum: e36609d80b9e93a6d06d5155ec52c08e
-SHA1: ea9aee61b6f0edbb10b7b73723efd8cb89d21e51
-SHA256: 4aeda4766ed71962edf1238684dcf493436f612717b8ae71c7719c285583fea4
-SHA512: ed564f8e615eceb3a1011868db4b0126609c65fb59bfecc3c42fd19247a3faba286604f7f47adcc5c69eefca1fb32cc1f0d0a8dc19bba1e8349d4680a6e135bd
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - RPC definitions
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared library containing the Google Protobuf definitions
- required for Mir clients and servers.
 
 Package: caja-image-converter
 Architecture: amd64
@@ -1949,26 +1153,6 @@ Description: Library with common API for various MATE modules (common files)
  reasons.
  .
  This package contains the architecture-independent files.
-
-Package: dh-systemd
-Architecture: all
-Version: 10.2.2ubuntu1~ubuntu16.04.1york0
-Multi-Arch: foreign
-Priority: extra
-Section: oldlibs
-Source: debhelper
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debhelper Maintainers <debhelper-devel@lists.alioth.debian.org>
-Installed-Size: 104
-Depends: debhelper (>= 9.20160709)
-Filename: ./dh-systemd_10.2.2ubuntu1~ubuntu16.04.1york0_all.deb
-Size: 100236
-MD5sum: d0ecb927e25b6eb657021110e6e3d897
-SHA1: dd22b8a27e23d22e7aa6cc956c49c596a3db4468
-SHA256: 091b8f4a68db9a52ee3431c72f6eb25b554fd1573dbcb1b95a2cdd0d5a677485
-SHA512: 0d8af839830eda6c6768d5b29cfe2f0ffa07e69ade94bff829e3af92de32dba87bb5579fb7214131d163d4b6e85aecb877ce09b4b8b3a1bacc2312f78cd93b0b
-Description: debhelper add-on to handle systemd unit files - transitional package
- This package is for transitional purposes and can be removed safely.
 
 Package: mate-polkit-bin
 Architecture: amd64
@@ -2049,33 +1233,6 @@ Description: MATE authentication agent for PolicyKit-1 (shared library API docum
  This package contains the API documentation files of the mate-polkit shared
  library.
 
-Package: strip-nondeterminism
-Architecture: all
-Version: 0.029-2~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: devel
-Maintainer: Reproducible builds folks <reproducible-builds@lists.alioth.debian.org>
-Installed-Size: 22
-Depends: libfile-stripnondeterminism-perl (= 0.029-2~16.04.york0), perl:any
-Filename: ./strip-nondeterminism_0.029-2~16.04.york0_all.deb
-Size: 9714
-MD5sum: 412f9a9b692900659f6088a6fd6f3ce8
-SHA1: 04e7171118814860d4de0b132ecbe33795cbd150
-SHA256: beac01f8c51cdc4a8e53bb7b516612c5035648c16f7462e212f5ca854ce12176
-SHA512: 6a49538d08e324e55c5402c33109ff5bfcf98bef86b07f2db127f0861ef05402c33581cd04eb67f5923f650c594279376eb103b97bfb010b83d00b219b212794
-Homepage: https://reproducible-builds.org/
-Description: file non-deterministic information stripper — stand-alone tool
- StripNondeterminism is a library for stripping non-deterministic
- information, such as timestamps and file system order, from files. It
- is used as part of the Reproducible Builds project.
- .
- This can be used as a post-processing step to improve the
- reproducibility of a build product, when the build process itself
- cannot be made deterministic.
- .
- This package installs the stand-alone ‘strip-nondeterminism’ tool.
-
 Package: mate-icon-theme
 Architecture: all
 Version: 1.18.1-0ubuntu1~16.04.york1
@@ -2098,34 +1255,6 @@ Description: MATE Desktop icon theme
  .
  This icon theme provides icon artwork for representing the different
  applications, files, directories, and devices found on the MATE desktop.
-
-Package: gir1.2-gtk-3.0
-Architecture: amd64
-Version: 3.22.7-1ubuntu2~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: introspection
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 994
-Depends: libgtk-3-common, gir1.2-atk-1.0, gir1.2-freedesktop, gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-pango-1.0, libgirepository-1.0-1 (>= 1.41.4-1), libgtk-3-0 (>= 3.22.6)
-Breaks: python-gi (<< 3.18), python3-gi (<< 3.18)
-Filename: ./gir1.2-gtk-3.0_3.22.7-1ubuntu2~16.04.york0_amd64.deb
-Size: 245082
-MD5sum: d5560ef6301fbd21877600258c3359e8
-SHA1: 9acb4eed5dd1bcac09e4b75192658d4037e771b9
-SHA256: 164b27e00c27566fd1cad9ff69c69982b47ad9a9c00b04fc7b10134c95216577
-SHA512: b295b7276519b08fdec8baf737b8e2d56fee4e94ee06148bfe96b898d2859540faa82e77021cb56ddcf7136929be2bed84e957ff7106828e36034e9c8c21e912
-Homepage: http://www.gtk.org/
-Description: GTK+ graphical user interface library -- gir bindings
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package can be used by other packages using the GIRepository format to
- generate dynamic bindings.
 
 Package: ubuntu-mate-icon-themes
 Architecture: all
@@ -2200,62 +1329,6 @@ Description: MATE document rendering library
  Portable Document Format (PDF) files.
  .
  This package contains the document rendering library used by Atril.
-
-Package: libwayland-client0
-Architecture: amd64
-Version: 1.12.0-1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 80
-Depends: libc6 (>= 2.14), libffi6 (>= 3.0.4)
-Conflicts: libwayland0 (<< 1.1.0-1)
-Replaces: libwayland0 (<< 1.1.0-1)
-Filename: ./libwayland-client0_1.12.0-1~16.04.york0_amd64.deb
-Size: 24580
-MD5sum: fb38d70e6b2901c95753c9cbf1425a0f
-SHA1: ef64e03634ab81ba64e67992e9c6f5fdb6f967c2
-SHA256: 9e40b1b81df38d4d761ae1a1f345a0f3d6c2c90e286bed503beda417a67365ce
-SHA512: c45256f5288d5dcc07250fb5226d88f41ab242772ee2d382cd4df40684dc0243bfd3320f6a2fda4098f5535f016630ec3aa4e9432096fec397ae943f705f53f4
-Homepage: https://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - client library
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package ships the library that implements the client side of
- the Wayland protocol.
-
-Package: libgail-3-0
-Architecture: amd64
-Version: 3.22.7-1ubuntu2~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 138
-Depends: libatk1.0-0 (>= 2.15.1), libc6 (>= 2.4), libglib2.0-0 (>= 2.49.4), libgtk-3-0 (= 3.22.7-1ubuntu2~16.04.york0), libpango-1.0-0 (>= 1.37.3), at-spi2-core
-Filename: ./libgail-3-0_3.22.7-1ubuntu2~16.04.york0_amd64.deb
-Size: 72674
-MD5sum: d4df664e049c346af59d6faa35555efa
-SHA1: ead8e279022b0f2167f065f35f96421c1a21b803
-SHA256: f84823118c9ded4a31774848fef1f20dc5fe59cfe952b13184101abc10c2f31a
-SHA512: 7c2048025a8139f3d3057dfcbcbc72eeac7097af05ab1c8b0bf623ea31fabd8d88e15ba98f873a9b2d214794ac76b8b7e58cde3342ddccb5c92e19fa9bf5f70c
-Homepage: http://www.gtk.org/
-Description: GNOME Accessibility Implementation Library -- shared libraries
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
- of accessibility, without the need to modify the application at all.
- .
- This package contains the shared library.
 
 Package: engrampa
 Architecture: amd64
@@ -2347,66 +1420,6 @@ Description: MATE library to manage keyboard configuration (development files)
  .
  This package contains the development files.
 
-Package: libpango1.0-doc
-Architecture: all
-Version: 1.40.4-1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: doc
-Source: pango1.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 2293
-Recommends: libglib2.0-doc
-Filename: ./libpango1.0-doc_1.40.4-1~16.04.york0_all.deb
-Size: 203800
-MD5sum: f09b797268fa72d9e5f4109c03ee9300
-SHA1: c81c67da7b65e2d1062d3c9c303428136d4c9202
-SHA256: 6c8c57f58e11252a7b306b92fe72f86aa435059efbb727134bf2117598f70685
-SHA512: efa9bcace6fde8ba7eaa069fc226961cbf5a6d3e80bed560064b1f9ec90b46671821471e732059efbb269796f1fac62b33f74510ceeb61aceb81c0ea3329cb66
-Homepage: http://www.pango.org/
-Description: Documentation files for the Pango
- Pango is a library for layout and rendering of text, with an emphasis
- on internationalization. Pango can be used anywhere that text layout is
- needed. however, most of the work on Pango-1.0 was done using the GTK+
- widget toolkit as a test platform. Pango forms the core of text and
- font handling for GTK+-2.0.
- .
- Pango is designed to be modular; the core Pango layout can be used with
- four different font backends:
-  - Core X windowing system fonts
-  - Client-side fonts on X using the Xft library
-  - Direct rendering of scalable fonts using the FreeType library
-  - Native fonts on Microsoft backends
- .
- This package contains the HTML documentation for the Pango in
- /usr/share/doc/libpango1.0-doc/ .
-
-Package: libgail-3-doc
-Architecture: all
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: doc
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 196
-Suggests: devhelp
-Filename: ./libgail-3-doc_3.20.9-1ubuntu2.1~16.04.york0_all.deb
-Size: 96580
-MD5sum: 0436a0a91e1edaa0350f2ee002abbdba
-SHA1: ad16eb5c1dd90b0c3e0807f7cf5d1bfdd45cc144
-SHA256: cfb1940ea210b5ab80798c36d0de2124d6d6d0612771554d1738f47a33de7400
-SHA512: 447a1bc9ce52a84126141aa0b194f9c068ebb61c025a0a8391de5837762b239f1109baa3aa1b1a61fb3232f6e79fd1dc424c86b08001b023fef6781d2da98146
-Homepage: http://www.gtk.org/
-Description: documentation files of the Gail library
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
- of accessibility, without the need to modify the application at all.
- .
- This package contains the documentation files for Gail.
-
 Package: libcaja-extension1
 Architecture: amd64
 Version: 1.18.1-0ubuntu1~16.04.york0
@@ -2461,29 +1474,6 @@ Description: utilities to configure the MATE desktop (common files)
  .
  This package contains the architecture independent files of MATE
  control center.
-
-Package: mir-utils
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Priority: optional
-Section: x11
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 340
-Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.17), libegl1-mesa (>= 7.8.1) | libegl1-x11, libgcc1 (>= 1:3.3.1), libgles2-mesa (>= 7.8.1) | libgles2, libmirclient9 (>= 0.24.0+16.10.20160815.3), libmircommon6 (>= 0.24.0+16.10.20160815.3), libstdc++6 (>= 5.2)
-Filename: ./mir-utils_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 131148
-MD5sum: 6b9a2298a9e412d57952067b4ce35339
-SHA1: c2cd94e9ecd2562adba0efc43d6d4ae798866bfe
-SHA256: b88167fbd698e53ce44eec30d47254cc1562cfe3c20b0ae1d012e2487011237a
-SHA512: dd7899dd0323e9a7eff2775a1f76df867dbde4c96103a41f41b5182be52db5833443ea2a78f06ca28be52e2b7589aaf22f8a78f517079b676fa502584cf9d5d2
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - utility programs
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains utility programs for probing and controling a Mir server.
 
 Package: mate-settings-daemon
 Architecture: amd64
@@ -2573,59 +1563,6 @@ Description: MATE authentication agent for PolicyKit-1 (library)
  .
  This package contains the library for mate-polkit.
 
-Package: libgtk-3-dev
-Architecture: amd64
-Version: 3.22.7-1ubuntu2~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 10861
-Depends: libgtk-3-0 (= 3.22.7-1ubuntu2~16.04.york0), gir1.2-gtk-3.0 (= 3.22.7-1ubuntu2~16.04.york0), libgtk-3-common, dconf-gsettings-backend | gsettings-backend, libglib2.0-dev (>= 2.49.4), libgdk-pixbuf2.0-dev (>= 2.30.0), libmirclient-dev (>= 0.13.3), libmircookie-dev (>= 0.17.0), libpango1.0-dev (>= 1.37.3), libatk1.0-dev (>= 2.15.1), libatk-bridge2.0-dev, libcairo2-dev (>= 1.14.0), libepoxy-dev (>= 1.0), libfontconfig1-dev, libx11-dev, libxext-dev, libxinerama-dev, libxi-dev, libxrandr-dev, libxcursor-dev, libxfixes-dev, libxcomposite-dev, libxdamage-dev, pkg-config, libegl1-mesa-dev, libwayland-dev (>= 1.9.91), wayland-protocols (>= 1.7), libxkbcommon-dev
-Suggests: libgtk-3-doc
-Filename: ./libgtk-3-dev_3.22.7-1ubuntu2~16.04.york0_amd64.deb
-Size: 957342
-MD5sum: 53b791c46a29e2c28822574bc8cc9658
-SHA1: 6728035eec907d67474e34b8225945e4328f112f
-SHA256: 2ea1456f4670b254029ce6f4a94e059d0ca1c2b34b8b58439964bac73fa16d51
-SHA512: 4c35c64a7547f91f13667068dc7c1f96dd83fc3e21babab153a81010aec7edac4fbc1f1d066834511d0b794a17e7d1531f4200c328818e592e4243675ffa593c
-Homepage: http://www.gtk.org/
-Description: development files for the GTK+ library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the header and development files which are
- needed for building GTK+ applications.
-
-Package: mirtest-dev
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 14258
-Depends: libmircommon-dev (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0), libmirplatform-dev (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0), libmirserver-dev (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0)
-Filename: ./mirtest-dev_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 959874
-MD5sum: b39b23270e520db66253b9e23e5f7a45
-SHA1: 8e9360474d8bb16d5bc39fd5b7120270cea66f5b
-SHA256: eee82b08a570f7ab6b38c264e194c1bbccb49faf8b06f1f845fae6bb19a8e1cb
-SHA512: e43123049794ffed678c6a9e3394a57bf8f5fb6f6acb2bfb3fc41f9a5c04878c50294528d373212401f900d2a8384f7c50e28a02711216efa037630ae8db71e5
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - test development headers and library
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains header files and static library for testing of server and/or client
- development.
-
 Package: libmateweather1
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -2674,118 +1611,6 @@ Description: Process viewer and system resource monitor for MATE
  processes on your system.  It also provides an overview of available
  resources such as CPU and memory.
 
-Package: libgtk-3-bin
-Architecture: amd64
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: misc
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 298
-Depends: libc6 (>= 2.4), libcairo2 (>= 1.14.0), libglib2.0-0 (>= 2.45.8), libgtk-3-0 (>= 3.20.9-1ubuntu2.1~16.04.york0), libgtk-3-common (>= 3.20.9-1ubuntu2.1~16.04.york0), gtk-update-icon-cache
-Filename: ./libgtk-3-bin_3.20.9-1ubuntu2.1~16.04.york0_amd64.deb
-Size: 130902
-MD5sum: 3c59b22f09809c2c33b2536faad6358b
-SHA1: d98dbd3cb606da77ea517068ecc746dea6f078ae
-SHA256: 2bdc76e929fed9d27c6c0ae0aea54b2c478ea5bc34f81ccfc5bb888e6165c85d
-SHA512: 5c0d9f91797652ca3070f02ed420c42ce26bb8167517fcbfec4d3ef41eb729963e7dbe33b9351c928b02073f137688e48bfe846c7bf74e7f07e8a422affd364d
-Homepage: http://www.gtk.org/
-Description: programs for the GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the utilities which are used by the libraries
- and other packages.
-
-Package: libgtk-3-common
-Architecture: all
-Version: 3.22.7-1ubuntu2~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: misc
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 24162
-Depends: dconf-gsettings-backend | gsettings-backend
-Recommends: libgtk-3-0
-Breaks: libgtk-3-0 (<< 3.5.4)
-Replaces: libgtk-3-0 (<< 3.5.4)
-Filename: ./libgtk-3-common_3.22.7-1ubuntu2~16.04.york0_all.deb
-Size: 3451758
-MD5sum: 089ac9e0ebcfc6afc607f7b22d699a1d
-SHA1: 4265dd0854108e027924b2cfbb44e4dd17eb1397
-SHA256: 6c7efcf38c50c8729bf33257b8b01b1d1045729d700c0cd1b01f567f2c38d2fe
-SHA512: efb9a8eca481b4e4986c1d048caf77653b2546cc75bbbc3b4c61587d4a39f002fc46e211c1d89d1314fc7d24fbc729ac677bc315042b40612e7f457e46b21bbe
-Homepage: http://www.gtk.org/
-Description: common files for the GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the common files which the libraries need.
-
-Package: gtk-3-examples
-Architecture: amd64
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Priority: extra
-Section: x11
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 3328
-Depends: libatk1.0-0 (>= 2.15.1), libc6 (>= 2.4), libcairo2 (>= 1.14.0), libepoxy0 (>= 1.0), libgdk-pixbuf2.0-0 (>= 2.25.2), libglib2.0-0 (>= 2.45.8), libgtk-3-0 (= 3.20.9-1ubuntu2.1~16.04.york0), libharfbuzz0b (>= 0.9.9), libpango-1.0-0 (>= 1.37.3), libpangocairo-1.0-0 (>= 1.37.3), libpangoft2-1.0-0 (>= 1.37.3), dconf-gsettings-backend | gsettings-backend
-Breaks: libgtk-3-common (<< 3.5.4)
-Replaces: libgtk-3-common (<< 3.5.4)
-Filename: ./gtk-3-examples_3.20.9-1ubuntu2.1~16.04.york0_amd64.deb
-Size: 668352
-MD5sum: 538af5bfb7d364578b830e9d1969e203
-SHA1: d4be3f41f66d654a49034ac8d8c61e9e8ef291d1
-SHA256: c861d1e384944b2f21580a6cc3054b700ea3bf9b492e5af479eab098ac24cfc4
-SHA512: 2356d4fa8d314253b0565e3de3b5fb07d548ae7dee16c851014e286713d0ae4b7929c9a27c0f1be8d4aa357092663908d98c040f6768657fae9096e8b00c90a7
-Homepage: http://www.gtk.org/
-Description: example files for GTK+ 3
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the example files and a demonstration program
- for GTK+3.
-
-Package: docker-engine
-Architecture: amd64
-Version: 17.04.0~ce-0~ubuntu-xenial
-Priority: optional
-Section: admin
-Maintainer: Docker <support@docker.com>
-Installed-Size: 82800
-Depends: iptables, init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubuntu7), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.97), libltdl7 (>= 2.4.6), libseccomp2 (>= 2.1.0), libsystemd0
-Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
-Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
-Filename: ./docker-engine_17.04.0~ce-0~ubuntu-xenial_amd64.deb
-Size: 18011010
-MD5sum: 0c158eeaf51bd2e67381071fab4c6d37
-SHA1: f830a9052da100e1d6108c01df61d996a065bb5e
-SHA256: 1f34112d0c5025e47d638a9da8d327d5391edbee8b806cd4f5af6608b85e7492
-SHA512: 5aedb122630bd060077f3c0a084a8d533e1104025c5d04bd6fc7b3e45bd314b2da75de5409240d6ace3514900bed1835f4115e5544a06c77d992d5d92ccddc61
-Homepage: https://dockerproject.org
-Description: Docker: the open-source application container engine
- Docker is an open source project to build, ship and run any application as a
- lightweight container
- .
- Docker containers are both hardware-agnostic and platform-agnostic. This means
- they can run anywhere, from your laptop to the largest EC2 compute instance and
- everything in between - and they don't require you to use a particular
- language, framework or packaging system. That makes them great building blocks
- for deploying and scaling web apps, databases, and backend services without
- depending on a particular stack or provider.
-
 Package: python-mate-menu
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -2807,34 +1632,6 @@ Description: implementation of the freedesktop menu specification for MATE (Pyth
  "Desktop Menu Specification" from freedesktop.org.
  .
  This package contains the Python bindings.
-
-Package: libwayland-dev
-Architecture: amd64
-Version: 1.11.0-2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: extra
-Section: libdevel
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 675
-Depends: libwayland-client0 (= 1.11.0-2~ubuntu16.04.1york0), libwayland-server0 (= 1.11.0-2~ubuntu16.04.1york0), libwayland-cursor0 (= 1.11.0-2~ubuntu16.04.1york0), libwayland-bin (= 1.11.0-2~ubuntu16.04.1york0)
-Filename: ./libwayland-dev_1.11.0-2~ubuntu16.04.1york0_amd64.deb
-Size: 93358
-MD5sum: 55e4791bad20178d2e0aac37366df021
-SHA1: 51ced460f922e28ec2a51de48fc844bfcb1702c4
-SHA256: 40692929ada950631629e79ec3ef15bd83f5a1670f4b4cfc232abb37bda6a7ab
-SHA512: 01e7d9bda97bfd8734397161c3029f947c67c87fd4d1b2b0d3442a82b406f9a5186498695369e28b4870d6f95335483721aed6405a65af8aeb64669db177863d
-Homepage: http://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - development files
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package contains the development headers for the Wayland libraries.
- Non-developers likely have little use for this package.
 
 Package: mate-core
 Architecture: all
@@ -2861,64 +1658,6 @@ Description: MATE Desktop Environment (essential components, dummy package)
  preserving a traditional desktop experience.
  .
  This package (mate-core) is a dummy package and can be safely removed.
-
-Package: libwayland-cursor0
-Architecture: amd64
-Version: 1.12.0-1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 49
-Depends: libc6 (>= 2.14), libwayland-client0 (>= 1.3.92)
-Conflicts: libwayland0 (<< 1.1.0-1)
-Replaces: libwayland0 (<< 1.1.0-1)
-Filename: ./libwayland-cursor0_1.12.0-1~16.04.york0_amd64.deb
-Size: 13296
-MD5sum: c8495918249789709e37c1f5179ea882
-SHA1: 8bc2633bdf52512b5988c3b1c49b1d23c83ed581
-SHA256: 169d5050b3ce0c319bfde2179a9d8a7beb783d11a671e755549ed98d7f69104b
-SHA512: c6cbc56a23589c0e9f5c24cde8e3fc19d819703ae208ff74d03a5612e1029fdcd5021f9d96b83ae97a13255fa2f2d16a4701e02b3c6ca6c52faaefe8fc8bb5c4
-Homepage: https://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - cursor library
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package ships a helper library to manage cursors.
-
-Package: libglib2.0-0-dbg
-Architecture: amd64
-Version: 2.50.3-1~16.04.york0
-Multi-Arch: same
-Priority: extra
-Section: debug
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 10824
-Depends: libglib2.0-0 (= 2.50.3-1~16.04.york0)
-Breaks: libglib2.0-dev (<< 2.43.2-2~)
-Replaces: libglib2.0-dev (<< 2.43.2-2~)
-Filename: ./libglib2.0-0-dbg_2.50.3-1~16.04.york0_amd64.deb
-Size: 7919834
-MD5sum: b457798350aac9ee19fbf6edc8887626
-SHA1: 3037a13550b0640f4e78420197d75ad92c2a4fd1
-SHA256: c1165eacf488bb40cdb2421694c016542b89b614a859ee6656805ca2d2f1be77
-SHA512: 768685d3a53f60c92216f62dbe3227b1fc9b9758163086fbc6f5b4b6fa6e916105994eacc179691db118920e4b0ec5f15008f46f85eb7b0f8db7e5153805926e
-Homepage: http://www.gtk.org/
-Description: Debugging symbols for the GLib libraries
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package contains detached debugging symbols.
- .
- Most people will not need this package.
-Build-Ids: 045ee34cf067852b8411327a1597d90c88e19441 11eccf1b04028c8d8378624ce282d586a81cf74b 1289843c35c54f0c43b94f85ec24ea34e942751e 4479525636414b603fc214983059b6b5a0991f88 4f538fa170bc2d22c3b2a67910fd3eb86f795f72 81396eea65d8824bc6ffb7f0dd66a8066b66ca0f e02da5710bf926702eb47e4ccb2f6af4c8005855 f00096322663009c2317c41f4191dcc043ff4a3f
 
 Package: mate-utils
 Architecture: amd64
@@ -3028,33 +1767,6 @@ Description: MATE authentication agent for PolicyKit-1 (common files)
  This package contains common files for the MATE policy kit authentication
  agent.
 
-Package: debhelper
-Architecture: all
-Version: 10.2.2ubuntu1~ubuntu16.04.1york0
-Multi-Arch: foreign
-Priority: optional
-Section: devel
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debhelper Maintainers <debhelper-devel@lists.alioth.debian.org>
-Installed-Size: 1308
-Depends: autotools-dev, binutils, dh-autoreconf (>= 12~), dh-strip-nondeterminism, dpkg (>= 1.16.2), dpkg-dev (>= 1.18.2~), file (>= 3.23), libdpkg-perl (>= 1.17.14), man-db (>= 2.5.1-1), po-debconf, perl
-Suggests: dh-make
-Breaks: dh-systemd (<< 1.38)
-Replaces: dh-systemd (<< 1.38)
-Filename: ./debhelper_10.2.2ubuntu1~ubuntu16.04.1york0_all.deb
-Size: 839634
-MD5sum: f1933a3d875886fd1e7499264a0280e5
-SHA1: 1665f9511e54714d88f444b89f5fb7e7f1f10b58
-SHA256: 924184ea5abc7a599c82266a2a7726078cad644b9f721cd01f7f71b5d87a40eb
-SHA512: deadd4017f426ca30029fdd8a686caf030861d6f6ec8e522053f7012eededc50709f849f378745aacdce92f586c5669e299e9dcc474bb4ee8b3ad753b3b283c0
-Description: helper programs for debian/rules
- A collection of programs that can be used in a debian/rules file to
- automate common tasks related to building Debian packages. Programs
- are included to install various files into your package, compress
- files, fix file permissions, integrate your package with the Debian
- menu system, debconf, doc-base, etc. Most Debian packages use debhelper
- as part of their build process.
-
 Package: debian-mate-default-settings
 Architecture: all
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -3105,57 +1817,6 @@ Description: GObject introspection data for Caja
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
-
-Package: mir-graphics-drivers-desktop
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 74
-Depends: mir-platform-graphics-mesa-kms10, mir-platform-graphics-mesa-x10, mir-client-platform-mesa5, mir-platform-input-evdev5
-Filename: ./mir-graphics-drivers-desktop_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 64336
-MD5sum: 95df6a893fa03d2f30f075cc5e7cc9a6
-SHA1: e49261db7a7bd9ace92d8392ac13d4e7d804c7a2
-SHA256: d78f2f24aa557cb50c5878e7db50d81a194a9963f77dfe65c4c2150661d1eb02
-SHA512: ea147abf00fa6a975fe730b587b77c33c3615dc780edd761b2dd7c930ae25fbbbc47b668e4a2748b46d61e03ea894f75d53cf5c5b5f41565bba598a5c04cfd61
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - desktop driver metapackage
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- This package depends on a full set of graphics drivers for traditional desktop
- systems.
-
-Package: libglib2.0-0
-Architecture: amd64
-Version: 2.50.3-1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 5003
-Depends: libc6 (>= 2.17), libffi6 (>= 3.0.4), libmount1 (>= 2.20.1), libpcre3, libselinux1 (>= 1.32), zlib1g (>= 1:1.2.2)
-Recommends: libglib2.0-data, shared-mime-info, xdg-user-dirs
-Breaks: glib-networking (<< 2.33.12), libgnome-desktop-3-2 (<< 3.4.2-2), python-gi (<< 3.7.2)
-Filename: ./libglib2.0-0_2.50.3-1~16.04.york0_amd64.deb
-Size: 2690182
-MD5sum: dada609cfd1f60ad816e93d224841e46
-SHA1: 5ad498a1bdd339fc6606f6fcd8bebe5f9116ad70
-SHA256: f120c0e345593184ddf4370a4629ae107cce308b587d05456fb591f824244599
-SHA512: f90587014c426c063ee468beca0c606238956fe74fd63f358bbbd7111f1d6acb8eaae920c55d7a497e370160c7267244b1545bfc6bf270afee9d61f950c9a9dd
-Homepage: http://www.gtk.org/
-Description: GLib library of C routines
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package contains the shared libraries.
 
 Package: libatrilview3
 Architecture: amd64
@@ -3226,31 +1887,6 @@ Description: lightweight GTK+ window manager for MATE (common files)
  developed mainly for the MATE Desktop.
  .
  This package contains the architecture independent files.
-
-Package: python3-mir-perf-framework
-Architecture: all
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Priority: optional
-Section: python
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 102
-Depends: python3:any (>= 3.3.2-2~), python3-evdev, python3-babeltrace, mir-demos
-Filename: ./python3-mir-perf-framework_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_all.deb
-Size: 69150
-MD5sum: bed7cd6e2d29cf2eb5aa054de3b73b9f
-SHA1: d704dcfa379a6ebd727a9c71a568be56d79f2214
-SHA256: 3ec5c8b60d1625a1c0afa82b390d31dcf40abcc0b0ee756d14d7f9c1aa4574b2
-SHA512: 4a4d84bbef7c42142efa8658ac47ca9d68ab48cfd06b89e8e5b178f81eb07d73f4af98fa2c620abfce7df527798970bbe1a1dcd518d5e0751ffa19ec74f7e6c6
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - performance testing framework
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- This package contains a python3 framework to facilitate writing performance
- tests for Mir. It also contains a few interesting performance tests written
- using the framework.
 
 Package: mate-desktop-environment-extra
 Architecture: all
@@ -3364,36 +2000,6 @@ Description: LightDM theme and default configuration for Ubuntu MATE
  This package can also be installed on other Ubuntu desktops desiring
  to use this theme, but it will replace the LightDM theme.
 
-Package: libwayland-client0
-Architecture: amd64
-Version: 1.11.0-2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 79
-Depends: libc6 (>= 2.14), libffi6 (>= 3.0.4)
-Conflicts: libwayland0 (<< 1.1.0-1)
-Replaces: libwayland0 (<< 1.1.0-1)
-Filename: ./libwayland-client0_1.11.0-2~ubuntu16.04.1york0_amd64.deb
-Size: 24348
-MD5sum: 684f6934459535848db86fd0f52056a0
-SHA1: d4a3f24148cf0fb1f3f4051a711bd8ce24c1528e
-SHA256: 380a5d96064f6830f80603dcdccd32dd784301a196607e98a483a7eb9094836f
-SHA512: 6f507c2c72567c4b670a9702c10b3a3079035c894ff7114fbd01c2e8825455fb9de9b1ad3734a669ee2f2d4cdacd95dd7cb8877b4309740d2b98efba79894143
-Homepage: http://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - client library
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package ships the library that implements the client side of
- the Wayland protocol.
-
 Package: marco
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -3443,93 +2049,6 @@ Description: MATE utilities for netbooks (common files)
  devices with low resolution displays.
  .
  This package contains the architecture independent files.
-
-Package: adwaita-icon-theme
-Architecture: all
-Version: 3.22.0-1ubuntu1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: gnome
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 4835
-Depends: hicolor-icon-theme, gtk-update-icon-cache, librsvg2-common, ubuntu-mono | adwaita-icon-theme-full
-Breaks: adwaita-icon-theme-full (<< 3.22.0-1ubuntu1~16.04.york0), gnome-themes-standard-data (<< 3.18.0-2~)
-Replaces: adwaita-icon-theme-full (<< 3.22.0-1ubuntu1~16.04.york0), gnome-themes-standard-data (<< 3.18.0-2~)
-Filename: ./adwaita-icon-theme_3.22.0-1ubuntu1~16.04.york0_all.deb
-Size: 3433650
-MD5sum: f15f73b6904753c8c284185caf694d25
-SHA1: 0a71ef57c08ce5ee3fc5eb2d3cdb818e40e5fd7d
-SHA256: 1b27ed00283d934fa1cafe04cf1a213474c0d1f7f32ab79fd56c62e1c3a3a225
-SHA512: d86bfb863261fe81f2d87bd605a19aadda0a7bcc1920128994dd4d86aa79da4298dc811b2dcd13d716acf32bbd98a314aaabb43fcc9b1495b3452d51a5e436de
-Description: default icon theme of GNOME (small subset)
- This package contains the default icon theme used by the GNOME desktop.
- The icons are used in many of the official gnome applications like eog,
- evince, system monitor, and many more.
- .
- This package only contains a small subset of the original GNOME icons which
- are not provided by the Humanity icon theme, to avoid installing many
- duplicated icons. Please install adwaita-icon-theme-full if you want the full
- set.
-
-Package: libglib2.0-tests
-Architecture: amd64
-Version: 2.50.3-1~16.04.york0
-Priority: optional
-Section: libs
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 7731
-Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.49.7), libpcre3, libstdc++6 (>= 4.1.1), shared-mime-info
-Filename: ./libglib2.0-tests_2.50.3-1~16.04.york0_amd64.deb
-Size: 2538398
-MD5sum: ceca92adc7956821c6bddfc4afa60481
-SHA1: f4ac6739bfc2759231b51d92fadc5d846ad236fa
-SHA256: 855d7563625658a0fb3dc53170c5f681b1f78aa78d37687a7cf92df1690c4571
-SHA512: 49c77d608970b7afdccf1f476df82ba2fa086b303bad46cc0a5ee929067b051b6e6d57bc4f28d587b0ef621ed71d92cd53f3ed2a80958e550331ddc6d7c67b97
-Homepage: http://www.gtk.org/
-Description: GLib library of C routines - installed tests
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package contains test programs, designed to be run as part of a
- regression testsuite.
-
-Package: libpango1.0-dev
-Architecture: amd64
-Version: 1.40.4-1~16.04.york0
-Priority: optional
-Section: libdevel
-Source: pango1.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 1868
-Depends: gir1.2-pango-1.0 (= 1.40.4-1~16.04.york0), libcairo2-dev (>= 1.12.10), libfontconfig1-dev (>= 2.10.91), libfreetype6-dev, libglib2.0-dev (>= 2.34.0), libharfbuzz-dev (>= 0.9.9), libpango-1.0-0 (= 1.40.4-1~16.04.york0), libpangocairo-1.0-0 (= 1.40.4-1~16.04.york0), libpangoft2-1.0-0 (= 1.40.4-1~16.04.york0), libpangoxft-1.0-0 (= 1.40.4-1~16.04.york0), libx11-dev, libxft-dev, libxrender-dev, pkg-config, libc6 (>= 2.7), libcairo2 (>= 1.12.10), libfontconfig1 (>= 2.11.94), libglib2.0-0 (>= 2.34.0), libx11-6, libxft2 (>> 2.1.1)
-Recommends: debhelper
-Suggests: imagemagick, libpango1.0-doc
-Filename: ./libpango1.0-dev_1.40.4-1~16.04.york0_amd64.deb
-Size: 305136
-MD5sum: 41638de1f26bd73c7b04cf5ffa1c69a6
-SHA1: b614e90ab69affeba3449e52c1dc13422a68fee0
-SHA256: bc366fd42611a77dc31b72fa71fdcd75875395e9f22e5d379891f176cdf5c892
-SHA512: 2213da7c4cdf26950fd291bf579fa0e603ef47b034a625fc8c9a615db60077415e2e500b54d03735f162367093124137dfff5c5b333fb10f2ae8c98970cf035a
-Homepage: http://www.pango.org/
-Description: Development files for the Pango
- Pango is a library for layout and rendering of text, with an emphasis
- on internationalization. Pango can be used anywhere that text layout is
- needed. however, most of the work on Pango-1.0 was done using the GTK+
- widget toolkit as a test platform. Pango forms the core of text and
- font handling for GTK+-2.0.
- .
- Pango is designed to be modular; the core Pango layout can be used with
- four different font backends:
-  - Core X windowing system fonts
-  - Client-side fonts on X using the Xft library
-  - Direct rendering of scalable fonts using the FreeType library
-  - Native fonts on Microsoft backends
- .
- This package contains the header files and some files needed for development
- with Pango.
 
 Package: mate-applets-common
 Architecture: all
@@ -3644,35 +2163,6 @@ Description: MATE authentication agent for PolicyKit-1
  .
  This package contains the MATE policy kit authentication agent.
 
-Package: libwayland-doc
-Architecture: all
-Version: 1.11.0-2~ubuntu16.04.1york0
-Multi-Arch: foreign
-Priority: extra
-Section: doc
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 726
-Conflicts: libwayland-dev (<< 1.10.0-2)
-Replaces: libwayland-dev (<< 1.10.0-2)
-Filename: ./libwayland-doc_1.11.0-2~ubuntu16.04.1york0_all.deb
-Size: 157574
-MD5sum: 83259aaa4e20d78fdd6808c8128735ac
-SHA1: 8b23a58c8e21d02737e51e5eef695cf14d7da434
-SHA256: 4aa261d9b93d35fc0544c3c0611a2e8d3abcf42e0edcdffd535cd4da9e8ac210
-SHA512: 7c4141d9025473ed8d80ed8a9e790c49d405626c55c25a3143c9b6197209cf09ac786c539763c2685999e3fc7c00a45a3ad2c8720347c7132abb0795a67347cf
-Homepage: http://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - documentation files
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package contains the documentation for the Wayland libraries.
- Non-developers likely have little use for this package.
-
 Package: ubuntu-mate-themes
 Architecture: all
 Version: 17.04.12~16.04.york0
@@ -3772,32 +2262,6 @@ Description: Eye of MATE graphics viewer program
  desktop which uses the gdk-pixbuf library. It can deal with large
  images, and zoom and scroll with constant memory usage. Its goals are
  simplicity and standards compliance.
-
-Package: libmirplatform-dev
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 173
-Depends: libmirplatform13 (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0), libmircommon-dev, libboost-program-options-dev
-Breaks: libmirplatform (<< 0.6)
-Replaces: libmirplatform (<< 0.6)
-Filename: ./libmirplatform-dev_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 77854
-MD5sum: 48832ff7b041ce714f54f0eb73ca317a
-SHA1: 8da9629062ea48ba1770c292a79f380f86b59b72
-SHA256: 74c948a76590db4d518755defffb9dd3cf4190a278f2676e25c768b259a20ceb
-SHA512: c3ec6b874b6ba43281c23f6048e269f1d4762ceea6fd7900a0227c3fc5cdeb1b2b1df70a5c87cb9c7a1d32136e00795b53e958d05525b34470e35daf071ccf76
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - development headers
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains header files required for hardware/driver support development.
 
 Package: mate-settings-daemon-common
 Architecture: all
@@ -3944,30 +2408,6 @@ Description: MATE panel indicator applet (common files)
  .
  This package contains the architecture independent files.
 
-Package: mir-test-tools
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Priority: optional
-Section: x11
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 77450
-Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.15), libdrm2 (>= 2.4.38), libegl1-mesa (>= 7.8.1) | libegl1-x11, libevdev2 (>= 0.9.1), libgbm1 (>= 8.1~0), libgcc1 (>= 1:3.0), libgles2-mesa (>= 7.8.1) | libgles2, libglib2.0-0 (>= 2.35.8), liblttng-ust0 (>= 2.5.0), libmirclient-debug-extension1 (>= 0.24.0+16.10.20160815.3), libmirclient9 (>= 0.24.0+16.10.20160815.3), libmircommon6 (>= 0.24.0+16.10.20160815.3), libmircookie2 (>= 0.24.0+16.10.20160815.3), libmirplatform13 (>= 0.24.0+16.10.20160815.3), libmirprotobuf3 (>= 0.24.0+16.10.20160815.3), libmirserver41 (>= 0.24.0+16.10.20160815.3), libprotobuf-lite9v5, libstdc++6 (>= 5.2), libudev1 (>= 183), libumockdev0 (>= 0.8), libuuid1 (>= 2.16), libx11-6, libxkbcommon0 (>= 0.5.0)
-Recommends: mir-demos
-Filename: ./mir-test-tools_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 13938600
-MD5sum: 50e24c76bae3be65be813e363adf9a1d
-SHA1: b0f2289cfd31fa3d7a3171a2f1f25398e3fcb3aa
-SHA256: aa9f01bff261b3b0fbe40c057b259ebffe838d16dc5d1b041abc1ad7a376cf2b
-SHA512: e04900720b82327151bb843edfa68114f6ffae6c573f16b3b1b969ef58b05a57a84366bc408393bb3de3d5c51e2e8295ec46cd3e49df8f84c99884e1f20ed451
-Homepage: https://launchpad.net/mir
-Description: Display Server for Ubuntu - stress tests and other test tools
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains a tool for stress testing the Mir display server
-
 Package: libmateweather-common
 Architecture: all
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -4047,32 +2487,6 @@ Description: User level public file sharing via WebDAV or ObexFTP
  The dav server used is Apache, so you need that installed. Avahi or
  Howl is used for mDNS support, so you need to have that installed and
  mDNSResolver running.
-
-Package: libgail-3-0
-Architecture: amd64
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 162
-Depends: libatk1.0-0 (>= 2.15.1), libc6 (>= 2.4), libglib2.0-0 (>= 2.45.8), libgtk-3-0 (= 3.20.9-1ubuntu2.1~16.04.york0), libpango-1.0-0 (>= 1.37.3), at-spi2-core
-Filename: ./libgail-3-0_3.20.9-1ubuntu2.1~16.04.york0_amd64.deb
-Size: 97310
-MD5sum: dc8be6b8d0b8a08ecf9cc1c0c5a90a4c
-SHA1: 6936b68362e237e0241f647e3fc6b477086e1a55
-SHA256: a7dc10c69526e746eaebdace58cef1430b309d630ebce1f6ced3ae43b7f7d1eb
-SHA512: 313f016df22e84b0b4d19548bca7b865bd99681630b279741212bac6611c7ef8746a08fe18638825596763a2350a841b13af91455fd049f827346cda42962c12
-Homepage: http://www.gtk.org/
-Description: GNOME Accessibility Implementation Library -- shared libraries
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
- of accessibility, without the need to modify the application at all.
- .
- This package contains the shared library.
 
 Package: mate-sensors-applet-common
 Architecture: all
@@ -4157,35 +2571,6 @@ Description: file manager for the MATE desktop
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
 
-Package: dh-autoreconf
-Architecture: all
-Version: 12~ubuntu16.04.1york0
-Multi-Arch: foreign
-Priority: optional
-Section: devel
-Maintainer: Julian Andres Klode <jak@debian.org>
-Installed-Size: 44
-Depends: perl, debhelper, autoconf, automake | automaken, autopoint, libtool (>= 2.4.2)
-Enhances: cdbs, debhelper
-Filename: ./dh-autoreconf_12~ubuntu16.04.1york0_all.deb
-Size: 15996
-MD5sum: 56879e4c76c702578b7ea991ae42df86
-SHA1: 5ec48d34655cceee9eadccf21f23ae849a85da41
-SHA256: acb4e824c975201373d6f155931400c766ccb3e849756f642c0806d659ae1f54
-SHA512: dafd0edff4690774c1e0b5c6a2de85149d9110287a8217d255099a9d7fac906535c8da3f5f75dc90e9359c8489ff536e9d3255684b88ace05faf06f4e7c7413b
-Description: debhelper add-on to call autoreconf and clean up after the build
- dh-autoreconf provides a debhelper sequence addon named 'autoreconf' and two
- commands, dh_autoreconf and dh_autoreconf_clean.
- .
- The dh_autoreconf command creates a list of the files and their checksums,
- calls autoreconf and then creates a second list for the new files.
- .
- The dh_autoreconf_clean command compares these two lists and removes all
- files which have been added or changed (files may be excluded if needed).
- .
- For CDBS users, a rule is provided to call the dh-autoreconf programs at
- the right time.
-
 Package: libmatedict-dev
 Architecture: amd64
 Version: 1.18.1-0ubuntu1~16.04.york0
@@ -4253,31 +2638,6 @@ Description: Mixer library for MATE Desktop (documentation files)
  .
  This package contains the documentation files.
 
-Package: libglib2.0-bin
-Architecture: amd64
-Version: 2.50.0-1~ubuntu16.04.1york0
-Multi-Arch: foreign
-Priority: optional
-Section: misc
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 1644
-Depends: libc6 (>= 2.4), libelf1 (>= 0.142), libglib2.0-0 (= 2.50.0-1~ubuntu16.04.1york0), libglib2.0-data
-Filename: ./libglib2.0-bin_2.50.0-1~ubuntu16.04.1york0_amd64.deb
-Size: 1581726
-MD5sum: d75da141a0002d0f93c29f4675637dcb
-SHA1: 57463910b4096393aeb3544bbc4039033b67e23c
-SHA256: a4f4adc9b4b35c2ad18b17d05256443667d59a9da88027cfb6deacc1984d4000
-SHA512: c3c61b1353c7b0bbffc3ad1207ff69476233ee066b4d5655a8ae76069a5273abf6a0402e978a477b3ed0f321da8606ff8ebcc7239910d760100a78872e974c84
-Homepage: http://www.gtk.org/
-Description: Programs for the GLib library
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package contains the program files which is used for the libraries
- and others.
-
 Package: libmatekbd4
 Architecture: amd64
 Version: 1.18.2-0ubuntu1~16.04.york0
@@ -4306,77 +2666,6 @@ Description: MATE library to manage keyboard configuration
  libmatekbd operations.
  .
  This package contains the shared libraries.
-
-Package: mir-android-diagnostics
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Priority: optional
-Section: x11
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 772
-Depends: libc6 (>= 2.14), libegl1-mesa (>= 7.8.1) | libegl1-x11, libgcc1 (>= 1:3.3.1), libgles2-mesa (>= 7.8.1) | libgles2, libhardware2, libmirclient9 (>= 0.24.0+16.10.20160815.3), libmircommon6 (>= 0.24.0+16.10.20160815.3), libmirplatform13 (>= 0.24.0+16.10.20160815.3), libmirserver41 (>= 0.24.0+16.10.20160815.3), libstdc++6 (>= 5.2)
-Recommends: mir-demos
-Filename: ./mir-android-diagnostics_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 231742
-MD5sum: 39e8f848c98ea9cde6402a9a500498a8
-SHA1: 012a0b76f8116add6e7bb62c9450d86dfdc868fb
-SHA256: 2067536680e4df63fc0cdd2c53f7d8aefea0f03881aa426c1cef22e7054d57a0
-SHA512: 5943dbf32844804ad7172aa2426b37fb701f3a42563fe315eb41f78009355847fd9e452d9c4db4cf860d7079f8b2943f9863c0d9ee29ca4f4f5246eb9526be71
-Homepage: https://launchpad.net/mir
-Description: Display Server for Ubuntu - android platform diagnostics utility
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains a tool for checking the graphics components of android devices.
-
-Package: mir-doc
-Architecture: all
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Priority: optional
-Section: doc
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 101100
-Filename: ./mir-doc_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_all.deb
-Size: 6705602
-MD5sum: 21124d6eea3d228cb2a6bec06e980cb9
-SHA1: 7b5a63f4d96835d7160742d4f0494964ed3d0c33
-SHA256: bf4119a39e682fee01a6e272a108bc53e976202807ef0482d946354b5b235ea6
-SHA512: 6828d56622a48ca3ea3a832123e134ac0dc97d0b99bb8f85345b710f4308247579b73e642c7786812e881dd36a5d41dd1234fefcccff35fce72749b400b903d8
-Homepage: https://launchpad.net/mir
-Description: API documentation for mir
- This package installs the mir API documentation.
-
-Package: adwaita-icon-theme
-Architecture: all
-Version: 3.20-3ubuntu2~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: gnome
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 6363
-Depends: hicolor-icon-theme, libgtk-3-bin, librsvg2-common, ubuntu-mono | adwaita-icon-theme-full
-Breaks: adwaita-icon-theme-full (<< 3.20-3ubuntu2~16.04.york0), gnome-themes-standard-data (<< 3.18.0-2~)
-Replaces: adwaita-icon-theme-full (<< 3.20-3ubuntu2~16.04.york0), gnome-themes-standard-data (<< 3.18.0-2~)
-Filename: ./adwaita-icon-theme_3.20-3ubuntu2~16.04.york0_all.deb
-Size: 3433168
-MD5sum: 08e3b254b8a82dc0e7b21e735558b2cf
-SHA1: 33ca1fd2b222951462ba3365746c32855b528049
-SHA256: b12a464d60544b0cbbf0bb8e0c6bb24aab5ccc4f7b1678fafddc67604b1a7d9a
-SHA512: 1278e9a6d68ca251370e1f4a46616bb1ab9a71edf2e6abf98c92ea94f202879eca27dc13d33e4c46ac15759ad7636b3e494c1e38273528e332f7f440c77e5cdf
-Description: default icon theme of GNOME (small subset)
- This package contains the default icon theme used by the GNOME desktop.
- The icons are used in many of the official gnome applications like eog,
- evince, system monitor, and many more.
- .
- This package only contains a small subset of the original GNOME icons which
- are not provided by the Humanity icon theme, to avoid installing many
- duplicated icons. Please install adwaita-icon-theme-full if you want the full
- set.
 
 Package: mate-calc-common
 Architecture: all
@@ -4426,60 +2715,6 @@ Description: Allows one to quickly set a wallpaper from folders
  Caja Wallpaper allows you to quickly set a wallpaper directly from
  file browser folders.
 
-Package: mate-icon-theme
-Architecture: all
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 31066
-Depends: hicolor-icon-theme, gtk-update-icon-cache, librsvg2-common
-Filename: ./mate-icon-theme_1.18.1-0ubuntu1~16.04.york0_all.deb
-Size: 12438846
-MD5sum: 233fa6f0eeef9f163b5f8118b479bb7d
-SHA1: 6950b7f34b3c8bce2cbac5e9476eccd46f60e674
-SHA256: 50b0cfa39a65d49d44564abb047d478f78326bba4ff90801271aab9b4be757cb
-SHA512: 6edadcc5a8ae249f5f517259e28f7eb84ad84a4f00a4a4f678ab0c22d782d7af547837b491d36f40db8a4bd8a6aace31640dbf84155b5d6c8922c2663b1900e4
-Homepage: http://www.mate-desktop.org/
-Description: MATE Desktop icon theme
- This package contains the default icon theme used by the MATE desktop.
- The icons are used in the panel menu, in Caja and other
- applications shipped with MATE.
- .
- This icon theme provides icon artwork for representing the different
- applications, files, directories, and devices found on the MATE desktop.
-
-Package: libwayland-server0
-Architecture: amd64
-Version: 1.11.0-2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 93
-Depends: libc6 (>= 2.14), libffi6 (>= 3.0.4)
-Conflicts: libwayland0 (<< 1.1.0-1)
-Breaks: weston (<< 1.2.0)
-Replaces: libwayland0 (<< 1.1.0-1)
-Filename: ./libwayland-server0_1.11.0-2~ubuntu16.04.1york0_amd64.deb
-Size: 29236
-MD5sum: 27fc31532ca9b5a12110fc939818ccbc
-SHA1: f0e6cf7c6b7c167046796bf9609cb6adc3861e72
-SHA256: 707a97ee3e0f90a420b6b0cbb813b790686321efdaf7afbf582df29bc0c82a73
-SHA512: 0d4bfe00b3c576e0ae1e7f3d0978b1bb24862ecbd38d5010c7a8d802456d2f2ace1e9e379847d6301f8f3418d59a898935887a64533d32130fbc1f99eb340c91
-Homepage: http://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - server library
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package ships the library that implements the server side of
- the Wayland protocol.
-
 Package: ubuntu-mate-live-settings
 Architecture: all
 Version: 17.04.7~16.04.york0
@@ -4498,94 +2733,6 @@ SHA512: c8543a7dda4c601dabd68c58201a721cd9a38eb734467413dfeec592b457cece30adc2eb
 Homepage: https://launchpad.net/ubuntu-mate/
 Description: Default settings for Ubuntu MATE live CD
  Various system settings tailored for Ubuntu MATE live CD.
-
-Package: gir1.2-gtk-3.0
-Architecture: amd64
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: introspection
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 1004
-Depends: libgtk-3-common, gir1.2-atk-1.0, gir1.2-freedesktop, gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-pango-1.0, libgirepository-1.0-1 (>= 1.41.4-1), libgtk-3-0 (>= 3.19.12)
-Breaks: python-gi (<< 3.18), python3-gi (<< 3.18)
-Filename: ./gir1.2-gtk-3.0_3.20.9-1ubuntu2.1~16.04.york0_amd64.deb
-Size: 266718
-MD5sum: 5eaf3088ec2a7033d065dd8ca2f3dcad
-SHA1: 1b104ef80ba5adfc5b93a502d0381cb57038470f
-SHA256: e2b91de2b8595351b09a1dc602786130fe2303de9f054ed91efdb41418c50013
-SHA512: 16facd2a6458f83d4f7a25572789e6586c45621a0937cdf242dd974dca0983ceb1be5a9939932c06dce0f9452896134a6df0d648414d3eb87c7761758e3a4b00
-Homepage: http://www.gtk.org/
-Description: GTK+ graphical user interface library -- gir bindings
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package can be used by other packages using the GIRepository format to
- generate dynamic bindings.
-
-Package: mir-client-platform-android5
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 173
-Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.3.1), libhardware2, libmircommon6 (>= 0.24.0+16.10.20160815.3), libstdc++6 (>= 5.2)
-Filename: ./mir-client-platform-android5_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 92500
-MD5sum: 76431e625c873bf6f20d6dc82530da6e
-SHA1: 76bd8ea162e15bae8354e5690e332b1cf889f7a5
-SHA256: 98dadb4e159a6f47fdeb1f521a2e73e7ed3afc41782bcd3e7f98bb6398da9b69
-SHA512: 9fba328041dff4d3aa7099a8218ae494258f19fb16464d212b0ce488c1b8be07208e23662008e6b2d744f35555feb76f2fb563a1d0fbc43cbb7e4430e129b023
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - client platform library for Android
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared libraries required for the Mir clients to interact with
- the underlying hardware platform using the Android drivers.
-
-Package: libmirclient-debug-extension-dev
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 90
-Depends: libmirclient-debug-extension1 (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0)
-Filename: ./libmirclient-debug-extension-dev_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 65908
-MD5sum: 187007dc0489d85332d0e0ec4f8c74e1
-SHA1: 906482326cfd6f19e2857f510a43275ac4e9336d
-SHA256: c26b4c5ddc929cb5f8b314f9c5bc68327febfd41f3fe4464589b1120fe8b0a78
-SHA512: bc2a7ad10327c992a218fe0fba3cc0732d202949d2f2127fe174e0499a6b5880319b20615a12b7ea2686b2bb97cbe187824ecd27a907d127072a11fe4ffefda3
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - client debug interface headers
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- This package contains both a shared library containing the client side of
- various optional debugging interfaces and the development headers required
- to use them.
- .
- This is primarily useful for developing Mir servers, low-level client
- toolkits, or for automated testing in constrained environments.
- .
- Not all Mir servers have the capability to service these APIs; end-user
- applications SHOULD NOT depend on this library.
- .
- This package contains the development headers required to develop against
- the debug extensions.
 
 Package: gir1.2-atril
 Architecture: amd64
@@ -4641,30 +2788,6 @@ Description: GObject introspection data for libmatekbd and libmatekbdui
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
-Package: libglib2.0-data
-Architecture: all
-Version: 2.50.0-1~ubuntu16.04.1york0
-Multi-Arch: foreign
-Priority: optional
-Section: libs
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 9397
-Filename: ./libglib2.0-data_2.50.0-1~ubuntu16.04.1york0_all.deb
-Size: 2508090
-MD5sum: 6ea20990d2bbe498a21b5b5c426e8228
-SHA1: dec39f075661bfdb682dc06a8df77b2c5fcd60c3
-SHA256: 70d8c9f766708167d901f71fc5522029bbc36d88c381227043440cd0f4fc5750
-SHA512: 50fc89465a3b83e0cb11a04195f2200a4dd7f38597a3b9c63d9c73482c719eccdd9a1d519954b0252c22e5c7c990c8b72486ad518902af50dd7368add39cac1b
-Homepage: http://www.gtk.org/
-Description: Common files for GLib library
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package is needed for the runtime libraries to display messages in
- languages other than English.
-
 Package: mate-dock-applet
 Architecture: amd64
 Version: 0.77-0ubuntu1~16.04.york0
@@ -4702,35 +2825,6 @@ Description: MATE Panel dock applet
     the most common colour) of the desktop wallpaper. The colour
     can be applied to all panels or just the panel containing the
     dock.
-
-Package: libglib2.0-0-dbg
-Architecture: amd64
-Version: 2.50.0-1~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: extra
-Section: debug
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 10730
-Depends: libglib2.0-0 (= 2.50.0-1~ubuntu16.04.1york0)
-Breaks: libglib2.0-dev (<< 2.43.2-2~)
-Replaces: libglib2.0-dev (<< 2.43.2-2~)
-Filename: ./libglib2.0-0-dbg_2.50.0-1~ubuntu16.04.1york0_amd64.deb
-Size: 7856940
-MD5sum: 11c1ef1e9829e9d25fdf2055cf951669
-SHA1: 35addcfa6c1b91d9e5008993bfd4725fca309c8a
-SHA256: 546ba456ff75d75e7a42eeea6eddfcc9776c069c043c3379a5e9b2e3673584f3
-SHA512: b7dfe0833e49f9ec9029cc13e02f29cb64dda412ad5e2b1468ee0fddc0c75ce6e57238361d5b8e664eebdf81aaeab0e7737e17e52b71739436fc814cf2aea48f
-Homepage: http://www.gtk.org/
-Description: Debugging symbols for the GLib libraries
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package contains detached debugging symbols.
- .
- Most people will not need this package.
-Build-Ids: 07198d1a37db90ad05697eb2dca453f4b2dc167c 1c1454937e8ca50cab3d7dc233b64e86cdaf94ae 41bdc94b25c2ff8f0f10b48c74459e37353bc96f 56a03ddf66adac3cc20e5e553e4c600998582dea 5a44bf944b3e37fd3b64a55d603e510a45f3972a 669887afe499c65e040d42dbe3cf59181c547126 eb5f44095280c3db8b1cb922b8f7de016e345441 f80dc0d5dbaa6b6636d53550652b0c151c60e511
 
 Package: ubuntu-mate-wallpapers-complete
 Architecture: all
@@ -4778,67 +2872,6 @@ Description: MATE Faenza Desktop icon theme
  This theme has been made by Rowen_Stipe based on Faenza and Faience icon themes
  by ~Tiheum.
 
-Package: libgtk-3-doc
-Architecture: all
-Version: 3.22.7-1ubuntu2~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: doc
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 24426
-Recommends: libglib2.0-doc, libatk1.0-doc, libpango1.0-doc
-Suggests: devhelp
-Filename: ./libgtk-3-doc_3.22.7-1ubuntu2~16.04.york0_all.deb
-Size: 3380726
-MD5sum: 97b6a74d6c582d1f929b99ce4f8370cc
-SHA1: 1f34446c25ff2322fff320a2ea9504b286ca2559
-SHA256: fe7ca4167199cf08a8922e735f0c80e9c5fb62edf1ff7894e6e7f763b6b24c56
-SHA512: c731f73c1d02ff9b24914d2d3e8a35a4f07e6550251c6a1b6551cf6511526ec38d5ada9f21b9c6f522a2dcfe9f6ffab09cc683ec1eae57d2fdf86c2a363ae6d2
-Homepage: http://www.gtk.org/
-Description: documentation for the GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the HTML documentation for the GTK+ library
- in /usr/share/doc/libgtk-3-doc/ .
-
-Package: libpango1.0-0
-Architecture: amd64
-Version: 1.40.4-1~16.04.york0
-Multi-Arch: same
-Priority: extra
-Section: oldlibs
-Source: pango1.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 32
-Depends: libpango-1.0-0 (= 1.40.4-1~16.04.york0), libpangocairo-1.0-0 (= 1.40.4-1~16.04.york0), libpangoft2-1.0-0 (= 1.40.4-1~16.04.york0), libpangox-1.0-0 (>= 0.0.2-2~), libpangoxft-1.0-0 (= 1.40.4-1~16.04.york0)
-Filename: ./libpango1.0-0_1.40.4-1~16.04.york0_amd64.deb
-Size: 24858
-MD5sum: 20f3c69a36df4b42b71cce91d6e47eea
-SHA1: 815ffe93cab5fd0d61a6ba61b4ca980f130e724c
-SHA256: a79ed9e5423c66758dc4bc96f8668a37816587fcc419ce1b7bf7a0a8e1371951
-SHA512: 7602ae88a28752e07191e3cbd346a5c9d74b7d42fdf40dc792700264065290ab51be830f6795a0ff80734fb8a1ee2283d4506459856e9beb0975595cde37607a
-Homepage: http://www.pango.org/
-Description: Layout and rendering of internationalized text (transitional package)
- Pango is a library for layout and rendering of text, with an emphasis
- on internationalization. Pango can be used anywhere that text layout is
- needed. however, most of the work on Pango-1.0 was done using the GTK+
- widget toolkit as a test platform. Pango forms the core of text and
- font handling for GTK+-2.0.
- .
- Pango is designed to be modular; the core Pango layout can be used with
- four different font backends:
-  - Core X windowing system fonts
-  - Client-side fonts on X using the Xft library
-  - Direct rendering of scalable fonts using the FreeType library
-  - Native fonts on Microsoft backends
- .
- This is a transitional package.
-
 Package: atril-common
 Architecture: all
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -4861,53 +2894,6 @@ Description: MATE document viewer (common files)
  Portable Document Format (PDF) files.
  .
  This package contains the architecture independent files.
-
-Package: libgail-3-0-dbg
-Architecture: amd64
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: same
-Priority: extra
-Section: debug
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 201
-Depends: libgail-3-0 (= 3.20.9-1ubuntu2.1~16.04.york0)
-Recommends: libgtk-3-0-dbg
-Filename: ./libgail-3-0-dbg_3.20.9-1ubuntu2.1~16.04.york0_amd64.deb
-Size: 108218
-MD5sum: 6367174a60cfb2430d0064568209188d
-SHA1: 4c2892021a96c1537276d93a84eb70550646a1c3
-SHA256: 3c0f83a0e3e0ee4599b3179fbc6b77864869e5dc17e4569f292532d9af99721d
-SHA512: 1d05a95283827199e5a9842a965da7b55b199cf9016f15f41d3e55cf669f68d7da22b589d400bb2dcbb06dd54ec37b5b3759ddee4dbcbf9032d47b5eb12da421
-Homepage: http://www.gtk.org/
-Description: Gail libraries and debugging symbols
- Gail is the "GNOME Accessibility Implementation Library".
- .
- This package contains detached debugging symbols.
- .
- Most people will not need this package.
-
-Package: wayland-protocols
-Architecture: all
-Version: 1.7-1~16.04.york0
-Multi-Arch: foreign
-Priority: extra
-Section: libdevel
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 297
-Filename: ./wayland-protocols_1.7-1~16.04.york0_all.deb
-Size: 44702
-MD5sum: 703d43bd40aee15fa9c8ce1397264358
-SHA1: 1cd8b6dd40177223c4fa71750735b435a159fc2c
-SHA256: 217e8feeab22a486be8020d83de355da5b6fbe1f36618592a0ede5d15cc3d90d
-SHA512: 1ea6f4b9925a207137a2020d34842006455f0d4c21e7b3cdf0049747c5b7e1a3e49c42caba1a97c9663ca8a89e57a4714a9472dc79f133c26519237df8b807f2
-Homepage: http://wayland.freedesktop.org/
-Description: wayland compositor protocols
- Wayland protocols that add functionality not available in the Wayland core
- protocol. Such protocols either add completely new functionality, or extend
- the functionality of some other protocol either in Wayland core, or some other
- protocol in wayland-protocols.
 
 Package: libcaja-extension-dev
 Architecture: amd64
@@ -5011,55 +2997,6 @@ Description: graphical boot animation and logger - ubuntu-mate-logo theme
  .
  This package contains the default ubuntu-mate-logo theme.
 
-Package: mir-platform-graphics-mesa-x10
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 222
-Depends: libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.14), libdrm2 (>= 2.4.38), libegl1-mesa (>= 7.8.1) | libegl1-x11, libgbm1 (>= 8.1~0), libgcc1 (>= 1:3.3.1), libgles2-mesa (>= 7.8.1) | libgles2, libmircommon6 (>= 0.24.0+16.10.20160815.3), libmirplatform13 (>= 0.24.0+16.10.20160815.3), libstdc++6 (>= 5.2), libx11-6
-Filename: ./mir-platform-graphics-mesa-x10_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 107022
-MD5sum: 1bf43434558cd125529e0a2606b57d6b
-SHA1: 2edc985d39d72d9571f9c57e6a6328b93c04a74f
-SHA256: 855a72fc9fb3be790ab314e92e7cb19a1297e125321ca506fd221ac8f3afd764
-SHA512: 8a8d4bd7b83c29c0b0131a46f19c85e283ba4c85236baa98b6ec35502acff6bd9752e03d1a5bf529e91ee5b1cf7b57be7360d8dc4cca2b9fcc0a2fc4adf3dfc8
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - platform library for X11 Mesa
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared libraries required for the Mir server to interact with
- the X11 platform using the Mesa drivers.
-
-Package: libmirclient-dev
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 278
-Depends: libmirclient9 (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0), libmircommon-dev (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0), libmircookie-dev (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0), libprotobuf-dev (>= 2.4.1)
-Filename: ./libmirclient-dev_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 92294
-MD5sum: 64af421b365322f37784dd873c551308
-SHA1: 2d03f9d1fe7713a344bb7f0bac1578fdc884350c
-SHA256: ce06889a51fa46454bc2756bba64d8f188b48aad00dcc4b00c7a28b23698d446
-SHA512: 86383f6a252720259916cc1031df664e265a4b82f1d7ab375c30b05f4206729dd68441c07e4d722ff71b2a283a1446b63a201847598b588cea20d6fc404db3b6
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - development headers
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains header files required to develop against Mir.
-
 Package: mate-desktop-environment-core
 Architecture: all
 Version: 1.18.0+0ubuntu1~16.04.york0
@@ -5091,33 +3028,6 @@ Description: MATE Desktop Environment (essential components, metapackage)
  start a MATE desktop environment session. The set of programs includes the
  MATE window manager (Marco), the MATE file manager (Caja), the MATE
  control center and a limited set of other obligatory MATE desktop components.
-
-Package: libgtk-3-bin
-Architecture: amd64
-Version: 3.22.7-1ubuntu2~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: misc
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 279
-Depends: libc6 (>= 2.4), libcairo2 (>= 1.14.0), libglib2.0-0 (>= 2.49.4), libgtk-3-0 (>= 3.22.7-1ubuntu2~16.04.york0), libgtk-3-common (>= 3.22.7-1ubuntu2~16.04.york0), gtk-update-icon-cache
-Filename: ./libgtk-3-bin_3.22.7-1ubuntu2~16.04.york0_amd64.deb
-Size: 107926
-MD5sum: c310e6ea7dd79a5d8610d335ba7a9781
-SHA1: c253943e4290dafdc24b65a66b41f079ebda18a1
-SHA256: 7d4a9c14df093a5fe2fdc15e98bd0e2d81336bc87d43e578b1a787344dc2c748
-SHA512: 8bac7de4b6dd557500a99877a08ac15f3910ec9e858ee3f66a931e96c46d1813600cbd4f337d3293cc9aa7293ac426dddfd041a09f4f9f669640df612a74166a
-Homepage: http://www.gtk.org/
-Description: programs for the GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the utilities which are used by the libraries
- and other packages.
 
 Package: libmate-slab0
 Architecture: amd64
@@ -5165,93 +3075,6 @@ Description: MateWeather shared library (development files)
  .
  This package contains the development files.
 
-Package: libgail-3-dev
-Architecture: amd64
-Version: 3.22.7-1ubuntu2~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 114
-Depends: libgail-3-0 (= 3.22.7-1ubuntu2~16.04.york0), libgtk-3-dev (= 3.22.7-1ubuntu2~16.04.york0), pkg-config, libatk1.0-dev
-Suggests: libgail-3-doc
-Filename: ./libgail-3-dev_3.22.7-1ubuntu2~16.04.york0_amd64.deb
-Size: 64546
-MD5sum: fda89b088e97dc5a860fc9ff6019c85d
-SHA1: 3e4e322028ecdb4640e3697be8d01a6438dbae3d
-SHA256: 6d4b19c14786b561a8d640353cfa787fac711764ad7b202574dbbdc311d6a22b
-SHA512: 39d9a5f23ef37f2cbb61baece0dbbdb04e93b40ec707a775e51ab905301ce5fa3c080197822888bff852b0ebd18f3503a0d02958f0e70479146a9a532acc477a
-Homepage: http://www.gtk.org/
-Description: GNOME Accessibility Implementation Library -- development files
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
- of accessibility, without the need to modify the application at all.
- .
- This package contains the development files for Gail.
-
-Package: libpangoxft-1.0-0
-Architecture: amd64
-Version: 1.40.4-1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: pango1.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 72
-Depends: libc6 (>= 2.4), libfontconfig1 (>= 2.11.94), libglib2.0-0 (>= 2.37.3), libpango-1.0-0 (>= 1.22.0), libpangoft2-1.0-0 (>= 1.14.0), libx11-6, libxft2 (>> 2.1.1), libxrender1
-Breaks: libpango1.0-0 (<< 1.32.5-2)
-Replaces: libpango1.0-0 (<< 1.32.5-2)
-Filename: ./libpangoxft-1.0-0_1.40.4-1~16.04.york0_amd64.deb
-Size: 36104
-MD5sum: c30688ca6b35c463047877f6f848f867
-SHA1: 763b5e490b15a2b7e3618620b594c209c6285561
-SHA256: 8b527cc2c03f8b5f549be5ccff0fca3cadb0b1d3f43852e88d6b207757e5b565
-SHA512: 497a333eecb8d1d84f460a101bbc10a2afb66ae64af4e6d0cc52c7770ef041cf7ea1a2b39748bd8860a3ea1a56d92bfa4a3cee224d7c11287010f83dc7e4acf0
-Homepage: http://www.pango.org/
-Description: Layout and rendering of internationalized text
- Pango is a library for layout and rendering of text, with an emphasis
- on internationalization. Pango can be used anywhere that text layout is
- needed. however, most of the work on Pango-1.0 was done using the GTK+
- widget toolkit as a test platform. Pango forms the core of text and
- font handling for GTK+-2.0.
- .
- Pango is designed to be modular; the core Pango layout can be used with
- four different font backends:
-  - Core X windowing system fonts
-  - Client-side fonts on X using the Xft library
-  - Direct rendering of scalable fonts using the FreeType library
-  - Native fonts on Microsoft backends
- .
- This package contains the shared libraries.
-
-Package: libmircookie2
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 113
-Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.3.1), libnettle6, libstdc++6 (>= 5.2)
-Filename: ./libmircookie2_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 74132
-MD5sum: 2e24f3d40e2032b4deb7cd2f1d094055
-SHA1: b68a24efa85069ab5911e0ab8acb2a3a683e7b7c
-SHA256: 72ac8deecc14038f85a6f4945ee0df1894584ecf9d6673029cbc2e5bf473a7bb
-SHA512: 370d7d8779739edabd0619833819c4d899efb5521cca7cdb9c69370c7723eac4efea9b56aaa35fd0b13469b2ca840ef003d4c932216760940ce92078137bfc35
-Homepage: https://launchpad.net/mir
-Description: Produce and verify spoof-resistant timestamps - runtime library
- libmircookie provides a simple mechanism for a group of cooperating processes
- to hand out and verify difficult-to-forge timestamps to untrusted 3rd parties.
- .
- This package contains the runtime library for generating and verifying the
- attestable timestamps.
-
 Package: mate-netbook
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -5273,35 +3096,6 @@ Description: MATE utilities for netbooks
  .
  Installing these utilities is recommended for netbooks and similar
  devices with low resolution displays.
-
-Package: libwayland-doc
-Architecture: all
-Version: 1.12.0-1~16.04.york0
-Multi-Arch: foreign
-Priority: extra
-Section: doc
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 759
-Conflicts: libwayland-dev (<< 1.10.0-2)
-Replaces: libwayland-dev (<< 1.10.0-2)
-Filename: ./libwayland-doc_1.12.0-1~16.04.york0_all.deb
-Size: 162252
-MD5sum: e44777c2f399a02d79ea1f0214f86553
-SHA1: fbce6cd86abfad7bbd48c4d8bdc699afb602aa06
-SHA256: 3a39c78756d533c763544fa40a1a9349e3d2c2668554b53fdd90eb53cd915619
-SHA512: 2366925f200ae41be359b7a0f8d6dc4d41c196389726c65c26cebf41ca7398b1bee39d639377a384b52fa4e13f6828a452825fb54d9079157c061811189f7a27
-Homepage: https://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - documentation files
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package contains the documentation for the Wayland libraries.
- Non-developers likely have little use for this package.
 
 Package: libatrildocument-dev
 Architecture: amd64
@@ -5328,231 +3122,6 @@ Description: MATE document rendering library (development files)
  .
  This package contains the development files for the libatrildocument
  library.
-
-Package: libwayland-bin
-Architecture: amd64
-Version: 1.12.0-1~16.04.york0
-Multi-Arch: foreign
-Priority: extra
-Section: libdevel
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 56
-Depends: libc6 (>= 2.14), libexpat1 (>= 2.0.1), libxml2 (>= 2.7.4)
-Conflicts: libwayland-dev (<< 1.11.0-1)
-Replaces: libwayland-dev (<< 1.11.0-1)
-Filename: ./libwayland-bin_1.12.0-1~16.04.york0_amd64.deb
-Size: 20446
-MD5sum: b96de0298a888ab251cb6aa72762046a
-SHA1: 7e3782304aebb529368a1b2b3ad7001667c730f3
-SHA256: 1a3c30beee285b58343c02eabdf5e48260ed386f23d19eb5bd266b123cd36b90
-SHA512: bc426e90b883bb31fe526ddeef95d2c69507fced3c1d600db86101357bfd8001bd22801e95ab47616712804433be3a2869ef4eba789f9d09359258ccbc5bf3dd
-Homepage: https://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - binary utilities
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package contains the development binary utilities
-
-Package: libgtk-3-doc
-Architecture: all
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: doc
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 23857
-Recommends: libglib2.0-doc, libatk1.0-doc, libpango1.0-doc
-Suggests: devhelp
-Filename: ./libgtk-3-doc_3.20.9-1ubuntu2.1~16.04.york0_all.deb
-Size: 3296880
-MD5sum: 37e8df407c548e60b774d9d2426461e2
-SHA1: 398a9af24a0e733e1051fce6b825923627149a15
-SHA256: 15912b56490a413bdff56c3ff8826490fed145654a395eecfddfda5804e692eb
-SHA512: 8c0e5254acb9ab7d6debf33243089b31f96e0e2e9d11f7db52c71d0a9b78a8a6e9b3b04729e0fbfd37b28b8567d55eeaecfdb5c59c13acfe2843732a69c8c0ca
-Homepage: http://www.gtk.org/
-Description: documentation for the GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the HTML documentation for the GTK+ library
- in /usr/share/doc/libgtk-3-doc/ .
-
-Package: libglib2.0-0
-Architecture: amd64
-Version: 2.50.0-1~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 4983
-Depends: libc6 (>= 2.17), libffi6 (>= 3.0.4), libmount1 (>= 2.20.1), libpcre3, libselinux1 (>= 1.32), zlib1g (>= 1:1.2.2)
-Recommends: libglib2.0-data, shared-mime-info, xdg-user-dirs
-Breaks: glib-networking (<< 2.33.12), libgnome-desktop-3-2 (<< 3.4.2-2), python-gi (<< 3.7.2)
-Filename: ./libglib2.0-0_2.50.0-1~ubuntu16.04.1york0_amd64.deb
-Size: 2681752
-MD5sum: bd50f1d00c882f27cf314ed916655414
-SHA1: 0a91fabbde1bf8fa907562006c21bfa3c2725674
-SHA256: 8cc7f0badf47cba70e627d41a9f4b985fee9f14ce686de04f251a1116a56d7f4
-SHA512: 4a3be5eb91958a15b8a060b872a19a9412b7efdee5255cab4294ff2f2bbe23968e56c4c5c307fc6873e0164ee8b7c7dc3a24b5b144c59e74a246818519ed9bdb
-Homepage: http://www.gtk.org/
-Description: GLib library of C routines
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package contains the shared libraries.
-
-Package: mir-renderer-gl-dev
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 87
-Filename: ./mir-renderer-gl-dev_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 65636
-MD5sum: 5e9acec1bdb6e87c0158d29f823f7236
-SHA1: f3953c9a09112e86931fcb5271893a00ead73824
-SHA256: ce3ce1d11401f0030bba3b5e7dfa3fe790a7b621b111d3f992bf1dde28f4c803
-SHA512: 7a1307d47c72c2fdb77456f424ef9d341a63e3bbe6c055011e2e1a200a1f37c731a07edccb9176052e98d3b3136a5b94f64817e69a2d68231e8a306a2c0f306b
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - GL Renderer development files
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains header files that define the interfaces through which platforms and
- renderers access the functionality needed to render with GL.
-
-Package: libfile-stripnondeterminism-perl
-Architecture: all
-Version: 0.029-2~16.04.york0
-Priority: optional
-Section: perl
-Source: strip-nondeterminism
-Maintainer: Reproducible builds folks <reproducible-builds@lists.alioth.debian.org>
-Installed-Size: 60
-Depends: libarchive-zip-perl, perl
-Filename: ./libfile-stripnondeterminism-perl_0.029-2~16.04.york0_all.deb
-Size: 15474
-MD5sum: 4de26816dbd0f79b44510072467f13b3
-SHA1: d06083a3a0466f6f23dc1b862ab427d4d43e6721
-SHA256: a28ac6ab44839af18d4674169790be0c9b271e81de7341aeacbfe847ba888d5a
-SHA512: 8175b2e99f6c56219c378b540b71f117fa3fbff48ca2c056dd8b484c12a338745fbcbc447e4dc78d55eb99358727a765d801c8063e8604ed6d315f9a82e084e8
-Homepage: https://reproducible-builds.org/
-Description: file non-deterministic information stripper — Perl module
- StripNondeterminism is a library for stripping non-deterministic
- information, such as timestamps and file system order, from files. It
- is used as part of the Reproducible Builds project.
- .
- This can be used as a post-processing step to improve the
- reproducibility of a build product, when the build process itself
- cannot be made deterministic.
- .
- This package installs the Perl module ‘File::StripNondeterminism’.
-
-Package: libpangocairo-1.0-0
-Architecture: amd64
-Version: 1.40.4-1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: pango1.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 89
-Depends: libc6 (>= 2.4), libcairo2 (>= 1.12.10), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.2.1), libglib2.0-0 (>= 2.37.3), libpango-1.0-0 (>= 1.37.5), libpangoft2-1.0-0 (>= 1.28.1)
-Breaks: libpango1.0-0 (<< 1.32.5-2)
-Replaces: libpango1.0-0 (<< 1.32.5-2)
-Filename: ./libpangocairo-1.0-0_1.40.4-1~16.04.york0_amd64.deb
-Size: 41552
-MD5sum: 4200c41e78588840ef57d85bd5578e13
-SHA1: 9cda5704f915de138d32c9a38becd1d7f6ebfe05
-SHA256: 132c636f9d6d804a9b15d3cac1962c389cb26afa3b24c8a321dec82d05a43a1d
-SHA512: 0ff8323625726e867b1a08adb96db6b4be7944ce8c3297c054763719935de6339b9b4c646e7d16ab109217ce67bfc57971a711ab3d3fe875081f7123d32454c7
-Homepage: http://www.pango.org/
-Description: Layout and rendering of internationalized text
- Pango is a library for layout and rendering of text, with an emphasis
- on internationalization. Pango can be used anywhere that text layout is
- needed. however, most of the work on Pango-1.0 was done using the GTK+
- widget toolkit as a test platform. Pango forms the core of text and
- font handling for GTK+-2.0.
- .
- Pango is designed to be modular; the core Pango layout can be used with
- four different font backends:
-  - Core X windowing system fonts
-  - Client-side fonts on X using the Xft library
-  - Direct rendering of scalable fonts using the FreeType library
-  - Native fonts on Microsoft backends
- .
- This package contains the shared libraries.
-
-Package: libgtk-3-0-dbg
-Architecture: amd64
-Version: 3.20.9-1ubuntu2.1~16.04.york0
-Priority: extra
-Section: debug
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 28643
-Depends: libgtk-3-0 (= 3.20.9-1ubuntu2.1~16.04.york0), libgtk-3-common
-Filename: ./libgtk-3-0-dbg_3.20.9-1ubuntu2.1~16.04.york0_amd64.deb
-Size: 6576816
-MD5sum: edbed74c956b56a5045199c88e735fc7
-SHA1: 67d2f6ce2aa2f5446982a63468408914f049deaf
-SHA256: 8b5f061d6b7094e2756938bf97a9d9b79e154a4353835a5f7765f949f1492ed0
-SHA512: 8010d56a47ebd0003435c9eba5b74e1459608347ecd3ed965c4d4c085291a66f24525a06dace8fbbbe9bd2fae90cdf954c1a349ac5a6242f928bb01cf35578e1
-Homepage: http://www.gtk.org/
-Description: GTK+ libraries and debugging symbols
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains detached debugging symbols.
- .
- Most people will not need this package.
-
-Package: libwayland-bin
-Architecture: amd64
-Version: 1.11.0-2~ubuntu16.04.1york0
-Multi-Arch: foreign
-Priority: extra
-Section: libdevel
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 55
-Depends: libc6 (>= 2.14), libexpat1 (>= 2.0.1), libxml2 (>= 2.7.4)
-Conflicts: libwayland-dev (<< 1.11.0-1)
-Replaces: libwayland-dev (<< 1.11.0-1)
-Filename: ./libwayland-bin_1.11.0-2~ubuntu16.04.1york0_amd64.deb
-Size: 20250
-MD5sum: c42786fc286aae14fe05119b56bfaf90
-SHA1: 54b430da0518fb40d5a2f02bbb00fc34ea1d794f
-SHA256: e63456529020748d6deab377a03cefbe41599678626c883b73a4eb5545f8a26d
-SHA512: b885e8e0b7e40b1d253396ef3f85062e9d2885a0209717be536e74de0db500a5a8e1f4a8a6b79178ab6887a22f3c13d743bbe067979f4ea896af5cfdd04bc319
-Homepage: http://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - binary utilities
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package contains the development binary utilities
 
 Package: libmate-slab-dev
 Architecture: amd64
@@ -5712,31 +3281,6 @@ Homepage: https://launchpad.net/ubuntu-mate/
 Description: Common Ubuntu MATE wallpapers
  Common wallpapers for Ubuntu MATE contributed by the community.
 
-Package: mir-platform-input-evdev5
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 178
-Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.3.1), libinput10 (>= 1.1.0), libmircommon6 (>= 0.24.0+16.10.20160815.3), libmirplatform13 (>= 0.24.0+16.10.20160815.3), libstdc++6 (>= 5.2), libudev1 (>= 183)
-Filename: ./mir-platform-input-evdev5_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 95596
-MD5sum: fa7a8fdd4c40a7a42dc90198bacf06c1
-SHA1: d60934caef443397808e9c273c295dd3da713669
-SHA256: 41700ddecdcfc959dd4692459e0acf4e8a6d1ad4ec2d9529ad82467724e1fd4a
-SHA512: 80a55e7dee5b4890e11b6322148cf18c036f22a275f43ae29663cbd2fd5e4d713b006b5a027c6400805d06874542bf799ac247235619062566fa1e9780cb5c59
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - input platform library
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared libraries required for the Mir server to interact with
- the input hardware using the evdev interface.
-
 Package: libmatemixer0
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -5788,63 +3332,6 @@ Description: implementation of the freedesktop menu specification for MATE (deve
  http://www.freedesktop.org/Standards/menu-spec
  .
  This package contains the development files.
-
-Package: adwaita-icon-theme-full
-Architecture: all
-Version: 3.22.0-1ubuntu1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: gnome
-Source: adwaita-icon-theme
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 22203
-Provides: gnome-icon-theme-symbolic
-Depends: adwaita-icon-theme (= 3.22.0-1ubuntu1~16.04.york0), gtk-update-icon-cache, librsvg2-common
-Breaks: adwaita-icon-theme (<< 3.22.0-1ubuntu1~16.04.york0), gnome-themes-standard-data (<< 3.18.0-2~)
-Replaces: adwaita-icon-theme (<< 3.22.0-1ubuntu1~16.04.york0), gnome-themes-standard-data (<< 3.18.0-2~)
-Filename: ./adwaita-icon-theme-full_3.22.0-1ubuntu1~16.04.york0_all.deb
-Size: 8036268
-MD5sum: 16b9d849d1204fa43e32581ff5afa68f
-SHA1: 0bd704f755985277d0d3acc6f4e5931572ca39e4
-SHA256: b8f79ef1f241085eb0026c0812bf98b2d430d1d05785fd8e2ef510f6bd3ac43c
-SHA512: 529a49686fd5d8f407ab93b2df97d772c109df62a243bede50521383886c89637ae614647bc1a3c8f34431b092db4c0cc41becb334b92d8f48232b9bc5bde7e6
-Description: default icon theme of GNOME
- This package contains the default icon theme used by the GNOME desktop.
- The icons are used in many of the official GNOME applications like eog,
- Evince, system monitor, and many more.
-
-Package: libmirclient-debug-extension1
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 89
-Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.3.1), libmirprotobuf3 (>= 0.24.0+16.10.20160815.3), libprotobuf-lite9v5, libstdc++6 (>= 5)
-Filename: ./libmirclient-debug-extension1_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 68232
-MD5sum: d21a51091f7846d11c4164e400e9b787
-SHA1: 47a23f915f0b52faeca37cb4e7c05556cc36f7d9
-SHA256: 8ac9d0cdf6c542108c12368adfc72c94315d2e491b559ddce0fcdef10b00dbc4
-SHA512: 3865f8de10adc4b1591b009cccf70165c87e2e18dc92160825f7831165b2206bc77773e1b17dcec5c2130673fa1a75de6e398383f778617a70a1e5621ee4e661
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - optional client debug interfaces
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- This package contains both a shared library containing the client side of
- various optional debugging interfaces and the development headers required
- to use them.
- .
- This is primarily useful for developing Mir servers, low-level client
- toolkits, or for automated testing in constrained environments.
- .
- Not all Mir servers have the capability to service these APIs; end-user
- applications SHOULD NOT depend on this library.
 
 Package: mate-user-share-common
 Architecture: all
@@ -5976,31 +3463,6 @@ Description: GObject introspection data for mate-polkit
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
-Package: libmircookie-dev
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 89
-Depends: libmircookie2 (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0)
-Filename: ./libmircookie-dev_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 66216
-MD5sum: 32bb727422c4cf36b81b6659f3f5143f
-SHA1: fc62172498c5c3dcb09eb2258aaff563806bbe5a
-SHA256: 19d1938ed9d76865477625b89524967124356dac31d72f9f1f43976f9b558332
-SHA512: c846e36c16b4c1e7fe1976e9db2c9799b62a23db33387d649a1a5752cd8f53831fa01f47c359e0eb61a9380e7848a10aacc7dcc199519e2eda6f353e700c6e4a
-Homepage: https://launchpad.net/mir
-Description: Produce and verify spoof-resistant timestamps - development headers
- libmircookie provides a simple mechanism for a group of cooperating processes
- to hand out and verify difficult-to-forge timestamps to untrusted 3rd parties.
- .
- This package contains the development headers for building programs that
- generate or verify the attestable timestamps.
-
 Package: gir1.2-mate-desktop
 Architecture: amd64
 Version: 1.18.0-0ubuntu2~16.04.york0
@@ -6056,34 +3518,6 @@ Description: graphical boot animation and logger - ubuntu-mate-text theme
  This package contains the default ubuntu-mate-text theme used when no
  support for a graphical theme is found on your system.
 
-Package: gtk-update-icon-cache
-Architecture: amd64
-Version: 3.22.7-1ubuntu2~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: misc
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 139
-Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.49.4)
-Breaks: libgtk-3-bin (<< 3.20.6-1), libgtk2.0-bin (<< 2.24.30-2)
-Replaces: libgtk-3-bin (<< 3.20.6-1), libgtk2.0-bin (<< 2.24.30-2)
-Filename: ./gtk-update-icon-cache_3.22.7-1ubuntu2~16.04.york0_amd64.deb
-Size: 76168
-MD5sum: 47ead2bc77326fe65a8dd6235c9f1ab8
-SHA1: 982acf8dee0f22d9762f6114a0b73410cc2b9ebd
-SHA256: 779c6441c6d9a657477ef5f2242ae9ccfdafb88cdcbc29fbd4b7067e4fc400a2
-SHA512: a32e3e8713e4d0e80a8569a2fcfff781e7801350670b520353f5da4fef617ce90bf8f50431f97de766cb805e39505c502987970328b2922a1bddc085fa4304df
-Homepage: http://www.gtk.org/
-Description: icon theme caching utility
- gtk-update-icon-cache creates mmap()able cache files for icon themes.
- .
- GTK+ can use the cache files created by gtk-update-icon-cache to avoid a lot
- of system call and disk seek overhead when the application starts. Since the
- format of the cache files allows them to be mmap()ed shared between multiple
- applications, the overall memory consumption is reduced as well.
-
 Package: eom-common
 Architecture: all
 Version: 1.18.1-0ubuntu1~16.04.york0
@@ -6108,81 +3542,6 @@ Description: Eye of MATE graphics viewer program (common files)
  simplicity and standards compliance.
  .
  This package contains the architecture independent files.
-
-Package: libmircommon-dev
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 178
-Depends: libmircommon6 (= 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0), libprotobuf-dev (>= 2.4.1), libxkbcommon-dev
-Breaks: mircommon-dev (<< 0.6)
-Replaces: mircommon-dev (<< 0.6)
-Filename: ./libmircommon-dev_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 78306
-MD5sum: 60b8fc9fc4611183ddfce388e932be0a
-SHA1: 78469cbd89ca9f984f21ce1406d544aec42ab738
-SHA256: e143a77dd05b9f7c3bb1950b11ba2ba0b4c9b29f37d35d1111631394bea6101c
-SHA512: f71922b1ce85b4256817cbcae48e3f019552d81bb65df1c531ad8b756b8892f3d81debbaf0a5168addae02d827f10d064c21e4ca565245fb7d64b90932a4723e
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - development headers
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains header files required for server and/or client development.
-
-Package: libglib2.0-doc
-Architecture: all
-Version: 2.50.0-1~ubuntu16.04.1york0
-Multi-Arch: foreign
-Priority: optional
-Section: doc
-Source: glib2.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 21546
-Suggests: devhelp
-Filename: ./libglib2.0-doc_2.50.0-1~ubuntu16.04.1york0_all.deb
-Size: 2897440
-MD5sum: 721b7a3e9755ac5ba668602280d65a8d
-SHA1: ad25a39bdf5c298f3dabaf5ad8404bb15b60a021
-SHA256: c8dd0386e88bdc6bdd7cd08e98e3c6c7f18e3cb3686deb073d80dac9cb11006b
-SHA512: 0d4ec9be68c1b8a46005c1013c114aa5fe801e68425a2b05f3f68c72c7447301843e456e6ab360be728ff00f6eb45f8c345fc24c3e4a30079c461bf0e6d7b282
-Homepage: http://www.gtk.org/
-Description: Documentation files for the GLib library
- GLib is a library containing many useful C routines for things such
- as trees, hashes, lists, and strings.  It is a useful general-purpose
- C library used by projects such as GTK+, GIMP, and GNOME.
- .
- This package contains the HTML documentation for the GLib library
- in /usr/share/doc/libglib2.0-doc/ .
-
-Package: libmircommon6
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 318
-Depends: libboost-filesystem1.58.0, libboost-system1.58.0, libc6 (>= 2.17), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2)
-Filename: ./libmircommon6_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 139918
-MD5sum: 75d66a2054c25f1890af0042bb230be2
-SHA1: 1c415d8ffb9b502176f4b1909e28e966df2a2507
-SHA256: f3a5b8861bcc163e790c32985d669770b975b8f891cb85f107978dff3728a0ac
-SHA512: 25985cefd70dc4341bf0aaf5c7384971f25e6adc83e4897c643636828724b0d02c71db21495670a15c1144793f1c6c3ee1c6bd140b3f2be764c7534b7eaf427c
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - shared library
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- Contains the shared libraries required for the Mir server and client.
 
 Package: mate-terminal-common
 Architecture: all
@@ -6339,41 +3698,6 @@ Description: Various applets for the MATE panel
  Service (NWS) servers, including the Interactive Weather Information
  Network (IWIN).
 
-Package: libpango-1.0-0
-Architecture: amd64
-Version: 1.40.4-1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: pango1.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 399
-Depends: fontconfig (>= 2.1.91), libc6 (>= 2.14), libglib2.0-0 (>= 2.37.3), libthai0 (>= 0.1.22-3~)
-Breaks: libpango1.0-0 (<< 1.32.5-2)
-Replaces: libpango1.0-0 (<< 1.32.5-2)
-Filename: ./libpango-1.0-0_1.40.4-1~16.04.york0_amd64.deb
-Size: 168666
-MD5sum: ca38d628fbbfbfd74516b87af730b27c
-SHA1: c6ece24b205b8e0d7088068ed89d5b5dbe7f4c63
-SHA256: 3c71aa8a58027d4325fc0b90920e98e356e8a249c0db247852687067a03b55ee
-SHA512: 49716dd55f8b2692327afb9a077e7a4639be16f6e5b55d7734b25ca985a9bb74bb5ff4d6cc97928cd3411ebe79238415c4bd5660d49803e7997e7a9a24d1efda
-Homepage: http://www.pango.org/
-Description: Layout and rendering of internationalized text
- Pango is a library for layout and rendering of text, with an emphasis
- on internationalization. Pango can be used anywhere that text layout is
- needed. however, most of the work on Pango-1.0 was done using the GTK+
- widget toolkit as a test platform. Pango forms the core of text and
- font handling for GTK+-2.0.
- .
- Pango is designed to be modular; the core Pango layout can be used with
- four different font backends:
-  - Core X windowing system fonts
-  - Client-side fonts on X using the Xft library
-  - Direct rendering of scalable fonts using the FreeType library
-  - Native fonts on Microsoft backends
- .
- This package contains the shared libraries.
-
 Package: eom-dev
 Architecture: amd64
 Version: 1.18.1-0ubuntu1~16.04.york0
@@ -6424,36 +3748,6 @@ Description: launcher and docking facility for MATE
  functions, such as quick launch icons, the clock, the notification area,
  volume controls and the battery charge indicator, and utilities ranging
  from weather forecast to system monitoring.
-
-Package: libgtk-3-0
-Architecture: amd64
-Version: 3.22.7-1ubuntu2~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: gtk+3.0
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 9032
-Provides: gtk3-binver-3.0.0
-Depends: libgtk-3-common (>= 3.22.7-1ubuntu2~16.04.york0), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.15.1), libc6 (>= 2.14), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.14.0), libcolord2 (>= 0.1.10), libcups2 (>= 1.6.2), libepoxy0 (>= 1.0), libfontconfig1 (>= 2.11.94), libgdk-pixbuf2.0-0 (>= 2.30.1), libglib2.0-0 (>= 2.49.5), libjson-glib-1.0-0 (>= 0.12.0), libmirclient9 (>= 0.24.0+16.10.20160815.3), libpango-1.0-0 (>= 1.37.5), libpangocairo-1.0-0 (>= 1.37.3), libpangoft2-1.0-0 (>= 1.37.3), librest-0.7-0 (>= 0.7), libwayland-client0 (>= 1.9.91), libwayland-cursor0 (>= 1.9.91), libwayland-egl1-mesa (>= 10.0.2) | libwayland-egl1, libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0), hicolor-icon-theme, adwaita-icon-theme, shared-mime-info
-Recommends: libgtk-3-bin
-Suggests: librsvg2-common, gvfs
-Breaks: gnome-themes-standard (<< 3.6), gtk3-engines-oxygen (<< 1.4.1-3)
-Filename: ./libgtk-3-0_3.22.7-1ubuntu2~16.04.york0_amd64.deb
-Size: 2546420
-MD5sum: 72e5e5562e0ea7ec2189366283b1ba6b
-SHA1: f712d4f6723c1e9def52c63e51eda511349f0f72
-SHA256: 1c773f5eceb842ba7575e87be33ac0b82e1c0c852b71ea3d6ec4980e8c266ddf
-SHA512: aa59db5a6ee0104a562b9f06baf9677571a28840c1581fa7a24bf459ab75e8bef3cfdf392b1d60853bd99d0d23434125fb420a9a57c6dc541d2fd9bd8c0e1df5
-Homepage: http://www.gtk.org/
-Description: GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the shared libraries.
 
 Package: mate-user-guide
 Architecture: all
@@ -6510,40 +3804,6 @@ Description: daemon to display passive popup notifications (common files)
  .
  This package contains the architecture independent files.
 
-Package: gir1.2-pango-1.0
-Architecture: amd64
-Version: 1.40.4-1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: introspection
-Source: pango1.0
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 110
-Depends: gir1.2-freedesktop, gir1.2-glib-2.0, libgirepository-1.0-1 (>= 1.41.4-1), libpango-1.0-0 (>= 1.37.5), libpangocairo-1.0-0 (>= 1.22.0), libpangoft2-1.0-0 (>= 1.14.0), libpangoxft-1.0-0 (>= 1.14.0)
-Filename: ./gir1.2-pango-1.0_1.40.4-1~16.04.york0_amd64.deb
-Size: 43130
-MD5sum: 0813b0bd8d15ec930106e80e594ae2e3
-SHA1: 2883d137f116a1cbda31ca280f7d904996fd71d7
-SHA256: 0fcc23b51ccab393a029ddbee3641fada3ef1c649409bd7015b23722e3597c4a
-SHA512: b49387260f60e23aca3c0b6860359813eca21bc1856c649b8641d077ce05bd55019ab9391adc370370e33724d882215d09383112f74928c205d918d9c7b411b2
-Homepage: http://www.pango.org/
-Description: Layout and rendering of internationalized text - gir bindings
- Pango is a library for layout and rendering of text, with an emphasis
- on internationalization. Pango can be used anywhere that text layout is
- needed. however, most of the work on Pango-1.0 was done using the GTK+
- widget toolkit as a test platform. Pango forms the core of text and
- font handling for GTK+-2.0.
- .
- Pango is designed to be modular; the core Pango layout can be used with
- four different font backends:
-  - Core X windowing system fonts
-  - Client-side fonts on X using the Xft library
-  - Direct rendering of scalable fonts using the FreeType library
-  - Native fonts on Microsoft backends
- .
- This package can be used by other packages using the GIRepository format to
- generate dynamic bindings.
-
 Package: caja-sendto
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -6572,62 +3832,6 @@ Description: integrates email clients and Pidgin into the Caja file manager
  .
  Caja Send To also provides the option of compressing the files (tar.bz2,
  tar.gz, or zip) before sending.
-
-Package: libwayland-server0
-Architecture: amd64
-Version: 1.12.0-1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: wayland
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Installed-Size: 94
-Depends: libc6 (>= 2.14), libffi6 (>= 3.0.4)
-Conflicts: libwayland0 (<< 1.1.0-1)
-Breaks: weston (<< 1.2.0)
-Replaces: libwayland0 (<< 1.1.0-1)
-Filename: ./libwayland-server0_1.12.0-1~16.04.york0_amd64.deb
-Size: 29998
-MD5sum: 980ce2318308e05e3684a7b67ee0331f
-SHA1: a532681654b70796c6dac6a7ddc928a9f1797310
-SHA256: 57a333c39d3539dca0b79e7fcf34399ddc5e90acdbb265bfa9d873caa4da24cd
-SHA512: 1294361c5e98caae7fbe7a030da34887b16448570561112aada1794fa598b1fe8e2a2b2c5a0e16b9403ee2d296fa43ebf308555bed93c213a484c6a491ad9a8e
-Homepage: https://wayland.freedesktop.org/
-Description: wayland compositor infrastructure - server library
- Wayland is a protocol for a compositor to talk to its clients as well
- as a C library implementation of that protocol. The compositor can be
- a standalone display server running on Linux kernel modesetting and
- evdev input devices, an X application, or a wayland client
- itself. The clients can be traditional applications, X servers
- (rootless or fullscreen) or other display servers.
- .
- This package ships the library that implements the server side of
- the Wayland protocol.
-
-Package: mir-graphics-drivers-android
-Architecture: amd64
-Version: 0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: mir
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Thomas Voß <thomas.voss@canonical.com>
-Installed-Size: 74
-Depends: mir-platform-graphics-android10, mir-client-platform-android5, mir-platform-input-evdev5
-Filename: ./mir-graphics-drivers-android_0.24.0+16.10.20160815.3-0ubuntu2~ubuntu16.04.1york0_amd64.deb
-Size: 64340
-MD5sum: d9cbab5a65a43c3daced9c963f4c999b
-SHA1: 32bce76f60b310cdc975bd31cbee093560aa1b86
-SHA256: 875a04f82ac13a53e6d5240063126e7762738d762651ee9eefdff8923da3c92a
-SHA512: c5946c8d65870a4c84dcd628db26649522dcdc9fb687f8e0889a6aef344e91be7b15a1a1dcd58d4027fa24d084b9d2931f360c046f3e44b484ff00feaf846181
-Homepage: https://launchpad.net/mir
-Description: Display server for Ubuntu - android driver metapackage
- Mir is a display server running on linux systems, with a focus on efficiency,
- robust operation and a well-defined driver model.
- .
- This package depends on a full set of graphics drivers for running Mir on top
- of an existing Android driver stack.
 
 Package: mate-menus
 Architecture: amd64
