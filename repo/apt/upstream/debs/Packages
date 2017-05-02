@@ -141,11 +141,11 @@ Depends: python-pkg-resources, python:any (<< 2.8), python:any (>= 2.7.5-5~), dc
 Suggests: software-center, synaptic
 Replaces: matemenu
 Filename: ./mate-menu_17.04.3-0ubuntu1~16.04.york0_all.deb
-Size: 170128
-MD5sum: 9bc81fc4c8d622545a7438ac1a63582a
-SHA1: 243ddb0d004091b448d48436dbb2356c01d385f5
-SHA256: 7267b64ef25a2906c274f6a32aded4265a1cba412ff03ead40e5e90a5ea7c318
-SHA512: c70f5d2e160fa0c95c1443c61c562419b9faf099180be7d508e1ee5e91862305a9ce166f52dab34d547ba47579157e1b7ab31e5eb475a2b46a632774beaf8583
+Size: 170100
+MD5sum: 95dd7808f016a5148f6a540460cfe1cc
+SHA1: bdaa2f4ec6c8fa6ae554247ba828a3216b9d8c78
+SHA256: 3a2c01e94379bdf9de9a6fb28ce255d0f331bc9c5493c4e2ea3a56d1116eed27
+SHA512: a1604e2617c79c946c264ce53658b1e58286587646a904b8e6bb3951561b781d0a7513d075e1bf34a8b2d71cc19de534ec09293adaa83d3fb0cd4b24d36f3f9e
 Homepage: https://bitbucket.org/ubuntu-mate/mate-menu/
 Description: Advanced MATE menu
  An advanced menu for MATE. Supports filtering, favorites,
