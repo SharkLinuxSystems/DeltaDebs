@@ -1162,6 +1162,190 @@ Homepage: http://www.deepin.org/
 Description: deepin sound theme
  This package contains the deepin sound theme.
 
+Package: gimp-plugin-registry
+Architecture: amd64
+Version: 7.20170217-0x8~ppa
+Priority: optional
+Section: graphics
+Maintainer: Otto Kesselgulasch <otto@kesselgulasch.org>
+Original-Maintainer: Bernd Zeimetz <bzed@debian.org>
+Installed-Size: 3769
+Provides: gimp-resynthesizer, gimp-save-for-web
+Depends: gimp (>= 2.6), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libgimp2.0 (>= 2.9.5~83-0x2~ppa~a774b24), libgl1-mesa-glx | libgl1, libglew1.13 (>= 1.12.0), libglib2.0-0 (>= 2.37.3), libglu1-mesa | libglu1, libgtk2.0-0 (>= 2.14.0), libgtkglext1, libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), liblqr-1-0 (>= 0.4.0), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 5.2), libtiff5 (>= 4.0.3), python, libtiff-tools, xdg-utils
+Recommends: gimp-gmic
+Suggests: icc-profiles
+Breaks: gimp-refocus (<< 0.9.0-2), gimp-resynthesizer (<< 0.16-2~), gimp-save-for-web
+Replaces: gimp-refocus (<< 0.9.0-2), gimp-resynthesizer, gimp-save-for-web
+Enhances: gimp
+Filename: ./gimp-plugin-registry_7.20170217-0x8~ppa_amd64.deb
+Size: 1151644
+MD5sum: 2d6e7c9d56a7dc28d79f253b9b6b69db
+SHA1: 19f24bc5763790f7b8827ad494ef90e654326a56
+SHA256: a9283aeb2b1107389694cd3a5e724b4ce239bb2c11d8d7b1a633c3990a03827c
+SHA512: d084be2ed04746b176c2f22fc350193c60c6692301c8468ce08fac3a8bd50cdbfc03a81112c55cb161460aa6d0b64d77dc492dfb7d07a1deca487b3aab891cbd
+Description: repository of optional extensions for GIMP
+ The package contains the following plugins:
+ .
+   * DBP (1.1.9): David's Batch Processor
+     A simple batch processing plugin for The Gimp - it allows
+     the user to automatically perform operations (such as resize)
+     on a collection of image files.
+   * add-filmgrain (2.8): Add Film Grain
+     Helps adding realistic film grain to BW images.
+   * btn4ws (0.8.0.1): btn4ws
+     Generates a series of buttons in three states (passive, active, pressed)
+     with various selectable effects on them, as well as XHTML, CSS and
+     JavaScript code for using the buttons.
+   * bw-simulation (1.1): Black and White Film Simulation
+     Converts the selected layer into Black and White using
+     the channel mixer. Tries to produce results resembling
+     tonal qualities of film.
+   * cmyk-tiff-2-pdf (20090321): CMYK Tiff 2 PDF for Gimp
+     This plugin completes the prepress workflow of using Separate+ to generate
+     CMYK Tiff images by allowing you to convert the saved CMYK Tiff image into
+     a PDF file.
+   * contact-sheet (2.16): Contact Sheet
+     Generates a contact sheet(s) for a directory of images.
+   * diana-holga2 (c): Diana-Holga2
+     Diana/Holga Toys Cameras effect simulator.
+   * elsamuko: El Samuko GIMP Scripts:
+     * Antique Photo Border Script:
+       This script simulates a yellowed and slightly jagged border
+       like these of old photographies.
+     * Che Guevara Script:
+       This script generates a poster like the famous Che Guevara
+       one from Jim Fitzpatrick.
+     * Cyanotype Script:
+       This script simulates the Cyanotype printing process.
+     * Difference Layer Script
+       This script generates two difference layers from the two layers
+       on the top. It's similar to GIMP's built-in Grain Extract/Merge
+       function, but the tonal range is bigger.
+       Now you can apply further editing and "switch on/off" the
+       adjustment by switching the visibility of the subtractive and
+       the additive layer.
+       Also you can change the modification intensity by changing the
+       intensity of these two layers.
+     * Erosion Sharpen:
+       Sharpens the image with erosion and dilation.
+     * Escape Line Script:
+       This script creates escaping lines from any point. It's similar
+       in function to the built-in Line-Nova Script, but much more
+       flexible. So you can chose the center, the thickness, the angle,
+       the length, the offset and the randomness.
+     * Film Grain Script:
+       This is yet another script which simulates the typical film grain
+       of high ISO pictures.
+     * First Photo Border Script:
+       This script simulates the cut-off of the first picture of a film
+       roll of cheap cameras like Lomo.
+     * Lomo Script with Old Style Colors
+       This script simulates the Lomo effect.
+     * Movie 300 Script:
+       This script simulates the color style of the movie "300".
+     * National Geographic Script:
+       This script simulates a high quality (portrait) photo like
+       these from the National Geographic.
+     * Obama "HOPE" Script:
+       This script generates a poster like the famous Obama "HOPE"
+       one from Shepard Fairey.
+     * Rainy Landscape Script:
+       This script changes a dry landscape to a wet one.
+     * Photochrom Script:
+       This script simulates a photochrom image, a lithographic printing
+       process from the 1890's.
+     * Sprocket Hole Script:
+       This script simulates complete exposed 35mm film strips with frame
+       numbers, lettering, overexposed sprocketholes and DX film edge barcodes.
+     * Sunny Landscape Script:
+       This script changes a rainy landscape to a sunny one.
+     * Technicolor 2 Color Script:
+       This script simulates the 2 Color Technicolor effect.
+     * Technicolor 3 Color Script:
+       This script simulates the 3 Color Technicolor effect.
+     * Vintage Look Script:
+       This script simulates a 70s vintage look.
+   * exposure-blend (1.3b): Exposure Blend
+     Prompt for 3 images in a bracketed exposure series (e.g. 0,-2,+2 EV)
+     and blend these into a contrast enhanced image.
+   * ez-perspective: EZ Perspective:
+     Specialized tool for easily correcting or changing perspective.
+   * fix-ca (3.0.2): Fix-CA
+     Corrects chromatic aberration in photos
+   * focus-blur (3.2.6): Focus-Blur
+     This plugin tries to simulate an out-of-focus blur
+   * gimp-fx-foundry (r111): GIMP FX Foundry
+     Probably the largest script collection available for The GIMP.
+   * gimp-mask: GIMP-Mask:
+     Do and undo several popular image masking (that is, censoring)
+     methods (CP, FL, Q0, MEKO).
+   * hdroberts-tone-adjust (May 24, 2010): Warming and Cooling Filters
+     Warm or cool an image using one of several methods:
+     Wratten, Roy's Warm, Brauer's Warm, Pasty Cadaveric Look
+   * layer-effects (4/12/2012): Layer-Effects
+     This is a series of scripts that implement various layer effects:
+     Drop Shadow, Inner Shadow, Outer Glow, Inner Glow, Bevel and Emboss,
+     Satin, Color Overlay, Gradient Overlay, Pattern Overlay, Stroke
+   * lqr (0.7.1): Liquid Rescale
+     Content-aware rescaling. Keeps the features of the image while
+     rescaling along a single direction.
+   * normalmap (1.2.3): Normalmap
+     Allows you to convert images into RGB normal maps for use in
+     per-pixel lighting applications.
+   * openraster (20110529-1d32622): OpenRaster load/save handler
+     OpenRaster is an effort by the Create project[1] to offer a standardized
+     and open interchange format for raster-based applications. This plugin
+     allows one to load and save files in the OpenRaster format.
+   * planet-render (1-2): Planet Render
+     Creates a planet. Color, size and sun orientation
+     can be set.
+   * refocus (0.9.1): Refocus
+     The GIMP plugin to refocus images using FIR Wiener filtering.
+     During image processing operations such as scanning and scaling, images
+     tend to get blurry. The blurred impression of these images is due to the
+     fact that image pixels are averaged with their neighbors. Blurred images
+     don't have sharp boundaries and look as though they have been taken with
+     an unfocused camera.
+   * resynthesizer (2.0): Resynthesizer
+     Gimp plugin for texture synthesis
+     This gimp plugin takes samples of textures, and synthesizes larger textures
+     from them.  It can be used to extend textures (including making tileable
+     textures), remove objects from textures, and make themed images.
+   * safe-for-web (0.29.0): Save for Web
+     Allows to experiment with various popular web format options. It shows
+     an automatically updated preview and file size statistics.
+   * separate+ (0.5.8): Separate+
+     Separate+ is a plug-in that generates color separations from an RGB
+     image, proofs CMYK colors on the monitor and exports the CMYK TIFF file.
+   * smart-seperate-sharpen (2.8): Smart Seperate Sharpening
+     This script implements a new version of smart sharpening (redux)
+     combined with separate sharpen to give better results.
+     You can find more about Smart Sharpening at
+     http://www.gimpguru.org/Tutorials/SmartSharpening2/
+   * streak (0.6): Streak-Camera simulation
+     A streak camera images an object through a slit -
+     thus getting a "one dimensional image". This image is
+     propagated along the second dimension of the image plane
+     at a constant speed. The result is a picture of the time
+     dependency of the object.
+   * traditional-orton: Traditional Orton:
+     This is an effect invented by Michael Orton in the 1990s, which
+     consists of taking two copies of an image, one blurred, and one sharp,
+     and mixing them to produce an image with a dreamy quality. It is
+     especially well suited to landscape and flower photography.
+   * wavelet-decompose (0.1.2): Wavelet Decompose
+     The wavelet decompose plugin decomposes a layer of an image into layers
+     of wavelet scales. This means that you can edit the image on different
+     detail scales (frequencies). The trivial recomposition of the image can
+     be done by GIMP's layer modes so you can see the results of your
+     modifications instantly. Among the applications are retouching, noise
+     reduction, and enhancing global contrast.
+   * wavelet-denoise (0.3.1): Wavelet Denoise
+     The wavelet denoise plugin is a tool to selectively reduce noise in
+     individual channels of an image with optional RGB<->YCbCr conversion.
+     It has a user interface to adjust the amount of denoising applied. The
+     wavelet nature of the algorithm makes the processing quite fast.
+
 Package: mate-backgrounds
 Architecture: all
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -1923,6 +2107,29 @@ Description: MATE document viewing library
  .
  This package contains the document viewing library used by Atril.
 
+Package: libwebpmux2
+Architecture: amd64
+Version: 0.5.1-2~0x0~ppa
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libwebp
+Maintainer: Jeff Breidenbach <jab@debian.org>
+Installed-Size: 55
+Depends: libc6 (>= 2.14), libwebp6 (>= 0.5.1)
+Filename: ./libwebpmux2_0.5.1-2~0x0~ppa_amd64.deb
+Size: 21860
+MD5sum: e0aaeae804166d16ec15fac56c133486
+SHA1: ec8d73a72924c2b62f1268263bb907907fca1f2f
+SHA256: 48dcd878d9faeaf7557f92b9e955f7fdf8d53e7e11cf0211849bef044481a0eb
+SHA512: 971be6f925c6b775ab3bed53aec44d1907e10967ebe94f01403d09fdf422887c0a5b704ee281cb3d756633c3a5cef3f3994c7e2a2f435483d8c506b915dced97
+Homepage: http://webp.googlecode.com
+Description: Lossy compression of digital photographic images.
+ Image Compression format, based on the VP8 codec.
+ WebP uses the modern VP8 compression format to deliver efficient
+ compression of images for the web. More than 30% extra gain over
+ optimized JPEG, for same quality, is not unusual.
+
 Package: engrampa-common
 Architecture: all
 Version: 1.18.2-0ubuntu1~16.04.york0
@@ -2045,6 +2252,33 @@ Description: MATE document viewing library (development files)
  This package contains the development files for the libatrilview
  library.
 
+Package: libgegl-0.3-0
+Architecture: amd64
+Version: 1:0.3.19~5-0x0~ppa~b3630f4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gegl
+Maintainer: Otto Meier <otto@kesselgulasch.org>
+Original-Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Installed-Size: 2955
+Provides: libgegl-0.3-0
+Depends: libbabl-0.1-0 (>= 0.1.29~3-0x0~ppa~4ac6c9b), libc6 (>= 2.15), libcairo2 (>= 1.2.4), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.31.1), libglib2.0-0 (>= 2.41.1), libjasper1, libjpeg8 (>= 8c), libjson-glib-1.0-0 (>= 0.12.0), liblcms2-2 (>= 2.2+git20110628), libopenexr22 (>= 2.2.0), libpango-1.0-0 (>= 1.37.5), libpangocairo-1.0-0 (>= 1.14.0), libpng12-0 (>= 1.2.13-4), libraw15 (>= 0.16.0), librsvg2-2 (>= 2.32.0), libsdl1.2debian (>= 1.2.11), libstdc++6 (>= 5.2), libtiff5 (>= 4.0.3), libumfpack5.7.1, libwebp6 (>= 0.5.1)
+Filename: ./libgegl-0.3-0_1%3a0.3.19~5-0x0~ppa~b3630f4_amd64.deb
+Size: 773202
+MD5sum: b578cf659da481e28332a5f4a781b759
+SHA1: 97bd01cd4ccb715315665d9b23197f5ba8f0eef6
+SHA256: c8597eae64c52763e75ede78340ffc870b9269757a68db244801e3eceb6d59fc
+SHA512: b1d207be6b6458232e8b4efded094a75e1fe4e4680e6951bb1686943a368b1630034e0948b01a5715ed7f8116d4a807daba128a7196c085897831faac3f62534
+Homepage: http://gegl.org/
+Description: Generic Graphics Library
+ GEGL (Generic Graphics Library) is a graph based image processing
+ framework.
+ .
+ GEGLs original design was made to scratch GIMPs itches for a new
+ compositing and processing core. This core is being designed to have
+ minimal dependencies and a simple well defined API.
+
 Package: gir1.2-mate-polkit
 Architecture: amd64
 Version: 1.18.1-0ubuntu1~16.04.york0
@@ -2144,6 +2378,30 @@ Description: official text editor of the MATE desktop environment (common files)
  ChangeLogs, and adjusting indentation levels.
  .
  This package contains the architecture independent files.
+
+Package: gimp-data
+Architecture: all
+Version: 2.9.5~113-0x0~ppa~c83f0e8
+Priority: optional
+Section: graphics
+Source: gimp
+Maintainer: Otto Meier <otto@kesselgulasch.org>
+Original-Maintainer: Ari Pollak <ari@debian.org>
+Installed-Size: 57179
+Depends: libgimp2.0 (= 2.9.5~113-0x0~ppa~c83f0e8)
+Recommends: gimp
+Conflicts: gimp (<< 2.4.0~rc2-2), gimp-python (<< 2.6.0)
+Replaces: gimp (<< 2.4.0~rc2-2), gimp-python (<< 2.6.0)
+Filename: ./gimp-data_2.9.5~113-0x0~ppa~c83f0e8_all.deb
+Size: 9384212
+MD5sum: 6b5bac7dd8b8ed34b60cf2a275866c84
+SHA1: 4d5749a7a96699f56db3acf82610923fa0150033
+SHA256: 220d83a33c52a6bfcc640e2fd80569d9efd74fb794667cca8285694758e7bfef
+SHA512: 59bd1d16f62f2f4a78f9a66a17d3719b4789334343e178e1ad554ac3baae65ae73fb9c6520625c4790fe7320f8a0030742ff6aafbd323e7ef224be7b162a1abb
+Homepage: http://www.gimp.org/
+Description: Data files for GIMP
+ This package contains architecture-independent supporting data files
+ for use with GIMP.
 
 Package: mate-settings-daemon
 Architecture: amd64
@@ -3034,6 +3292,51 @@ SHA512: 57349c40bf5109a69142ec06f0f6c0f70e9aa805bd282a51418a4052d4e95484f68e6567
 Homepage: https://gitcafe.com/Deepin/dae/
 Description: Deepin App Engine
 
+Package: libwebp6
+Architecture: amd64
+Version: 0.5.1-2~0x0~ppa
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libwebp
+Maintainer: Jeff Breidenbach <jab@debian.org>
+Installed-Size: 401
+Depends: libc6 (>= 2.14)
+Filename: ./libwebp6_0.5.1-2~0x0~ppa_amd64.deb
+Size: 173832
+MD5sum: a779abca4a3f4f88beed4acb03601553
+SHA1: 9320873be1b86338be825bed406a614652f160df
+SHA256: bd84c5581f983467155f4a40f778dab54a0623e7604f846ddf1796ce2f779efc
+SHA512: fd76adbb798e28643f0a2cbfd54366325168ade3dea1910267ece52514e807e2616f6baaf833f39a62af3232544f9fb815214da6ca2ac3744b0c1807486648e0
+Homepage: http://webp.googlecode.com
+Description: Lossy compression of digital photographic images.
+ Image Compression format, based on the VP8 codec.
+ WebP uses the modern VP8 compression format to deliver efficient
+ compression of images for the web. More than 30% extra gain over
+ optimized JPEG, for same quality, is not unusual.
+
+Package: libgimp2.0
+Architecture: amd64
+Version: 2.9.5~113-0x0~ppa~c83f0e8
+Priority: optional
+Section: libs
+Source: gimp
+Maintainer: Otto Meier <otto@kesselgulasch.org>
+Original-Maintainer: Ari Pollak <ari@debian.org>
+Installed-Size: 3769
+Depends: libbabl-0.1-0 (>= 0.1.28), libc6 (>= 2.15), libcairo2 (>= 1.10.2), libgdk-pixbuf2.0-0 (>= 2.25.2), libgegl-0.3-0 (>= 1:0.3.18), libgexiv2-2 (>= 0.6.1), libglib2.0-0 (>= 2.41.1), libgtk2.0-0 (>= 2.24.10), liblcms2-2 (>= 2.2+git20110628), libpango-1.0-0 (>= 1.29.4), libpangocairo-1.0-0 (>= 1.29.4)
+Recommends: gimp-data (>= 2.9.5~113), gimp-data (<= 2.9.5~113-z)
+Filename: ./libgimp2.0_2.9.5~113-0x0~ppa~c83f0e8_amd64.deb
+Size: 775838
+MD5sum: 57cdcc1025057d4f96b8c1d9e5d00619
+SHA1: e527c8eec9d906083355d99c14480ec644f34b40
+SHA256: b6a46a95996410c11075ddee87290897f1069784f2cc6f536a6dd946993bcfdf
+SHA512: c42298deae32450d692b5a56617a1bfe41286f30a6427c41f389a5969881c44ce13af25ca0a951a45e904b82b1383856cb8e3dc374e8c6469dec8f4a004d03c3
+Homepage: http://www.gimp.org/
+Description: Libraries for the GNU Image Manipulation Program
+ This package includes the libgimp libraries, which are
+ necessary to run GIMP and third-party GIMP plugins.
+
 Package: libmate-desktop-doc
 Architecture: all
 Version: 1.18.0-0ubuntu2~16.04.york0
@@ -3236,6 +3539,45 @@ Description: Session manager of the MATE desktop environment
  This version is configured to start the MATE desktop, based on the
  MATE panel.
 
+Package: gimp
+Architecture: amd64
+Version: 2.9.5~113-0x0~ppa~c83f0e8
+Priority: optional
+Section: graphics
+Maintainer: Otto Meier <otto@kesselgulasch.org>
+Original-Maintainer: Ari Pollak <ari@debian.org>
+Installed-Size: 14735
+Provides: gimp-helpbrowser, gimp-python
+Depends: libgimp2.0 (>= 2.9.5~113-0x0~ppa~c83f0e8), libgimp2.0 (<= 2.9.5~113-z), gimp-data (>= 2.9.5~113), gimp-data (<= 2.9.5~113-z), libgegl-0.3-0 (>= 1:0.3.18), libbabl-0.1-0 (>= 0.1.28), python-gtk2 (>= 2.8.0), libmypaint (>= 1.4.0~3-0x0~ppa~c196a86), libaa1 (>= 1.4p5), libbz2-1.0, libc6 (>= 2.15), libcairo2 (>= 1.12.0), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.25.2), libgexiv2-2 (>= 0.10.3), libglib2.0-0 (>= 2.41.1), libgs9 (>= 8.61.dfsg.1), libgtk2.0-0 (>= 2.24.10), libgudev-1.0-0 (>= 146), libharfbuzz0b (>= 0.6.0), libilmbase12 (>= 2.2.0), libjasper1, libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), liblzma5 (>= 5.1.1alpha+20120614), libmng2 (>= 1.0.10), libopenexr22 (>= 2.2.0), libpango-1.0-0 (>= 1.29.4), libpangocairo-1.0-0 (>= 1.29.4), libpangoft2-1.0-0 (>= 1.29.4), libpng12-0 (>= 1.2.13-4), librsvg2-2 (>= 2.14.4), libstdc++6 (>= 5.2), libtiff5 (>= 4.0.3), libwebkitgtk-1.0-0 (>= 1.3.10), libwebp6 (>= 0.5.1), libwebpdemux2 (>= 0.5.1), libwebpmux2 (>= 0.5.1), libwmf0.2-7 (>= 0.2.8.4), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxfixes3, libxmu6, libxpm4, zlib1g (>= 1:1.1.4), python:any (>= 2.6.6-7~), python2.7
+Recommends: ghostscript
+Suggests: gimp-help-en | gimp-help, gimp-data-extras, gvfs-backends, libasound2
+Breaks: gimp-plugin-registry (<< 4.20120506)
+Replaces: gimp-plugin-registry (<< 4.20120506)
+Filename: ./gimp_2.9.5~113-0x0~ppa~c83f0e8_amd64.deb
+Size: 3599754
+MD5sum: 8fd175c1ceddb6aa4f8e8d2ac402e6a0
+SHA1: a1c32db97d8b049a06cc78f0b7719357c509b065
+SHA256: b898cb38ffea7bb83ae7f938ca899d57a83719e720e774aadaa82c158ce48932
+SHA512: f3466f99cd7e7724d5829471678d5bfdfb35bf0a2378233c05b6f35ebbd3c8cca6f04656e518e5534f47767bea64a89b6f23631fca66394c6310a89fc2f302a7
+Homepage: http://www.gimp.org/
+Description: The GNU Image Manipulation Program
+ GIMP is an advanced picture editor. You can use it to edit, enhance, and
+ retouch photos and scans, create drawings, and make your own images.
+ It has a large collection of professional-level editing tools and
+ filters, similar to the ones you might find in Photoshop. Numerous
+ fine-control settings and features like layers, paths, masks, and
+ scripting give you total control over your images.
+ .
+ Many image file formats are supported, including JPEG, Photoshop (.psd),
+ and Paint Shop Pro (.psp) files. It can also be used to scan and print
+ photos.
+ .
+ To open files remotely (like over HTTP), install the gvfs-backends
+ package.
+ .
+ To use a MIDI device (like a musical keyboard) as an input controller in GIMP,
+ install libasound2 and read the how-to at /usr/share/doc/gimp/README.MIDI
+
 Package: libmate-menu-dev
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -3308,6 +3650,30 @@ SHA512: 120a4f96ba0e87dfb1c91043ea7dce0d1443092317cef7cb3e86234743c6f0a6304acf08
 Homepage: https://launchpad.net/ubuntu-mate/
 Description: Default settings for Ubuntu MATE live CD
  Various system settings tailored for Ubuntu MATE live CD.
+
+Package: libbabl-0.1-0
+Architecture: amd64
+Version: 0.1.29~3-0x0~ppa~4ac6c9b
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: babl
+Maintainer: Otto Meier <otto@kesselgulasch.org>
+Original-Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Installed-Size: 635
+Depends: libc6 (>= 2.14)
+Filename: ./libbabl-0.1-0_0.1.29~3-0x0~ppa~4ac6c9b_amd64.deb
+Size: 216156
+MD5sum: 80ba8dc6c1ce7812ef852c5ac0793fd5
+SHA1: 02eb2631fcbdec9dc14ce6fddd9317aca1149e78
+SHA256: f985f856e82e948939d66948f3690c880e0a30331c787242f4cf9bbf187d9df8
+SHA512: 44bf321cd51fac61a8d6a72a7b60dbfb8969f920493b4a06f8b49ed4c3475ea201186e5e6975e882fff5f522ce05f7f1b18d91d2f9cfeda681a8efd2ec214ec6
+Homepage: http://gegl.org/babl/
+Description: Dynamic, any to any, pixel format conversion library
+ Babl is a dynamic, any to any, pixel format conversion library. It
+ provides conversions between the myriad of buffer types images can be
+ stored in. Babl doesn't only help with existing pixel formats, but
+ also facilitates creation of new and uncommon ones.
 
 Package: dde-control-center-dbg
 Architecture: amd64
@@ -5270,6 +5636,24 @@ Description: file manager for the MATE desktop
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
 
+Package: libmypaint
+Architecture: amd64
+Version: 1.4.0~5-0x0~ppa~9bafe4b
+Priority: optional
+Section: libs
+Maintainer: Otto Meier <otto@kesselgulasch.org>
+Installed-Size: 113
+Depends: libbabl-0.1-0 (>= 0.1.29~3-0x0~ppa~4ac6c9b), libc6 (>= 2.14), libgegl-0.3-0, libglib2.0-0 (>= 2.16.0), libjson-c2 (>= 0.10)
+Filename: ./libmypaint_1.4.0~5-0x0~ppa~9bafe4b_amd64.deb
+Size: 34322
+MD5sum: 434069d5163f4dbe3d0669f39b8a8fd1
+SHA1: 8e080daa327790d06895aa83153078d6fc45eae7
+SHA256: ce6fbbd580a8724878c54a71bcff15151e4ab3cf1ada5d26fbe6d5a076a065df
+SHA512: a919e4aec273899e06996bcdf8469ffe2acdb9a3a019f1bfe0638787a6c038a89b58edc21339c006f236b4be25064c19bed49e72a1469a69781bb9e0b1b30a8c
+Homepage: https://github.com/mypaint/libmypaint
+Description: libmypaint - MyPaint brush engine library
+ This is a self-contained C library that is isolated from MyPaint. It allows other applications to make use of the MyPaint brush engine.
+
 Package: dde-help-zhcn
 Architecture: all
 Version: 3.0.1-1.1
@@ -5934,6 +6318,33 @@ Homepage: http://pypi.python.org/pypi/jieba/
 Description: Chinese Words Segementation Utilities - extra dict
  Chinese Words Segementation Utilities packaged from pypi
 
+Package: gimp-gmic
+Architecture: amd64
+Version: 1:2.0.2~pre-0x4~ppa~edge
+Priority: optional
+Section: graphics
+Source: gmic
+Maintainer: Otto Meier <otto@kesselgulasch.org>
+Original-Maintainer: Bernd Zeimetz <bzed@debian.org>
+Installed-Size: 8656
+Depends: libbabl-0.1-0 (>= 0.1.29~3-0x0~ppa~4ac6c9b), libc6 (>= 2.14), libcurl3 (>= 7.16.2), libfftw3-double3, libgcc1 (>= 1:3.0), libgegl-0.3-0, libgimp2.0 (>= 2.9.5~113-0x0~ppa~c83f0e8), libglib2.0-0 (>= 2.12.0), libgomp1 (>= 4.9), libpng12-0 (>= 1.2.13-4), libqt5core5a (>= 5.5.0), libqt5gui5 (>= 5.3.0) | libqt5gui5-gles (>= 5.3.0), libqt5network5 (>= 5.0.2), libqt5widgets5 (>= 5.2.0), libstdc++6 (>= 5.2), libx11-6, zlib1g (>= 1:1.2.0), gimp (>= 2.6)
+Suggests: gmic
+Enhances: gimp
+Filename: ./gimp-gmic_1%3a2.0.2~pre-0x4~ppa~edge_amd64.deb
+Size: 3462984
+MD5sum: a9531dad9dbec257a1c27fe175a02eb3
+SHA1: d3030d0ece499abbe0b413389f72acddefa61385
+SHA256: 55f2cbcf29527a61ef0d7b3d68bb77d4d7eab1e22dda74739de730583bc30b9f
+SHA512: 7efde5b88f53218ea677a86521ae1e97e225dfbfb0dc55c32e23f1c262f44c6312b8fda7a58ffb156cc39ca78a93d101e8fdacecef9f6c824dd43516a3c72065
+Homepage: http://gmic.sourceforge.net/
+Description: GIMP plugin for GREYC's Magic Image Converter
+ G'MIC is an interpreter of image processing macros whose goal is to
+ convert, manipulate and visualize generic 1D/2D/3D multi-spectral
+ image files. This includes classical color images, but also more
+ complex data as image sequences or 3D volumetric images.
+ .
+ This package contains the GIMP plugin.
+
 Package: deepin-metacity-common
 Architecture: all
 Version: 3.18.1.12-1
@@ -6029,6 +6440,29 @@ SHA512: dcb722b82ff393a7f2276c5b2b4614cc26d36164bd11dbf8a0a26d0df1ad755d5d3cc5df
 Homepage: http://www.linuxdeepin.com
 Description: deepin window manager monitoring and auto-switching service
  deepin window manager monitoring and auto-switching service.
+
+Package: libwebpdemux2
+Architecture: amd64
+Version: 0.5.1-2~0x0~ppa
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libwebp
+Maintainer: Jeff Breidenbach <jab@debian.org>
+Installed-Size: 35
+Depends: libc6 (>= 2.14), libwebp6 (>= 0.5.1)
+Filename: ./libwebpdemux2_0.5.1-2~0x0~ppa_amd64.deb
+Size: 11704
+MD5sum: 092f59840f04cdaa66c87840f5519a6d
+SHA1: 2924d986d38de2e042a259e871f367f599c8db06
+SHA256: e11ca00f293c9e7a5fa20642002ce1e89f47e5b6f3a21c2fd2c79b19a6278a10
+SHA512: bff7a0de652856d5447af7a6fa2be2ef6245e3f89f85c1fad3353f5936c4b43bca117ff48f96b7ae0eb827eab99fa84f5a4f489dd326ecb8de2b3bc4429c87b9
+Homepage: http://webp.googlecode.com
+Description: Lossy compression of digital photographic images.
+ Image Compression format, based on the VP8 codec.
+ WebP uses the modern VP8 compression format to deliver efficient
+ compression of images for the web. More than 30% extra gain over
+ optimized JPEG, for same quality, is not unusual.
 
 Package: libmarco-private1
 Architecture: amd64
