@@ -211,36 +211,6 @@ Description: Go bindings for Deepin Desktop Environment development
  .
  gio-2.0 go bindings.
 
-Package: libmate-panel-applet-dev
-Architecture: amd64
-Version: 1.18.2-0ubuntu1~16.04.york0
-Priority: optional
-Section: libdevel
-Source: mate-panel
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 52
-Provides: libmatepanelapplet-dev
-Depends: libglib2.0-dev, libgtk-3-dev, libmate-panel-applet-4-1 (= 1.18.2-0ubuntu1~16.04.york0)
-Conflicts: libmatepanelapplet-dev
-Replaces: libmatepanelapplet-dev
-Filename: ./libmate-panel-applet-dev_1.18.2-0ubuntu1~16.04.york0_amd64.deb
-Size: 13892
-MD5sum: 1702804dde3624e9d843c998254bf87c
-SHA1: 7545c01c8df9686041d5b72ff66c44f8d86761d0
-SHA256: 64f9971a5ec650cc1f60f5e91d17bcde93c40e02013e48c6edfeef5353852a5f
-SHA512: 316518369079f570739a14e89c57fb57ea588e3c0250c404dd0d9550d4e172a859905afeaae87ccdabfeacc4ee5b8ab4d44c789471d7524448734ca1d8d86db3
-Homepage: http://www.mate-desktop.org/
-Description: library for MATE Panel applets (development files)
- The MATE Panel is an essential part of the MATE Desktop, providing
- toolbar-like “panels” which can be attached to the sides of your desktop.
- They are used to launch applications and embed a number of other
- functions, such as quick launch icons, the clock, the notification area,
- volume controls and the battery charge indicator, and utilities ranging
- from weather forecast to system monitoring.
- .
- This package contains the development files of the MATE panel applet
- library.
-
 Package: caja-share
 Architecture: amd64
 Version: 1.18.1-0ubuntu1~16.04.york0
@@ -358,32 +328,34 @@ Description: implementation of the freedesktop menu specification for MATE (Pyth
  .
  This package contains the Python bindings.
 
-Package: libmate-window-settings1
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Multi-Arch: same
+Package: libmate-panel-applet-doc
+Architecture: all
+Version: 1.18.3-0ubuntu1~16.04.york0
 Priority: optional
-Section: libs
-Source: mate-control-center
+Section: doc
+Source: mate-panel
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 69
-Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.35.9), libgtk-3-0 (>= 3.0.0), libmate-desktop-2-17 (>= 1.6.1)
-Breaks: mate-control-center (<< 1.9.0)
-Filename: ./libmate-window-settings1_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 18862
-MD5sum: c38cc1db7436aa7341000e322e7c7522
-SHA1: 95ccc2f56eb41c8d1a878e819327816c5272a32d
-SHA256: 1de0d1522fc3fd1bdeb27c1fa1526dc304c552034617f6a519ef0742e62f4b52
-SHA512: 54d852beda8fc08b319e6ee564c54a1bcd3605d41867185fae2a1ca7a9f4946688a54a03fd9d6f077936fe5ba9a6d7ae713bbba63de41895ba1c22f11b415500
+Installed-Size: 131
+Provides: libmatepanelapplet-doc
+Conflicts: libmatepanelapplet-doc
+Replaces: libmatepanelapplet-doc
+Filename: ./libmate-panel-applet-doc_1.18.3-0ubuntu1~16.04.york0_all.deb
+Size: 24468
+MD5sum: 33b3a32fa2580efb712629ea3d228c3f
+SHA1: f7ea1e6788f082b8427d8242857f97f6b0a3304b
+SHA256: 3defeeeb9c19152ece0a1076c6c36aff02cc2d8b66296ef4d0f0c823050249de
+SHA512: 48d8fe5dbc259411d1f9e7c1696ff319c20a3126afcc2521550784fc2c3200d49e361668af74669a5be0528e19086904321b930207e48293c31305c64de6c1e2
 Homepage: http://www.mate-desktop.org/
-Description: utilities to configure the MATE desktop (window settings library)
- The MATE control center contains configuration applets for the MATE desktop,
- allowing to set accessibility configuration, desktop fonts, keyboard
- and mouse properties, sound setup, desktop theme and background, user
- interface properties, screen resolution, and other MATE parameters.
+Description: library for MATE Panel applets (documentation files)
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
  .
- This package contains the MATE window settings library for MATE control
- center.
+ This package contains the documentation files of the MATE panel applet
+ library.
 
 Package: libmatedict-dev
 Architecture: amd64
@@ -559,28 +531,6 @@ Description: libraries for Caja components (API documentation files)
  This package contains the API documentation for the libraries needed
  by Caja's extensions.
 
-Package: ubuntu-mate-default-settings
-Architecture: all
-Version: 17.10.6~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-settings
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 137
-Depends: desktop-file-utils, im-config, libglib2.0-bin, ttf-ubuntu-font-family, dconf-gsettings-backend | gsettings-backend
-Suggests: mate-desktop-environment-core (>= 1.14.0)
-Conflicts: debian-mate-default-settings, mint-mate-default-settings
-Replaces: policykit-desktop-privileges-ubuntu-mate
-Filename: ./ubuntu-mate-default-settings_17.10.6~16.04.york0_all.deb
-Size: 20232
-MD5sum: 449a77ed5665cfd9d1e400ef6d2988e5
-SHA1: 110843c813b05ebdfbb1634de0147f523c1a1b15
-SHA256: 50d1a3d979103722195ead6c775ad0637e854336f69f0a9844532ad2a8098a5c
-SHA512: 74cc7a983019f3e7ec9c18f6d7f963bd5518eb1614d8e8faa39422ea93b3e34105a6d5225fb9b8c89c2998af214531d298f5d8686b64d12ad051e9e9f4963ceb
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Default settings for Ubuntu MATE
- Various system settings tailored for Ubuntu MATE.
-
 Package: debian-mate-default-settings
 Architecture: all
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -745,29 +695,6 @@ Description: Various applets for the MATE panel
  Service (NWS) servers, including the Interactive Weather Information
  Network (IWIN).
 
-Package: mate-media-common
-Architecture: all
-Version: 1.18.0-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Source: mate-media
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 1392
-Breaks: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
-Replaces: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
-Filename: ./mate-media-common_1.18.0-0ubuntu1~16.04.york0_all.deb
-Size: 163458
-MD5sum: f01ef189e10ae0f7494b77a5c6e80390
-SHA1: 8f740dac6f8f79191db8ec9a8c6fa4e259388bf8
-SHA256: b85e67557782dd125dce8af3ea1ff8d882d9df9cf3f6ef9ffd5894a5167ea3f4
-SHA512: d8b32eabc383e585b010929cc1099b5bca1cd1d6eaeea9bf47bef94b05c6d886adc8749f9f053e984de5d3a227ea7940abeeebc5f2416f6339b082906c660eea
-Homepage: http://www.mate-desktop.org/
-Description: MATE media utilities (common files)
- MATE media utilities are the audio mixer and the volume
- control applet.
- .
- This package contains the common files.
-
 Package: pluma-dev
 Architecture: amd64
 Version: 1.18.2-0ubuntu1~16.04.york0
@@ -827,6 +754,35 @@ Description: Go bindings for Deepin Desktop Environment development
  .
  gobject-2.0 go bindings.
 
+Package: libmate-panel-applet-4-1
+Architecture: amd64
+Version: 1.18.3-0ubuntu1~16.04.york0
+Priority: optional
+Section: libs
+Source: mate-panel
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 100
+Provides: libmate-panel-applet4-1, libmatepanelapplet
+Depends: libc6 (>= 2.4), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.0.0), libx11-6
+Breaks: libmate-panel-applet4-1, libmatepanelapplet, mate-panel (<= 1.0.0-3)
+Replaces: libmate-panel-applet4-1, libmatepanelapplet
+Filename: ./libmate-panel-applet-4-1_1.18.3-0ubuntu1~16.04.york0_amd64.deb
+Size: 29494
+MD5sum: a85a2e2f156cfc8683ed16db2ec4745d
+SHA1: aea87222ddcba978b6930e94c1f326f681999b6e
+SHA256: 68372f50f1f123bcd9be96cd4f345b120d7d60ba1762ef525475b5ead4a7df5b
+SHA512: 9774c926eef392afdf41fc8fd6cbb6c70813a6f7830da6899032515cdb219e6d972fb81a55ac0561dbb26c34cd7c40822b133b06c516a7db40c7d943a970e916
+Homepage: http://www.mate-desktop.org/
+Description: library for MATE Panel applets
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the MATE Panel applet library.
+
 Package: dde-api
 Architecture: amd64
 Version: 3.0.8-1.1
@@ -869,31 +825,6 @@ Description: implementation of the freedesktop menu specification for MATE
  .
  Also contained here are the MATE menu layout configuration files, .directory
  files and assorted menu related utility programs.
-
-Package: mate-media
-Architecture: amd64
-Version: 1.18.0-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 209
-Depends: mate-desktop-common (>= 1.18), mate-media-common (= 1.18.0-0ubuntu1~16.04.york0), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libmate-desktop-2-17 (>= 1.14.0), libmatemixer0 (>= 1.10.0), libpango-1.0-0 (>= 1.14.0), libxml2 (>= 2.7.4)
-Recommends: alsa-utils, sound-theme-freedesktop
-Breaks: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
-Replaces: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
-Filename: ./mate-media_1.18.0-0ubuntu1~16.04.york0_amd64.deb
-Size: 57774
-MD5sum: b535fdfeda9e591269af815e1ad2d214
-SHA1: cabe673a8da1301f3902b7ac1849192ed7f4303e
-SHA256: a1a49f925c0743a8f116b5d10dc613954211536e93ad04277b155df3baa52a60
-SHA512: 740d777936d809039d9b70e2134def861ae0dc9f8280f04efa126e8278874769ea2be4cd51b5c2d5f72514d3973c05c97485f2b4bfe594e73d5cca50b2898b7c
-Homepage: http://www.mate-desktop.org/
-Description: MATE media utilities
- MATE media utilities are the audio mixer and the volume
- control applet.
- .
- This package utilizes the libmatemixer library which provides
- support for ALSA and Pulseaudio as audio backends.
 
 Package: ubuntu-mate-icon-themes
 Architecture: all
@@ -1120,31 +1051,6 @@ Homepage: http://www.linuxdeepin.com
 Description: Go-lang dbus gen QML for dlib
  Go-lang dbus gen QML for dlib
 
-Package: mate-menu
-Architecture: all
-Version: 17.10.2-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 1564
-Depends: python-pkg-resources, python:any (<< 2.8), python:any (>= 2.7.5-5~), dconf-gsettings-backend | gsettings-backend, gir1.2-mate-desktop (>= 1.18.0), gir1.2-mate-panel (>= 1.18), gir1.2-gtk-3.0, gvfs-bin, mate-menus (>= 1.18), mozo | menulibre, python (>= 2.4), python (<< 3), python-configobj, python-mate-menu, python-xdg, python-xlib, xdg-utils, libglib2.0-bin
-Suggests: software-center, synaptic
-Replaces: matemenu
-Filename: ./mate-menu_17.10.2-0ubuntu1~16.04.york0_all.deb
-Size: 169490
-MD5sum: abd6a2ca0ee9e0aae88a942beba51eea
-SHA1: d2baae1d38770145eb6607107dcb4d1160787e58
-SHA256: d9cf2b8c76d926e1661d25608e6889f50fda3597fe076af656d0ccfe0b9485ba
-SHA512: e1818e1fd5bf2a046a58a418a57fa95138583a9b50e3109a868518dfa97f1b686db9f8f16053561196b245404e13b713f0696325269d31cd2d99a8203956ec66
-Homepage: https://bitbucket.org/ubuntu-mate/mate-menu/
-Description: Advanced MATE menu
- An advanced menu for MATE. Supports filtering, favorites,
- easy-uninstallation, autosession, and many other features.
- .
- This menu originated in the Linux Mint distribution and has
- been ported to other distros that ship the MATE Desktop
- Environment.
-
 Package: deepin-sound-theme
 Architecture: all
 Version: 15.10.01
@@ -1162,189 +1068,43 @@ Homepage: http://www.deepin.org/
 Description: deepin sound theme
  This package contains the deepin sound theme.
 
-Package: gimp-plugin-registry
+Package: mate-dock-applet
 Architecture: amd64
-Version: 7.20170217-0x8~ppa
-Priority: optional
-Section: graphics
-Maintainer: Otto Kesselgulasch <otto@kesselgulasch.org>
-Original-Maintainer: Bernd Zeimetz <bzed@debian.org>
-Installed-Size: 3769
-Provides: gimp-resynthesizer, gimp-save-for-web
-Depends: gimp (>= 2.6), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libgimp2.0 (>= 2.9.5~83-0x2~ppa~a774b24), libgl1-mesa-glx | libgl1, libglew1.13 (>= 1.12.0), libglib2.0-0 (>= 2.37.3), libglu1-mesa | libglu1, libgtk2.0-0 (>= 2.14.0), libgtkglext1, libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), liblqr-1-0 (>= 0.4.0), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 5.2), libtiff5 (>= 4.0.3), python, libtiff-tools, xdg-utils
-Recommends: gimp-gmic
-Suggests: icc-profiles
-Breaks: gimp-refocus (<< 0.9.0-2), gimp-resynthesizer (<< 0.16-2~), gimp-save-for-web
-Replaces: gimp-refocus (<< 0.9.0-2), gimp-resynthesizer, gimp-save-for-web
-Enhances: gimp
-Filename: ./gimp-plugin-registry_7.20170217-0x8~ppa_amd64.deb
-Size: 1151644
-MD5sum: 2d6e7c9d56a7dc28d79f253b9b6b69db
-SHA1: 19f24bc5763790f7b8827ad494ef90e654326a56
-SHA256: a9283aeb2b1107389694cd3a5e724b4ce239bb2c11d8d7b1a633c3990a03827c
-SHA512: d084be2ed04746b176c2f22fc350193c60c6692301c8468ce08fac3a8bd50cdbfc03a81112c55cb161460aa6d0b64d77dc492dfb7d07a1deca487b3aab891cbd
-Description: repository of optional extensions for GIMP
- The package contains the following plugins:
+Version: 0.79-0ubuntu1~16.04.york0
+Priority: extra
+Section: utils
+Maintainer: Debian MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 498
+Depends: gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-mate-panel (>= 1.14.0), gir1.2-wnck-3.0, libglib2.0-bin, mate-panel (>= 1.14), python3, python3-gi-cairo, python3-pil, python3-xdg, python3-xlib, dconf-gsettings-backend | gsettings-backend
+Filename: ./mate-dock-applet_0.79-0ubuntu1~16.04.york0_amd64.deb
+Size: 79544
+MD5sum: d76afe1f10ab1f0d394f545d63e96372
+SHA1: bcdc23b10816b54ca57e0a780d0e77a186e7697e
+SHA256: 6b5822d816d635744c2fb63011ce569d4dccb653f844f9a50e7e044a6376d9cb
+SHA512: 91fcb8ad8076e68fd4ce1344546449e64c2eed546995731557b2b130ee29a26fc5bff6ac955feb82f6ccbaa4da25836f29de7d8b69b79d436ae98dcd5ddb42ef
+Homepage: https://github.com/robint99/dock-applet
+Description: MATE Panel dock applet
+ An application dock applet for the MATE panel. The applet allows you to:
  .
-   * DBP (1.1.9): David's Batch Processor
-     A simple batch processing plugin for The Gimp - it allows
-     the user to automatically perform operations (such as resize)
-     on a collection of image files.
-   * add-filmgrain (2.8): Add Film Grain
-     Helps adding realistic film grain to BW images.
-   * btn4ws (0.8.0.1): btn4ws
-     Generates a series of buttons in three states (passive, active, pressed)
-     with various selectable effects on them, as well as XHTML, CSS and
-     JavaScript code for using the buttons.
-   * bw-simulation (1.1): Black and White Film Simulation
-     Converts the selected layer into Black and White using
-     the channel mixer. Tries to produce results resembling
-     tonal qualities of film.
-   * cmyk-tiff-2-pdf (20090321): CMYK Tiff 2 PDF for Gimp
-     This plugin completes the prepress workflow of using Separate+ to generate
-     CMYK Tiff images by allowing you to convert the saved CMYK Tiff image into
-     a PDF file.
-   * contact-sheet (2.16): Contact Sheet
-     Generates a contact sheet(s) for a directory of images.
-   * diana-holga2 (c): Diana-Holga2
-     Diana/Holga Toys Cameras effect simulator.
-   * elsamuko: El Samuko GIMP Scripts:
-     * Antique Photo Border Script:
-       This script simulates a yellowed and slightly jagged border
-       like these of old photographies.
-     * Che Guevara Script:
-       This script generates a poster like the famous Che Guevara
-       one from Jim Fitzpatrick.
-     * Cyanotype Script:
-       This script simulates the Cyanotype printing process.
-     * Difference Layer Script
-       This script generates two difference layers from the two layers
-       on the top. It's similar to GIMP's built-in Grain Extract/Merge
-       function, but the tonal range is bigger.
-       Now you can apply further editing and "switch on/off" the
-       adjustment by switching the visibility of the subtractive and
-       the additive layer.
-       Also you can change the modification intensity by changing the
-       intensity of these two layers.
-     * Erosion Sharpen:
-       Sharpens the image with erosion and dilation.
-     * Escape Line Script:
-       This script creates escaping lines from any point. It's similar
-       in function to the built-in Line-Nova Script, but much more
-       flexible. So you can chose the center, the thickness, the angle,
-       the length, the offset and the randomness.
-     * Film Grain Script:
-       This is yet another script which simulates the typical film grain
-       of high ISO pictures.
-     * First Photo Border Script:
-       This script simulates the cut-off of the first picture of a film
-       roll of cheap cameras like Lomo.
-     * Lomo Script with Old Style Colors
-       This script simulates the Lomo effect.
-     * Movie 300 Script:
-       This script simulates the color style of the movie "300".
-     * National Geographic Script:
-       This script simulates a high quality (portrait) photo like
-       these from the National Geographic.
-     * Obama "HOPE" Script:
-       This script generates a poster like the famous Obama "HOPE"
-       one from Shepard Fairey.
-     * Rainy Landscape Script:
-       This script changes a dry landscape to a wet one.
-     * Photochrom Script:
-       This script simulates a photochrom image, a lithographic printing
-       process from the 1890's.
-     * Sprocket Hole Script:
-       This script simulates complete exposed 35mm film strips with frame
-       numbers, lettering, overexposed sprocketholes and DX film edge barcodes.
-     * Sunny Landscape Script:
-       This script changes a rainy landscape to a sunny one.
-     * Technicolor 2 Color Script:
-       This script simulates the 2 Color Technicolor effect.
-     * Technicolor 3 Color Script:
-       This script simulates the 3 Color Technicolor effect.
-     * Vintage Look Script:
-       This script simulates a 70s vintage look.
-   * exposure-blend (1.3b): Exposure Blend
-     Prompt for 3 images in a bracketed exposure series (e.g. 0,-2,+2 EV)
-     and blend these into a contrast enhanced image.
-   * ez-perspective: EZ Perspective:
-     Specialized tool for easily correcting or changing perspective.
-   * fix-ca (3.0.2): Fix-CA
-     Corrects chromatic aberration in photos
-   * focus-blur (3.2.6): Focus-Blur
-     This plugin tries to simulate an out-of-focus blur
-   * gimp-fx-foundry (r111): GIMP FX Foundry
-     Probably the largest script collection available for The GIMP.
-   * gimp-mask: GIMP-Mask:
-     Do and undo several popular image masking (that is, censoring)
-     methods (CP, FL, Q0, MEKO).
-   * hdroberts-tone-adjust (May 24, 2010): Warming and Cooling Filters
-     Warm or cool an image using one of several methods:
-     Wratten, Roy's Warm, Brauer's Warm, Pasty Cadaveric Look
-   * layer-effects (4/12/2012): Layer-Effects
-     This is a series of scripts that implement various layer effects:
-     Drop Shadow, Inner Shadow, Outer Glow, Inner Glow, Bevel and Emboss,
-     Satin, Color Overlay, Gradient Overlay, Pattern Overlay, Stroke
-   * lqr (0.7.1): Liquid Rescale
-     Content-aware rescaling. Keeps the features of the image while
-     rescaling along a single direction.
-   * normalmap (1.2.3): Normalmap
-     Allows you to convert images into RGB normal maps for use in
-     per-pixel lighting applications.
-   * openraster (20110529-1d32622): OpenRaster load/save handler
-     OpenRaster is an effort by the Create project[1] to offer a standardized
-     and open interchange format for raster-based applications. This plugin
-     allows one to load and save files in the OpenRaster format.
-   * planet-render (1-2): Planet Render
-     Creates a planet. Color, size and sun orientation
-     can be set.
-   * refocus (0.9.1): Refocus
-     The GIMP plugin to refocus images using FIR Wiener filtering.
-     During image processing operations such as scanning and scaling, images
-     tend to get blurry. The blurred impression of these images is due to the
-     fact that image pixels are averaged with their neighbors. Blurred images
-     don't have sharp boundaries and look as though they have been taken with
-     an unfocused camera.
-   * resynthesizer (2.0): Resynthesizer
-     Gimp plugin for texture synthesis
-     This gimp plugin takes samples of textures, and synthesizes larger textures
-     from them.  It can be used to extend textures (including making tileable
-     textures), remove objects from textures, and make themed images.
-   * safe-for-web (0.29.0): Save for Web
-     Allows to experiment with various popular web format options. It shows
-     an automatically updated preview and file size statistics.
-   * separate+ (0.5.8): Separate+
-     Separate+ is a plug-in that generates color separations from an RGB
-     image, proofs CMYK colors on the monitor and exports the CMYK TIFF file.
-   * smart-seperate-sharpen (2.8): Smart Seperate Sharpening
-     This script implements a new version of smart sharpening (redux)
-     combined with separate sharpen to give better results.
-     You can find more about Smart Sharpening at
-     http://www.gimpguru.org/Tutorials/SmartSharpening2/
-   * streak (0.6): Streak-Camera simulation
-     A streak camera images an object through a slit -
-     thus getting a "one dimensional image". This image is
-     propagated along the second dimension of the image plane
-     at a constant speed. The result is a picture of the time
-     dependency of the object.
-   * traditional-orton: Traditional Orton:
-     This is an effect invented by Michael Orton in the 1990s, which
-     consists of taking two copies of an image, one blurred, and one sharp,
-     and mixing them to produce an image with a dreamy quality. It is
-     especially well suited to landscape and flower photography.
-   * wavelet-decompose (0.1.2): Wavelet Decompose
-     The wavelet decompose plugin decomposes a layer of an image into layers
-     of wavelet scales. This means that you can edit the image on different
-     detail scales (frequencies). The trivial recomposition of the image can
-     be done by GIMP's layer modes so you can see the results of your
-     modifications instantly. Among the applications are retouching, noise
-     reduction, and enhancing global contrast.
-   * wavelet-denoise (0.3.1): Wavelet Denoise
-     The wavelet denoise plugin is a tool to selectively reduce noise in
-     individual channels of an image with optional RGB<->YCbCr conversion.
-     It has a user interface to adjust the amount of denoising applied. The
-     wavelet nature of the algorithm makes the processing quite fast.
+  - place a dock on any MATE panel, of any size, on any side of
+    the desktop you desire.
+  - pin and unpin apps to the dock
+  - rearrange application icons on the dock
+  - launch apps by clicking on their icons in the dock
+  - minimize/unminimize running app windows by clicking the
+    app's dock icon
+  - detect changes in the current icon theme and update the dock
+    accordingly
+  - use an indicator by each app to show when it is running
+  - optionally, use multiple indicators for each window an app
+    has open
+  - use either a light or dark indicator that it can always be
+    seen no matter what colour the panel is, or turn indicators
+    off altogether
+  - change the colour of MATE panels to the dominant colour (i.e.
+    the most common colour) of the desktop wallpaper. The colour
+    can be applied to all panels or just the panel containing the
+    dock.
 
 Package: mate-backgrounds
 Architecture: all
@@ -1704,6 +1464,32 @@ Homepage: http://www.deepin.org/
 Description: English (en_US) Help files for dde
  English (en_US) Help files for dde
 
+Package: mate-control-center-common
+Architecture: all
+Version: 1.18.2-0ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Source: mate-control-center
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 7043
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-control-center (<< 1.11.0)
+Filename: ./mate-control-center-common_1.18.2-0ubuntu1~16.04.york0_all.deb
+Size: 851984
+MD5sum: f13fd24f6418fbd0401ffa9b58465bb8
+SHA1: 7e8cbe193146bdcede5cb60bee7334ef45fad659
+SHA256: c6fff3135a89e12fb9843321414c4a9b1f867e7aea93c3deef577e81b6976129
+SHA512: be64f611401f02728b47828c107c75e513c2938c35a7187e62a7985df1bb99b42d5b0dfc8666e0cd6dcedd9ed53933e9d15b16ccb56778b347f242056920fc05
+Homepage: http://www.mate-desktop.org/
+Description: utilities to configure the MATE desktop (common files)
+ The MATE control center contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ This package contains the architecture independent files of MATE
+ control center.
+
 Package: deepin-gtk-theme
 Architecture: all
 Version: 15.12.6-1.1
@@ -1763,43 +1549,6 @@ Homepage: https://github.com/howeyc/fsnotify.git
 Description: Go's text/template package with newline elision.
  This is a fork of Go 1.4's text/template package with one addition: a backslash
  immediately after a closing delimiter will delete all subsequent newlines until a non-newline.
-
-Package: mate-settings-daemon-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: extra
-Section: devel
-Source: mate-settings-daemon
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 41
-Depends: mate-settings-daemon (= 1.18.1-0ubuntu1~16.04.york0)
-Breaks: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
-Replaces: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
-Filename: ./mate-settings-daemon-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 10192
-MD5sum: df71f9fa1cabe8957c261d7285d4c81f
-SHA1: 6ffa82919cba9405ecc5a4275ff07197b1d92804
-SHA256: 4235cced4c4117cebd8adb0c560d7685e91d1579417bfe3320b74939e4e01227
-SHA512: 777266526f5980928adafb780e3c481bab80c48d5a690524030e238269859ed5ab8e682325f577183fa2d32592860293e8b778def720cc680b296fc4777e86fe
-Homepage: http://www.mate-desktop.org/
-Description: daemon handling the MATE session settings (development files)
- This package contains the daemon which is responsible for setting the
- various parameters of a MATE session and the applications that run
- under it. It handles the following kinds of settings:
- .
-  * Keyboard: layout, accessibility options, shortcuts, media keys
-  * Clipboard management
-  * Theming: background, icons, GTK+ applications
-  * Cleanup of unused files
-  * Mouse: cursors, speed, accessibility options
-  * Startup of other daemons: screensaver, sound daemon
-  * Typing break
- .
- It also sets various application settings through X resources and
- freedesktop.org XSETTINGS.
- .
- This package contains the development files for building
- mate-settings-daemon plugins.
 
 Package: golang-github-smartystreets-goconvey-dev
 Architecture: all
@@ -1868,44 +1617,6 @@ Description: MATE utilities for netbooks
  .
  Installing these utilities is recommended for netbooks and similar
  devices with low resolution displays.
-
-Package: mate-dock-applet
-Architecture: amd64
-Version: 0.77-0ubuntu1~16.04.york0
-Priority: extra
-Section: utils
-Maintainer: Debian MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 443
-Depends: gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-keybinder-3.0, gir1.2-mate-panel (>= 1.14.0), gir1.2-wnck-3.0, libglib2.0-bin, mate-panel (>= 1.14), python3, python3-gi-cairo, python3-pil, python3-xdg, dconf-gsettings-backend | gsettings-backend
-Filename: ./mate-dock-applet_0.77-0ubuntu1~16.04.york0_amd64.deb
-Size: 74636
-MD5sum: 000eaab9cfdb044d2a0973a63c502723
-SHA1: f1497d656b108bb3f302b5d472fedae4d9c79a4f
-SHA256: c4e91b6d9b1d52ec8d4f017a43fc119456141f3b9bcd4e90d8b03604db7cacd6
-SHA512: b799c4e4ed894feb059f1a88af176a85530cb51d3a8b95490d72e760f089e0d32f9906bcf47dd20df13214d0c11bb8d7d958590d0d286ff500b23c2cde185d18
-Homepage: https://github.com/robint99/dock-applet
-Description: MATE Panel dock applet
- An application dock applet for the MATE panel. The applet allows you to:
- .
-  - place a dock on any MATE panel, of any size, on any side of
-    the desktop you desire.
-  - pin and unpin apps to the dock
-  - rearrange application icons on the dock
-  - launch apps by clicking on their icons in the dock
-  - minimize/unminimize running app windows by clicking the
-    app's dock icon
-  - detect changes in the current icon theme and update the dock
-    accordingly
-  - use an indicator by each app to show when it is running
-  - optionally, use multiple indicators for each window an app
-    has open
-  - use either a light or dark indicator that it can always be
-    seen no matter what colour the panel is, or turn indicators
-    off altogether
-  - change the colour of MATE panels to the dominant colour (i.e.
-    the most common colour) of the desktop wallpaper. The colour
-    can be applied to all panels or just the panel containing the
-    dock.
 
 Package: deepin-metacity
 Architecture: amd64
@@ -2107,29 +1818,6 @@ Description: MATE document viewing library
  .
  This package contains the document viewing library used by Atril.
 
-Package: libwebpmux2
-Architecture: amd64
-Version: 0.5.1-2~0x0~ppa
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: libwebp
-Maintainer: Jeff Breidenbach <jab@debian.org>
-Installed-Size: 55
-Depends: libc6 (>= 2.14), libwebp6 (>= 0.5.1)
-Filename: ./libwebpmux2_0.5.1-2~0x0~ppa_amd64.deb
-Size: 21860
-MD5sum: e0aaeae804166d16ec15fac56c133486
-SHA1: ec8d73a72924c2b62f1268263bb907907fca1f2f
-SHA256: 48dcd878d9faeaf7557f92b9e955f7fdf8d53e7e11cf0211849bef044481a0eb
-SHA512: 971be6f925c6b775ab3bed53aec44d1907e10967ebe94f01403d09fdf422887c0a5b704ee281cb3d756633c3a5cef3f3994c7e2a2f435483d8c506b915dced97
-Homepage: http://webp.googlecode.com
-Description: Lossy compression of digital photographic images.
- Image Compression format, based on the VP8 codec.
- WebP uses the modern VP8 compression format to deliver efficient
- compression of images for the web. More than 30% extra gain over
- optimized JPEG, for same quality, is not unusual.
-
 Package: engrampa-common
 Architecture: all
 Version: 1.18.2-0ubuntu1~16.04.york0
@@ -2198,6 +1886,28 @@ Description: MATE screen saver and locker (common files)
  .
  This package contains the architecture independent files.
 
+Package: ubuntu-mate-core
+Architecture: amd64
+Version: 1.195~16.04.york0
+Priority: optional
+Section: metapackages
+Source: ubuntu-mate-meta
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 19
+Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, lightdm, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unity-control-center-faces, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
+Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brltty-x11, caja-gksu, caja-open-terminal, caja-sendto, caja-wallpaper, caja-xattr-tags, cups, cups-bsd, cups-client, cups-filters, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gksu, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops-daemon, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libwmf0.2-7-gtk, lightdm-gtk-greeter, lightdm-gtk-greeter-settings, mate-accessibility-profiles, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, sane-utils, seahorse, sessioninstaller, simple-scan, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, tilda, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, ubuntu-mate-lightdm-theme, usbmuxd, whoopsie, xcursor-themes, xdg-utils, xterm, xul-ext-ubufox, xzoom
+Filename: ./ubuntu-mate-core_1.195~16.04.york0_amd64.deb
+Size: 15118
+MD5sum: 6300c9e405ef1993540597127582f860
+SHA1: 685ac2eb0bd787e64de38ac222b87a640dcb5daf
+SHA256: 00dd63c5c3f60d868cbe57cc7aa10792b3c6e6bde76f949b02ffdd5b946a5d83
+SHA512: 4454cb1263beef7863c0ae806365323847f9194e9668299138534441176f8a2ebd4cf552631a94b13b13978e09038a0fb8d3dad0be392249cfcf999f4d7ef261
+Homepage: https://launchpad.net/ubuntu-mate/
+Description: Ubuntu MATE - core system
+ This package is the minimal MATE desktop as a Ubuntu environment.
+ .
+ It is safe to remove this package if some of these packages are not desired.
+
 Package: libmatekbd4
 Architecture: amd64
 Version: 1.18.2-0ubuntu1~16.04.york0
@@ -2227,6 +1937,56 @@ Description: MATE library to manage keyboard configuration
  .
  This package contains the shared libraries.
 
+Package: libmate-window-settings-dev
+Architecture: amd64
+Version: 1.18.2-0ubuntu1~16.04.york0
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mate-control-center
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 50
+Depends: libmate-window-settings1 (= 1.18.2-0ubuntu1~16.04.york0)
+Filename: ./libmate-window-settings-dev_1.18.2-0ubuntu1~16.04.york0_amd64.deb
+Size: 13486
+MD5sum: 9dc38b34e69ac768dd73d8f0eb2fbe34
+SHA1: b8e1b917945fc68dec75df7411e6c148589d3cd0
+SHA256: 8b37a55fb079e22b2b0bf603690652c2416147b8c245438f994425c9ed1df378
+SHA512: 6636af8fc1a979c3638348198ee9a9765294b0f20fc34ff4014f37ed6629e701699ee55b94eb62bbebb4d97bc21df263ecbf35b3305907c8f0b827d171b0534f
+Homepage: http://www.mate-desktop.org/
+Description: utilities to configure the MATE desktop (window settings headers)
+ The MATE control center contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ This package contains the development files for the MATE window settings
+ library.
+
+Package: libmate-slab-dev
+Architecture: amd64
+Version: 1.18.2-0ubuntu1~16.04.york0
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mate-control-center
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 105
+Provides: libmate-slab0-dev
+Depends: libmate-slab0 (= 1.18.2-0ubuntu1~16.04.york0)
+Filename: ./libmate-slab-dev_1.18.2-0ubuntu1~16.04.york0_amd64.deb
+Size: 20934
+MD5sum: 1465b7bb495e609bdb349f60edeba6c7
+SHA1: 389bc519bd374b8580aeed91ca638017d039780a
+SHA256: b285e9936cd3a3f7f4d658ccf441530bb66f6244a6d5e8bbbf4a6c8219254451
+SHA512: 500bff8b8cdc256df52ec06f719ba9883a4b93cd1467f7af8e32d6694e92f4f5ad11350c485be23c5fdfaffa4fdc3acf450b8c7a2d5cffd44f07880ac1218d19
+Homepage: http://www.mate-desktop.org/
+Description: beautification app library (development headers)
+ The libmate-slab library provides functionality to create applications
+ like MATE control center and the application-browser from gnome-main-menu.
+ .
+ This package contains the development files for libmate-slab.
+
 Package: libatrilview-dev
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -2252,32 +2012,30 @@ Description: MATE document viewing library (development files)
  This package contains the development files for the libatrilview
  library.
 
-Package: libgegl-0.3-0
+Package: mate-applet-brisk-menu
 Architecture: amd64
-Version: 1:0.3.19~5-0x0~ppa~b3630f4
-Multi-Arch: same
+Version: 0.4.5-0ubuntu1~16.04.york0
 Priority: optional
-Section: libs
-Source: gegl
-Maintainer: Otto Meier <otto@kesselgulasch.org>
-Original-Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
-Installed-Size: 2955
-Provides: libgegl-0.3-0
-Depends: libbabl-0.1-0 (>= 0.1.29~3-0x0~ppa~4ac6c9b), libc6 (>= 2.15), libcairo2 (>= 1.2.4), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.31.1), libglib2.0-0 (>= 2.41.1), libjasper1, libjpeg8 (>= 8c), libjson-glib-1.0-0 (>= 0.12.0), liblcms2-2 (>= 2.2+git20110628), libopenexr22 (>= 2.2.0), libpango-1.0-0 (>= 1.37.5), libpangocairo-1.0-0 (>= 1.14.0), libpng12-0 (>= 1.2.13-4), libraw15 (>= 0.16.0), librsvg2-2 (>= 2.32.0), libsdl1.2debian (>= 1.2.11), libstdc++6 (>= 5.2), libtiff5 (>= 4.0.3), libumfpack5.7.1, libwebp6 (>= 0.5.1)
-Filename: ./libgegl-0.3-0_1%3a0.3.19~5-0x0~ppa~b3630f4_amd64.deb
-Size: 773202
-MD5sum: b578cf659da481e28332a5f4a781b759
-SHA1: 97bd01cd4ccb715315665d9b23197f5ba8f0eef6
-SHA256: c8597eae64c52763e75ede78340ffc870b9269757a68db244801e3eceb6d59fc
-SHA512: b1d207be6b6458232e8b4efded094a75e1fe4e4680e6951bb1686943a368b1630034e0948b01a5715ed7f8116d4a807daba128a7196c085897831faac3f62534
-Homepage: http://gegl.org/
-Description: Generic Graphics Library
- GEGL (Generic Graphics Library) is a graph based image processing
- framework.
+Section: x11
+Source: brisk-menu
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 286
+Depends: mate-panel (>= 1.16.0), libc6 (>= 2.4), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.16.2), libmate-menu2 (>= 1.6.0), libmate-panel-applet-4-1 (>= 1.6.1), libx11-6, dconf-gsettings-backend | gsettings-backend
+Filename: ./mate-applet-brisk-menu_0.4.5-0ubuntu1~16.04.york0_amd64.deb
+Size: 47152
+MD5sum: 9ce291d28db4441c6a1c047347aa2571
+SHA1: 7ff91ead53a4d1af7eaf7c5f3a664d08830c52e1
+SHA256: 617c23617f08585de595171a11295f18b4dfb0e66e204a5e76a7c4a6b076865f
+SHA512: 673b4fda9aa0014daefecfd6cc5616a2edd13472de98ea7979cc4b99e77511f393785455edf9cf7f8318d26f6df28804200a3a190d49eeefcde8a0a9553746f8
+Homepage: http://www.mate-desktop.org/
+Description: Solus Project's Brisk Menu MATE Panel Applet
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
  .
- GEGLs original design was made to scratch GIMPs itches for a new
- compositing and processing core. This core is being designed to have
- minimal dependencies and a simple well defined API.
+ Brisk Menu is a modern desktop menu for the MATE Desktop Environment
+ providing the MATE Desktop with a first-class application and system
+ menu applet.
 
 Package: gir1.2-mate-polkit
 Architecture: amd64
@@ -2378,63 +2136,6 @@ Description: official text editor of the MATE desktop environment (common files)
  ChangeLogs, and adjusting indentation levels.
  .
  This package contains the architecture independent files.
-
-Package: gimp-data
-Architecture: all
-Version: 2.9.5~113-0x0~ppa~c83f0e8
-Priority: optional
-Section: graphics
-Source: gimp
-Maintainer: Otto Meier <otto@kesselgulasch.org>
-Original-Maintainer: Ari Pollak <ari@debian.org>
-Installed-Size: 57179
-Depends: libgimp2.0 (= 2.9.5~113-0x0~ppa~c83f0e8)
-Recommends: gimp
-Conflicts: gimp (<< 2.4.0~rc2-2), gimp-python (<< 2.6.0)
-Replaces: gimp (<< 2.4.0~rc2-2), gimp-python (<< 2.6.0)
-Filename: ./gimp-data_2.9.5~113-0x0~ppa~c83f0e8_all.deb
-Size: 9384212
-MD5sum: 6b5bac7dd8b8ed34b60cf2a275866c84
-SHA1: 4d5749a7a96699f56db3acf82610923fa0150033
-SHA256: 220d83a33c52a6bfcc640e2fd80569d9efd74fb794667cca8285694758e7bfef
-SHA512: 59bd1d16f62f2f4a78f9a66a17d3719b4789334343e178e1ad554ac3baae65ae73fb9c6520625c4790fe7320f8a0030742ff6aafbd323e7ef224be7b162a1abb
-Homepage: http://www.gimp.org/
-Description: Data files for GIMP
- This package contains architecture-independent supporting data files
- for use with GIMP.
-
-Package: mate-settings-daemon
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 772
-Depends: mate-desktop-common (>= 1.18), mate-polkit, mate-settings-daemon-common (= 1.18.1-0ubuntu1~16.04.york0), x11-xserver-utils, libc6 (>= 2.14), libcairo2 (>= 1.10.0), libcanberra-gtk3-0 (>= 0.25), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.88), libdconf1 (>= 0.14.0), libfontconfig1 (>= 2.11.94), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.43.92), libgtk-3-0 (>= 3.16.2), libmate-desktop-2-17 (>= 1.14.0), libmatekbd4 (>= 1.18), libmatemixer0 (>= 1.10.0), libnotify4 (>= 0.7.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libnss3 (>= 2:3.13.4-2~) | libnss3-1d (>= 3.12.0~1.9b1), libpolkit-gobject-1-0 (>= 0.99), libpulse0 (>= 0.99.1), libx11-6, libxi6 (>= 2:1.2.0), libxklavier16 (>= 5.0)
-Breaks: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
-Replaces: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
-Filename: ./mate-settings-daemon_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 171936
-MD5sum: b9867c2b1ca58c4ad96d88b581ed5ada
-SHA1: 9031b95bba0586522f23392109f6bf41a93696c5
-SHA256: d3c3746b997b9f67928f789f473b2588b6ff6350c13f02a701b4995121b9331f
-SHA512: 86e965a33a95a893a660012965e87291ffd6fa5bee9bcd3846b2de3445854fdc461dd2718308a5a501afdf6d8e88fb58ad4503ab2e6e928cae2582040ee0c510
-Homepage: http://www.mate-desktop.org/
-Description: daemon handling the MATE session settings
- This package contains the daemon which is responsible for setting the
- various parameters of a MATE session and the applications that run
- under it. It handles the following kinds of settings:
- .
-  * Keyboard: layout, accessibility options, shortcuts, media keys
-  * Clipboard management
-  * Theming: background, icons, GTK+ applications
-  * Cleanup of unused files
-  * Mouse: cursors, speed, accessibility options
-  * Startup of other daemons: screensaver, sound daemon
-  * Typing break
- .
- It also sets various application settings through X resources and
- freedesktop.org XSETTINGS.
 
 Package: dde-control-center
 Architecture: amd64
@@ -2896,6 +2597,54 @@ Description: Process viewer and system resource monitor for MATE (common files)
  .
  This package contains the architecture independent files.
 
+Package: mate-media
+Architecture: amd64
+Version: 1.18.1-0ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 209
+Depends: mate-desktop-common (>= 1.18), mate-media-common (= 1.18.1-0ubuntu1~16.04.york0), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libmate-desktop-2-17 (>= 1.14.0), libmatemixer0 (>= 1.10.0), libpango-1.0-0 (>= 1.14.0), libxml2 (>= 2.7.4)
+Recommends: alsa-utils, sound-theme-freedesktop
+Breaks: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
+Replaces: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
+Filename: ./mate-media_1.18.1-0ubuntu1~16.04.york0_amd64.deb
+Size: 57974
+MD5sum: a917c32e2c4e9bf3af11293c8f5e73cb
+SHA1: 5c789914fc6882918491e893795bf0aa9d5902e4
+SHA256: 92e58440114d9decad6359d37a98ced4684ef8df187a8d08db4f8f604234b282
+SHA512: cd92167150d8f6b7302ca8eb543515486e613a1b6bc9be9e0529b5774d02f94014ddfead6c4fc4cdf6a2c387d80d8aff4b729e5bb267881c2b80b00bf7d0f8d4
+Homepage: http://www.mate-desktop.org/
+Description: MATE media utilities
+ MATE media utilities are the audio mixer and the volume
+ control applet.
+ .
+ This package utilizes the libmatemixer library which provides
+ support for ALSA and Pulseaudio as audio backends.
+
+Package: mate-media-common
+Architecture: all
+Version: 1.18.1-0ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Source: mate-media
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 1396
+Breaks: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
+Replaces: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
+Filename: ./mate-media-common_1.18.1-0ubuntu1~16.04.york0_all.deb
+Size: 163770
+MD5sum: 1e2976b4e5bdb0249bfb378333c173f8
+SHA1: 720152f25e83fd9e89284c65ffcfc046289ad57c
+SHA256: ff144a30f023de6a26ea68d7d1620899e492a215ed31f83e0663d106ef169930
+SHA512: ceb36675698f58aa59972c875d174f14c31842650139552ed2545e2c08f44e950044a1cbe79c2e5a5bd52305d89e8ef07f40bd7d5b928e55eb7df3254223cd26
+Homepage: http://www.mate-desktop.org/
+Description: MATE media utilities (common files)
+ MATE media utilities are the audio mixer and the volume
+ control applet.
+ .
+ This package contains the common files.
+
 Package: deepin-mutter
 Architecture: amd64
 Version: 3.18.2.8-1
@@ -3098,35 +2847,6 @@ Description: File system notification for GO
  .
  This package contains the source.
 
-Package: gir1.2-mate-panel
-Architecture: amd64
-Version: 1.18.2-0ubuntu1~16.04.york0
-Priority: optional
-Section: introspection
-Source: mate-panel
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 70
-Depends: gir1.2-glib-2.0, gir1.2-gtk-3.0, libgirepository-1.0-1 (>= 1.41.4-1), libmate-panel-applet-4-1 (>= 1.6.1)
-Filename: ./gir1.2-mate-panel_1.18.2-0ubuntu1~16.04.york0_amd64.deb
-Size: 15572
-MD5sum: 4b74eb05ddb5df0b9b1ceb2999a3bfa3
-SHA1: ea19b4b38c6e0cd469998e9f957a3f309e73f0ea
-SHA256: e33b37081f654c526283b9cbaabe108e2f69dac177d09a51ee4fe0b54ad6d94a
-SHA512: 255400f7230f1ef761cb164abe6e39fe942cc145e9ae9546a58040d4e4ebb4e63e19ca195786752885e2c2c0083be2f747acb6b6e7f2df9bc0662bcfb517b5f7
-Homepage: http://www.mate-desktop.org/
-Description: GObject introspection data for MATE panel
- The MATE Panel is an essential part of the MATE Desktop, providing
- toolbar-like “panels” which can be attached to the sides of your desktop.
- They are used to launch applications and embed a number of other
- functions, such as quick launch icons, the clock, the notification area,
- volume controls and the battery charge indicator, and utilities ranging
- from weather forecast to system monitoring.
- .
- This package contains introspection data for MATE panel.
- .
- It can be used by packages using the GIRepository format to generate
- dynamic bindings.
-
 Package: golang-dlib-dev
 Architecture: all
 Version: 0.4.10-1
@@ -3292,50 +3012,30 @@ SHA512: 57349c40bf5109a69142ec06f0f6c0f70e9aa805bd282a51418a4052d4e95484f68e6567
 Homepage: https://gitcafe.com/Deepin/dae/
 Description: Deepin App Engine
 
-Package: libwebp6
-Architecture: amd64
-Version: 0.5.1-2~0x0~ppa
-Multi-Arch: same
+Package: mate-menu
+Architecture: all
+Version: 17.10.5-0ubuntu1~16.04.york0
 Priority: optional
-Section: libs
-Source: libwebp
-Maintainer: Jeff Breidenbach <jab@debian.org>
-Installed-Size: 401
-Depends: libc6 (>= 2.14)
-Filename: ./libwebp6_0.5.1-2~0x0~ppa_amd64.deb
-Size: 173832
-MD5sum: a779abca4a3f4f88beed4acb03601553
-SHA1: 9320873be1b86338be825bed406a614652f160df
-SHA256: bd84c5581f983467155f4a40f778dab54a0623e7604f846ddf1796ce2f779efc
-SHA512: fd76adbb798e28643f0a2cbfd54366325168ade3dea1910267ece52514e807e2616f6baaf833f39a62af3232544f9fb815214da6ca2ac3744b0c1807486648e0
-Homepage: http://webp.googlecode.com
-Description: Lossy compression of digital photographic images.
- Image Compression format, based on the VP8 codec.
- WebP uses the modern VP8 compression format to deliver efficient
- compression of images for the web. More than 30% extra gain over
- optimized JPEG, for same quality, is not unusual.
-
-Package: libgimp2.0
-Architecture: amd64
-Version: 2.9.5~113-0x0~ppa~c83f0e8
-Priority: optional
-Section: libs
-Source: gimp
-Maintainer: Otto Meier <otto@kesselgulasch.org>
-Original-Maintainer: Ari Pollak <ari@debian.org>
-Installed-Size: 3769
-Depends: libbabl-0.1-0 (>= 0.1.28), libc6 (>= 2.15), libcairo2 (>= 1.10.2), libgdk-pixbuf2.0-0 (>= 2.25.2), libgegl-0.3-0 (>= 1:0.3.18), libgexiv2-2 (>= 0.6.1), libglib2.0-0 (>= 2.41.1), libgtk2.0-0 (>= 2.24.10), liblcms2-2 (>= 2.2+git20110628), libpango-1.0-0 (>= 1.29.4), libpangocairo-1.0-0 (>= 1.29.4)
-Recommends: gimp-data (>= 2.9.5~113), gimp-data (<= 2.9.5~113-z)
-Filename: ./libgimp2.0_2.9.5~113-0x0~ppa~c83f0e8_amd64.deb
-Size: 775838
-MD5sum: 57cdcc1025057d4f96b8c1d9e5d00619
-SHA1: e527c8eec9d906083355d99c14480ec644f34b40
-SHA256: b6a46a95996410c11075ddee87290897f1069784f2cc6f536a6dd946993bcfdf
-SHA512: c42298deae32450d692b5a56617a1bfe41286f30a6427c41f389a5969881c44ce13af25ca0a951a45e904b82b1383856cb8e3dc374e8c6469dec8f4a004d03c3
-Homepage: http://www.gimp.org/
-Description: Libraries for the GNU Image Manipulation Program
- This package includes the libgimp libraries, which are
- necessary to run GIMP and third-party GIMP plugins.
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 1579
+Depends: python-pkg-resources, python:any (<< 2.8), python:any (>= 2.7.5-5~), dconf-gsettings-backend | gsettings-backend, gir1.2-mate-desktop (>= 1.18.0), gir1.2-mate-panel (>= 1.18), gir1.2-gtk-3.0, gvfs-bin, mate-menus (>= 1.18), mozo | menulibre, python (>= 2.4), python (<< 3), python-configobj, python-mate-menu, python-xdg, python-xlib, xdg-utils, libglib2.0-bin
+Suggests: software-center, synaptic
+Replaces: matemenu
+Filename: ./mate-menu_17.10.5-0ubuntu1~16.04.york0_all.deb
+Size: 170762
+MD5sum: af3f3218d0369542d706fdb379e9196a
+SHA1: 8bd1c606d1648a6a19555c244438e3d3f7ebf291
+SHA256: f306743ad5b1d15fcaa10d0752d3b8783d7f144b29c2f37d212dff85891429af
+SHA512: 6a868fd6f7ea5c7ea58bff6804c5414e2555fa6052605c665b51b531c3fe6d792639b24e2afce9b4f63a22300b3872fa38fbf7c39c1bcf2911542c133343fdd1
+Homepage: https://bitbucket.org/ubuntu-mate/mate-menu/
+Description: Advanced MATE menu
+ An advanced menu for MATE. Supports filtering, favorites,
+ easy-uninstallation, autosession, and many other features.
+ .
+ This menu originated in the Linux Mint distribution and has
+ been ported to other distros that ship the MATE Desktop
+ Environment.
 
 Package: libmate-desktop-doc
 Architecture: all
@@ -3440,31 +3140,28 @@ Homepage: http://www.deepin.org/
 Description: deepin desktop-environment - dde-session-ui module
  Deepin desktop environment 2015 - dde-session-ui module.
 
-Package: libmate-window-settings-dev
+Package: libmate-slab0
 Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
+Version: 1.18.2-0ubuntu1~16.04.york0
 Multi-Arch: same
 Priority: optional
-Section: libdevel
+Section: libs
 Source: mate-control-center
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 50
-Depends: libmate-window-settings1 (= 1.18.1-0ubuntu1~16.04.york0)
-Filename: ./libmate-window-settings-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 13420
-MD5sum: b6f8245c0e40560d24a65af3860147c1
-SHA1: 94b7f407921d6c593ba5c69acb98922cde23f895
-SHA256: 496bb397e23da7d0f2e5898a112d082fb925f23868bc53db4fd2d909e3018a5e
-SHA512: 3ab5acb7ffa94a42c23e66e748edd37946f914fc3bd471aaf990dab6aff4371a191cb3e82b0fc8e05eca56e4436140d887b3924ddede3b5976ae729758af7693
+Installed-Size: 185
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libmate-desktop-2-17 (>= 1.6.1), libmate-menu2 (>= 1.6.0), librsvg2-2 (>= 2.14.4)
+Filename: ./libmate-slab0_1.18.2-0ubuntu1~16.04.york0_amd64.deb
+Size: 58436
+MD5sum: 44d43d50a219f57973453ee82cd374ab
+SHA1: c3364c9cea716613915eb5610910deb610ccae98
+SHA256: addc895f4663330d63f998209cf3614558a7005cd9e3c64a32419d59b396260b
+SHA512: 92fc97c4401a68f7979edfd0e5b4184bca68af5f75762f14f7907d66b0a0426603dd3ed78a996009669d5ac6484da5d4a7b6a87e90927ccbc6535d95ae564247
 Homepage: http://www.mate-desktop.org/
-Description: utilities to configure the MATE desktop (window settings headers)
- The MATE control center contains configuration applets for the MATE desktop,
- allowing to set accessibility configuration, desktop fonts, keyboard
- and mouse properties, sound setup, desktop theme and background, user
- interface properties, screen resolution, and other MATE parameters.
+Description: beautification app library
+ This library provides functionality to create applications like MATE
+ control center and the application-browser from gnome-main-menu.
  .
- This package contains the development files for the MATE window settings
- library.
+ This library has been forked from GNOMEv2 by the MATE project.
 
 Package: mate-themes
 Architecture: all
@@ -3539,45 +3236,6 @@ Description: Session manager of the MATE desktop environment
  This version is configured to start the MATE desktop, based on the
  MATE panel.
 
-Package: gimp
-Architecture: amd64
-Version: 2.9.5~113-0x0~ppa~c83f0e8
-Priority: optional
-Section: graphics
-Maintainer: Otto Meier <otto@kesselgulasch.org>
-Original-Maintainer: Ari Pollak <ari@debian.org>
-Installed-Size: 14735
-Provides: gimp-helpbrowser, gimp-python
-Depends: libgimp2.0 (>= 2.9.5~113-0x0~ppa~c83f0e8), libgimp2.0 (<= 2.9.5~113-z), gimp-data (>= 2.9.5~113), gimp-data (<= 2.9.5~113-z), libgegl-0.3-0 (>= 1:0.3.18), libbabl-0.1-0 (>= 0.1.28), python-gtk2 (>= 2.8.0), libmypaint (>= 1.4.0~3-0x0~ppa~c196a86), libaa1 (>= 1.4p5), libbz2-1.0, libc6 (>= 2.15), libcairo2 (>= 1.12.0), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.25.2), libgexiv2-2 (>= 0.10.3), libglib2.0-0 (>= 2.41.1), libgs9 (>= 8.61.dfsg.1), libgtk2.0-0 (>= 2.24.10), libgudev-1.0-0 (>= 146), libharfbuzz0b (>= 0.6.0), libilmbase12 (>= 2.2.0), libjasper1, libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), liblzma5 (>= 5.1.1alpha+20120614), libmng2 (>= 1.0.10), libopenexr22 (>= 2.2.0), libpango-1.0-0 (>= 1.29.4), libpangocairo-1.0-0 (>= 1.29.4), libpangoft2-1.0-0 (>= 1.29.4), libpng12-0 (>= 1.2.13-4), librsvg2-2 (>= 2.14.4), libstdc++6 (>= 5.2), libtiff5 (>= 4.0.3), libwebkitgtk-1.0-0 (>= 1.3.10), libwebp6 (>= 0.5.1), libwebpdemux2 (>= 0.5.1), libwebpmux2 (>= 0.5.1), libwmf0.2-7 (>= 0.2.8.4), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxfixes3, libxmu6, libxpm4, zlib1g (>= 1:1.1.4), python:any (>= 2.6.6-7~), python2.7
-Recommends: ghostscript
-Suggests: gimp-help-en | gimp-help, gimp-data-extras, gvfs-backends, libasound2
-Breaks: gimp-plugin-registry (<< 4.20120506)
-Replaces: gimp-plugin-registry (<< 4.20120506)
-Filename: ./gimp_2.9.5~113-0x0~ppa~c83f0e8_amd64.deb
-Size: 3599754
-MD5sum: 8fd175c1ceddb6aa4f8e8d2ac402e6a0
-SHA1: a1c32db97d8b049a06cc78f0b7719357c509b065
-SHA256: b898cb38ffea7bb83ae7f938ca899d57a83719e720e774aadaa82c158ce48932
-SHA512: f3466f99cd7e7724d5829471678d5bfdfb35bf0a2378233c05b6f35ebbd3c8cca6f04656e518e5534f47767bea64a89b6f23631fca66394c6310a89fc2f302a7
-Homepage: http://www.gimp.org/
-Description: The GNU Image Manipulation Program
- GIMP is an advanced picture editor. You can use it to edit, enhance, and
- retouch photos and scans, create drawings, and make your own images.
- It has a large collection of professional-level editing tools and
- filters, similar to the ones you might find in Photoshop. Numerous
- fine-control settings and features like layers, paths, masks, and
- scripting give you total control over your images.
- .
- Many image file formats are supported, including JPEG, Photoshop (.psd),
- and Paint Shop Pro (.psp) files. It can also be used to scan and print
- photos.
- .
- To open files remotely (like over HTTP), install the gvfs-backends
- package.
- .
- To use a MIDI device (like a musical keyboard) as an input controller in GIMP,
- install libasound2 and read the how-to at /usr/share/doc/gimp/README.MIDI
-
 Package: libmate-menu-dev
 Architecture: amd64
 Version: 1.18.0-0ubuntu1~16.04.york0
@@ -3606,75 +3264,6 @@ Description: implementation of the freedesktop menu specification for MATE (deve
  .
  This package contains the development files.
 
-Package: mate-control-center
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 887
-Depends: caja-common (>= 1.8.0), desktop-file-utils, gsettings-desktop-schemas, libglib2.0-bin, libmate-slab0 (= 1.18.1-0ubuntu1~16.04.york0), libmate-window-settings1 (= 1.18.1-0ubuntu1~16.04.york0), marco-common (>= 1.18), mate-control-center-common (>= 1.18.1-0ubuntu1~16.04.york0), mate-desktop (>= 1.18), mate-icon-theme, mate-menus, mate-settings-daemon (>= 1.18), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.10.0), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libdbus-glib-1-2 (>= 0.78), libdconf1 (>= 0.14.0), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libmarco-private1 (>= 1.6.2), libmate-desktop-2-17 (>= 1.14.0), libmatekbd4 (>= 1.18), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6, libxcursor1 (>> 1.1.2), libxi6 (>= 2:1.2.0), libxklavier16 (>= 5.0), libxml2 (>= 2.7.4), libxss1
-Suggests: gconf2
-Breaks: ubuntu-mate-default-settings (<< 16.04)
-Filename: ./mate-control-center_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 226984
-MD5sum: 0c9cb904c29fd1069b5ee40c0423ae9c
-SHA1: b46fee85fc4a5041ca53cdb08aeca94c0e9504fd
-SHA256: 96e39a159313a46bf8b17d2856db51b2b3db816e29741996b02d84639486355f
-SHA512: fe9b59c18215d9bb02f22c055caa72f5097940bbe5f8872cbea96109b75cf02c857f3a951151f7bfd0b09a06467bec5d2f2f7993fc90b52f77ae2e20fcf88131
-Homepage: http://www.mate-desktop.org/
-Description: utilities to configure the MATE desktop
- The MATE control center contains configuration applets for the MATE desktop,
- allowing to set accessibility configuration, desktop fonts, keyboard
- and mouse properties, sound setup, desktop theme and background, user
- interface properties, screen resolution, and other MATE parameters.
- .
- It also contains a front end to these applets, which can also be
- accessed with the MATE panel or the Caja file manager.
-
-Package: ubuntu-mate-live-settings
-Architecture: all
-Version: 17.10.6~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-settings
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 18
-Depends: dconf-gsettings-backend | gsettings-backend
-Filename: ./ubuntu-mate-live-settings_17.10.6~16.04.york0_all.deb
-Size: 6740
-MD5sum: 023ca8db3f613408ed9f459cd5bd8731
-SHA1: 49afff14f6be7e252461eb5348404fac65bfaf65
-SHA256: d4c9b7a5baf9d48cd53d7a99fe156ca04ef3ab0ca0b32acf9a03e18023fa4df3
-SHA512: 120a4f96ba0e87dfb1c91043ea7dce0d1443092317cef7cb3e86234743c6f0a6304acf0888239e026d324603c1d56982e74eb64fadf86d41e5914a99131967d7
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Default settings for Ubuntu MATE live CD
- Various system settings tailored for Ubuntu MATE live CD.
-
-Package: libbabl-0.1-0
-Architecture: amd64
-Version: 0.1.29~3-0x0~ppa~4ac6c9b
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: babl
-Maintainer: Otto Meier <otto@kesselgulasch.org>
-Original-Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
-Installed-Size: 635
-Depends: libc6 (>= 2.14)
-Filename: ./libbabl-0.1-0_0.1.29~3-0x0~ppa~4ac6c9b_amd64.deb
-Size: 216156
-MD5sum: 80ba8dc6c1ce7812ef852c5ac0793fd5
-SHA1: 02eb2631fcbdec9dc14ce6fddd9317aca1149e78
-SHA256: f985f856e82e948939d66948f3690c880e0a30331c787242f4cf9bbf187d9df8
-SHA512: 44bf321cd51fac61a8d6a72a7b60dbfb8969f920493b4a06f8b49ed4c3475ea201186e5e6975e882fff5f522ce05f7f1b18d91d2f9cfeda681a8efd2ec214ec6
-Homepage: http://gegl.org/babl/
-Description: Dynamic, any to any, pixel format conversion library
- Babl is a dynamic, any to any, pixel format conversion library. It
- provides conversions between the myriad of buffer types images can be
- stored in. Babl doesn't only help with existing pixel formats, but
- also facilitates creation of new and uncommon ones.
-
 Package: dde-control-center-dbg
 Architecture: amd64
 Version: 3.0.10-1.1
@@ -3693,33 +3282,6 @@ Homepage: http://gitcafe.com/Deepin/dde-control-center.git
 Description: New control center for linux deepin dbg
  New control center for linux deepin dbg
 Build-Ids: 014790d7865a7ccfe6637f141d04832f97dbd173 107e47bcd3c6d076e2694c707d82f50bddeccc27 1bbd7ab476771da149ddc5a45195b09f86d12913 2a624d991643414d7459bfffabcd4af1cd526a56 3db17f10a0198bbfe10dc2d1ad0ca036ccf24d34 4052e785e04b09c2e7a5c28644f1e72736702c64 48fdbb7e4b6a5a2f07b6b081c6b8927cb5edac02 49bc21754b899c76eb9f24e8bc509cb6bddf8054 5e832d850c67979358bacd797aac9d8d3c371aa0 6239793ac4c3f3e1f00e54ddccc40fc4b5b9fa0f 6369ade9ad1816156f15c5ee7923c108f510aadd 66d2c296a95f2238245f1eb31bf50923b4fce8bb 68488b0a24bc817b92ea8bb105c687e1ac498393 6cd737f0ceee9eee6b481d6445204b79ff1c7ad6 70731d74cd4a9e03389571b9d4594c387e233295 9d7e480651ef293c1b5e3c95a645fb93bd6544e1 a0bc9fa73be7e6fdea7bd1cce87e7c98db340ae5 ac8b652f312c706d31ee29527b8690316da433d5 acd538fdcd702c3c0e35314aee5142d91ac172c9 aeed6b9c53cb093a5b0baba29e0e360cd79a6d41 ca0ec46c2cb2329f49f52753d9e70f5aa0931b85 e92f479ef10a18098031cb6c582add6d7afdff02 e96b4914146258564d4fb73bc4f2258327f1f6eb ef920ba9371139d6ed8bb69aa5f953919eb0dc19 f362ec9752364d1b7b1b8308e3ef14e0ea1ce706 fb14c3a393dfd4ff72633976a8837164b2055380
-
-Package: mate-panel-common
-Architecture: all
-Version: 1.18.2-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Source: mate-panel
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 8233
-Breaks: mate-panel (<= 1.9.0)
-Replaces: mate-panel (<= 1.9.0)
-Filename: ./mate-panel-common_1.18.2-0ubuntu1~16.04.york0_all.deb
-Size: 1047790
-MD5sum: 0de51ffd6939f0a807c126339dea171e
-SHA1: 08d2359f396da96ace70521a5c4e4b2877a6b132
-SHA256: ffff267509f1d0948956281e4e7d1f4f81dc3218fe2544245dfa996dd1e5ce21
-SHA512: 832c26fddfda4afa665d129a6c601da2d2a84e08a1f0a39e9cafd4ccb15bc6f561f9084b1c6c5f7c77aaff0a6df7401c9a33fa52709a0bbfa355a9640177fc89
-Homepage: http://www.mate-desktop.org/
-Description: launcher and docking facility for MATE (common files)
- The MATE Panel is an essential part of the MATE Desktop, providing
- toolbar-like “panels” which can be attached to the sides of your desktop.
- They are used to launch applications and embed a number of other
- functions, such as quick launch icons, the clock, the notification area,
- volume controls and the battery charge indicator, and utilities ranging
- from weather forecast to system monitoring.
- .
- This package contains the architecture independent files.
 
 Package: flash-player-properties
 Architecture: amd64
@@ -3811,6 +3373,31 @@ Description: MATE Desktop icon theme
  This icon theme provides icon artwork for representing the different
  applications, files, directories, and devices found on the MATE desktop.
 
+Package: mate-panel
+Architecture: amd64
+Version: 1.18.3-0ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 1720
+Depends: libmate-panel-applet-4-1 (= 1.18.3-0ubuntu1~16.04.york0), mate-desktop, mate-menus, mate-panel-common (= 1.18.3-0ubuntu1~16.04.york0), mate-polkit, menu-xdg, dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.6.0), libdbus-glib-1-2 (>= 0.78), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgtk-3-0 (>= 3.16.2), libice6 (>= 1:1.0.0), libmate-desktop-2-17 (>= 1.14.0), libmate-menu2 (>= 1.6.0), libmateweather1 (>= 1.6.2), libpango-1.0-0 (>= 1.18.0), librsvg2-2 (>= 2.14.4), libsm6, libwnck-3-0 (>= 3.4.7), libx11-6, libxrandr2 (>= 2:1.2.99.3)
+Breaks: mate-panel-common (<< 1.1.1-4)
+Replaces: mate-panel-common (<< 1.1.1-4)
+Filename: ./mate-panel_1.18.3-0ubuntu1~16.04.york0_amd64.deb
+Size: 456432
+MD5sum: 046288d371635fd312174dd01f2a3c4f
+SHA1: bc3ee873ba82e9353ae08d3b6e65810c901fd8c5
+SHA256: 6df0e2933d8d8a5b49708c715946381218ff61e08598d3c473d7c47f82c5c1b0
+SHA512: 9069ddbda02801180c3086afe16385f462ab4481dd0fae473b2b592cd018927eb8d0b2f25e9535195bc929db2bd87cabb2b48f7b2deb593fafa552aa195bdac2
+Homepage: http://www.mate-desktop.org/
+Description: launcher and docking facility for MATE
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+
 Package: deepin-metacity-dbg
 Architecture: amd64
 Version: 3.18.1.12-1
@@ -3836,6 +3423,28 @@ Description: debugging symbols for the Metacity window manager
  .
  This package contains the debugging symbols.
 Build-Ids: 367b351585f457710899655abad39bdf2f686808 5dd7d397d6ccb9e27fc57d0625f0fd18f968723e a9493612ea7df6dfb85fbcd8301a8ade82b96f33 f01b0b5d2b98674b67e2fb0f814bc3a27f20bfa6
+
+Package: ubuntu-mate-desktop
+Architecture: amd64
+Version: 1.195~16.04.york0
+Priority: optional
+Section: metapackages
+Source: ubuntu-mate-meta
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 19
+Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, lightdm, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-core, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unity-control-center-faces, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
+Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brasero, brltty-x11, caja-gksu, caja-open-terminal, caja-sendto, caja-wallpaper, caja-xattr-tags, cheese, compiz, compiz-core, compiz-mate, compiz-plugins, compiz-plugins-default, cups, cups-bsd, cups-client, cups-filters, deja-dup, deja-dup-caja, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, folder-color-caja, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gksu, gnome-disk-utility, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hexchat, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops-daemon, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libreoffice-calc, libreoffice-gnome, libreoffice-impress, libreoffice-ogltrans, libreoffice-pdfimport, libreoffice-style-tango, libreoffice-writer, libwmf0.2-7-gtk, lightdm-gtk-greeter, lightdm-gtk-greeter-settings, mate-accessibility-profiles, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, plank, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, redshift-gtk, rhythmbox, rhythmbox-plugin-alternative-toolbar, rhythmbox-plugin-cdrecorder, sane-utils, seahorse, sessioninstaller, shotwell, simple-scan, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, thunderbird, thunderbird-gnome-support, tilda, transmission-gtk, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, ubuntu-mate-lightdm-theme, ubuntu-mate-welcome, usb-creator-gtk, usbmuxd, vlc, vlc-plugin-notify, vlc-plugin-samba, whoopsie, xcursor-themes, xdg-utils, xterm, xul-ext-calendar-timezones, xul-ext-gdata-provider, xul-ext-lightning, xul-ext-ubufox, xzoom
+Filename: ./ubuntu-mate-desktop_1.195~16.04.york0_amd64.deb
+Size: 15364
+MD5sum: a1cb0b019d817adb594f56572456f025
+SHA1: bf346502b42ca942bb42e81757b02e4e04958cf7
+SHA256: 2aafb34fd1ca54dae89b552875d03296dbb2d6d614af3752f6e460714b5bb605
+SHA512: 999450e84d6813473bfc87cb7645070c35fa1a2a218ef37aad65195be3a8180f03145c3c0f8cc302b79b1433c10f2f8b222f8d28ee7ab73c90bbdc97b4fda13b
+Homepage: https://launchpad.net/ubuntu-mate/
+Description: Ubuntu MATE - full desktop
+ This package is the Ubuntu MATE desktop environment.
+ .
+ It is safe to remove this package if some of these packages are not desired.
 
 Package: libdtkutil-dev
 Architecture: amd64
@@ -3875,30 +3484,52 @@ Homepage: http://www.linuxdeepin.com
 Description: Deepin QML widgets
  Deepin QML widgets
 
-Package: mate-applet-brisk-menu
-Architecture: amd64
-Version: 0.4.0-0ubuntu1~16.04.york0
+Package: mate-tweak
+Architecture: all
+Version: 17.10.7-0ubuntu0~16.04.york0
+Priority: optional
+Section: admin
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 1008
+Depends: compton, dconf-cli, gir1.2-gtk-3.0, gir1.2-notify-0.7, mate-desktop-common (>= 1.16), mesa-utils, python-gobject-2, python3 (>= 3.3), python3-psutil, python3-setproctitle, x11-xserver-utils, zenity, python3-pkg-resources
+Recommends: mate-indicator-applet (>= 1.16.1)
+Suggests: indicator-application, indicator-messages, indicator-sounds, indicator-power, metacity, xcompmgr
+Filename: ./mate-tweak_17.10.7-0ubuntu0~16.04.york0_all.deb
+Size: 99342
+MD5sum: bacbfb4d28ad4667adf492eef8cf330f
+SHA1: bbc6d9eb9bac4a2c4aef573aa4f13e61af990b92
+SHA256: 974786a014ab1daf762ac5452c63d65b59425a835c99da7e76e2c957b5e102da
+SHA512: cbd595d6e281792141b52c4b71fb4b095cf8feb8f3406757f8ca3913003fc8e3d9dbb0efe023c40388d21fdc3a99de3a941874f27250fa1e2c91d3590e81d8e7
+Homepage: https://bitbucket.org/ubuntu-mate/mate-tweak
+Description: MATE desktop tweak tool
+ Configures some aspects of the MATE desktop not exposed via the
+ MATE Control Center applets.
+ .
+ Settings that can be handled via MATE Tweak:
+ .
+   - Show/hide standard desktop icons
+   - Panel fine-tuning (icon visibility, in menus and on buttons,
+     icon size, button labelling, contex menus, etc.)
+   - Window manager fine-tuning
+
+Package: ubuntu-mate-live-settings
+Architecture: all
+Version: 17.10.11~16.04.york0
 Priority: optional
 Section: x11
-Source: brisk-menu
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 274
-Depends: mate-panel (>= 1.16.0), libc6 (>= 2.4), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.16.2), libmate-menu2 (>= 1.6.0), libmate-panel-applet-4-1 (>= 1.6.1), libx11-6, dconf-gsettings-backend | gsettings-backend
-Filename: ./mate-applet-brisk-menu_0.4.0-0ubuntu1~16.04.york0_amd64.deb
-Size: 45268
-MD5sum: 62ba3b012fc5966d901dc062cc0059ab
-SHA1: a2e176beee43125b2f24f2f7b5d848852f7f1edf
-SHA256: b570318bcdc4a70d2a94b1e31fc30fda9ce7eea0d52a75aa8da539b77d3c1301
-SHA512: 0930c424cd9eb877421a8affef7f9c09cbe55c3d6d66b1bab30293db01e924243557a747880bb277641de91ab60c293fd8d0c7ff38a6684a4eca871954c3fdfd
-Homepage: http://www.mate-desktop.org/
-Description: Solus Project's Brisk Menu MATE Panel Applet
- The MATE Desktop Environment is the continuation of GNOME 2. It provides an
- intuitive and attractive desktop environment using traditional metaphors for
- Linux and other Unix-like operating systems.
- .
- Brisk Menu is a modern desktop menu for the MATE Desktop Environment
- providing the MATE Desktop with a first-class application and system
- menu applet.
+Source: ubuntu-mate-settings
+Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
+Installed-Size: 19
+Depends: dconf-gsettings-backend | gsettings-backend
+Filename: ./ubuntu-mate-live-settings_17.10.11~16.04.york0_all.deb
+Size: 7036
+MD5sum: 277991c43a65712423cee9978151a0f2
+SHA1: d252d9ec1f49b38960b3c50c8d10f04d09a5b51c
+SHA256: c131d712866f3d48fc94d99ff764dde74cfdb1e8e315aaa4401891c5f34199d4
+SHA512: b62cbbe27ecfa65a8cfc1334781d4dca64882801311bf6bc307770dea83c2976e33cec6d4e6667123db64c2e4f69e0d395e1f0f30899ff33a35ab6b0c9a4a240
+Homepage: https://launchpad.net/ubuntu-mate/
+Description: Default settings for Ubuntu MATE live CD
+ Various system settings tailored for Ubuntu MATE live CD.
 
 Package: python-peewee
 Architecture: all
@@ -3984,35 +3615,6 @@ Description: power management tool for the MATE desktop (common files)
  events, all integrated to other components of the MATE desktop.
  .
  This package contains the architecture independent files.
-
-Package: libmate-panel-applet-doc
-Architecture: all
-Version: 1.18.2-0ubuntu1~16.04.york0
-Priority: optional
-Section: doc
-Source: mate-panel
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 130
-Provides: libmatepanelapplet-doc
-Conflicts: libmatepanelapplet-doc
-Replaces: libmatepanelapplet-doc
-Filename: ./libmate-panel-applet-doc_1.18.2-0ubuntu1~16.04.york0_all.deb
-Size: 24196
-MD5sum: 8caf42d8c1abe1e40b328bb2b6c776ec
-SHA1: 56c251076c63a0b4b17bf6280bbb3f9b7396f161
-SHA256: 44022b6b373e9864010c8a890fd3ab628edc87972d66968aa8edef157c16306a
-SHA512: 878f0be64ca86dee56ecda71880ec03e0705946e3a498df3d46c5712fe7b3a3b579a29a847ffa0a67d768e3b6b7765450fee222e4b0ebd6fb937865758dff543
-Homepage: http://www.mate-desktop.org/
-Description: library for MATE Panel applets (documentation files)
- The MATE Panel is an essential part of the MATE Desktop, providing
- toolbar-like “panels” which can be attached to the sides of your desktop.
- They are used to launch applications and embed a number of other
- functions, such as quick launch icons, the clock, the notification area,
- volume controls and the battery charge indicator, and utilities ranging
- from weather forecast to system monitoring.
- .
- This package contains the documentation files of the MATE panel applet
- library.
 
 Package: dde-dock-dbg
 Architecture: amd64
@@ -4226,52 +3828,6 @@ SHA512: 73fee4f2da67c0c0598e57f5df7be8d416aa91a8569d274ced5892cf225b8dd5a2eb33b5
 Description: Deepin Account face Images
  This package is Deepin Account face Images
 
-Package: ubuntu-mate-welcome
-Architecture: all
-Version: 17.10.5~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 30092
-Pre-Depends: mate-menus
-Depends: gir1.2-gtk-3.0, gir1.2-notify-0.7, gir1.2-webkit2-4.0, humanity-icon-theme, inxi, libnotify-bin, parted, pciutils, policykit-1, python3, python3-apt, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-gi, python3-polib, python3-setproctitle, software-properties-common, zenity
-Recommends: mate-control-center, mate-tweak, update-manager
-Suggests: hexchat
-Filename: ./ubuntu-mate-welcome_17.10.5~16.04.york0_all.deb
-Size: 11741308
-MD5sum: 29401a86f113733f31b350cfc667284e
-SHA1: f6747e92db119ac2142489b12f5cf6618bd315b7
-SHA256: 8c4b5127bc1b163717a060290ff98f26c4b4dfdec84fa798e155dce072e2e793
-SHA512: 1e66e90746121cb6bf330393ee2f25e44f15cfd7155d89ed735cc23e3c467a3820ad4e55e4ad63e7444bbb3bd25d3457b079d4e583a3a530a6fb3dfc833adfec
-Homepage: https://bitbucket.org/ubuntu-mate/ubuntu-mate-welcome
-Description: Welcome screen for Ubuntu MATE
- A welcome screen for Ubuntu MATE that provides links to helpful
- resources, utilities and a selection of software packages.
-
-Package: libmate-slab-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: mate-control-center
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 105
-Provides: libmate-slab0-dev
-Depends: libmate-slab0 (= 1.18.1-0ubuntu1~16.04.york0)
-Filename: ./libmate-slab-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 20820
-MD5sum: b921e2f0595645250346d9cce3a579c3
-SHA1: b9cf79350e07bc905b67134331a167afd66a0a50
-SHA256: a7bebe0a3b75fe5e05de0df337664d1a41b838169dd13d24a3cc5f0b4852aaf7
-SHA512: f7d34fb48314e14e33f4e0189e2d8f067b488c7cd1e6c26eb0b7ccaa4d4019b51a452a67f90b376a084a97ab3bd2093a770fcf6a4a9e3fb8d0b70d049e51c5f4
-Homepage: http://www.mate-desktop.org/
-Description: beautification app library (development headers)
- The libmate-slab library provides functionality to create applications
- like MATE control center and the application-browser from gnome-main-menu.
- .
- This package contains the development files for libmate-slab.
-
 Package: libdtkutil
 Architecture: amd64
 Version: 0.1.6-1
@@ -4440,32 +3996,6 @@ SHA512: 197fc550ff0dd2352ed94a8d6ae0b80880747fe54ef0d88ad1417244149cc32eb542f2ed
 Homepage: https://launchpad.net/ubuntu-mate/
 Description: Ubuntu MATE 15.10 Wallpapers
  Wallpapers from the Ubuntu MATE community for Ubuntu MATE 15.10
-
-Package: mate-control-center-common
-Architecture: all
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Source: mate-control-center
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 6996
-Depends: dconf-gsettings-backend | gsettings-backend
-Breaks: mate-control-center (<< 1.11.0)
-Filename: ./mate-control-center-common_1.18.1-0ubuntu1~16.04.york0_all.deb
-Size: 844728
-MD5sum: cca6a6182b2629fb8cb24e253f772a7b
-SHA1: a93b50402fcdf7c8beedd42175e5795e2a789ecc
-SHA256: b54f7f0a6c6e45c9d4004c8b4d258f72e0798d099f7de4c44c8ddd32f8dfc82b
-SHA512: 1cdb974d5b9e8ba112d7620dc154b45d4352f48fd74768e61cae9b1999ebfe604513e09fc38bba78d9762fd551112d0bcc05b7b6db352e8019b0319d28950e76
-Homepage: http://www.mate-desktop.org/
-Description: utilities to configure the MATE desktop (common files)
- The MATE control center contains configuration applets for the MATE desktop,
- allowing to set accessibility configuration, desktop fonts, keyboard
- and mouse properties, sound setup, desktop theme and background, user
- interface properties, screen resolution, and other MATE parameters.
- .
- This package contains the architecture independent files of MATE
- control center.
 
 Package: libmarco-dev
 Architecture: amd64
@@ -4734,6 +4264,39 @@ Homepage: https://launchpad.net/ubuntu-mate/
 Description: Ubuntu MATE 15.04 Wallpapers
  Wallpapers from the Ubuntu MATE community for Ubuntu MATE 15.04
 
+Package: mate-settings-daemon
+Architecture: amd64
+Version: 1.18.1-0ubuntu2~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 772
+Depends: mate-desktop-common (>= 1.18), mate-polkit, mate-settings-daemon-common (= 1.18.1-0ubuntu2~16.04.york0), x11-xserver-utils, libc6 (>= 2.14), libcairo2 (>= 1.10.0), libcanberra-gtk3-0 (>= 0.25), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.88), libdconf1 (>= 0.14.0), libfontconfig1 (>= 2.11.94), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.43.92), libgtk-3-0 (>= 3.16.2), libmate-desktop-2-17 (>= 1.14.0), libmatekbd4 (>= 1.18), libmatemixer0 (>= 1.10.0), libnotify4 (>= 0.7.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libnss3 (>= 2:3.13.4-2~) | libnss3-1d (>= 3.12.0~1.9b1), libpolkit-gobject-1-0 (>= 0.99), libpulse0 (>= 0.99.1), libx11-6, libxi6 (>= 2:1.2.0), libxklavier16 (>= 5.0)
+Breaks: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Replaces: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Filename: ./mate-settings-daemon_1.18.1-0ubuntu2~16.04.york0_amd64.deb
+Size: 170904
+MD5sum: b2e32da1604f081d684767bc54cd8728
+SHA1: 7dbcb0eb46075239de3fd9dd9f5e6a75246e3f8d
+SHA256: 03139920f8ff352c19a7fa210f70c48d4a63648dda1e739b40698f35af2a8db8
+SHA512: 1f82f183c15750a574798e2302da47f4725149fe01f202a6765c88092d38794ac33db3fec78e6b3dc94462a14b87ab71cae2517d001fd88092082cdf358de757
+Homepage: http://www.mate-desktop.org/
+Description: daemon handling the MATE session settings
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+  * Keyboard: layout, accessibility options, shortcuts, media keys
+  * Clipboard management
+  * Theming: background, icons, GTK+ applications
+  * Cleanup of unused files
+  * Mouse: cursors, speed, accessibility options
+  * Startup of other daemons: screensaver, sound daemon
+  * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+
 Package: python-xpyb
 Architecture: amd64
 Version: 1.3.1-1.1
@@ -4850,6 +4413,35 @@ Description: MATE document viewer
  When supported by the document, it also allows searching for text,
  copying text to the clipboard, hypertext navigation, and
  table-of-contents bookmarks.
+
+Package: gir1.2-mate-panel
+Architecture: amd64
+Version: 1.18.3-0ubuntu1~16.04.york0
+Priority: optional
+Section: introspection
+Source: mate-panel
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 71
+Depends: gir1.2-glib-2.0, gir1.2-gtk-3.0, libgirepository-1.0-1 (>= 1.41.4-1), libmate-panel-applet-4-1 (>= 1.6.1)
+Filename: ./gir1.2-mate-panel_1.18.3-0ubuntu1~16.04.york0_amd64.deb
+Size: 15882
+MD5sum: 4bb3e1689c57472ce05da1a40cd544a9
+SHA1: aa06886e5c46f96c17a6f2e8217d7f6e547d8828
+SHA256: 7e4da55c2a5d77952a0b0d8830b0e7243aab4e6036d5658af1a2c2722489e671
+SHA512: 2fe01a1cdb09a57b22502ac09ca776ff3450b623e01840279fede4d90e0149290e9fc164033c127baff595237352e36bfb99ceb9523e36af18d41ff5129c8006
+Homepage: http://www.mate-desktop.org/
+Description: GObject introspection data for MATE panel
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains introspection data for MATE panel.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
 
 Package: deepin-desktop-base
 Architecture: all
@@ -4985,28 +4577,27 @@ Description: X protocol Go language Binding.
  .
  This package contains the source.
 
-Package: libmate-slab0
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Multi-Arch: same
+Package: ubuntu-mate-default-settings
+Architecture: all
+Version: 17.10.11~16.04.york0
 Priority: optional
-Section: libs
-Source: mate-control-center
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 185
-Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libmate-desktop-2-17 (>= 1.6.1), libmate-menu2 (>= 1.6.0), librsvg2-2 (>= 2.14.4)
-Filename: ./libmate-slab0_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 58690
-MD5sum: dc3d446f8278a46f558411daeb846261
-SHA1: 8155f29367d3e6941b40f3eb3e57057609aa6923
-SHA256: 5be8d9116f00b055d54c614ae132b893aec593d891326e096acd2b84d655eaca
-SHA512: c4cf325324547a453771a44e74c4136a9df26cc9031e5403c51f6a8cb5e339a9bfd26e9c49c04b5bb2fbcd81f252cc527bb589ce96123ab82db3225e784a5d10
-Homepage: http://www.mate-desktop.org/
-Description: beautification app library
- This library provides functionality to create applications like MATE
- control center and the application-browser from gnome-main-menu.
- .
- This library has been forked from GNOMEv2 by the MATE project.
+Section: x11
+Source: ubuntu-mate-settings
+Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
+Installed-Size: 140
+Depends: desktop-file-utils, im-config, libglib2.0-bin, ttf-ubuntu-font-family, dconf-gsettings-backend | gsettings-backend
+Suggests: mate-desktop-environment-core (>= 1.14.0)
+Conflicts: debian-mate-default-settings, mint-mate-default-settings
+Replaces: policykit-desktop-privileges-ubuntu-mate
+Filename: ./ubuntu-mate-default-settings_17.10.11~16.04.york0_all.deb
+Size: 20776
+MD5sum: 8242382bb2228f5985c40b3bead3e0f1
+SHA1: 426593943522a5511dea41e60a67ccdf78bafb93
+SHA256: f3dae0801325e13f1c525bad1be3a1de2296891f264b0fffb548c995dd38b341
+SHA512: 13f26773ec7e36eb97edb3601a83495148fd0518ea13c0fdd41dfcc9b64087dc53191a6f88c196f1248e6c14f1137f74a64701102d6ee78d52edabfc6774ec05
+Homepage: https://launchpad.net/ubuntu-mate/
+Description: Default settings for Ubuntu MATE
+ Various system settings tailored for Ubuntu MATE.
 
 Package: mate-utils-common
 Architecture: all
@@ -5208,6 +4799,36 @@ Description: MATE document rendering library (development files)
  This package contains the development files for the libatrildocument
  library.
 
+Package: libmate-panel-applet-dev
+Architecture: amd64
+Version: 1.18.3-0ubuntu1~16.04.york0
+Priority: optional
+Section: libdevel
+Source: mate-panel
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 53
+Provides: libmatepanelapplet-dev
+Depends: libglib2.0-dev, libgtk-3-dev, libmate-panel-applet-4-1 (= 1.18.3-0ubuntu1~16.04.york0)
+Conflicts: libmatepanelapplet-dev
+Replaces: libmatepanelapplet-dev
+Filename: ./libmate-panel-applet-dev_1.18.3-0ubuntu1~16.04.york0_amd64.deb
+Size: 14164
+MD5sum: eae363a32c7feb6b4fede5dd022c8dc2
+SHA1: 1295dd2cc8c6df3b6ee9e98a3d25a2f1a593765f
+SHA256: e9768e1a9ad2cc067881b5c8ea19da4cd84c24566fe1d5437eb1e2c0701f300d
+SHA512: 4f4c05ea1eac523ed37f9c6baa51e3ca08f79f4a82e3ef45ff3227ecffde3b6ee6f50701209bb2085e12c70aa0fb92faa97739d73d9555fde50132849abeb242
+Homepage: http://www.mate-desktop.org/
+Description: library for MATE Panel applets (development files)
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the development files of the MATE panel applet
+ library.
+
 Package: mate-core
 Architecture: all
 Version: 1.18.0+0ubuntu1~16.04.york0
@@ -5345,42 +4966,6 @@ Description: MATE Desktop Environment (metapackage)
  It also suggests a few non-MATE standard desktop applications like an
  internet browser, a mail reader and a network management applet.
 
-Package: mate-settings-daemon-common
-Architecture: all
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Source: mate-settings-daemon
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 2339
-Depends: dconf-gsettings-backend | gsettings-backend
-Breaks: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
-Replaces: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
-Filename: ./mate-settings-daemon-common_1.18.1-0ubuntu1~16.04.york0_all.deb
-Size: 315780
-MD5sum: 5831ac70b29378379dc9e70be17f7fd4
-SHA1: fb1b8800bbc830accd07df2b0c2c90bfef8e6a9e
-SHA256: a202771d8bc0e956e6ba4d7807207c6e55192f22350b02c320e30b5b124a703e
-SHA512: caa11bd84994863145f42875bc6b64511a41633e54eeb3b9fa3523b344a585eee79da503cfe823b84e10513a10ebe9fad874332406348a545e201982c0a54a88
-Homepage: http://www.mate-desktop.org/
-Description: daemon handling the MATE session settings (common files)
- This package contains the daemon which is responsible for setting the
- various parameters of a MATE session and the applications that run
- under it. It handles the following kinds of settings:
- .
-  * Keyboard: layout, accessibility options, shortcuts, media keys
-  * Clipboard management
-  * Theming: background, icons, GTK+ applications
-  * Cleanup of unused files
-  * Mouse: cursors, speed, accessibility options
-  * Startup of other daemons: screensaver, sound daemon
-  * Typing break
- .
- It also sets various application settings through X resources and
- freedesktop.org XSETTINGS.
- .
- This package contains the architecture independent files.
-
 Package: golang-github-burntsushi-xgbutil-dev
 Architecture: all
 Version: 0.0~git20160330
@@ -5471,6 +5056,69 @@ Description: Caja extension to mass resize or rotate images
  all images. This opens a dialog where you set the desired image size
  and file name. A click on "Resize" finally resizes the image(s) using
  ImageMagick's convert tool.
+
+Package: mate-panel-common
+Architecture: all
+Version: 1.18.3-0ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Source: mate-panel
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 8237
+Breaks: mate-panel (<= 1.9.0)
+Replaces: mate-panel (<= 1.9.0)
+Filename: ./mate-panel-common_1.18.3-0ubuntu1~16.04.york0_all.deb
+Size: 1051950
+MD5sum: 5c6848f18574ae669fe5478a34dcfd5a
+SHA1: b5a8e53af10dfe790fc3b72e70e7d2430127f2a6
+SHA256: 37588c2fd0c1a2b206e5317603ca51a33632eb422b4aa5e5a6505a9d101bf28a
+SHA512: af2322fcd593ed5090b03d2f7c7df7d44775e90f0dc07646b9bb90622293b16cbe661a19c945bcb23532a721f0cabab3dff02488d6ee961fb0de014e2a918fa5
+Homepage: http://www.mate-desktop.org/
+Description: launcher and docking facility for MATE (common files)
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-settings-daemon-common
+Architecture: all
+Version: 1.18.1-0ubuntu2~16.04.york0
+Priority: optional
+Section: x11
+Source: mate-settings-daemon
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 2339
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Replaces: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Filename: ./mate-settings-daemon-common_1.18.1-0ubuntu2~16.04.york0_all.deb
+Size: 316006
+MD5sum: d68b30e7cffb44822d9eeb5ba4abcfd2
+SHA1: e97389b81bba55e70e5a793330918dc9e495a690
+SHA256: ca10c57e6d7ccc51a615ab5af392c01eb1f91787d90dd16a701ef3bb27d074db
+SHA512: fd19aa20cb893d59a4cb3b725abc43456aea3e84f9681bf92ef2fc812a461b0c8cc47653940f01f61f8643173a7bcdcd0fc380862aea7d039e7de478579fa204
+Homepage: http://www.mate-desktop.org/
+Description: daemon handling the MATE session settings (common files)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+  * Keyboard: layout, accessibility options, shortcuts, media keys
+  * Clipboard management
+  * Theming: background, icons, GTK+ applications
+  * Cleanup of unused files
+  * Mouse: cursors, speed, accessibility options
+  * Startup of other daemons: screensaver, sound daemon
+  * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This package contains the architecture independent files.
 
 Package: mate-applets-common
 Architecture: all
@@ -5636,24 +5284,6 @@ Description: file manager for the MATE desktop
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
 
-Package: libmypaint
-Architecture: amd64
-Version: 1.4.0~5-0x0~ppa~9bafe4b
-Priority: optional
-Section: libs
-Maintainer: Otto Meier <otto@kesselgulasch.org>
-Installed-Size: 113
-Depends: libbabl-0.1-0 (>= 0.1.29~3-0x0~ppa~4ac6c9b), libc6 (>= 2.14), libgegl-0.3-0, libglib2.0-0 (>= 2.16.0), libjson-c2 (>= 0.10)
-Filename: ./libmypaint_1.4.0~5-0x0~ppa~9bafe4b_amd64.deb
-Size: 34322
-MD5sum: 434069d5163f4dbe3d0669f39b8a8fd1
-SHA1: 8e080daa327790d06895aa83153078d6fc45eae7
-SHA256: ce6fbbd580a8724878c54a71bcff15151e4ab3cf1ada5d26fbe6d5a076a065df
-SHA512: a919e4aec273899e06996bcdf8469ffe2acdb9a3a019f1bfe0638787a6c038a89b58edc21339c006f236b4be25064c19bed49e72a1469a69781bb9e0b1b30a8c
-Homepage: https://github.com/mypaint/libmypaint
-Description: libmypaint - MyPaint brush engine library
- This is a self-contained C library that is isolated from MyPaint. It allows other applications to make use of the MyPaint brush engine.
-
 Package: dde-help-zhcn
 Architecture: all
 Version: 3.0.1-1.1
@@ -5746,30 +5376,42 @@ Description: Mixer library for MATE Desktop
  .
  This package contains the shared libraries.
 
-Package: mate-panel
+Package: mate-settings-daemon-dev
 Architecture: amd64
-Version: 1.18.2-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
+Version: 1.18.1-0ubuntu2~16.04.york0
+Priority: extra
+Section: devel
+Source: mate-settings-daemon
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 1719
-Depends: libmate-panel-applet-4-1 (= 1.18.2-0ubuntu1~16.04.york0), mate-desktop, mate-menus, mate-panel-common (= 1.18.2-0ubuntu1~16.04.york0), mate-polkit, menu-xdg, dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.6.0), libdbus-glib-1-2 (>= 0.78), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.5), libgtk-3-0 (>= 3.16.2), libice6 (>= 1:1.0.0), libmate-desktop-2-17 (>= 1.14.0), libmate-menu2 (>= 1.6.0), libmateweather1 (>= 1.6.2), libpango-1.0-0 (>= 1.18.0), librsvg2-2 (>= 2.14.4), libsm6, libwnck-3-0 (>= 3.4.7), libx11-6, libxrandr2 (>= 2:1.2.99.3)
-Breaks: mate-panel-common (<< 1.1.1-4)
-Replaces: mate-panel-common (<< 1.1.1-4)
-Filename: ./mate-panel_1.18.2-0ubuntu1~16.04.york0_amd64.deb
-Size: 453906
-MD5sum: 97a783dc2bf822c1b781665f9dda18ee
-SHA1: 9ae5bc2af9f78a8b557718c03feec618e536eb1f
-SHA256: e08be3288b28f9d9825f39cf478ac26476348afe594562a01ea097eb9b420bc8
-SHA512: 738e0a7a60b22557654e8360c5d31620a8133fbd325d739f5208b1ff67d90f828543b762cd80cd3038885bcdb7d7f1e3c90ec02e7b228b427b05fb1eb7b354a6
+Installed-Size: 41
+Depends: mate-settings-daemon (= 1.18.1-0ubuntu2~16.04.york0)
+Breaks: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Replaces: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Filename: ./mate-settings-daemon-dev_1.18.1-0ubuntu2~16.04.york0_amd64.deb
+Size: 10272
+MD5sum: 74927a884a5a1a8eb5efb1a400470802
+SHA1: 0c21ec9f2231cf0be3c913f6cd19efc4f142dbbf
+SHA256: 9a1f93542c5db9e5c9b8b1a9185db01caaa8c25065c819d89562f3f1c461909a
+SHA512: 8928e4c1328980a06847ee315731605c6f97f92c7990bae6690107b598a31cb7a1853008a4c4878f9908c16c63f7af48df9cdea16f0b365a5089794f123c097c
 Homepage: http://www.mate-desktop.org/
-Description: launcher and docking facility for MATE
- The MATE Panel is an essential part of the MATE Desktop, providing
- toolbar-like “panels” which can be attached to the sides of your desktop.
- They are used to launch applications and embed a number of other
- functions, such as quick launch icons, the clock, the notification area,
- volume controls and the battery charge indicator, and utilities ranging
- from weather forecast to system monitoring.
+Description: daemon handling the MATE session settings (development files)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+  * Keyboard: layout, accessibility options, shortcuts, media keys
+  * Clipboard management
+  * Theming: background, icons, GTK+ applications
+  * Cleanup of unused files
+  * Mouse: cursors, speed, accessibility options
+  * Startup of other daemons: screensaver, sound daemon
+  * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This package contains the development files for building
+ mate-settings-daemon plugins.
 
 Package: fcitx-skin-deepin
 Architecture: all
@@ -5995,6 +5637,33 @@ Homepage: https://gitcafe.com/Deepin/deepin-manual/
 Description: Deepin Manual
  Deepin User Manual
 
+Package: libmate-window-settings1
+Architecture: amd64
+Version: 1.18.2-0ubuntu1~16.04.york0
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mate-control-center
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 69
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.35.9), libgtk-3-0 (>= 3.0.0), libmate-desktop-2-17 (>= 1.6.1)
+Breaks: mate-control-center (<< 1.9.0)
+Filename: ./libmate-window-settings1_1.18.2-0ubuntu1~16.04.york0_amd64.deb
+Size: 19036
+MD5sum: facffe540b96752a9aceae4ff2926d37
+SHA1: 1ddfa308fe53e986e7b6ccfb98fe53888bfbdedc
+SHA256: 661b46fc2bc24f8b147f6aefe68d422259dcb87ba3540fd3fcce2b6f8adcd5a2
+SHA512: 19a39fd075a2b9713607d8ffb95d43287087452ae1ef08af135e3d5e3f7160faa8b661f0389a21f1ba31a7ae7759f128122f38c48e727015f1b3b6438abb96ec
+Homepage: http://www.mate-desktop.org/
+Description: utilities to configure the MATE desktop (window settings library)
+ The MATE control center contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ This package contains the MATE window settings library for MATE control
+ center.
+
 Package: gir1.2-eom
 Architecture: amd64
 Version: 1.18.2-0ubuntu1~16.04.york0
@@ -6185,34 +5854,6 @@ Description: FFmpeg powered multimedia playback SDK for Qt
    * Video eq: brightness, contrast, saturation, hue
    * QML support as a plugin. Most playback APIs are compatible with QtMultiMedia module
 
-Package: mate-tweak
-Architecture: all
-Version: 17.10.2-0ubuntu1~16.04.york0
-Priority: optional
-Section: admin
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 1018
-Depends: compton, dconf-cli, gir1.2-gtk-3.0, gir1.2-notify-0.7, mate-desktop-common (>= 1.14), mesa-utils, python-gobject-2, python3 (>= 3.3), python3-psutil, python3-setproctitle, x11-xserver-utils, zenity, python3-pkg-resources
-Recommends: mate-indicator-applet (>= 1.14.1)
-Suggests: indicator-application, indicator-messages, indicator-sounds, metacity, xcompmgr
-Filename: ./mate-tweak_17.10.2-0ubuntu1~16.04.york0_all.deb
-Size: 101238
-MD5sum: 2cce060afdba19fe0669bfe90146a894
-SHA1: 72d0b558db6faa90550684dc92351b4a872881a8
-SHA256: b4d6216ef2542ae78156d9464d059b7f64b9a1ddfc2b9fd96c8b4384942f973a
-SHA512: 45614f9a75213c843b2f8ac325467972119c811e2ebecb0b14b8952ca90db18bf18dd3f2ca2164ea2e8db159b30cfcec16e6af7b6aac1ac67a2af120bad79320
-Homepage: https://bitbucket.org/ubuntu-mate/mate-tweak
-Description: MATE desktop tweak tool
- Configures some aspects of the MATE desktop not exposed via the
- MATE Control Center applets.
- .
- Settings that can be handled via MATE Tweak:
- .
-   - Show/hide standard desktop icons
-   - Panel fine-tuning (icon visibility, in menus and on buttons,
-     icon size, button labelling, contex menus, etc.)
-   - Window manager fine-tuning
-
 Package: dde-help
 Architecture: all
 Version: 3.0.1-1.1
@@ -6253,35 +5894,6 @@ Description: Caja extensions (common files)
  This package contains the architecture independent files for
  various available Caja extensions.
 
-Package: libmate-panel-applet-4-1
-Architecture: amd64
-Version: 1.18.2-0ubuntu1~16.04.york0
-Priority: optional
-Section: libs
-Source: mate-panel
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 99
-Provides: libmate-panel-applet4-1, libmatepanelapplet
-Depends: libc6 (>= 2.4), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.0.0), libx11-6
-Breaks: libmate-panel-applet4-1, libmatepanelapplet, mate-panel (<= 1.0.0-3)
-Replaces: libmate-panel-applet4-1, libmatepanelapplet
-Filename: ./libmate-panel-applet-4-1_1.18.2-0ubuntu1~16.04.york0_amd64.deb
-Size: 29098
-MD5sum: 387882584083e9c1e726f8a26233e8a8
-SHA1: 19f526c35346664137ce4d9c5356f7ce07a5ca7a
-SHA256: cd40c3968536a16b599df03ce80b7e6600901b01b4945bfe7d1f3f4be0350dd2
-SHA512: 4b4c9efa49ab6da31538fe2ba777c1b92b753c1b8b89cad2eb0fa727b248735949599fe9c4cbbfec09766e536bac24a5b9c4a48f08ac5893ed8bc10076f783d2
-Homepage: http://www.mate-desktop.org/
-Description: library for MATE Panel applets
- The MATE Panel is an essential part of the MATE Desktop, providing
- toolbar-like “panels” which can be attached to the sides of your desktop.
- They are used to launch applications and embed a number of other
- functions, such as quick launch icons, the clock, the notification area,
- volume controls and the battery charge indicator, and utilities ranging
- from weather forecast to system monitoring.
- .
- This package contains the MATE Panel applet library.
-
 Package: deepin-default-gsettings
 Architecture: all
 Version: 0.0.2
@@ -6317,33 +5929,6 @@ SHA512: 13b3351c9094f7d9d451195416bec222b1f1c52dd4619a4993c63f882251373b564fe0ac
 Homepage: http://pypi.python.org/pypi/jieba/
 Description: Chinese Words Segementation Utilities - extra dict
  Chinese Words Segementation Utilities packaged from pypi
-
-Package: gimp-gmic
-Architecture: amd64
-Version: 1:2.0.2~pre-0x4~ppa~edge
-Priority: optional
-Section: graphics
-Source: gmic
-Maintainer: Otto Meier <otto@kesselgulasch.org>
-Original-Maintainer: Bernd Zeimetz <bzed@debian.org>
-Installed-Size: 8656
-Depends: libbabl-0.1-0 (>= 0.1.29~3-0x0~ppa~4ac6c9b), libc6 (>= 2.14), libcurl3 (>= 7.16.2), libfftw3-double3, libgcc1 (>= 1:3.0), libgegl-0.3-0, libgimp2.0 (>= 2.9.5~113-0x0~ppa~c83f0e8), libglib2.0-0 (>= 2.12.0), libgomp1 (>= 4.9), libpng12-0 (>= 1.2.13-4), libqt5core5a (>= 5.5.0), libqt5gui5 (>= 5.3.0) | libqt5gui5-gles (>= 5.3.0), libqt5network5 (>= 5.0.2), libqt5widgets5 (>= 5.2.0), libstdc++6 (>= 5.2), libx11-6, zlib1g (>= 1:1.2.0), gimp (>= 2.6)
-Suggests: gmic
-Enhances: gimp
-Filename: ./gimp-gmic_1%3a2.0.2~pre-0x4~ppa~edge_amd64.deb
-Size: 3462984
-MD5sum: a9531dad9dbec257a1c27fe175a02eb3
-SHA1: d3030d0ece499abbe0b413389f72acddefa61385
-SHA256: 55f2cbcf29527a61ef0d7b3d68bb77d4d7eab1e22dda74739de730583bc30b9f
-SHA512: 7efde5b88f53218ea677a86521ae1e97e225dfbfb0dc55c32e23f1c262f44c6312b8fda7a58ffb156cc39ca78a93d101e8fdacecef9f6c824dd43516a3c72065
-Homepage: http://gmic.sourceforge.net/
-Description: GIMP plugin for GREYC's Magic Image Converter
- G'MIC is an interpreter of image processing macros whose goal is to
- convert, manipulate and visualize generic 1D/2D/3D multi-spectral
- image files. This includes classical color images, but also more
- complex data as image sequences or 3D volumetric images.
- .
- This package contains the GIMP plugin.
 
 Package: deepin-metacity-common
 Architecture: all
@@ -6423,6 +6008,29 @@ Description: GObject introspection data for the MATE menu specification
  It can be used by packages using the GIRepository format to generate dynamic
  bindings.
 
+Package: mate-optimus
+Architecture: all
+Version: 17.10.0-0ubuntu1~16.04.york0
+Priority: optional
+Section: admin
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 31
+Depends: gir1.2-gtk-3.0, python3
+Filename: ./mate-optimus_17.10.0-0ubuntu1~16.04.york0_all.deb
+Size: 13244
+MD5sum: 2875c416341ec6a05325dcd5961bf09c
+SHA1: fbf81fb465192c6752e996a00a5972053d2fb566
+SHA256: 7d4405c48f4491e9a438b431aca022d477bc629ea93baa58294a28d083447445
+SHA512: 2499cbe9cc2c410f32a8e933cc3bade8e9a629a87ffbe6880ec0dbfd64edd504d5b7f185daeb0c77959afd7d2a0a7352cca2c3e1fa7f6e0f0f99925e71c2e435
+Homepage: https://bitbucket.org/ubuntu-mate/mate-optimus/
+Description: MATE Desktop applet for controlling NVIDIA Optimus graphics cards
+ NVIDIA© Optimus(TM) technology intelligently optimizes your notebook PC,
+ providing the outstanding graphics performance you need, when you need
+ it, all the while extending battery life for longer enjoyment.
+ .
+ This applet provides means to display the active GPU and lets you switch
+ between the Intel and Nvidia GPUs on NVIDIA Optimus equipped computers.
+
 Package: deepin-wm-switcher
 Architecture: amd64
 Version: 1.0.3-1
@@ -6441,28 +6049,27 @@ Homepage: http://www.linuxdeepin.com
 Description: deepin window manager monitoring and auto-switching service
  deepin window manager monitoring and auto-switching service.
 
-Package: libwebpdemux2
-Architecture: amd64
-Version: 0.5.1-2~0x0~ppa
-Multi-Arch: same
+Package: ubuntu-mate-welcome
+Architecture: all
+Version: 17.10.6~16.04.york0
 Priority: optional
-Section: libs
-Source: libwebp
-Maintainer: Jeff Breidenbach <jab@debian.org>
-Installed-Size: 35
-Depends: libc6 (>= 2.14), libwebp6 (>= 0.5.1)
-Filename: ./libwebpdemux2_0.5.1-2~0x0~ppa_amd64.deb
-Size: 11704
-MD5sum: 092f59840f04cdaa66c87840f5519a6d
-SHA1: 2924d986d38de2e042a259e871f367f599c8db06
-SHA256: e11ca00f293c9e7a5fa20642002ce1e89f47e5b6f3a21c2fd2c79b19a6278a10
-SHA512: bff7a0de652856d5447af7a6fa2be2ef6245e3f89f85c1fad3353f5936c4b43bca117ff48f96b7ae0eb827eab99fa84f5a4f489dd326ecb8de2b3bc4429c87b9
-Homepage: http://webp.googlecode.com
-Description: Lossy compression of digital photographic images.
- Image Compression format, based on the VP8 codec.
- WebP uses the modern VP8 compression format to deliver efficient
- compression of images for the web. More than 30% extra gain over
- optimized JPEG, for same quality, is not unusual.
+Section: x11
+Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
+Installed-Size: 30164
+Pre-Depends: mate-menus
+Depends: gir1.2-gtk-3.0, gir1.2-notify-0.7, gir1.2-webkit2-4.0, humanity-icon-theme, inxi, libnotify-bin, parted, pciutils, policykit-1, python3, python3-apt, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-gi, python3-polib, python3-setproctitle, software-properties-common, zenity
+Recommends: mate-control-center, mate-tweak, update-manager
+Suggests: hexchat
+Filename: ./ubuntu-mate-welcome_17.10.6~16.04.york0_all.deb
+Size: 11900686
+MD5sum: ff0cf0dc14494276e794f93dcd20b59c
+SHA1: 3297771fdfc0e8ea0eb42614a898e7aee7c2c78f
+SHA256: f069ded9f6adcc45c8258b90d989644643479b4b2030de9834d01c2f026c2d33
+SHA512: 2c3b3329164207baa09c492e5dd56295afdb8c955e6b278d1cbd4e1d6c8d2684c60b1d92cdf516a8fd0fd4a409043f63e4d4478c8bb0f445a8b2a725968523f1
+Homepage: https://bitbucket.org/ubuntu-mate/ubuntu-mate-welcome
+Description: Welcome screen for Ubuntu MATE
+ A welcome screen for Ubuntu MATE that provides links to helpful
+ resources, utilities and a selection of software packages.
 
 Package: libmarco-private1
 Architecture: amd64
@@ -6489,6 +6096,32 @@ Description: library for Marco window manager
  developed mainly for the MATE Desktop.
  .
  This package contains the library.
+
+Package: mate-control-center
+Architecture: amd64
+Version: 1.18.2-0ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 890
+Depends: caja-common (>= 1.8.0), desktop-file-utils, gsettings-desktop-schemas, libglib2.0-bin, libmate-slab0 (= 1.18.2-0ubuntu1~16.04.york0), libmate-window-settings1 (= 1.18.2-0ubuntu1~16.04.york0), marco-common (>= 1.18), mate-control-center-common (>= 1.18.2-0ubuntu1~16.04.york0), mate-desktop (>= 1.18), mate-icon-theme, mate-menus, mate-settings-daemon (>= 1.18), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.10.0), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libdbus-glib-1-2 (>= 0.78), libdconf1 (>= 0.14.0), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libmarco-private1 (>= 1.6.2), libmate-desktop-2-17 (>= 1.14.0), libmatekbd4 (>= 1.18), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6, libxcursor1 (>> 1.1.2), libxi6 (>= 2:1.2.0), libxklavier16 (>= 5.0), libxml2 (>= 2.7.4), libxss1
+Suggests: gconf2
+Breaks: ubuntu-mate-default-settings (<< 16.04)
+Filename: ./mate-control-center_1.18.2-0ubuntu1~16.04.york0_amd64.deb
+Size: 227778
+MD5sum: d2bafc483bee53c622af0f85dd266744
+SHA1: f6a2cf261d191063b59e556b40555bc30804be73
+SHA256: e3dc6b7c73f8a1cdc0bd9ce4d87601ec528d7e02bdf2b26997e64397b3500938
+SHA512: 274af6fd31c872d5491a9ce01f85182f2547ace7f6165132b1a0ee6e3e4c0d2f4483b4c006c946434860936e14c9fd9304037721bbd6fef1c07ae008b23d36b6
+Homepage: http://www.mate-desktop.org/
+Description: utilities to configure the MATE desktop
+ The MATE control center contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ It also contains a front end to these applets, which can also be
+ accessed with the MATE panel or the Caja file manager.
 
 Package: mate-system-monitor
 Architecture: amd64
