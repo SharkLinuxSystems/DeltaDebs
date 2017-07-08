@@ -1908,6 +1908,31 @@ Description: Ubuntu MATE - core system
  .
  It is safe to remove this package if some of these packages are not desired.
 
+Package: mate-menu
+Architecture: all
+Version: 17.10.6-0ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 1580
+Depends: python-pkg-resources, python:any (<< 2.8), python:any (>= 2.7.5-5~), dconf-gsettings-backend | gsettings-backend, gir1.2-mate-desktop (>= 1.18.0), gir1.2-mate-panel (>= 1.18), gir1.2-gtk-3.0, gvfs-bin, mate-menus (>= 1.18), mozo | menulibre, python (>= 2.4), python (<< 3), python-configobj, python-mate-menu, python-xdg, python-xlib, xdg-utils, libglib2.0-bin
+Suggests: software-center, synaptic
+Replaces: matemenu
+Filename: ./mate-menu_17.10.6-0ubuntu1~16.04.york0_all.deb
+Size: 170832
+MD5sum: 93b8a5509bf518cce9ec0b6c7c253b26
+SHA1: 5208cc26df3b969825905dff1edbbf5f43afb61d
+SHA256: 8c764b4b0d477c71915097f4b96bdeb09956e8a040bebdf350a65eecf53be9ad
+SHA512: a355fdbbcb949ac4c274a3d92a600a2ce9af90abf01211e5af9831b6547ec0136c34857607bebdfa309674eb034727309a1caca80081afca45428869ab4c0359
+Homepage: https://bitbucket.org/ubuntu-mate/mate-menu/
+Description: Advanced MATE menu
+ An advanced menu for MATE. Supports filtering, favorites,
+ easy-uninstallation, autosession, and many other features.
+ .
+ This menu originated in the Linux Mint distribution and has
+ been ported to other distros that ship the MATE Desktop
+ Environment.
+
 Package: libmatekbd4
 Architecture: amd64
 Version: 1.18.2-0ubuntu1~16.04.york0
@@ -3011,31 +3036,6 @@ SHA256: 1b66dc9764bde3a50950d5444f39c08ab0318956ddabe86941479dedd80397a5
 SHA512: 57349c40bf5109a69142ec06f0f6c0f70e9aa805bd282a51418a4052d4e95484f68e6567015705e09affd3ab4bbabf00c8091e925a0340e4d7fe6907a2b41fd1
 Homepage: https://gitcafe.com/Deepin/dae/
 Description: Deepin App Engine
-
-Package: mate-menu
-Architecture: all
-Version: 17.10.5-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 1579
-Depends: python-pkg-resources, python:any (<< 2.8), python:any (>= 2.7.5-5~), dconf-gsettings-backend | gsettings-backend, gir1.2-mate-desktop (>= 1.18.0), gir1.2-mate-panel (>= 1.18), gir1.2-gtk-3.0, gvfs-bin, mate-menus (>= 1.18), mozo | menulibre, python (>= 2.4), python (<< 3), python-configobj, python-mate-menu, python-xdg, python-xlib, xdg-utils, libglib2.0-bin
-Suggests: software-center, synaptic
-Replaces: matemenu
-Filename: ./mate-menu_17.10.5-0ubuntu1~16.04.york0_all.deb
-Size: 170762
-MD5sum: af3f3218d0369542d706fdb379e9196a
-SHA1: 8bd1c606d1648a6a19555c244438e3d3f7ebf291
-SHA256: f306743ad5b1d15fcaa10d0752d3b8783d7f144b29c2f37d212dff85891429af
-SHA512: 6a868fd6f7ea5c7ea58bff6804c5414e2555fa6052605c665b51b531c3fe6d792639b24e2afce9b4f63a22300b3872fa38fbf7c39c1bcf2911542c133343fdd1
-Homepage: https://bitbucket.org/ubuntu-mate/mate-menu/
-Description: Advanced MATE menu
- An advanced menu for MATE. Supports filtering, favorites,
- easy-uninstallation, autosession, and many other features.
- .
- This menu originated in the Linux Mint distribution and has
- been ported to other distros that ship the MATE Desktop
- Environment.
 
 Package: libmate-desktop-doc
 Architecture: all
