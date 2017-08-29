@@ -135,29 +135,6 @@ Description: Go bindings for Deepin Desktop Environment development
  .
  glib-2.0 go bindings.
 
-Package: atril-common
-Architecture: all
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Source: atril
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 5540
-Breaks: atril (<= 1.0.3-3)
-Filename: ./atril-common_1.18.1-0ubuntu1~16.04.york0_all.deb
-Size: 816028
-MD5sum: 230df84bd48362649aa931797ac1ba3a
-SHA1: 4872fc89ec491aba3be4cb69c478b101499ec4cd
-SHA256: fb81fcfef3d1b8a3a3a59f18f6afd16dbea9d0eca483e2a22d03f202bfe43a4a
-SHA512: 4b68ed6b31146521eb79d5ea006a39eef98ecb110b8b18f75c04cb69b2b1dfac5722fc194015062b574d1f423486a6844337fdc7a04e35bd2834d16544e9332b
-Homepage: http://www.mate-desktop.org/
-Description: MATE document viewer (common files)
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- This package contains the architecture independent files.
-
 Package: qml-module-qtav
 Architecture: amd64
 Version: 1:1.10.0-1.1
@@ -203,6 +180,28 @@ Description: All assertions which are referenced in goconvey packages
  which are referenced in goconvey's convey package
  .
  This package contains the source.
+
+Package: ubuntu-mate-welcome
+Architecture: all
+Version: 17.10.11~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
+Installed-Size: 30140
+Pre-Depends: mate-menus
+Depends: gir1.2-gtk-3.0, gir1.2-notify-0.7, gir1.2-webkit2-4.0, humanity-icon-theme, inxi, libnotify-bin, parted, pciutils, policykit-1, python3, python3-apt, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-gi, python3-polib, python3-setproctitle, software-properties-common, zenity
+Recommends: mate-control-center, mate-tweak, update-manager
+Suggests: hexchat
+Filename: ./ubuntu-mate-welcome_17.10.11~16.04.york0_all.deb
+Size: 11708774
+MD5sum: 1c50b711a77b95ffb5a42bef2b10be6b
+SHA1: caed2f84211b2e2cbb6b087cace1fd19373803d1
+SHA256: e8dbf206dc9137e1095e27d22f47b167d55aac69b59f48db44cf5392f70ad212
+SHA512: fcb930c104fc03c15b8c20d02fa77dd41be950b6aa57d7c95ba0e469c6d8268a40c3b937fce27668586f87364ee8cfd9e441f2aa39d1409c062974d38b5e0d44
+Homepage: https://bitbucket.org/ubuntu-mate/ubuntu-mate-welcome
+Description: Welcome screen for Ubuntu MATE
+ A welcome screen for Ubuntu MATE that provides links to helpful
+ resources, utilities and a selection of software packages.
 
 Package: python-ass
 Architecture: all
@@ -405,6 +404,35 @@ SHA256: 2f990445df116a7423bbcf8545c7e19fb9e945dfdb5e2722d5ca66c9c4fa6bdb
 SHA512: d6d6ce4523ea6d910f6aececb22b1596e0de3cbba3ee80107476b35926a93ddb99dcd4075f4d516c66b650ee6d5b357445721ed3c1644981b9dc927f53bf7116
 Homepage: http://www.linuxdeepin.com
 Description: System-wide social sharing service for Deepin!
+
+Package: libcaja-extension1
+Architecture: amd64
+Version: 1.18.4-0ubuntu1~16.04.york0
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: caja
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 80
+Provides: libcaja-extension
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.0.0)
+Breaks: libcaja-extension (<< 1.7.0)
+Replaces: libcaja-extension (<< 1.7.0)
+Filename: ./libcaja-extension1_1.18.4-0ubuntu1~16.04.york0_amd64.deb
+Size: 20156
+MD5sum: 098293a9a58e02441c56603ccccddab6
+SHA1: 3d89f0009a925e4b1fc17a7309f0e5bb69e99707
+SHA256: 2ebcffef6898925356935e7f5d5ae64c6a97df54c6650d1bfb339f37b3617b7c
+SHA512: f7e4f0490f48b451a071ec0e0bb99722fa7cb85c5209468bc36e3daa625fd5d7a2f6e071a23c4f16537daf9003b162d50a52c59d6548f989f373e5a70ff41dce
+Homepage: http://www.mate-desktop.org/
+Description: libraries for Caja components
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains a few runtime libraries needed by Caja's
+ extensions.
 
 Package: libjs-dmanual-dev
 Architecture: all
@@ -638,6 +666,33 @@ Description: Library for plugins for the mate-sensors-applet package
  This package contains the library that is used to create plugins for
  the applet.
 
+Package: caja-common
+Architecture: all
+Version: 1.18.4-0ubuntu1~16.04.york0
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: caja
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 14299
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: caja (<< 1.9.0)
+Replaces: caja (<< 1.9.0)
+Filename: ./caja-common_1.18.4-0ubuntu1~16.04.york0_all.deb
+Size: 2227046
+MD5sum: e4f33502be50401cb7253d5032ea24c2
+SHA1: dbe70c3b54edbd2813aa64ae9c0bfdc7d8445fe9
+SHA256: fe76175d3b2c60af13b06409ed48978da140b7b483b220eefa3398f7203f664e
+SHA512: bc370107757f3fb4c0167bc176bd9d304a5937761c850fcde2b9d6a9d4791a54c9021ab9a87ceecc94b9180096e3c081910a5c9c3e666e306a07698faeb54112
+Homepage: http://www.mate-desktop.org/
+Description: file manager for the MATE desktop (common files)
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains the architecture independent files.
+
 Package: ubuntu-mate-wallpapers-complete
 Architecture: all
 Version: 17.10.6~16.04.york0
@@ -659,37 +714,6 @@ Description: Complete set of all Ubuntu MATE wallpapers
  Ubuntu MATE community.
  .
  It is a metapackage.
-
-Package: mate-power-manager-common
-Architecture: all
-Version: 1.18.0-1~16.04.york1
-Priority: optional
-Section: x11
-Source: mate-power-manager
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 7922
-Depends: dconf-gsettings-backend | gsettings-backend
-Breaks: mate-power-manager (<< 1.9.0)
-Replaces: mate-power-manager (<< 1.9.0)
-Filename: ./mate-power-manager-common_1.18.0-1~16.04.york1_all.deb
-Size: 2738164
-MD5sum: 3a6288937e509a29358c79fd0ca9dc78
-SHA1: f2d33d3209e011d81f751cc0b5f93f2d22ca38e5
-SHA256: 89d985887ecae7b32577424518c1b251ce25f371f7927650200dd5faaa523b0c
-SHA512: 5cea491a92a7e64e4deb24cfc8106bbd676c1a801b395615120a407acd8022564a923abc0f63279ec2ac09880dbd290d8f6a895ccbd8cd41900f480a32094ced
-Homepage: http://www.mate-desktop.org/
-Description: power management tool for the MATE desktop (common files)
- MATE Power Manager is a session daemon for the MATE desktop
- that takes care of system or desktop events related to power, and
- triggers actions accordingly. Its philosophy is to completely hide
- these complex tasks and only show some settings important to the user.
- .
- The MATE power manager displays and manages battery status, power plug
- events, display brightness, CPU, graphics card and hard disk drive
- power saving, and can trigger suspend-to-RAM, hibernate or shutdown
- events, all integrated to other components of the MATE desktop.
- .
- This package contains the architecture independent files.
 
 Package: libmatekbd-dev
 Architecture: amd64
@@ -1173,6 +1197,28 @@ Homepage: http://www.linuxdeepin.com
 Description: system notifications for deepin desktop environment
  Deepin notification is a notfiy app for deepin new desktop environment.
 
+Package: ubuntu-mate-desktop
+Architecture: amd64
+Version: 1.201~16.04.york0
+Priority: optional
+Section: metapackages
+Source: ubuntu-mate-meta
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 19
+Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-control-center-faces, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-core, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
+Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brasero, brltty-x11, caja-gtkhash, caja-open-terminal, caja-sendto, caja-wallpaper, caja-xattr-tags, cheese, compiz, compiz-core, compiz-mate, compiz-plugins, compiz-plugins-default, cups, cups-bsd, cups-client, cups-filters, deja-dup, deja-dup-caja, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, folder-color-caja, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-disk-utility, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hexchat, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libreoffice-calc, libreoffice-gnome, libreoffice-impress, libreoffice-ogltrans, libreoffice-pdfimport, libreoffice-style-tango, libreoffice-writer, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, plank, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, redshift-gtk, rhythmbox, rhythmbox-plugin-alternative-toolbar, rhythmbox-plugin-cdrecorder, sane-utils, seahorse, sessioninstaller, shotwell, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, thunderbird, thunderbird-gnome-support, tilda, transmission-gtk, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, ubuntu-mate-welcome, usb-creator-gtk, usbmuxd, vlc, vlc-plugin-notify, vlc-plugin-samba, whoopsie, xcursor-themes, xdg-utils, xterm, xul-ext-calendar-timezones, xul-ext-gdata-provider, xul-ext-lightning, xzoom
+Filename: ./ubuntu-mate-desktop_1.201~16.04.york0_amd64.deb
+Size: 15534
+MD5sum: ed016a337238db088b593b313e2e4fa5
+SHA1: 91087300f0e4e1b33660ca9cc32b8dd993d16800
+SHA256: e972166c26b6f807195da1fbcd23837e8f04f16efe5fb3ff339b71b4ed32a4ac
+SHA512: 660166b450bd0a148fd4cb7debe9dfe316fb8a32d886636785d1c578bfaaa34aeb436a5062b9c2720b057c578ff22fcc4fc18d6bcc30fe076da85cab77c34629
+Homepage: https://launchpad.net/ubuntu-mate/
+Description: Ubuntu MATE - full desktop
+ This package is the Ubuntu MATE desktop environment.
+ .
+ It is safe to remove this package if some of these packages are not desired.
+
 Package: dde-qml-dbus-factory
 Architecture: amd64
 Version: 3.0.3-1
@@ -1373,28 +1419,6 @@ Description: Various applets for the MATE panel
  Service (NWS) servers, including the Interactive Weather Information
  Network (IWIN).
 
-Package: ubuntu-mate-welcome
-Architecture: all
-Version: 17.10.10~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 30139
-Pre-Depends: mate-menus
-Depends: gir1.2-gtk-3.0, gir1.2-notify-0.7, gir1.2-webkit2-4.0, humanity-icon-theme, inxi, libnotify-bin, parted, pciutils, policykit-1, python3, python3-apt, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-gi, python3-polib, python3-setproctitle, software-properties-common, zenity
-Recommends: mate-control-center, mate-tweak, update-manager
-Suggests: hexchat
-Filename: ./ubuntu-mate-welcome_17.10.10~16.04.york0_all.deb
-Size: 11708768
-MD5sum: de827fbc04182c01489596b6182e21da
-SHA1: b1d4fad50549bea62529e980d46c25dba96ec4d2
-SHA256: 13d7bc578d16f1f1b58bb6e94e1b1f602fba6c6380e89afd0b10d8244b658fde
-SHA512: 8b64db53d5479b7526f3820dd77f2ed4170f2b768a5aad96f37ef471e1b0e25ddb2ac915c58d9387a10a7e18119c0f48bff7f7c6a2f07d6b9123a21bbf67e182
-Homepage: https://bitbucket.org/ubuntu-mate/ubuntu-mate-welcome
-Description: Welcome screen for Ubuntu MATE
- A welcome screen for Ubuntu MATE that provides links to helpful
- resources, utilities and a selection of software packages.
-
 Package: mate-optimus
 Architecture: all
 Version: 17.10.0-1~16.04.york0
@@ -1513,31 +1537,6 @@ Description: archive manager for MATE (common files)
  .
  This package contains the architecture independent files.
 
-Package: caja
-Architecture: amd64
-Version: 1.18.3-1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: utils
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 3186
-Depends: caja-common (= 1.18.3-1~16.04.york0), desktop-file-utils, gvfs, libcaja-extension1 (= 1.18.3-1~16.04.york0), libglib2.0-data, mate-desktop, shared-mime-info, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.10.0), libexempi3 (>= 2.2.0), libexif12 (>= 0.6.21-1~), libgail-3-0 (>= 3.0.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgtk-3-0 (>= 3.16.2), libice6 (>= 1:1.0.0), libmate-desktop-2-17 (>= 1.14.0), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.20.0), libpangocairo-1.0-0 (>= 1.14.0), libselinux1 (>= 1.32), libsm6, libx11-6, libxml2 (>= 2.7.4)
-Recommends: gvfs-backends
-Suggests: engrampa, gstreamer1.0-tools, meld
-Breaks: libcaja-extension (<< 1.10.0), libcaja-extension1 (<< 1.10.0), mate-session-manager (<< 1.8.1-7)
-Filename: ./caja_1.18.3-1~16.04.york0_amd64.deb
-Size: 807758
-MD5sum: 9635e405d10c21a153da4be32470e70c
-SHA1: f99ef361a7221dac91da9ef5645243db925142ba
-SHA256: 6fb679963531c19c7f90d3769cb7ab405335e8746069cb532204560ea3ff60f6
-SHA512: 7e4705beef87172e00905daf3552278398129910a80050ee0bfc011671006bfe8794c36e1c4f916f943dd031b7c5764ab4570288d4cbd60a7966e053c5efaaed
-Homepage: http://www.mate-desktop.org/
-Description: file manager for the MATE desktop
- Caja is the official file manager for the MATE desktop. It allows one
- to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
- desktop. It works on local and remote filesystems.
-
 Package: golang-github-burntsushi-freetype-go-dev
 Architecture: all
 Version: 0.0~git20160920
@@ -1579,28 +1578,6 @@ Description: Process viewer and system resource monitor for MATE
  MATE system monitor allows you to graphically view and manipulate the running
  processes on your system.  It also provides an overview of available
  resources such as CPU and memory.
-
-Package: ubuntu-mate-default-settings
-Architecture: all
-Version: 17.10.22~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-settings
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 135
-Depends: desktop-file-utils, im-config, libglib2.0-bin, ttf-ubuntu-font-family, dconf-gsettings-backend | gsettings-backend
-Suggests: mate-desktop-environment-core (>= 1.14.0)
-Conflicts: debian-mate-default-settings, mint-mate-default-settings
-Replaces: policykit-desktop-privileges-ubuntu-mate
-Filename: ./ubuntu-mate-default-settings_17.10.22~16.04.york0_all.deb
-Size: 22314
-MD5sum: 573d824acc5f1d01164c80d7cdd373c5
-SHA1: eda2649e383c344ded1652ae683fcb6aa230c9a3
-SHA256: 0752da77a3e000ba67f1bff27616757f6b5f98460d665f67981b3e3386a47706
-SHA512: 547c2b9fdfe16d7e12f69f25463f2635e5fd2f00aa49a2b14e4e17fc0f22f6c72c30bc47b9bda8ce5c58fab4671c06593133f866f8a73a75e5ff9ef00ecba013
-Homepage: https://github.com/ubuntu-mate/ubuntu-mate-settings
-Description: Default settings for Ubuntu MATE
- Various system settings tailored for Ubuntu MATE.
 
 Package: deepin-gettext-tools
 Architecture: amd64
@@ -2088,32 +2065,6 @@ Homepage: http://get.adobe.com/cn/flashplayer/
 Description: flashplayer plugin for internet browser
  flashplayer plugin for internet browser like firefox, konqueror.
 
-Package: libatrildocument-dev
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: libdevel
-Source: atril
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 195
-Depends: libatrildocument3 (= 1.18.1-0ubuntu1~16.04.york0)
-Breaks: libatril-dev (<< 1.9.0)
-Replaces: libatril-dev (<< 1.9.0)
-Filename: ./libatrildocument-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 26448
-MD5sum: f94e4c86521be3da304bbb3730f444d1
-SHA1: 24339d94bafcc98c3818681d7dcea38e02440c18
-SHA256: 1b55332ecb5af6bb0c1c90eb6bf3f6e4337b3077ca589925a18d526256219473
-SHA512: 5a4a167d2d40ff52757a0c7782b4fa8708e5e76c631eb6dcbc266db4c9f836b4087313fa35ef14e092cb9632e341c2f8bb01531d77fb37719bd2e1192f1affa9
-Homepage: http://www.mate-desktop.org/
-Description: MATE document rendering library (development files)
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- This package contains the development files for the libatrildocument
- library.
-
 Package: startdde
 Architecture: amd64
 Version: 3.0.5-1
@@ -2134,6 +2085,31 @@ SHA512: efde36bede7ae2809883bc7efda68768f19941e5a9ed9f717191858ceb268273e384d1db
 Homepage: http://github.com/linuxdeepin/startdde
 Description: starter of deepin desktop environment
  starter of deepin desktop environment.
+
+Package: caja
+Architecture: amd64
+Version: 1.18.4-0ubuntu1~16.04.york0
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 3186
+Depends: caja-common (= 1.18.4-0ubuntu1~16.04.york0), desktop-file-utils, gvfs, libcaja-extension1 (= 1.18.4-0ubuntu1~16.04.york0), libglib2.0-data, mate-desktop, shared-mime-info, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.10.0), libexempi3 (>= 2.2.0), libexif12 (>= 0.6.21-1~), libgail-3-0 (>= 3.0.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgtk-3-0 (>= 3.16.2), libice6 (>= 1:1.0.0), libmate-desktop-2-17 (>= 1.14.0), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.20.0), libpangocairo-1.0-0 (>= 1.14.0), libselinux1 (>= 1.32), libsm6, libx11-6, libxml2 (>= 2.7.4)
+Recommends: gvfs-backends
+Suggests: engrampa, gstreamer1.0-tools, meld
+Breaks: libcaja-extension (<< 1.10.0), libcaja-extension1 (<< 1.10.0), mate-session-manager (<< 1.8.1-7)
+Filename: ./caja_1.18.4-0ubuntu1~16.04.york0_amd64.deb
+Size: 810800
+MD5sum: e867626f8cb4aa527d7f7ed6c95f0eeb
+SHA1: d2c0e53bbca20582b42b6099d7806aaf8c43addb
+SHA256: e529f13358b30fae4d4d3267616c704b278afc9adf8efc3e104262e4641b87cd
+SHA512: c4b505accd09e3772f5f2af2e1783ab9ff7e821d92e3b993eec84eabd75003f487983f17285efaf7103c8d352e3e8988d998ef4bf8d7088b65ce752f86cfbaba
+Homepage: http://www.mate-desktop.org/
+Description: file manager for the MATE desktop
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
 
 Package: mate-menus
 Architecture: amd64
@@ -2206,29 +2182,6 @@ Description: privilege granting extension for Caja using gksu
  The gksu extension for Caja allows you to open files with
  administration privileges using the context menu when browsing
  your files with Caja.
-
-Package: mate-hud
-Architecture: all
-Version: 17.10.6-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: Martin Wimpress <martin.wimpress@ubuntu.com>
-Installed-Size: 46
-Depends: gir1.2-gtk-3.0, mate-applet-appmenu, mate-desktop-common, python3 (>= 3.3), python3-dbus, python3-setproctitle, python3-xlib, rofi, dconf-gsettings-backend | gsettings-backend, python3-pkg-resources
-Filename: ./mate-hud_17.10.6-0ubuntu1~16.04.york0_all.deb
-Size: 9908
-MD5sum: 851934c3a69a19a8ea902303816bff55
-SHA1: a868c7652d937922d87d3eeaabace4f22fe05c19
-SHA256: 55b90569db6745643ba79376f862e083afe4e55c23cd01c7a5add63173057faf
-SHA512: c96d0116cd11d2395b9736c252d55655b201ddf288a0d4deb0bfe8accc74cd0a2fd1b8ef7815c102166c05244cbb56b9f662a573a740bcf165c7bf6c82eea7c5
-Homepage: https://github.com/ubuntu-mate/mate-hud/
-Description: Run menubar commands, much like the Unity 7 HUD
- A Heads-Up Display (HUD) allows you to search through an application's
- appmenu. So if you're trying to find that single filter in Gimp but
- can't remember which filter category it fits into or if you can't
- recall if preferences sits under File, Edit or Tools on your favourite
- browser, you can just search for it rather than hunting through the
- menus.
 
 Package: mate-sensors-applet-common
 Architecture: all
@@ -2485,6 +2438,32 @@ Description: official text editor of the MATE desktop environment (common files)
  .
  This package contains the architecture independent files.
 
+Package: libatrildocument-dev
+Architecture: amd64
+Version: 1.18.1-1~16.04.york0
+Priority: optional
+Section: libdevel
+Source: atril
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 195
+Depends: libatrildocument3 (= 1.18.1-1~16.04.york0)
+Breaks: libatril-dev (<< 1.9.0)
+Replaces: libatril-dev (<< 1.9.0)
+Filename: ./libatrildocument-dev_1.18.1-1~16.04.york0_amd64.deb
+Size: 26662
+MD5sum: 562a39d26e8b4606105af6e8add78052
+SHA1: e7b6e1ef0ee1138f13de6b0f54843e7aa727f5ef
+SHA256: 6a1b20255471e022494fc554f5dc644676104e51bcaa58a57bb6ae1dd3a2c207
+SHA512: d887f928f8ddf9ec67046508ba31a0b64e69093ede93254e8a8aed297abcc8abcd2e12194114efb1cfbf6b7227b0b7bce698f73873dc73e89ef2f1eb9b4e1743
+Homepage: http://www.mate-desktop.org/
+Description: MATE document rendering library (development files)
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains the development files for the libatrildocument
+ library.
+
 Package: libmatemixer-common
 Architecture: all
 Version: 1.18.0-1~16.04.york0
@@ -2571,31 +2550,6 @@ SHA512: 1db9761944b0bbf0fdb03422d1f68b6ac3ff0420cd2115d428bc03fbbbd233177ae5805f
 Homepage: https://github.com/ubuntu-mate/ubuntu-mate-artwork
 Description: Ubuntu MATE 15.04 Wallpapers
  Wallpapers from the Ubuntu MATE community for Ubuntu MATE 15.04
-
-Package: libatrildocument3
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: libs
-Source: atril
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 687
-Depends: libjs-mathjax, libc6 (>= 2.14), libcairo2 (>= 1.10.0), libdjvulibre21 (>= 3.5.27.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.9.10), libgxps2 (>= 0.2.1), libkpathsea6, libpoppler-glib8 (>= 0.22.1), libspectre1 (>= 0.2.3), libtiff5 (>= 4.0.3), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
-Breaks: libatril (<< 1.9.0)
-Replaces: libatril (<< 1.9.0)
-Filename: ./libatrildocument3_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 191722
-MD5sum: cd7c4754e3a7baa688b7d92b5c51857e
-SHA1: ce409a4ec01c776f2b2f5c2b8546f7ca2a0aa5c5
-SHA256: 9b5e57d7342fd0406c5e547e6a346d3d4135466ea3ce5c12798df12ca574ba81
-SHA512: 1f32e75f2a9e96b1d6da2d09de0c2c08199586094be60da3da748c8be5d19a216c89a4b947a89d99641920fd0559bf17c692879fc1438013e7e40f7645c6b84a
-Homepage: http://www.mate-desktop.org/
-Description: MATE document rendering library
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- This package contains the document rendering library used by Atril.
 
 Package: mate-desktop-environment
 Architecture: all
@@ -2694,6 +2648,32 @@ Description: Library to build plugins for Deepin Window Manager
  .
  This package contains the shared library used for deepin-wm.
 
+Package: gir1.2-atril
+Architecture: amd64
+Version: 1.18.1-1~16.04.york0
+Priority: optional
+Section: x11
+Source: atril
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 513
+Depends: gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gtk-3.0, libatrildocument3 (>= 1.18.0), libatrilview3 (>= 1.16.0), libgirepository-1.0-1 (>= 1.41.4-1)
+Filename: ./gir1.2-atril_1.18.1-1~16.04.york0_amd64.deb
+Size: 49376
+MD5sum: 430a66ba08927d649154a3e5b05fe320
+SHA1: b9a44baf59af59f4f3f12ba37d2422b39e88a3f2
+SHA256: 997ed885486c8f0be7fbb751728f845f7ce861b57f8b8093b8f6de8b97ac013b
+SHA512: 8dd290faad38ef2dd43bce19c9f6d83ecbcc17ba526cb0a6bb1ed2f16fa17bfa58084b16bf0946c142586e95786ac0ce631f3ff58ffae6acf667158fea80f54a
+Homepage: http://www.mate-desktop.org/
+Description: GObject introspection data for Atril
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains introspection data for Atril.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
 Package: golang-github-alecthomas-units-dev
 Architecture: all
 Version: 0.0~git20160118
@@ -2754,28 +2734,6 @@ Description: MATE Panel dock applet
     the most common colour) of the desktop wallpaper. The colour
     can be applied to all panels or just the panel containing the
     dock.
-
-Package: ubuntu-mate-desktop
-Architecture: amd64
-Version: 1.200~16.04.york0
-Priority: optional
-Section: metapackages
-Source: ubuntu-mate-meta
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 19
-Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-control-center-faces, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-core, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
-Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brasero, brltty-x11, caja-gtkhash, caja-open-terminal, caja-sendto, caja-wallpaper, caja-xattr-tags, cheese, compiz, compiz-core, compiz-mate, compiz-plugins, compiz-plugins-default, cups, cups-bsd, cups-client, cups-filters, deja-dup, deja-dup-caja, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, folder-color-caja, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gksu, gnome-disk-utility, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hexchat, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libreoffice-calc, libreoffice-gnome, libreoffice-impress, libreoffice-ogltrans, libreoffice-pdfimport, libreoffice-style-tango, libreoffice-writer, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, plank, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, redshift-gtk, rhythmbox, rhythmbox-plugin-alternative-toolbar, rhythmbox-plugin-cdrecorder, sane-utils, seahorse, sessioninstaller, shotwell, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, thunderbird, thunderbird-gnome-support, tilda, transmission-gtk, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, ubuntu-mate-welcome, usb-creator-gtk, usbmuxd, vlc, vlc-plugin-notify, vlc-plugin-samba, whoopsie, xcursor-themes, xdg-utils, xterm, xul-ext-calendar-timezones, xul-ext-gdata-provider, xul-ext-lightning, xzoom
-Filename: ./ubuntu-mate-desktop_1.200~16.04.york0_amd64.deb
-Size: 15542
-MD5sum: bbfa33b2bf17268c50868b926a9d6e5e
-SHA1: bda5fce153149017a7f663065cc59789904c7b9e
-SHA256: fb53eead276cd0c2c5263a41d54373b1f9f8192bd4dfbada94b7ae2eeb843bf9
-SHA512: e87868a09b9abd8e15e51e35103febc78c71fa18ad93cd658401c6a0807e68b82b3c8927129dcf511ba0eaa56954bc2a26a3964c305c3c60438ed00646b5060b
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE - full desktop
- This package is the Ubuntu MATE desktop environment.
- .
- It is safe to remove this package if some of these packages are not desired.
 
 Package: deepin-wm-dbg
 Architecture: amd64
@@ -3150,6 +3108,34 @@ Description: MateWeather shared library (common files)
  .
  This package contains the architecture independent files.
 
+Package: mate-tweak
+Architecture: all
+Version: 17.10.13-1~16.04.york0
+Priority: optional
+Section: admin
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 1010
+Depends: dconf-cli, gir1.2-gtk-3.0, gir1.2-notify-0.7, mate-panel (>= 1.18.0), mesa-utils, python-gobject-2, python3 (>= 3.3), python3-gi, python3-psutil, python3-setproctitle, x11-xserver-utils, python3-pkg-resources
+Recommends: compton, mate-indicator-applet (>= 1.18.0)
+Suggests: indicator-application, indicator-messages, indicator-sounds, indicator-session, indicator-power, metacity, xcompmgr
+Filename: ./mate-tweak_17.10.13-1~16.04.york0_all.deb
+Size: 99690
+MD5sum: 319efb07833a01f574716df044657fd4
+SHA1: 4980111cffe7f2160298eaad8571dcef81b09668
+SHA256: 4cc7a69b790bf1640553c07671c97be5a07216b60c8b2598d1593cfa183fd8ad
+SHA512: 1a9435f4c27ada54842939f3abccd2a5588cd2f68a84cc9eccc3a73dac9855b1ebd8478587533aeef56f62f747a8cb8edb300a09fbf48391b301dc48c97eaf72
+Homepage: https://github.com.org/ubuntu-mate/mate-tweak
+Description: MATE desktop tweak tool
+ Configures some aspects of the MATE desktop not exposed via the
+ MATE Control Center applets.
+ .
+ Settings that can be handled via MATE Tweak:
+ .
+   - Show/hide standard desktop icons
+   - Panel fine-tuning (icon visibility, in menus and on buttons,
+     icon size, button labelling, contex menus, etc.)
+   - Window manager fine-tuning
+
 Package: mate-power-manager
 Architecture: amd64
 Version: 1.18.0-2ubuntu1~16.04.york1
@@ -3206,6 +3192,29 @@ Description: MATE Desktop Environment (extra components, metapackage)
  .
  This package installs an extra set of MATE components that are
  also part of the official MATE release.
+
+Package: atril-common
+Architecture: all
+Version: 1.18.1-1~16.04.york0
+Priority: optional
+Section: x11
+Source: atril
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 5540
+Breaks: atril (<= 1.0.3-3)
+Filename: ./atril-common_1.18.1-1~16.04.york0_all.deb
+Size: 817768
+MD5sum: 54c54cb4e947dcf5ed0ae626e29d749d
+SHA1: d997ea56ec353552fec6586f8f613c9eac7263fa
+SHA256: 7bd2156f73a33402dcb8b25c8cc5d17b4a4ccc5e0bce356c8d5764a6c0a435f1
+SHA512: 69dc30472e6a11ca7ead2a8ea32809ed0720aebc7254aa51a769f105eefd24704071622a2b2ad185f82cf04e407752e1849bfe72c910842a7ee502ac168b757f
+Homepage: http://www.mate-desktop.org/
+Description: MATE document viewer (common files)
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains the architecture independent files.
 
 Package: libmate-desktop-dev
 Architecture: amd64
@@ -3495,32 +3504,6 @@ Homepage: http://www.deepin.org/
 Description: deepin desktop-environment - dde-session-ui module
  Deepin desktop environment 2015 - dde-session-ui module.
 
-Package: libcaja-extension-dev
-Architecture: amd64
-Version: 1.18.3-1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: caja
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 85
-Depends: libcaja-extension1 (= 1.18.3-1~16.04.york0), libgtk-3-dev
-Filename: ./libcaja-extension-dev_1.18.3-1~16.04.york0_amd64.deb
-Size: 15214
-MD5sum: d5dc2f5f56f76518f5a80ccbd58f675a
-SHA1: 72d092fe697c9df33050c75f29b11a8a70fd142d
-SHA256: daf905fde4920939000aa191a3e43adb6ccd7039346d26d2778ab4ce0b3289d7
-SHA512: 36f0b9ed4929cf7af93a70201bc38bac462798b329009269f472d5bb4603f57dde13c4a547093979b66ee10a95f07b10be3ecd605545bf0a2d602c25ca98bba4
-Homepage: http://www.mate-desktop.org/
-Description: libraries for Caja components (development files)
- Caja is the official file manager for the MATE desktop. It allows one
- to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
- desktop. It works on local and remote filesystems.
- .
- This package contains the development files for the libraries needed
- by Caja's extensions.
-
 Package: libmate-window-settings-dev
 Architecture: amd64
 Version: 1.18.2-1~16.04.york0
@@ -3629,30 +3612,6 @@ Description: MATE desktop utilities (common files)
     a file
  .
  This package contains the architecture independent files.
-
-Package: libatrilview3
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: libs
-Source: atril
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 330
-Depends: libatrildocument3 (= 1.18.1-0ubuntu1~16.04.york0), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.14.0), libgail-3-0 (>= 3.0.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.9.10), libpango-1.0-0 (>= 1.14.0), libwebkit2gtk-4.0-37 (>= 2.5.3)
-Replaces: libatril (<< 1.9.0)
-Filename: ./libatrilview3_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 99886
-MD5sum: 15f1bc840b74cd5e491dacd5ea287e1d
-SHA1: dbaf926fa94d9ca213cfa59b25ebbe3c1dd42b32
-SHA256: ad9f70c691ae1fb16f927a10389f941008fb90fdb85a03dd67ab5ce4ba607208
-SHA512: d8572d5da864a2fbaf6b2b36d896ac30442f03d8af5d9792cd352d968fabce8c0b7bc76b18eb397b68db42bb0e9d4610efed9ce523aecfc9685dbeae9edfc3c4
-Homepage: http://www.mate-desktop.org/
-Description: MATE document viewing library
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- This package contains the document viewing library used by Atril.
 
 Package: dde-control-center-dbg
 Architecture: amd64
@@ -3988,32 +3947,6 @@ Description: A small, expressive orm
    hstore/json/arrays, sqlite full-text-search, schema migrations,
    and much more).
 
-Package: gir1.2-atril
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Source: atril
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 513
-Depends: gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gtk-3.0, libatrildocument3 (>= 1.18.0), libatrilview3 (>= 1.16.0), libgirepository-1.0-1 (>= 1.41.4-1)
-Filename: ./gir1.2-atril_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 49250
-MD5sum: e741cc7b0cb80486d8860e6d7c616c8b
-SHA1: 00cc4fc100a33073bf42233852c94ec07f2f2654
-SHA256: 0b239a55ce38e2ab629b85cd0104a5f28264b670b21485c21afbec4e7b435b3a
-SHA512: 0f91ca2611b421095140510b9d8eac30470ae05768f6fe5067ef7ad33c05a1e0b0a7f86d36bdf0d3cfdce75d281d7323f633e45a2d65be9b2a8c1196f6900920
-Homepage: http://www.mate-desktop.org/
-Description: GObject introspection data for Atril
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- This package contains introspection data for Atril.
- .
- It can be used by packages using the GIRepository format to generate
- dynamic bindings.
-
 Package: dde-dock-dbg
 Architecture: amd64
 Version: 3.0.7-1.1
@@ -4053,62 +3986,6 @@ Description: Take PNG images from Xcursor and generate xcursorgen config-file
  xcur2png is a program which let you take PNG image from X cursor,
  and generate config-file which is reusable by xcursorgen.
  To put it simply, it is converter from X cursor to PNG image.
-
-Package: gir1.2-caja
-Architecture: amd64
-Version: 1.18.3-1~16.04.york0
-Priority: optional
-Section: introspection
-Source: caja
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 133
-Depends: gir1.2-glib-2.0, gir1.2-gtk-3.0, libcaja-extension1 (>= 1.6.3), libgirepository-1.0-1 (>= 1.41.4-1)
-Filename: ./gir1.2-caja_1.18.3-1~16.04.york0_amd64.deb
-Size: 17660
-MD5sum: c39968ad3c366530df2003cb926eab42
-SHA1: c247747823741ae253b812c84c7457e2762d7a09
-SHA256: ab21bc17efab5fffd0dbaa03e73fd9cb28ddf753f646069c9d0e173d72750180
-SHA512: 4e5c02937b8a80bd97890e6e561f41dcb5235e149b8432b60c855d017185ddcb5555afa9c379806498317ae92cfe6d82117488beafb7f9c5505c6a3742ca3438
-Homepage: http://www.mate-desktop.org/
-Description: GObject introspection data for Caja
- Caja is the official file manager for the MATE desktop. It allows one
- to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
- desktop. It works on local and remote filesystems.
- .
- This package contains introspection data for Caja.
- .
- It can be used by packages using the GIRepository format to generate
- dynamic bindings.
-
-Package: atril
-Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 599
-Provides: djvu-viewer, pdf-viewer, postscript-viewer
-Depends: atril-common (>= 1.18.1-0ubuntu1~16.04.york0), libatrildocument3 (= 1.18.1-0ubuntu1~16.04.york0), libatrilview3 (= 1.18.1-0ubuntu1~16.04.york0), mate-desktop-common, shared-mime-info, dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.10.0), libcaja-extension1 (>= 1.6.3), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libice6 (>= 1:1.0.0), libsecret-1-0 (>= 0.7), libsm6, libx11-6, libxml2 (>= 2.7.4)
-Recommends: default-dbus-session-bus | dbus-session-bus, gvfs
-Suggests: caja, poppler-data, unrar
-Breaks: libatrildocument3 (<< 1.13.0)
-Replaces: libatrildocument3 (<< 1.13.0)
-Filename: ./atril_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 164012
-MD5sum: 6f61e2e7d53fc83554de3ba6379e0e19
-SHA1: 926f82c025183fc2026b8eccc6414a82fcb9b405
-SHA256: 3558f43d69b0ea5f3bc43b451f02f2c6fdc79841780de45b40de92d55bacd63b
-SHA512: 259089cb0c207784eba64c80dda2bc44aee391dbc45ddb0e2d6a306d91f41fdb9df2105b6bc876e4500f5622153554684a8a78e1c3593e0b962d671b516d7a1c
-Homepage: http://www.mate-desktop.org/
-Description: MATE document viewer
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- When supported by the document, it also allows searching for text,
- copying text to the clipboard, hypertext navigation, and
- table-of-contents bookmarks.
 
 Package: netselect
 Architecture: amd64
@@ -4230,6 +4107,31 @@ SHA512: 73fee4f2da67c0c0598e57f5df7be8d416aa91a8569d274ced5892cf225b8dd5a2eb33b5
 Description: Deepin Account face Images
  This package is Deepin Account face Images
 
+Package: libcaja-extension-doc
+Architecture: all
+Version: 1.18.4-0ubuntu1~16.04.york0
+Priority: optional
+Section: doc
+Source: caja
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 258
+Breaks: libcaja-extension-dev (<< 1.12.3-2~)
+Filename: ./libcaja-extension-doc_1.18.4-0ubuntu1~16.04.york0_all.deb
+Size: 27990
+MD5sum: 5f25ad944d3b7823cf037eb6934d11c1
+SHA1: e3a2d4416b6b0d867f0fb0889992b000c10d2cbb
+SHA256: c8691485a11f22d972b9d3e6884023d3382f3cd84c194462bc32b6ce8bce6e06
+SHA512: e1f25b488568f753c9b5956f28f88193ae570b79fcd4234eb0a0121f768ddbc95bd7ab7404d27df853891e45ac6de8dbb8dfc80a2189ca8f8ffe3ffdb3206ddc
+Homepage: http://www.mate-desktop.org/
+Description: libraries for Caja components (API documentation files)
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains the API documentation for the libraries needed
+ by Caja's extensions.
+
 Package: mate-core
 Architecture: all
 Version: 1.18.0+1~16.04.york0
@@ -4255,34 +4157,6 @@ Description: MATE Desktop Environment (essential components, dummy package)
  preserving a traditional desktop experience.
  .
  This package (mate-core) is a dummy package and can be safely removed.
-
-Package: mate-tweak
-Architecture: all
-Version: 17.10.13-0ubuntu1~16.04.york0
-Priority: optional
-Section: admin
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 1007
-Depends: compton, dconf-cli, gir1.2-gtk-3.0, gir1.2-notify-0.7, mate-panel (>= 1.18.0), mesa-utils, python-gobject-2, python3 (>= 3.3), python3-gi, python3-psutil, python3-setproctitle, x11-xserver-utils, python3-pkg-resources
-Recommends: mate-indicator-applet (>= 1.18.0)
-Suggests: indicator-application, indicator-messages, indicator-sounds, indicator-session, indicator-power, metacity, xcompmgr
-Filename: ./mate-tweak_17.10.13-0ubuntu1~16.04.york0_all.deb
-Size: 99682
-MD5sum: 575d0e195f7918f0c25f1c745457fb3d
-SHA1: 623713289b8c5f4feaebc00b4d7fddbb3fd73659
-SHA256: 4263d28c5c1855c9fc25e28fe4560cbffa2a6b3a445b77ce890f9459c27f6fa0
-SHA512: d26a920acf9300dc4ee32a036339b4ab2344c13a27fd0ce511dfe258abc336d58870a8eb943857869fde0e3e3ca8fa105b70d05ca3313059a45ced597daa9412
-Homepage: https://github.com.org/ubuntu-mate/mate-tweak
-Description: MATE desktop tweak tool
- Configures some aspects of the MATE desktop not exposed via the
- MATE Control Center applets.
- .
- Settings that can be handled via MATE Tweak:
- .
-   - Show/hide standard desktop icons
-   - Panel fine-tuning (icon visibility, in menus and on buttons,
-     icon size, button labelling, contex menus, etc.)
-   - Window manager fine-tuning
 
 Package: libdtkutil
 Architecture: amd64
@@ -4327,6 +4201,28 @@ Description: A basic GNU's gettext library for Go
  Package gettext implements a basic GNU's gettext library.
  .
  This package contains the source.
+
+Package: ubuntu-mate-core
+Architecture: amd64
+Version: 1.201~16.04.york0
+Priority: optional
+Section: metapackages
+Source: ubuntu-mate-meta
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 19
+Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-control-center-faces, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
+Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brltty-x11, caja-gtkhash, caja-open-terminal, caja-sendto, caja-wallpaper, caja-xattr-tags, cups, cups-bsd, cups-client, cups-filters, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, sane-utils, seahorse, sessioninstaller, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, tilda, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, usbmuxd, whoopsie, xcursor-themes, xdg-utils, xterm, xzoom
+Filename: ./ubuntu-mate-core_1.201~16.04.york0_amd64.deb
+Size: 15298
+MD5sum: 9d3415b40fd273f199fce9efc2dcd197
+SHA1: b81cb061c6fd91ad5e7369931dca832310daa744
+SHA256: 311f4ef698e229852fb26b8134ed9f33594537fc8ba9001740440b0a6ea29ed0
+SHA512: 927da8fcf6ea774191246f51c0c9ec21350d58a2872e009a316aec523abb736d412661b0e28b1b62615687e705b24e2e052b89a7a2700347dda74d15b5a102ce
+Homepage: https://launchpad.net/ubuntu-mate/
+Description: Ubuntu MATE - core system
+ This package is the minimal MATE desktop as a Ubuntu environment.
+ .
+ It is safe to remove this package if some of these packages are not desired.
 
 Package: libdtkbase
 Architecture: amd64
@@ -4672,6 +4568,25 @@ SHA256: 0f7cf59b030657df985d28dff69bec00c451f641b587abb210f401ae656e181c
 SHA512: dfb01ba13c687b10cd54dcddaf059f4844f7d34afcf2107a983eae86f21857c68c7c011186d9cd1451757113ef5ee11dfef9a77117b7cd769ae0f73982f7a487
 Description: Base files for Deepin Desktop
 
+Package: ubuntu-mate-live-settings
+Architecture: all
+Version: 17.10.23~16.04.york0
+Priority: optional
+Section: x11
+Source: ubuntu-mate-settings
+Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
+Installed-Size: 35
+Depends: dconf-gsettings-backend | gsettings-backend
+Filename: ./ubuntu-mate-live-settings_17.10.23~16.04.york0_all.deb
+Size: 20166
+MD5sum: 1cee29a61b14cdb82256d427834af8a8
+SHA1: 0bf8223c6beb450585fe0344a631e9f2c9e8b35a
+SHA256: 1774335da44276f7a71b0db58739a4a0b125104aa0e0ad4aad8a26c763746ced
+SHA512: 42bda2bdda87676f707a8d13f86e652664acf2c36e93dfc13efd17d4245c4bc25b315443fca5e799237bdc57af281a6322f1ae8f4166b13705e95af1a515be05
+Homepage: https://github.com/ubuntu-mate/ubuntu-mate-settings
+Description: Default settings for Ubuntu MATE live CD
+ Various system settings tailored for Ubuntu MATE live CD.
+
 Package: deepin-wm
 Architecture: amd64
 Version: 1.0.8-1
@@ -4903,28 +4818,6 @@ Description: Mixer library for MATE Desktop
  .
  This package contains the shared libraries.
 
-Package: ubuntu-mate-core
-Architecture: amd64
-Version: 1.200~16.04.york0
-Priority: optional
-Section: metapackages
-Source: ubuntu-mate-meta
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 19
-Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-control-center-faces, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
-Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brltty-x11, caja-gtkhash, caja-open-terminal, caja-sendto, caja-wallpaper, caja-xattr-tags, cups, cups-bsd, cups-client, cups-filters, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, sane-utils, seahorse, sessioninstaller, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, tilda, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, usbmuxd, whoopsie, xcursor-themes, xdg-utils, xterm, xzoom
-Filename: ./ubuntu-mate-core_1.200~16.04.york0_amd64.deb
-Size: 15290
-MD5sum: 2c0a894b2008edfe2a1cc8a71ef64898
-SHA1: 36ccddc4306d324890264fb43a1449599ac246d2
-SHA256: 73bbb26aa930e8e4d65a1aeed9cc5103d7a2faf53281251271ad0aa3f5b5fce1
-SHA512: 780e5871d8dcb3cf50d8313bd0bc21f0443f7630bba72ff94706e466dfc8bf6dcb8272d792d50bd24f9adf3965164bc95936afcdc78e04b0805e01728dc2f616
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE - core system
- This package is the minimal MATE desktop as a Ubuntu environment.
- .
- It is safe to remove this package if some of these packages are not desired.
-
 Package: python-mate-menu
 Architecture: amd64
 Version: 1.18.0-2~16.04.york0
@@ -4964,31 +4857,6 @@ SHA512: 9fc3250bda60e693a340f0ef387b6d9b0fa29df262ae78cb01cf4ae5ed6b71d6f5a608e8
 Homepage: http://www.deepin.org/
 Description: deepin desktop-environment - launcher module
  Deepin desktop environment 2015 - launcher module.
-
-Package: libcaja-extension-doc
-Architecture: all
-Version: 1.18.3-1~16.04.york0
-Priority: optional
-Section: doc
-Source: caja
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 258
-Breaks: libcaja-extension-dev (<< 1.12.3-2~)
-Filename: ./libcaja-extension-doc_1.18.3-1~16.04.york0_all.deb
-Size: 28000
-MD5sum: a5bc5953562e23167c4e115fee7a44cc
-SHA1: 5197cd306288b1abefe6368e5c5bae8c7a264dcf
-SHA256: 3183f0bf9b077935e9630f451e52de6f2df876dc1017e15028f984142c1ffab1
-SHA512: 8d1c26aa62a147d838f5bc84d5424131a679646eb0ef1c9555b6b807c34f86717426c69807661f348cf9c983f0bce7016be89c5f7126916b089cc2c170de056c
-Homepage: http://www.mate-desktop.org/
-Description: libraries for Caja components (API documentation files)
- Caja is the official file manager for the MATE desktop. It allows one
- to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
- desktop. It works on local and remote filesystems.
- .
- This package contains the API documentation for the libraries needed
- by Caja's extensions.
 
 Package: caja-image-converter
 Architecture: amd64
@@ -5229,25 +5097,6 @@ Description: Allows one to quickly set a wallpaper from folders
  .
  Caja Wallpaper allows you to quickly set a wallpaper directly from
  file browser folders.
-
-Package: ubuntu-mate-live-settings
-Architecture: all
-Version: 17.10.22~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-settings
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 35
-Depends: dconf-gsettings-backend | gsettings-backend
-Filename: ./ubuntu-mate-live-settings_17.10.22~16.04.york0_all.deb
-Size: 20074
-MD5sum: 763639861b1e299149d2004cb3dfc82b
-SHA1: 2ee1cf1bb35894ad624c974ac6308b1d77007996
-SHA256: b9c5689ba2156b6b13828df922cfa633cf50a44c77b8202f2f59ceba07c5f2aa
-SHA512: 41114c25617d456692bd3295c7457556b631bc1fac181463cd6b24d05c59be80c659a76c6ef44169292f28be1bbb3bc4db19ac4187ea0402ad5188a3fcd81834
-Homepage: https://github.com/ubuntu-mate/ubuntu-mate-settings
-Description: Default settings for Ubuntu MATE live CD
- Various system settings tailored for Ubuntu MATE live CD.
 
 Package: mate-media
 Architecture: amd64
@@ -5501,6 +5350,35 @@ Description: GSettings deepin desktop-wide schemas
  deepin-desktop-schemas contains a collection of GSettings schemas for
  settings shared by various components of a desktop.
 
+Package: atril
+Architecture: amd64
+Version: 1.18.1-1~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 599
+Provides: djvu-viewer, pdf-viewer, postscript-viewer
+Depends: atril-common (>= 1.18.1-1~16.04.york0), libatrildocument3 (= 1.18.1-1~16.04.york0), libatrilview3 (= 1.18.1-1~16.04.york0), mate-desktop-common, shared-mime-info, dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.10.0), libcaja-extension1 (>= 1.6.3), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libice6 (>= 1:1.0.0), libsecret-1-0 (>= 0.7), libsm6, libx11-6, libxml2 (>= 2.7.4)
+Recommends: default-dbus-session-bus | dbus-session-bus, gvfs
+Suggests: caja, poppler-data, unrar
+Breaks: libatrildocument3 (<< 1.13.0)
+Replaces: libatrildocument3 (<< 1.13.0)
+Filename: ./atril_1.18.1-1~16.04.york0_amd64.deb
+Size: 163726
+MD5sum: 078be6e4071f9f28599a9ac2ea32df55
+SHA1: ec26292ce36199ed60d15eac4d6084c07b9fc9db
+SHA256: 1d4433dabdb1f881bbf69c26c3983841ca4d8a928544b23accb3657ddf422d60
+SHA512: f00e6713e339c5273390c5986f6b399255e29abdbbaca5bd4e78e4300bb46c8f40a178e45839988d06b0a1590239764f92511d0ea7a7bb9a1000b01ff1daccf2
+Homepage: http://www.mate-desktop.org/
+Description: MATE document viewer
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ When supported by the document, it also allows searching for text,
+ copying text to the clipboard, hypertext navigation, and
+ table-of-contents bookmarks.
+
 Package: golang-github-burntsushi-graphics-go-dev
 Architecture: all
 Version: 0.0~git20160920
@@ -5524,20 +5402,20 @@ Description: Graphics library for Go
 
 Package: libatrilview-dev
 Architecture: amd64
-Version: 1.18.1-0ubuntu1~16.04.york0
+Version: 1.18.1-1~16.04.york0
 Priority: optional
 Section: libdevel
 Source: atril
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
 Installed-Size: 94
-Depends: libatrilview3 (= 1.18.1-0ubuntu1~16.04.york0)
+Depends: libatrilview3 (= 1.18.1-1~16.04.york0)
 Breaks: libatril-dev (<< 1.9.0)
-Filename: ./libatrilview-dev_1.18.1-0ubuntu1~16.04.york0_amd64.deb
-Size: 16862
-MD5sum: f85222b97cd6b8ce4846f9a5cbf8eb94
-SHA1: 76dec6e1b5b71e0133b87f4edcc6fdbbcce305c7
-SHA256: e7b84a34eace6dd392533c2279f2f1b9d0bbf390db3c841ebd740e43d0069d48
-SHA512: 1c67013ad09edbc4f429f526baa43a7f9122b41b2c9ea7cd30823caa731fef5b2676500f92b2d4b9f054855b726724142e1234275dad40b25cfed69f2e1e3452
+Filename: ./libatrilview-dev_1.18.1-1~16.04.york0_amd64.deb
+Size: 17010
+MD5sum: 1d61aecfe8e034477a7cb9a6f3a2827d
+SHA1: f271e49b9511c31c5e5c120c107edbb45f8e8269
+SHA256: a8e4f91e160e95580b22cca2d5da26c83c931c911dfe35d3c88be9b656b03930
+SHA512: 9e3b793a8b87189d1eb2aa70b9dd414090592840b793f7b5cdf5c296b03a26c9fc87f22226573aff2cd79781d634be3bbca77bef40b7b112a2a3661ade4ac886
 Homepage: http://www.mate-desktop.org/
 Description: MATE document viewing library (development files)
  Atril is a simple multi-page document viewer.  It can display
@@ -5571,6 +5449,28 @@ Description: Library to build plugins for Deepin Window Manager (development fil
  providing accessibility features like zoom, and more.
  .
  This package contains the development files used for deepin-wm.
+
+Package: ubuntu-mate-default-settings
+Architecture: all
+Version: 17.10.23~16.04.york0
+Priority: optional
+Section: x11
+Source: ubuntu-mate-settings
+Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
+Installed-Size: 137
+Depends: desktop-file-utils, im-config, libglib2.0-bin, ttf-ubuntu-font-family, dconf-gsettings-backend | gsettings-backend
+Suggests: mate-desktop-environment-core (>= 1.14.0)
+Conflicts: debian-mate-default-settings, mint-mate-default-settings
+Replaces: policykit-desktop-privileges-ubuntu-mate
+Filename: ./ubuntu-mate-default-settings_17.10.23~16.04.york0_all.deb
+Size: 22728
+MD5sum: 20c9af8070d7f828b3745eb28fb32e89
+SHA1: bde5b61246333229a48d6b140dfad59d6228878d
+SHA256: 58d45c55762aa897ca52b3bff7713cfb501a46da290a721444bc872adff0cc4f
+SHA512: 3df073f3479db1e95cb1d97e7164a788874e577f2e71150414cc05d0597e3da59d5c0a57a60974ff152f32ba8ba1df36616b0461e5620216020c4c65a9c8d4bb
+Homepage: https://github.com/ubuntu-mate/ubuntu-mate-settings
+Description: Default settings for Ubuntu MATE
+ Various system settings tailored for Ubuntu MATE.
 
 Package: dde-help-zhcn
 Architecture: all
@@ -5769,33 +5669,6 @@ Description: integrates email clients and Pidgin into the Caja file manager
  Caja Send To also provides the option of compressing the files (tar.bz2,
  tar.gz, or zip) before sending.
 
-Package: mate-power-manager
-Architecture: amd64
-Version: 1.18.0-1~16.04.york1
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 450
-Depends: default-dbus-session-bus | dbus-session-bus | dbus-x11, mate-notification-daemon | notification-daemon, mate-power-manager-common (= 1.18.0-1~16.04.york1), policykit-1, systemd | consolekit, upower, libc6 (>= 2.7), libcairo2 (>= 1.10.0), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.88), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgnome-keyring0 (>= 2.20.3), libgtk-3-0 (>= 3.0.0), libmate-panel-applet-4-1 (>= 1.6.1), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.14.0), libupower-glib3 (>= 0.99.0), libx11-6, libxext6, libxrandr2 (>= 2:1.2.99.2)
-Suggests: mate-polkit
-Filename: ./mate-power-manager_1.18.0-1~16.04.york1_amd64.deb
-Size: 116898
-MD5sum: d732d7ab3ca041fbf93beb3d839940ea
-SHA1: b288b03db2b4f4654d37044eb180d95eb33f4b53
-SHA256: 940f49b55779e031cc3136dd9cf9c0f5a66d676d5b2bf6dd48acbc69c98fbf40
-SHA512: 47b16c66d7aabb0c8a473f80b9984c6fba718a18711f5f49dc1aa1c67ee97a8a72ed38ec6c84ac1a47c5747a2951350dd67f4b0d180d37deb5cd9bf22123d037
-Homepage: http://www.mate-desktop.org/
-Description: power management tool for the MATE desktop
- MATE Power Manager is a session daemon for the MATE desktop
- that takes care of system or desktop events related to power, and
- triggers actions accordingly. Its philosophy is to completely hide
- these complex tasks and only show some settings important to the user.
- .
- The MATE power manager displays and manages battery status, power plug
- events, display brightness, CPU, graphics card and hard disk drive
- power saving, and can trigger suspend-to-RAM, hibernate or shutdown
- events, all integrated to other components of the MATE desktop.
-
 Package: caja-xattr-tags
 Architecture: amd64
 Version: 1.18.1-1~16.04.york0
@@ -5887,61 +5760,30 @@ Homepage: https://gitcafe.com/Deepin/deepin-manual/
 Description: Deepin Manual
  Deepin User Manual
 
-Package: libcaja-extension1
+Package: libatrildocument3
 Architecture: amd64
-Version: 1.18.3-1~16.04.york0
-Multi-Arch: same
+Version: 1.18.1-1~16.04.york0
 Priority: optional
 Section: libs
-Source: caja
+Source: atril
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 80
-Provides: libcaja-extension
-Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.0.0)
-Breaks: libcaja-extension (<< 1.7.0)
-Replaces: libcaja-extension (<< 1.7.0)
-Filename: ./libcaja-extension1_1.18.3-1~16.04.york0_amd64.deb
-Size: 20156
-MD5sum: 07bca9ebf37ead61c79b9008b2b1c25e
-SHA1: bc515b33485e9b1fee3e0d8b5076ef735469fa5b
-SHA256: a366726ccb09dd2eece61020fab878507f8347f95bce9ff79f76acb2917aa6e0
-SHA512: 8e9f970ec42dd433f85796286ac84b26c1dcd80b09f7b22f8f37ff0609e22c20deb4c136c26113f40ad5b24301a77ede452f2e4f6db221675cf35d3ade09104f
+Installed-Size: 687
+Depends: libjs-mathjax, libc6 (>= 2.14), libcairo2 (>= 1.10.0), libdjvulibre21 (>= 3.5.27.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.9.10), libgxps2 (>= 0.2.1), libkpathsea6, libpoppler-glib8 (>= 0.22.1), libspectre1 (>= 0.2.3), libtiff5 (>= 4.0.3), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Breaks: libatril (<< 1.9.0)
+Replaces: libatril (<< 1.9.0)
+Filename: ./libatrildocument3_1.18.1-1~16.04.york0_amd64.deb
+Size: 192602
+MD5sum: 2057bc5cedf661cd2d8665b548a496e3
+SHA1: 13063443f86db599977e5d5a59291de47b901c4b
+SHA256: e1f543a756cd2b77b410e93d92803e77e9e107fd2d3c7e6689a13f1173f5f3fe
+SHA512: 800089613df3dae50e1729b82379d9f11371868c7638fcfa5dd4816648f9eb79dc8a9602ebfbdf83feb9e6214526c60a11aa18dafe8bb228ded99a7985ffefd6
 Homepage: http://www.mate-desktop.org/
-Description: libraries for Caja components
- Caja is the official file manager for the MATE desktop. It allows one
- to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
- desktop. It works on local and remote filesystems.
+Description: MATE document rendering library
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
  .
- This package contains a few runtime libraries needed by Caja's
- extensions.
-
-Package: caja-common
-Architecture: all
-Version: 1.18.3-1~16.04.york0
-Multi-Arch: foreign
-Priority: optional
-Section: utils
-Source: caja
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 14299
-Depends: dconf-gsettings-backend | gsettings-backend
-Breaks: caja (<< 1.9.0)
-Replaces: caja (<< 1.9.0)
-Filename: ./caja-common_1.18.3-1~16.04.york0_all.deb
-Size: 2216272
-MD5sum: fa27109a49dd66ab552ba74fd87aece4
-SHA1: 42657183b9695c074cd63ae9b2debcaec12cf9b1
-SHA256: 9b0545f63f37c2fb94f22a42fd83056ef78544f37ba95aeae4b75f08ab5c6f26
-SHA512: 7bb277c785ba607651902d6876a584ffe551273dd31d54e765ffe6ba87093fc34955b9f19d0b3c6a1710e46844ed01a0e68962c3a77ce861114b498b8e78b75c
-Homepage: http://www.mate-desktop.org/
-Description: file manager for the MATE desktop (common files)
- Caja is the official file manager for the MATE desktop. It allows one
- to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
- desktop. It works on local and remote filesystems.
- .
- This package contains the architecture independent files.
+ This package contains the document rendering library used by Atril.
 
 Package: mate-applets-common
 Architecture: all
@@ -6035,6 +5877,33 @@ Description: FFmpeg powered multimedia playback SDK for Qt
    * Video eq: brightness, contrast, saturation, hue
    * QML support as a plugin. Most playback APIs are compatible with QtMultiMedia module
 
+Package: gir1.2-caja
+Architecture: amd64
+Version: 1.18.4-0ubuntu1~16.04.york0
+Priority: optional
+Section: introspection
+Source: caja
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 133
+Depends: gir1.2-glib-2.0, gir1.2-gtk-3.0, libcaja-extension1 (>= 1.6.3), libgirepository-1.0-1 (>= 1.41.4-1)
+Filename: ./gir1.2-caja_1.18.4-0ubuntu1~16.04.york0_amd64.deb
+Size: 17688
+MD5sum: cb1e795e34305cdd54dad771fb4483ad
+SHA1: 126c2c727d9e6ee72b8d6a5fb4a23049437fbaff
+SHA256: d385ebdf8ec927f39cb6b85cd92ab779135dab4e4825e005c1c6cb4ee81e58d3
+SHA512: b75adb59c5d37706da62cdfcf2460f5e3b444d18c72997915954bd4b841de913c55182d25f95e2ca40cca561054f777f4e8eb4b68168b53a939f36a2c776e7ab
+Homepage: http://www.mate-desktop.org/
+Description: GObject introspection data for Caja
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains introspection data for Caja.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
 Package: dde-help
 Architecture: all
 Version: 3.0.1-1.1
@@ -6052,6 +5921,30 @@ SHA512: f315eb88ba01b0efea150f211723204c35a01fc9bb1f68c5fcc6c8923579e0e2a2fad63d
 Homepage: http://www.deepin.org/
 Description: Help files for dde
  Help files for dde.
+
+Package: libatrilview3
+Architecture: amd64
+Version: 1.18.1-1~16.04.york0
+Priority: optional
+Section: libs
+Source: atril
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 330
+Depends: libatrildocument3 (= 1.18.1-1~16.04.york0), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.14.0), libgail-3-0 (>= 3.0.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.9.10), libpango-1.0-0 (>= 1.14.0), libwebkit2gtk-4.0-37 (>= 2.5.3)
+Replaces: libatril (<< 1.9.0)
+Filename: ./libatrilview3_1.18.1-1~16.04.york0_amd64.deb
+Size: 100092
+MD5sum: c4cd673bab05229b5a70b60bbb06ed41
+SHA1: cff7704816e1d30580566e9794e22532e9843f4e
+SHA256: eb318b4280a521712d5c1f280cbb9c45700df769f4657762f3819c03eb7e59f6
+SHA512: 4b729d6c2d4296efa61747b629477164ed3c8ce6c36bc98b295b20d2f3e421eea8efc5fed63df95fb1ebc91b1c4edfb9c9f7b53f348540d7e9555941a9208011
+Homepage: http://www.mate-desktop.org/
+Description: MATE document viewing library
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains the document viewing library used by Atril.
 
 Package: mate-panel
 Architecture: amd64
@@ -6077,6 +5970,32 @@ Description: launcher and docking facility for MATE
  functions, such as quick launch icons, the clock, the notification area,
  volume controls and the battery charge indicator, and utilities ranging
  from weather forecast to system monitoring.
+
+Package: libcaja-extension-dev
+Architecture: amd64
+Version: 1.18.4-0ubuntu1~16.04.york0
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: caja
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 85
+Depends: libcaja-extension1 (= 1.18.4-0ubuntu1~16.04.york0), libgtk-3-dev
+Filename: ./libcaja-extension-dev_1.18.4-0ubuntu1~16.04.york0_amd64.deb
+Size: 15254
+MD5sum: 872ac3967db5bb29db181f699f6a6314
+SHA1: 353b358b41df12384c4d2b178f90bc68030f951e
+SHA256: 65d03c6aaf78f037e24b0f933d1b73026b7b2c7d8047fe7e0852fe1de5ec51a0
+SHA512: 542eb4cf5d311f405be1f0477869b51c9e98071634dc9924cf4478eac243c346a827828af4985dc2a4825807254945113a21e4ad274fdc74812158d8bd19b0d5
+Homepage: http://www.mate-desktop.org/
+Description: libraries for Caja components (development files)
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains the development files for the libraries needed
+ by Caja's extensions.
 
 Package: mate-desktop
 Architecture: amd64
@@ -6387,6 +6306,29 @@ Description: Debugging symbols for the Mutter window manager
  .
  This package contains detached debugging symbols.
 Build-Ids: 480968e894a98a0ee06c6d3bf0111d8ca8168fca 8b4a95b1d3401899269c53006302db30c850f352 e3637596f245b3185e6ad3301f00dac272afb586
+
+Package: mate-hud
+Architecture: all
+Version: 17.10.7-0ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: Martin Wimpress <martin.wimpress@ubuntu.com>
+Installed-Size: 46
+Depends: gir1.2-gtk-3.0, mate-applet-appmenu, mate-desktop-common, python3 (>= 3.3), python3-dbus, python3-setproctitle, python3-xlib, rofi, dconf-gsettings-backend | gsettings-backend, python3-pkg-resources
+Filename: ./mate-hud_17.10.7-0ubuntu1~16.04.york0_all.deb
+Size: 9908
+MD5sum: 0c1a850b38a6d2db68e4df319f7c7079
+SHA1: d4ab44c000c72fdc531774ba676bfb1f16864d68
+SHA256: 6392767e90005776b4d7b4836e8f04bf81eac752486777cc6674a9694c7b93ba
+SHA512: 8053dd983475392b6b6e9f7a7856be9d800f703a6cd148a0a5725bea4adcf43c34cdde38719b24721dc0440af17722c6eaf2b23e96c1a2f5270b46782585979b
+Homepage: https://github.com/ubuntu-mate/mate-hud/
+Description: Run menubar commands, much like the Unity 7 HUD
+ A Heads-Up Display (HUD) allows you to search through an application's
+ appmenu. So if you're trying to find that single filter in Gimp but
+ can't remember which filter category it fits into or if you can't
+ recall if preferences sits under File, Edit or Tools on your favourite
+ browser, you can just search for it rather than hunting through the
+ menus.
 
 Package: deepin-mutter-common
 Architecture: all
