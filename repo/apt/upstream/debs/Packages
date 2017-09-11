@@ -117,6 +117,28 @@ Description: Go bindings for Deepin Desktop Environment development
  .
  glib-2.0 go bindings.
 
+Package: ubuntu-mate-default-settings
+Architecture: all
+Version: 17.10.24~16.04.york0
+Priority: optional
+Section: x11
+Source: ubuntu-mate-settings
+Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
+Installed-Size: 137
+Depends: desktop-file-utils, im-config, libglib2.0-bin, ttf-ubuntu-font-family, dconf-gsettings-backend | gsettings-backend
+Suggests: mate-desktop-environment-core (>= 1.14.0)
+Conflicts: debian-mate-default-settings, mint-mate-default-settings
+Replaces: policykit-desktop-privileges-ubuntu-mate
+Filename: ./ubuntu-mate-default-settings_17.10.24~16.04.york0_all.deb
+Size: 22880
+MD5sum: 67d8ea4fd59cc2fe7b53848b404e575e
+SHA1: 1ab20146b103e2c3e60bef230a3001e7f1257d3f
+SHA256: 1f6f44bcc7e5c810ade1970c649f183e8a57992cad669879ddd7718f72d0be96
+SHA512: d6c7e6709e83422df8d3fcb4f581d53ac7e66e221d11bca8f57a72bd00181fc6ddfc29a5f185df8eb2378ca9bb6fbf42e160b3f9db15715cbc9c88cc7fc35578
+Homepage: https://github.com/ubuntu-mate/ubuntu-mate-settings
+Description: Default settings for Ubuntu MATE
+ Various system settings tailored for Ubuntu MATE.
+
 Package: qml-module-qtav
 Architecture: amd64
 Version: 1:1.10.0-1.1
@@ -179,6 +201,32 @@ SHA256: 8bd2719f2365c13e5264cb84a2a4cd856dc4c605163f94c700d7463589eb8dbf
 SHA512: d8d3bd9a66cb1a5412b3fa81638b189c723ffcfef708e3187c42879e43b3a88d8f99dd935aba974bf24d48c72827ee532d496d0a4d819f7dab08972e51d013c9
 Description: python2.7-ass Wrapper for Python-2.7
  A library for parsing and manipulating Advanced SubStation Alpha subtitle files.
+
+Package: caja-rename
+Architecture: all
+Version: 17.3.28~bzr14+repack1-2~16.04.york0
+Priority: optional
+Section: utils
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 116
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~), python-gi, gir1.2-gtk-3.0, caja, python-caja
+Breaks: cajarename
+Replaces: cajarename
+Filename: ./caja-rename_17.3.28~bzr14+repack1-2~16.04.york0_all.deb
+Size: 12752
+MD5sum: 616f47801e9ab1e9d4765cc26dce2b36
+SHA1: b56f9d1b4d5b215252ad27640f04583d4d198336
+SHA256: 5bc1b16e9507c245fc2b7a493e5093455c4aca34c32cd83d7bf8469cf0f74153
+SHA512: fc423643942c94c4bd7dc1c0948b30e516466c779b3e973a04295ce3da1e07c90f8bff9b6be5fb2058e16b4fba3c3a7bedd34294b58d8c39a15e2d4594fbdb4c
+Homepage: https://tari.in/www/software/cajarename/
+Description: Batch renaming extension for Caja
+ An extension for the Caja file browser allowing users to rename multiple
+ files/folders in a single pass.
+ .
+ The application can change the case, insert, replace and delete strings,
+ as well as enumerate the selection. Any changes are instantly visible in
+ the preview list. The user interface strives to be as simple as
+ possible, without confusing advanced operations.
 
 Package: golang-gir-gio-2.0-dev
 Architecture: amd64
@@ -512,6 +560,29 @@ Description: MATE media utilities (common files)
  .
  This package contains the common files.
 
+Package: marco
+Architecture: amd64
+Version: 1.18.1-3ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 684
+Provides: x-window-manager
+Depends: libmarco-private1 (= 1.18.1-3ubuntu1~16.04.york0), marco-common (= 1.18.1-3ubuntu1~16.04.york0), mate-desktop-common (>= 1.18), zenity, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.10.0), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libgtop-2.0-10 (>= 2.22.3), libice6 (>= 1:1.0.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsm6, libstartup-notification0 (>= 0.7), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxinerama1, libxrandr2, libxrender1
+Breaks: mate-window-manager (<= 1.0.0-2)
+Filename: ./marco_1.18.1-3ubuntu1~16.04.york0_amd64.deb
+Size: 245916
+MD5sum: fafab7cacd19e899302eaa56b049ed7e
+SHA1: f4eecbacbe10dc20d171f48b2f555822600b67ba
+SHA256: 4ec0bc397f649cf470b1cf70b747c25bf20f4f3c88d8d6b519ce9501654ccb66
+SHA512: 9ef469c6cf229b6c9c9701a6bd06f4685ac641bf557050dc798900fceddd17ae1420647cbf564523c50312ec65f8ceae308ad5dac9cf7cc86339a7cb049137f6
+Homepage: http://www.mate-desktop.org/
+Description: lightweight GTK+ window manager for MATE
+ Marco is a small window manager, using GTK+ to do everything. It is
+ developed mainly for the MATE Desktop.
+ .
+ This package contains the marco window manager itself.
+
 Package: pluma-common
 Architecture: all
 Version: 1.18.2-1~16.04.york0
@@ -750,28 +821,6 @@ Homepage: http://www.linuxdeepin.com
 Description: Go-lang bingdings for dde-daemon
  Go-lang bindings for dde-daemon
 
-Package: ubuntu-mate-desktop
-Architecture: amd64
-Version: 1.201~16.04.york1
-Priority: optional
-Section: metapackages
-Source: ubuntu-mate-meta
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 19
-Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-core, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
-Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brasero, brltty-x11, caja-gtkhash, caja-open-terminal, caja-sendto, caja-wallpaper, caja-xattr-tags, cheese, compiz, compiz-core, compiz-mate, compiz-plugins, compiz-plugins-default, cups, cups-bsd, cups-client, cups-filters, deja-dup, deja-dup-caja, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, folder-color-caja, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-disk-utility, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hexchat, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libreoffice-calc, libreoffice-gnome, libreoffice-impress, libreoffice-ogltrans, libreoffice-pdfimport, libreoffice-style-tango, libreoffice-writer, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, plank, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, redshift-gtk, rhythmbox, rhythmbox-plugin-alternative-toolbar, rhythmbox-plugin-cdrecorder, sane-utils, seahorse, sessioninstaller, shotwell, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, thunderbird, thunderbird-gnome-support, tilda, transmission-gtk, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, ubuntu-mate-welcome, usb-creator-gtk, usbmuxd, vlc, vlc-plugin-notify, vlc-plugin-samba, whoopsie, xcursor-themes, xdg-utils, xterm, xul-ext-calendar-timezones, xul-ext-gdata-provider, xul-ext-lightning, xzoom
-Filename: ./ubuntu-mate-desktop_1.201~16.04.york1_amd64.deb
-Size: 15524
-MD5sum: 96ae09c2adfe27411a21304d0a2acd96
-SHA1: b3e48ce1e781ec446041ca47dbf24ee82b6fec08
-SHA256: fca0746e9bfb863d92984806f33aa884baca21e030e3e1ed7d27d9823e93eb80
-SHA512: 7870b570574b0f9d38e71763f900720606fb9857cf0e4404ffce4d76bba280f0288dd5877e2aa6c11c6e88454985a0fc9b6fbcf6c16ea9995b4ae3d7917817f5
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE - full desktop
- This package is the Ubuntu MATE desktop environment.
- .
- It is safe to remove this package if some of these packages are not desired.
-
 Package: libmate-sensors-applet-plugin-dev
 Architecture: amd64
 Version: 1.18.2-1~16.04.york0
@@ -865,6 +914,30 @@ Description: Caja extensions (common files)
  .
  This package contains the architecture independent files for
  various available Caja extensions.
+
+Package: libmarco-dev
+Architecture: amd64
+Version: 1.18.1-3ubuntu1~16.04.york0
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: marco
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 112
+Depends: libmarco-private1 (= 1.18.1-3ubuntu1~16.04.york0)
+Breaks: mate-window-manager (<= 1.0.0-2)
+Filename: ./libmarco-dev_1.18.1-3ubuntu1~16.04.york0_amd64.deb
+Size: 23584
+MD5sum: 71cbffd8c6c05712ca2101f23bfec478
+SHA1: 6eb9ca5e0b20ca0ec60122f4f394a2988a758263
+SHA256: 974d6efded083cc0985deedb8f80c60d2908d65d4c21ba634eed71da19e4ce03
+SHA512: 6c4aa5d509e739c2edbc32a14480e3e1a033efb817d22694070c187e30ab525d321f66c823db46bc6e7bbb16cf37024b3e553d1dbee840a41e22aa78fa4fcb2c
+Homepage: http://www.mate-desktop.org/
+Description: library for Marco window manager (development files)
+ Marco is a small window manager, using GTK+ to do everything. It is
+ developed mainly for the MATE Desktop.
+ .
+ This package contains the development files.
 
 Package: libcaja-extension-dev
 Architecture: amd64
@@ -1495,30 +1568,6 @@ Homepage: http://www.linuxdeepin.com
 Description: This tool can generate library binding code which support gir for golang.
  This tool can generate library binding code which support gir for golang.
 
-Package: libmarco-dev
-Architecture: amd64
-Version: 1.18.1-2ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: marco
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 112
-Depends: libmarco-private1 (= 1.18.1-2ubuntu1~16.04.york0)
-Breaks: mate-window-manager (<= 1.0.0-2)
-Filename: ./libmarco-dev_1.18.1-2ubuntu1~16.04.york0_amd64.deb
-Size: 23454
-MD5sum: 3d0e53bfd5242fcb7f58c1b366763f15
-SHA1: 297e14cc5b43a71ed5dd4128cc1eceb09d743e8f
-SHA256: 9c62709e11ab15013253f7a10923460e95eaf935d99bfa08e52a5f8d8e3be38e
-SHA512: d367f143cb00e0b64aa87368b383c5e7813cc4792ef6b0a7e6e6fe80b22536ded148b4dea11b6c275ede92aa83714a7673e0872b61fe4d819aa1ee062e9c1534
-Homepage: http://www.mate-desktop.org/
-Description: library for Marco window manager (development files)
- Marco is a small window manager, using GTK+ to do everything. It is
- developed mainly for the MATE Desktop.
- .
- This package contains the development files.
-
 Package: engrampa-common
 Architecture: all
 Version: 1.18.2-1~16.04.york0
@@ -1545,28 +1594,6 @@ Description: archive manager for MATE (common files)
   * Extract files from the archive.
  .
  This package contains the architecture independent files.
-
-Package: ubuntu-mate-core
-Architecture: amd64
-Version: 1.201~16.04.york1
-Priority: optional
-Section: metapackages
-Source: ubuntu-mate-meta
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 19
-Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
-Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brltty-x11, caja-gtkhash, caja-open-terminal, caja-sendto, caja-wallpaper, caja-xattr-tags, cups, cups-bsd, cups-client, cups-filters, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, sane-utils, seahorse, sessioninstaller, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, tilda, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, usbmuxd, whoopsie, xcursor-themes, xdg-utils, xterm, xzoom
-Filename: ./ubuntu-mate-core_1.201~16.04.york1_amd64.deb
-Size: 15282
-MD5sum: 91501c2ead9f27a8cc69435dd5b9c612
-SHA1: 814c455533479e26c61f624a07b7c37575764b36
-SHA256: 56a36305ff76c2624655cdbd1f3d331b2148607b8f4d573aa24f5b2acf44a56f
-SHA512: b8cd7450e66583cb07012617fb5a7fea705414f0cc8489bfa70917978de75b7521a3beb99c6183891b2aa914f00f32e15cb19c749c25ee9f33859f72abb3f573
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE - core system
- This package is the minimal MATE desktop as a Ubuntu environment.
- .
- It is safe to remove this package if some of these packages are not desired.
 
 Package: golang-github-burntsushi-freetype-go-dev
 Architecture: all
@@ -2577,6 +2604,28 @@ Description: Supplementary Go image libraries
  Supplementary Go image libraries (golang.org/x/image) not included in the
  main distribution.
 
+Package: ubuntu-mate-core
+Architecture: amd64
+Version: 1.203~16.04.york0
+Priority: optional
+Section: metapackages
+Source: ubuntu-mate-meta
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 19
+Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-control-center-faces, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
+Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brltty-x11, caja-admin, caja-gtkhash, caja-open-terminal, caja-rename, caja-sendto, caja-wallpaper, caja-xattr-tags, cups, cups-bsd, cups-client, cups-filters, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, sane-utils, seahorse, sessioninstaller, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, tilda, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, usbmuxd, whoopsie, xcursor-themes, xdg-utils, xterm, xzoom
+Filename: ./ubuntu-mate-core_1.203~16.04.york0_amd64.deb
+Size: 15390
+MD5sum: 8b430a571a31d99701cebb20eb331f11
+SHA1: 47b82fe082fd3feb88bd18ea6c4b1c64239c51dc
+SHA256: ce434a242da3aa383b158bfc4978f2df48963e1297c04ff63018e59b76980a1d
+SHA512: 1348a36cf3cf2f9aeca263700c14c13a201152211e9c00720a3b61c9f5b7192038c3bd086368868471b46d929efa408629cf84e102ecaf35b9ddccd51af296af
+Homepage: https://launchpad.net/ubuntu-mate/
+Description: Ubuntu MATE - core system
+ This package is the minimal MATE desktop as a Ubuntu environment.
+ .
+ It is safe to remove this package if some of these packages are not desired.
+
 Package: dde-api-dev
 Architecture: all
 Version: 3.0.8-1.1
@@ -2755,6 +2804,28 @@ Homepage: http://pypi.python.org/pypi/jieba/
 Description: Chinese Words Segementation Utilities - python3 version
  Chinese Words Segementation Utilities packaged from pypi
 
+Package: ubuntu-mate-welcome
+Architecture: all
+Version: 17.10.13~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
+Installed-Size: 30146
+Pre-Depends: mate-menus
+Depends: gir1.2-gtk-3.0, gir1.2-notify-0.7, gir1.2-webkit2-4.0, humanity-icon-theme, inxi, libnotify-bin, parted, pciutils, policykit-1, python3, python3-apt, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-gi, python3-polib, python3-setproctitle, software-properties-common, zenity
+Recommends: mate-control-center, mate-tweak, update-manager
+Suggests: hexchat
+Filename: ./ubuntu-mate-welcome_17.10.13~16.04.york0_all.deb
+Size: 11867710
+MD5sum: b7d03f407e28db3ef9fa5695d1089115
+SHA1: 68f4c84e1316033a320e2254a1c05cb98fdd9402
+SHA256: f271fa72147659a869c4a0aa09a1f85d80e04b6fbcb7eb1e1b24d7f47e007788
+SHA512: 2572cf0094c47d25614d90dcbc97ffe028dc9015b50f410b5098c8d8e8ebb54436e3b871db93b5622c2b698504a44d7cc21f1e35a176fd11c4104d9511e65648
+Homepage: https://bitbucket.org/ubuntu-mate/ubuntu-mate-welcome
+Description: Welcome screen for Ubuntu MATE
+ A welcome screen for Ubuntu MATE that provides links to helpful
+ resources, utilities and a selection of software packages.
+
 Package: pluma-doc
 Architecture: all
 Version: 1.18.2-0ubuntu1~16.04.york0
@@ -2908,6 +2979,29 @@ Description: GObject introspection data for libmatekbd and libmatekbdui
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
+
+Package: marco-common
+Architecture: all
+Version: 1.18.1-3ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Source: marco
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 4973
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-window-manager (<= 1.0.0-2)
+Filename: ./marco-common_1.18.1-3ubuntu1~16.04.york0_all.deb
+Size: 609478
+MD5sum: db4ec6f9bbd258c3b1420270ca7f1a21
+SHA1: 86c29b580be988b37a8d287921c33cc8f23c2bd2
+SHA256: 10af536e89a527af424f72a057e1cf80452e49a5afee0d4cc1e2d6c3e32ea375
+SHA512: a675759f2c39fa84f3e2d5837d2c5080a684601389447fb3298fbd6cfadce0f2034d28b085d590b70d3ce22142cb69fccca0809ab73778663563119b3e859bb5
+Homepage: http://www.mate-desktop.org/
+Description: lightweight GTK+ window manager for MATE (common files)
+ Marco is a small window manager, using GTK+ to do everything. It is
+ developed mainly for the MATE Desktop.
+ .
+ This package contains the architecture independent files.
 
 Package: golang-github-disintegration-imaging-dev
 Architecture: all
@@ -3640,6 +3734,25 @@ Description: implementation of the freedesktop menu specification for MATE (deve
  .
  This package contains the development files.
 
+Package: ubuntu-mate-live-settings
+Architecture: all
+Version: 17.10.24~16.04.york0
+Priority: optional
+Section: x11
+Source: ubuntu-mate-settings
+Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
+Installed-Size: 35
+Depends: dconf-gsettings-backend | gsettings-backend
+Filename: ./ubuntu-mate-live-settings_17.10.24~16.04.york0_all.deb
+Size: 20232
+MD5sum: e13785c7561cb95bd2d493fc52a3d841
+SHA1: 67976c9398735cd334311c4cc6bc68866585ea8a
+SHA256: c81192a4a69ac63168e71445e6fc928c9459c3565910b121c8d0232e8653cf57
+SHA512: 7fd186b608a992f7aaa8b072c55835b44fa6718b97a9f002e8fa815e634a7fb11a79beda0b37893951d5578203d14c271b15e31cd05e91bb218f16251533476d
+Homepage: https://github.com/ubuntu-mate/ubuntu-mate-settings
+Description: Default settings for Ubuntu MATE live CD
+ Various system settings tailored for Ubuntu MATE live CD.
+
 Package: mate-hud
 Architecture: all
 Version: 17.10.8-0ubuntu1~16.04.york0
@@ -3682,32 +3795,6 @@ SHA512: 01e6eedf02f4e6d0d565a294926a8022842e7ed0380f0549fadbc70741928c296d671c34
 Homepage: http://get.adobe.com/cn/flashplayer/
 Description: flashplayer plugin for internet browser
  flashplayer plugin for internet browser like firefox, konqueror.
-
-Package: libmarco-private1
-Architecture: amd64
-Version: 1.18.1-2ubuntu1~16.04.york0
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: marco
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 198
-Provides: libmarco
-Depends: libc6 (>= 2.14), libcairo2 (>= 1.10.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.0.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0)
-Breaks: libmarco, libmarco-private0, mate-window-manager (<= 1.0.0-2)
-Replaces: libmarco, libmarco-private0
-Filename: ./libmarco-private1_1.18.1-2ubuntu1~16.04.york0_amd64.deb
-Size: 69542
-MD5sum: 01f55644af9258ff9830a97b3ced2f5f
-SHA1: de7709a01c6a628d7f62ce1ea0b2ba41849ca204
-SHA256: 4ffb765f4b88a498b45dbff78d42ef36f6b297476d7829ada294b71286832898
-SHA512: 867102628253f3f6f8aab4375fe115bc08184c338cca1b7e7fb674bf54fdc0303be95dc9266fa6932cbf19568cb706a671aa6eddad246486f570baa15a6ae4ee
-Homepage: http://www.mate-desktop.org/
-Description: library for Marco window manager
- Marco is a small window manager, using GTK+ to do everything. It is
- developed mainly for the MATE Desktop.
- .
- This package contains the library.
 
 Package: eom-dev
 Architecture: amd64
@@ -4305,6 +4392,32 @@ Description: GObject introspection data for the mate-desktop library
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
+Package: libmarco-private1
+Architecture: amd64
+Version: 1.18.1-3ubuntu1~16.04.york0
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: marco
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 198
+Provides: libmarco
+Depends: libc6 (>= 2.14), libcairo2 (>= 1.10.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.0.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0)
+Breaks: libmarco, libmarco-private0, mate-window-manager (<= 1.0.0-2)
+Replaces: libmarco, libmarco-private0
+Filename: ./libmarco-private1_1.18.1-3ubuntu1~16.04.york0_amd64.deb
+Size: 69824
+MD5sum: b785655f39d5cec133507ee018e25f5a
+SHA1: a5135aa97f7955a793f8ec2ad725fbd234e59eb4
+SHA256: 975e161bc5f5ddb7e88f22958a67e71dc8dc592fe7c049576941e7a4f95077fc
+SHA512: 6c4ce1d1148878060321a0bcc7673a976ab477a70d6940784e01b041f38915a0cd24f08492c68243073275affadae09c2f1e75c7b2b4f119d7748734bc591b0a
+Homepage: http://www.mate-desktop.org/
+Description: library for Marco window manager
+ Marco is a small window manager, using GTK+ to do everything. It is
+ developed mainly for the MATE Desktop.
+ .
+ This package contains the library.
+
 Package: pluma-doc
 Architecture: all
 Version: 1.18.2-1~16.04.york0
@@ -4565,25 +4678,6 @@ Description: MATE desktop tweak tool
      icon size, button labelling, contex menus, etc.)
    - Window manager fine-tuning
 
-Package: ubuntu-mate-live-settings
-Architecture: all
-Version: 17.10.23~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-settings
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 35
-Depends: dconf-gsettings-backend | gsettings-backend
-Filename: ./ubuntu-mate-live-settings_17.10.23~16.04.york0_all.deb
-Size: 20166
-MD5sum: 1cee29a61b14cdb82256d427834af8a8
-SHA1: 0bf8223c6beb450585fe0344a631e9f2c9e8b35a
-SHA256: 1774335da44276f7a71b0db58739a4a0b125104aa0e0ad4aad8a26c763746ced
-SHA512: 42bda2bdda87676f707a8d13f86e652664acf2c36e93dfc13efd17d4245c4bc25b315443fca5e799237bdc57af281a6322f1ae8f4166b13705e95af1a515be05
-Homepage: https://github.com/ubuntu-mate/ubuntu-mate-settings
-Description: Default settings for Ubuntu MATE live CD
- Various system settings tailored for Ubuntu MATE live CD.
-
 Package: deepin-wm
 Architecture: amd64
 Version: 1.0.8-1
@@ -4784,6 +4878,55 @@ Homepage: https://github.com/ubuntu-mate/ubuntu-mate-artwork
 Description: Ubuntu MATE 17.10 Wallpapers
  Wallpapers from the Ubuntu MATE community for Ubuntu MATE 17.10
 
+Package: ubuntu-mate-desktop
+Architecture: amd64
+Version: 1.203~16.04.york0
+Priority: optional
+Section: metapackages
+Source: ubuntu-mate-meta
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 19
+Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-control-center-faces, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-core, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
+Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brasero, brltty-x11, caja-admin, caja-gtkhash, caja-open-terminal, caja-rename, caja-sendto, caja-wallpaper, caja-xattr-tags, cheese, compiz, compiz-core, compiz-mate, compiz-plugins, compiz-plugins-default, cups, cups-bsd, cups-client, cups-filters, deja-dup, deja-dup-caja, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, folder-color-caja, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-disk-utility, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libreoffice-calc, libreoffice-gnome, libreoffice-impress, libreoffice-ogltrans, libreoffice-pdfimport, libreoffice-style-tango, libreoffice-writer, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, plank, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, redshift-gtk, rhythmbox, rhythmbox-plugin-alternative-toolbar, rhythmbox-plugin-cdrecorder, sane-utils, seahorse, sessioninstaller, shotwell, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, thunderbird, thunderbird-gnome-support, tilda, transmission-gtk, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, ubuntu-mate-guide, ubuntu-mate-welcome, usb-creator-gtk, usbmuxd, vlc, vlc-plugin-notify, vlc-plugin-samba, whoopsie, xcursor-themes, xdg-utils, xterm, xul-ext-calendar-timezones, xul-ext-gdata-provider, xul-ext-lightning, xzoom
+Filename: ./ubuntu-mate-desktop_1.203~16.04.york0_amd64.deb
+Size: 15638
+MD5sum: 4394c1699491909fd6362b3d1bff17ce
+SHA1: de10cce775d54c842cbfafaddb7b2774d097f29c
+SHA256: b3902e9057f0dc42a5e0085c9e826ee169d9fa4018d403b388109ed7657314d3
+SHA512: 3ce74c7e0c0bf790a1ca94dd57082aa361588f44af5e0044b7df8527c2424cbd4d49db5f85e03894bf2fe8c8053d88104ac80d09b68402d50a86f7704e88ac41
+Homepage: https://launchpad.net/ubuntu-mate/
+Description: Ubuntu MATE - full desktop
+ This package is the Ubuntu MATE desktop environment.
+ .
+ It is safe to remove this package if some of these packages are not desired.
+
+Package: caja-admin
+Architecture: all
+Version: 0.0.1-1~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 81
+Depends: python-gi, gir1.2-gtk-3.0, caja, policykit-1, python-caja
+Recommends: pluma, mate-terminal
+Filename: ./caja-admin_0.0.1-1~16.04.york0_all.deb
+Size: 11748
+MD5sum: 6b634aefb3533fb0c4cf400724668220
+SHA1: 0a798665f437dd8c9494c10e8f48a32e2a01b910
+SHA256: 96310a19310056b3a57e69a9e4d9533c0d6d5fbb42ad6719fd5aec90964efa0e
+SHA512: 5365c8f5a4fe0498dca8a5fad2221b132802104a7a0c10d32ec21959a25aac74076a7b79819f9597a9a196370455bef31fc9a22d2b216dafd4b3aa10140a8de2
+Homepage: https://github.com/infirit/caja-admin/
+Description: Add administrative actions to Caja's right-click menu
+ Caja Admin is a simple Python extension for the Caja file manager that
+ adds some administrative actions to the right-click menu:
+ .
+   - Open as Administrator: opens a folder in a new Caja window running
+     with administrator (root) privileges.
+   - Edit as Administrator: opens a file in a Pluma window running with
+     administrator (root) privileges.
+   - Run as Administrator: runs an executable file with administrator
+     (root) privileges inside a MATE Terminal.
+
 Package: libmate-desktop-doc
 Architecture: all
 Version: 1.18.0-1~16.04.york0
@@ -4811,29 +4954,6 @@ Description: Library with common API for various MATE modules (documentation fil
  reasons.
  .
  This package contains the documentation files.
-
-Package: marco-common
-Architecture: all
-Version: 1.18.1-2ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Source: marco
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 4973
-Depends: dconf-gsettings-backend | gsettings-backend
-Breaks: mate-window-manager (<= 1.0.0-2)
-Filename: ./marco-common_1.18.1-2ubuntu1~16.04.york0_all.deb
-Size: 609930
-MD5sum: 99f4cb0dbb41bcc29ea64211ac850454
-SHA1: e5a9d725f8d274e0b7acf31736bcfef4e810d1da
-SHA256: 6486bccca9a3354c544534d9f7da75b0a6ef916d7af11833c8346acc8f5ac369
-SHA512: e3a9ba115abce9a4580da637e854cef0f8a4370fc20f61d2a456f6a88ddb953a80bd65f56ed55ba5deca02bb45d9d588cfa2b445e7d14bab1951c19c7a78b694
-Homepage: http://www.mate-desktop.org/
-Description: lightweight GTK+ window manager for MATE (common files)
- Marco is a small window manager, using GTK+ to do everything. It is
- developed mainly for the MATE Desktop.
- .
- This package contains the architecture independent files.
 
 Package: libmatemixer0
 Architecture: amd64
@@ -5052,29 +5172,6 @@ Description: MATE Desktop icon theme
  .
  This icon theme provides icon artwork for representing the different
  applications, files, directories, and devices found on the MATE desktop.
-
-Package: marco
-Architecture: amd64
-Version: 1.18.1-2ubuntu1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 684
-Provides: x-window-manager
-Depends: libmarco-private1 (= 1.18.1-2ubuntu1~16.04.york0), marco-common (= 1.18.1-2ubuntu1~16.04.york0), mate-desktop-common (>= 1.18), zenity, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.10.0), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libgtop-2.0-10 (>= 2.22.3), libice6 (>= 1:1.0.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsm6, libstartup-notification0 (>= 0.7), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxinerama1, libxrandr2, libxrender1
-Breaks: mate-window-manager (<= 1.0.0-2)
-Filename: ./marco_1.18.1-2ubuntu1~16.04.york0_amd64.deb
-Size: 245620
-MD5sum: ff2de285b3551d42832e2589396dd4dd
-SHA1: 9dc3a692b694d5a8cc5e1a9f4fee8839126c8b22
-SHA256: 5e834d93b11f9572a0a73fb9eeae35332ab0d7cef35a9c1f6a2ac1669a9fa670
-SHA512: e1fd75475f7543c2adbfa53edc4daf57a8701025b07f753a00e0187d013598fa12b5b9de3133f2a5bc4b26354e296625ec3059ce3d2a637995655dde3d781d23
-Homepage: http://www.mate-desktop.org/
-Description: lightweight GTK+ window manager for MATE
- Marco is a small window manager, using GTK+ to do everything. It is
- developed mainly for the MATE Desktop.
- .
- This package contains the marco window manager itself.
 
 Package: dde-dock
 Architecture: amd64
@@ -5424,28 +5521,6 @@ Description: Library to build plugins for Deepin Window Manager (development fil
  .
  This package contains the development files used for deepin-wm.
 
-Package: ubuntu-mate-default-settings
-Architecture: all
-Version: 17.10.23~16.04.york0
-Priority: optional
-Section: x11
-Source: ubuntu-mate-settings
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 137
-Depends: desktop-file-utils, im-config, libglib2.0-bin, ttf-ubuntu-font-family, dconf-gsettings-backend | gsettings-backend
-Suggests: mate-desktop-environment-core (>= 1.14.0)
-Conflicts: debian-mate-default-settings, mint-mate-default-settings
-Replaces: policykit-desktop-privileges-ubuntu-mate
-Filename: ./ubuntu-mate-default-settings_17.10.23~16.04.york0_all.deb
-Size: 22728
-MD5sum: 20c9af8070d7f828b3745eb28fb32e89
-SHA1: bde5b61246333229a48d6b140dfad59d6228878d
-SHA256: 58d45c55762aa897ca52b3bff7713cfb501a46da290a721444bc872adff0cc4f
-SHA512: 3df073f3479db1e95cb1d97e7164a788874e577f2e71150414cc05d0597e3da59d5c0a57a60974ff152f32ba8ba1df36616b0461e5620216020c4c65a9c8d4bb
-Homepage: https://github.com/ubuntu-mate/ubuntu-mate-settings
-Description: Default settings for Ubuntu MATE
- Various system settings tailored for Ubuntu MATE.
-
 Package: dde-help-zhcn
 Architecture: all
 Version: 3.0.1-1.1
@@ -5464,28 +5539,6 @@ SHA512: b260b9b2f1480abbe0daaa04cc08b39e71d80b53c3192c4702d7af4c5c0b62e31ad3f6d2
 Homepage: http://www.deepin.org/
 Description: Chinese Simplified (zh_CN) Help files for dde
  Chinese Simplified (zh_CN) Help files for dde
-
-Package: ubuntu-mate-welcome
-Architecture: all
-Version: 17.10.12~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 30141
-Pre-Depends: mate-menus
-Depends: gir1.2-gtk-3.0, gir1.2-notify-0.7, gir1.2-webkit2-4.0, humanity-icon-theme, inxi, libnotify-bin, parted, pciutils, policykit-1, python3, python3-apt, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-gi, python3-polib, python3-setproctitle, software-properties-common, zenity
-Recommends: mate-control-center, mate-tweak, update-manager
-Suggests: hexchat
-Filename: ./ubuntu-mate-welcome_17.10.12~16.04.york0_all.deb
-Size: 11709090
-MD5sum: 52f51fcd215f831d39c82fc2d52ba35d
-SHA1: 6cd846553d95faa906d99a8794ac2d9a7ff80a71
-SHA256: 053a2579e8cde9a4181b8d27f254fd0435939641c9328c295cccbe6bf467de2c
-SHA512: 79aa3087339b3e719b3257dd7b5115762f2b885732cb5252343a7fe5384e2295ce0d0817aeb6f78aba867d718f39fd6d1f72fe1f11acb5140f70a84b8e06a850
-Homepage: https://bitbucket.org/ubuntu-mate/ubuntu-mate-welcome
-Description: Welcome screen for Ubuntu MATE
- A welcome screen for Ubuntu MATE that provides links to helpful
- resources, utilities and a selection of software packages.
 
 Package: libqtav10
 Architecture: amd64
