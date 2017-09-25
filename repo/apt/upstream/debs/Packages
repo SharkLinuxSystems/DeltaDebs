@@ -16,31 +16,6 @@ Homepage: https://github.com/dragondjf/QMusic
 Description: Music player for Linux users
  Music player for Linux users
 
-Package: mate-menu
-Architecture: all
-Version: 17.10.7-1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 1587
-Depends: python-pkg-resources, python:any (<< 2.8), python:any (>= 2.7.5-5~), dconf-gsettings-backend | gsettings-backend, gir1.2-mate-desktop (>= 1.18.0), gir1.2-mate-panel (>= 1.18), gir1.2-gtk-3.0, gvfs-bin, mate-menus (>= 1.18), mozo | menulibre, python (>= 2.4), python (<< 3), python-configobj, python-mate-menu, python-setproctitle, python-xdg, python-xlib, xdg-utils, libglib2.0-bin
-Suggests: software-center, synaptic
-Replaces: matemenu
-Filename: ./mate-menu_17.10.7-1~16.04.york0_all.deb
-Size: 171026
-MD5sum: 5fe727df730142e428887b2317ecab61
-SHA1: 21f98d137eb817930c16c90bd4bacb08fb308821
-SHA256: 0d74994b9ab041d3436a2012de984468bdaf49d1e0d25c1515d462607a3777fe
-SHA512: 0bbeed4303957ad9abf3800e16fb8f0e785b8f559a40a242dfa1959eea5ce7068624c989fe948e8aea2d5b7c40c92ddfc57dbd98d4b3b89beb187cec9cbc678e
-Homepage: https://github.com/ubuntu-mate/mate-menu/
-Description: Advanced MATE menu
- An advanced menu for MATE. Supports filtering, favorites,
- easy-uninstallation, autosession, and many other features.
- .
- This menu originated in the Linux Mint distribution and has
- been ported to other distros that ship the MATE Desktop
- Environment.
-
 Package: mate-desktop-common
 Architecture: all
 Version: 1.18.0-1~16.04.york0
@@ -92,6 +67,29 @@ Description: MATE authentication agent for PolicyKit-1 (common files)
  .
  This package contains common files for the MATE policy kit authentication
  agent.
+
+Package: mate-sensors-applet-nvidia
+Architecture: amd64
+Version: 1.18.2-5ubuntu0~16.04.york0
+Priority: optional
+Section: x11
+Source: mate-sensors-applet
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 31
+Depends: mate-sensors-applet (= 1.18.2-5ubuntu0~16.04.york0), libc6 (>= 2.4), libglib2.0-0 (>= 2.12.0), libmate-sensors-applet-plugin0 (>= 1.8.0), libx11-6, libxnvctrl0
+Filename: ./mate-sensors-applet-nvidia_1.18.2-5ubuntu0~16.04.york0_amd64.deb
+Size: 8266
+MD5sum: 8f5fbd4262fcad1979014ad819d37170
+SHA1: f17eaaab31b3a83afe6f5eea72774644ec9362a3
+SHA256: 7cec1cda23728d074600c6ec9be3b934a1ff2d0b33e2f07fec63952ace41dc75
+SHA512: cf992bfeb4815b54d6f8edf9acb0e770a64c6c626ec372dba10b6274905980dc396a87dd95fcab935315725c19df0947d2415118766c9f671a4b9fcf1280a312
+Homepage: http://www.mate-desktop.org/
+Description: Display readings from hardware sensors in your MATE panel (NVIDIA sensors)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains plugin for NVIDIA graphics cards.
 
 Package: golang-gir-glib-2.0-dev
 Architecture: amd64
@@ -692,32 +690,6 @@ Description: utilities to configure the MATE desktop (window settings library)
  This package contains the MATE window settings library for MATE control
  center.
 
-Package: libmate-sensors-applet-plugin0
-Architecture: amd64
-Version: 1.18.2-1~16.04.york0
-Priority: optional
-Section: libs
-Source: mate-sensors-applet
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 32
-Depends: libc6 (>= 2.2.5), libglib2.0-0 (>= 2.12.0)
-Breaks: libmatesensorsappletplugin
-Replaces: libmatesensorsappletplugin
-Filename: ./libmate-sensors-applet-plugin0_1.18.2-1~16.04.york0_amd64.deb
-Size: 7640
-MD5sum: cecac8ac837f174620eebc46b0372f8b
-SHA1: f5e8d47f2f4e92c8cf40903dff9f8e68fc9803cd
-SHA256: c9d0fb034201cdbec8cd1768530648e3fc605a614ec7c996d09050249c7bb1e1
-SHA512: a75893e613dcea009e1510087394c6792b623164076bf83e12ee90fa107938510ec6b532a2182bc6279f1442adfa273bc099f10b087e442a91d183ca5fcf5259
-Homepage: http://www.mate-desktop.org/
-Description: Library for plugins for the mate-sensors-applet package
- MATE Sensors Applet is an applet for the MATE panel that displays
- readings from hardware sensors, including temperatures, fan speeds and
- voltage readings.
- .
- This package contains the library that is used to create plugins for
- the applet.
-
 Package: ubuntu-mate-wallpapers-utopic
 Architecture: all
 Version: 17.10.9~16.04.york0
@@ -821,32 +793,6 @@ Homepage: http://www.linuxdeepin.com
 Description: Go-lang bingdings for dde-daemon
  Go-lang bindings for dde-daemon
 
-Package: libmate-sensors-applet-plugin-dev
-Architecture: amd64
-Version: 1.18.2-1~16.04.york0
-Priority: optional
-Section: libdevel
-Source: mate-sensors-applet
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 27
-Depends: libglib2.0-dev, libmate-sensors-applet-plugin0 (= 1.18.2-1~16.04.york0)
-Breaks: libmatesensorsappletplugin-dev
-Replaces: libmatesensorsappletplugin-dev
-Filename: ./libmate-sensors-applet-plugin-dev_1.18.2-1~16.04.york0_amd64.deb
-Size: 6236
-MD5sum: 3b4c8da19bc4b5e778b7d383f37adbf1
-SHA1: 99f8b53f26e8458fe668b95cba41dbcace739532
-SHA256: 583b2327f5f856a0e9f62578d27c59a6327dac686d3a9f947343763a1ca93309
-SHA512: a6dfdac35401eae9548446975cae761e942d7bcdb8eac1719d33e5901b3b2758c41c480467280c2cf4b173c291c44e3bb4377310270929ab3a4e138dc6f3567f
-Homepage: http://www.mate-desktop.org/
-Description: Library for plugins for the mate-sensors-applet package (development files)
- MATE Sensors Applet is an applet for the MATE panel that displays
- readings from hardware sensors, including temperatures, fan speeds and
- voltage readings.
- .
- This package contains the files necessary to develop plugins for the
- applet.
-
 Package: mate-polkit
 Architecture: amd64
 Version: 1.18.1-1~16.04.york0
@@ -869,29 +815,6 @@ Description: MATE authentication agent for PolicyKit-1
  bring up authentication dialogs used for obtaining privileges.
  .
  This package contains the MATE policy kit authentication agent.
-
-Package: mate-screensaver-common
-Architecture: all
-Version: 1.18.1-1~16.04.york0
-Priority: optional
-Section: x11
-Source: mate-screensaver
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 5812
-Depends: dconf-gsettings-backend | gsettings-backend
-Breaks: mate-screensaver (<< 1.5.2)
-Filename: ./mate-screensaver-common_1.18.1-1~16.04.york0_all.deb
-Size: 4537380
-MD5sum: f0a6885c36e5ca5979461d133a2eea71
-SHA1: 6df65a5ef3ea788d90b9b65b38eb8298d4679b27
-SHA256: 5eaca57f83b6336198581225642d212351ccce4a06d027060356459a14681765
-SHA512: aac57766efe6d07af8d9acacc027ead047b5244510565b0029896ff9100f8b5e31f77bbe89be6085b9c33c92a96a7756f587338ca8b55276951b700739da73cc
-Homepage: http://www.mate-desktop.org/
-Description: MATE screen saver and locker (common files)
- mate-screensaver is a screen saver and locker that aims to have simple,
- sane and secure defaults, and be well integrated with the MATE desktop.
- .
- This package contains the architecture independent files.
 
 Package: caja-extensions-common
 Architecture: all
@@ -1395,6 +1318,61 @@ Homepage: https://github.com/ubuntu-mate/ubuntu-mate-artwork
 Description: Ubuntu MATE 15.10 Wallpapers
  Wallpapers from the Ubuntu MATE community for Ubuntu MATE 15.10
 
+Package: mate-tweak
+Architecture: all
+Version: 17.10.15-1~16.04.york0
+Priority: optional
+Section: admin
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 1037
+Depends: dconf-cli, gir1.2-gtk-3.0, gir1.2-notify-0.7, mate-panel (>= 1.18.0), mesa-utils, python-gobject-2, python3 (>= 3.3), python3-gi, python3-psutil, python3-setproctitle, x11-xserver-utils, python3-pkg-resources
+Recommends: compton, mate-indicator-applet (>= 1.18.0)
+Suggests: indicator-application, indicator-messages, indicator-sounds, indicator-session, indicator-power, metacity, xcompmgr
+Filename: ./mate-tweak_17.10.15-1~16.04.york0_all.deb
+Size: 105664
+MD5sum: 5a097cfcce67130832485fd2af704d15
+SHA1: 08c30274c2d6bc15770001def204088c2745685c
+SHA256: 5d26d52b36dbf98aca3ac4e8b3dbc7637c0361157655fc0c3dcb503a46210262
+SHA512: b0bece38501998c54c44c8f01b01f797d337454a3bcf128e1f770f4082714e8e75ff84310551787e4d2357e13df9432cf5bd2d844b8a642cdfbe1022af2d9833
+Homepage: https://github.com.org/ubuntu-mate/mate-tweak
+Description: MATE desktop tweak tool
+ Configures some aspects of the MATE desktop not exposed via the
+ MATE Control Center applets.
+ .
+ Settings that can be handled via MATE Tweak:
+ .
+   - Show/hide standard desktop icons
+   - Panel fine-tuning (icon visibility, in menus and on buttons,
+     icon size, button labelling, contex menus, etc.)
+   - Window manager fine-tuning
+
+Package: engrampa-common
+Architecture: all
+Version: 1.18.2-2ubuntu0~16.04.york0
+Priority: optional
+Section: x11
+Source: engrampa
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 5414
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: engrampa (<= 1.0.3-1)
+Filename: ./engrampa-common_1.18.2-2ubuntu0~16.04.york0_all.deb
+Size: 857918
+MD5sum: 2ce83242365c09b6941f5be95e51d7a2
+SHA1: 2061ecf10d2fb2cb4781144eaf328861feafb2eb
+SHA256: a9753dd4db4aa5ca8d6782be243ba37921656b421702957ca2d1b514c769e2f4
+SHA512: 325bc6890845bff7a369c1178e1e6a64185f0988d9dc295b19e8763f472d6a581d1145ebfd45ba7e3fb6e6e54a29c19d1eaab82baf9c68eff861958d5766be90
+Homepage: http://www.mate-desktop.org/
+Description: archive manager for MATE (common files)
+ Engrampa is an archive manager for the MATE environment. It allows you to:
+ .
+  * Create and modify archives.
+  * View the content of an archive.
+  * View a file contained in an archive.
+  * Extract files from the archive.
+ .
+ This package contains the architecture independent files.
+
 Package: deepin-sound-theme
 Architecture: all
 Version: 15.10.01
@@ -1526,29 +1504,6 @@ Description: Various applets for the MATE panel
  Service (NWS) servers, including the Interactive Weather Information
  Network (IWIN).
 
-Package: mate-optimus
-Architecture: all
-Version: 17.10.0-1~16.04.york0
-Priority: optional
-Section: admin
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 31
-Depends: gir1.2-gtk-3.0, python3
-Filename: ./mate-optimus_17.10.0-1~16.04.york0_all.deb
-Size: 13238
-MD5sum: 4eba8fc6602dc8979d4ec99bb8ff0637
-SHA1: 930a8f1ce25a0351428e9c7755d3d56453d89d60
-SHA256: 17986fd26f46329ac6a747735862b3d43a249342dfa652a5a71274629ab446ab
-SHA512: 0c5102e6d1dd6f7f17b0df70b2c23ec3f254a279aea81fad3d8440ecf3a4b750d8bd19f4a4d85efb62638c3d440c4bac5e20a3e6b6d0421ddf1cda454486299e
-Homepage: https://bitbucket.org/ubuntu-mate/mate-optimus/
-Description: MATE Desktop applet for controlling NVIDIA Optimus graphics cards
- NVIDIA© Optimus(TM) technology intelligently optimizes your notebook PC,
- providing the outstanding graphics performance you need, when you need
- it, all the while extending battery life for longer enjoyment.
- .
- This applet provides means to display the active GPU and lets you switch
- between the Intel and Nvidia GPUs on NVIDIA Optimus equipped computers.
-
 Package: golang-gir-generator
 Architecture: amd64
 Version: 0.9.3-1
@@ -1567,33 +1522,6 @@ SHA512: 0d60425e60f2e70f7bad4b1396b99b9eda2a6eafe4fdbdebd6f3bed699ede8db85e0a5d5
 Homepage: http://www.linuxdeepin.com
 Description: This tool can generate library binding code which support gir for golang.
  This tool can generate library binding code which support gir for golang.
-
-Package: engrampa-common
-Architecture: all
-Version: 1.18.2-1~16.04.york0
-Priority: optional
-Section: x11
-Source: engrampa
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 5414
-Depends: dconf-gsettings-backend | gsettings-backend
-Breaks: engrampa (<= 1.0.3-1)
-Filename: ./engrampa-common_1.18.2-1~16.04.york0_all.deb
-Size: 859938
-MD5sum: 60f14f60606e95b7b2f8658169db5afd
-SHA1: 6eb55c053995fd117803001b15e6714c67cc21ee
-SHA256: c3a521b32d309b9339b49dfa451a446ca68a29d56a8777b249a71436ee333e0e
-SHA512: 37fc1c8d7b4d9156dbff037316d145c000736a8e19575bf41db85ffbb58ee83a3c950dd515c547a184489fbee92ae5622a5ecca24ad2d7bd69f051db035a7ef2
-Homepage: http://www.mate-desktop.org/
-Description: archive manager for MATE (common files)
- Engrampa is an archive manager for the MATE environment. It allows you to:
- .
-  * Create and modify archives.
-  * View the content of an archive.
-  * View a file contained in an archive.
-  * Extract files from the archive.
- .
- This package contains the architecture independent files.
 
 Package: golang-github-burntsushi-freetype-go-dev
 Architecture: all
@@ -1722,6 +1650,29 @@ Description: Sqlite3 driver for GO
  Sqlite3 driver conforming to the built-in database/sql interface.
  .
  This package contains the source.
+
+Package: mate-optimus
+Architecture: all
+Version: 17.10.1-1ubuntu0~16.04.york0
+Priority: optional
+Section: admin
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 33
+Depends: gir1.2-gtk-3.0, gir1.2-notify-0.7, python3, python3-gi, python3-setproctitle
+Filename: ./mate-optimus_17.10.1-1ubuntu0~16.04.york0_all.deb
+Size: 13704
+MD5sum: abe73038771ccca79780d6be077383ef
+SHA1: 4a87c8bbbe8c0e1a536b44c59bd5a0da966fa07b
+SHA256: 4f284fb05586dc4e1837a8f6181ef08bb4c375d2c84064c1b9a87dd8a70bc6b5
+SHA512: 667b0740cd93895e8ff0eb1c2538f1071d4d0d4f4ef0a3772a7249995cb4f781e296d2de9b381f832a9eede6ba25c997d7a74a7f0ce01199db5f02f98c1112ff
+Homepage: https://github.com/ubuntu-mate/mate-optimus/
+Description: MATE Desktop applet for controlling NVIDIA Optimus graphics cards
+ NVIDIA© Optimus(TM) technology intelligently optimizes your notebook PC,
+ providing the outstanding graphics performance you need, when you need
+ it, all the while extending battery life for longer enjoyment.
+ .
+ This applet provides means to display the active GPU and lets you switch
+ between the Intel and Nvidia GPUs on NVIDIA Optimus equipped computers.
 
 Package: libqtavwidgets
 Architecture: amd64
@@ -2157,28 +2108,28 @@ Description: implementation of the freedesktop menu specification for MATE
  Also contained here are the MATE menu layout configuration files, .directory
  files and assorted menu related utility programs.
 
-Package: mate-sensors-applet-nvidia
-Architecture: amd64
-Version: 1.18.2-1~16.04.york0
+Package: mate-hud
+Architecture: all
+Version: 17.10.9-0ubuntu1~16.04.york0
 Priority: optional
 Section: x11
-Source: mate-sensors-applet
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 30
-Depends: mate-sensors-applet (= 1.18.2-1~16.04.york0), libc6 (>= 2.4), libglib2.0-0 (>= 2.12.0), libmate-sensors-applet-plugin0 (>= 1.8.0), libx11-6, libxnvctrl0
-Filename: ./mate-sensors-applet-nvidia_1.18.2-1~16.04.york0_amd64.deb
-Size: 7736
-MD5sum: e31bf900b016d8adc42f2e115a630156
-SHA1: 49d582f0b49c7839713b64d64a7c883872e5cbaa
-SHA256: 60810c22ec511e184c161a15ee59d03651ffefc986f9de881e86b03d66d353de
-SHA512: cfb80f8a4735d96444f851e90f5ed3fe2b2a5c283d9032b63d4036208c8760c9d1952e98a166e864ba57ccd2e7411ed786e3836ee2aea25d53010e2694f00d4b
-Homepage: http://www.mate-desktop.org/
-Description: Display readings from hardware sensors in your MATE panel (NVIDIA sensors)
- MATE Sensors Applet is an applet for the MATE panel that displays
- readings from hardware sensors, including temperatures, fan speeds and
- voltage readings.
- .
- This package contains plugin for NVIDIA graphics cards.
+Maintainer: Martin Wimpress <martin.wimpress@ubuntu.com>
+Installed-Size: 46
+Depends: gir1.2-gtk-3.0, mate-applet-appmenu, mate-desktop-common, python3 (>= 3.3), python3-dbus, python3-setproctitle, python3-xlib, rofi, dconf-gsettings-backend | gsettings-backend, python3-pkg-resources
+Filename: ./mate-hud_17.10.9-0ubuntu1~16.04.york0_all.deb
+Size: 9950
+MD5sum: 9ac01c633274656fa99b179efa11678e
+SHA1: 40bb935e68378f46d4694d0a0fe39030feff0488
+SHA256: 10330beb6a40efe1b25788c37cb48fcc04247232325bb476923dd38287278ef5
+SHA512: b6b64e05291c9a0b66cb1bf6645934bfe16adaf67aa69ba88bfb9ba0f54c4e8a477d1732f3be9178e62f3a391d48c35a4607b2940b353f25b9409b912c7707ed
+Homepage: https://github.com/ubuntu-mate/mate-hud/
+Description: Run menubar commands, much like the Unity 7 HUD
+ A Heads-Up Display (HUD) allows you to search through an application's
+ appmenu. So if you're trying to find that single filter in Gimp but
+ can't remember which filter category it fits into or if you can't
+ recall if preferences sits under File, Edit or Tools on your favourite
+ browser, you can just search for it rather than hunting through the
+ menus.
 
 Package: caja-gksu
 Architecture: amd64
@@ -2203,31 +2154,6 @@ Description: privilege granting extension for Caja using gksu
  The gksu extension for Caja allows you to open files with
  administration privileges using the context menu when browsing
  your files with Caja.
-
-Package: mate-sensors-applet-common
-Architecture: all
-Version: 1.18.2-1~16.04.york0
-Priority: optional
-Section: x11
-Source: mate-sensors-applet
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 595
-Depends: dconf-gsettings-backend | gsettings-backend
-Breaks: mate-sensors-applet (<< 1.9.0)
-Replaces: mate-sensors-applet (<< 1.9.0)
-Filename: ./mate-sensors-applet-common_1.18.2-1~16.04.york0_all.deb
-Size: 91134
-MD5sum: fb673e9b68d58a1037c9e6690d39aa59
-SHA1: b4fb7942034b8934b1ee0a03d3fb111ba59e94b9
-SHA256: 29b835789a14aa292ccfb64a0bb0352820dc9de78b5268ed45c76f215a5b813e
-SHA512: bf473d48cae5c5688ca336022220b424f2b0eb5896b81f3edd7b0b107a54e5465020ef1b7442aeb9158d0f9d5ac508e4fe273a636b19b9be59a8337157602f13
-Homepage: http://www.mate-desktop.org/
-Description: Display readings from hardware sensors in your MATE panel (common files)
- MATE Sensors Applet is an applet for the MATE panel that displays
- readings from hardware sensors, including temperatures, fan speeds and
- voltage readings.
- .
- This package contains the architecture independent files.
 
 Package: deepin-icon-theme
 Architecture: all
@@ -2357,35 +2283,6 @@ Description: launcher and docking facility for MATE (common files)
  from weather forecast to system monitoring.
  .
  This package contains the architecture independent files.
-
-Package: mate-screensaver
-Architecture: amd64
-Version: 1.18.1-1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 481
-Depends: dbus-x11, mate-desktop-common, mate-screensaver-common (= 1.18.1-1~16.04.york0), mate-session-manager (>= 1.11.0), libc6 (>= 2.14), libcairo2 (>= 1.10.0), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libgdk-pixbuf2.0-0 (>= 2.22.0), libgl1-mesa-glx | libgl1, libglib2.0-0 (>= 2.35.9), libgtk-3-0 (>= 3.16.2), libmate-desktop-2-17 (>= 1.14.0), libmate-menu2 (>= 1.6.0), libmatekbd4 (>= 1.18), libnotify4 (>= 0.7.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.18.0), libsystemd0, libx11-6, libxext6, libxklavier16 (>= 5.0), libxss1, libxxf86vm1
-Recommends: mate-power-manager
-Suggests: rss-glx, xscreensaver-data
-Breaks: mate-screensaver-common (<< 1.9.0)
-Replaces: mate-screensaver-common (<< 1.9.0)
-Filename: ./mate-screensaver_1.18.1-1~16.04.york0_amd64.deb
-Size: 125068
-MD5sum: 970d2a66be9326054b554be25a9ee9c5
-SHA1: 1585d604e9c358cadf1e59fe743270ca77ebe530
-SHA256: 2a92a24455ebb746795af28d3b8b1f4a10a5a147dd120e6bfeff939cc584dc2f
-SHA512: 562f0a44b7e60796c460ed85203eac9539c37bca64b2409afbf7861189975d2f3adc51d3f7b08def7d439967c96d52e256efd8134be31db2786d52e1c5213573
-Homepage: http://www.mate-desktop.org/
-Description: MATE screen saver and locker
- mate-screensaver is a screen saver and locker that aims to have simple,
- sane and secure defaults, and be well integrated with the MATE desktop.
- .
- It is designed to support, among other things:
- .
-  * the ability to lock down configuration settings
-  * translation into other languages
-  * user switching
 
 Package: ubuntu-mate-wallpapers-yakkety
 Architecture: all
@@ -2551,6 +2448,28 @@ Description: GObject introspection data for Mutter
  .
  This package contains the GObject introspection data which may be
  used to generate dynamic bindings.
+
+Package: ubuntu-mate-welcome
+Architecture: all
+Version: 17.10.14~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
+Installed-Size: 29993
+Pre-Depends: mate-menus
+Depends: gir1.2-gtk-3.0, gir1.2-notify-0.7, gir1.2-webkit2-4.0, humanity-icon-theme, inxi, libnotify-bin, parted, pciutils, policykit-1, python3, python3-apt, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-gi, python3-polib, python3-setproctitle, software-properties-common, zenity
+Recommends: mate-control-center, mate-tweak, update-manager
+Suggests: hexchat
+Filename: ./ubuntu-mate-welcome_17.10.14~16.04.york0_all.deb
+Size: 11716004
+MD5sum: 74a67e9b16dea565db90ad6b18db78fc
+SHA1: e7d7fc543624c1c3d2e7bc0325cda86f61609861
+SHA256: d0d772bc71c13a6485ec21ade0faab9fe7e22782fac4fa05bd8a04076c59bd5d
+SHA512: fd739f068bae4572a7e96f3613daa1c9a5d6e3ebd652d03533563b0b23b256e23ded107f972576f0d6d3e93df49a86e2a6696d4588800597043ece4751dda1fd
+Homepage: https://bitbucket.org/ubuntu-mate/ubuntu-mate-welcome
+Description: Welcome screen for Ubuntu MATE
+ A welcome screen for Ubuntu MATE that provides links to helpful
+ resources, utilities and a selection of software packages.
 
 Package: mate-desktop-environment
 Architecture: all
@@ -2803,28 +2722,6 @@ SHA512: 365f2d3641f65e941f27dbfbc2f130babf6f963ea30b4ad9d52556ecbde3781cd215d453
 Homepage: http://pypi.python.org/pypi/jieba/
 Description: Chinese Words Segementation Utilities - python3 version
  Chinese Words Segementation Utilities packaged from pypi
-
-Package: ubuntu-mate-welcome
-Architecture: all
-Version: 17.10.13~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: Ubuntu MATE Team <ubuntu-mate-dev@lists.launchpad.net>
-Installed-Size: 30146
-Pre-Depends: mate-menus
-Depends: gir1.2-gtk-3.0, gir1.2-notify-0.7, gir1.2-webkit2-4.0, humanity-icon-theme, inxi, libnotify-bin, parted, pciutils, policykit-1, python3, python3-apt, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-gi, python3-polib, python3-setproctitle, software-properties-common, zenity
-Recommends: mate-control-center, mate-tweak, update-manager
-Suggests: hexchat
-Filename: ./ubuntu-mate-welcome_17.10.13~16.04.york0_all.deb
-Size: 11867710
-MD5sum: b7d03f407e28db3ef9fa5695d1089115
-SHA1: 68f4c84e1316033a320e2254a1c05cb98fdd9402
-SHA256: f271fa72147659a869c4a0aa09a1f85d80e04b6fbcb7eb1e1b24d7f47e007788
-SHA512: 2572cf0094c47d25614d90dcbc97ffe028dc9015b50f410b5098c8d8e8ebb54436e3b871db93b5622c2b698504a44d7cc21f1e35a176fd11c4104d9511e65648
-Homepage: https://bitbucket.org/ubuntu-mate/ubuntu-mate-welcome
-Description: Welcome screen for Ubuntu MATE
- A welcome screen for Ubuntu MATE that provides links to helpful
- resources, utilities and a selection of software packages.
 
 Package: pluma-doc
 Architecture: all
@@ -3540,6 +3437,32 @@ Description: MATE desktop calculator (common files)
  .
  This package contains the architecture independent files.
 
+Package: libmate-sensors-applet-plugin-dev
+Architecture: amd64
+Version: 1.18.2-5ubuntu0~16.04.york0
+Priority: optional
+Section: libdevel
+Source: mate-sensors-applet
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 28
+Depends: libglib2.0-dev, libmate-sensors-applet-plugin0 (= 1.18.2-5ubuntu0~16.04.york0)
+Breaks: libmatesensorsappletplugin-dev
+Replaces: libmatesensorsappletplugin-dev
+Filename: ./libmate-sensors-applet-plugin-dev_1.18.2-5ubuntu0~16.04.york0_amd64.deb
+Size: 6752
+MD5sum: bb0dcb14cd01f387c175332de7c7a686
+SHA1: ef3247d19840efeb53f3002c50a11495513e1911
+SHA256: e9b4aaf0528bcf2fc93f94611a68c0d2b7ef4aa4a1f0b7c369a8d85a84b2fc6c
+SHA512: f9da8dea601b1ecf17c9589997e7704a696662d11c2a7bb98cb819af6229e9ed9483a7c65823a457b0f74608a088263b1c38af8fb7a951fab3910f71def3585c
+Homepage: http://www.mate-desktop.org/
+Description: Library for plugins for the mate-sensors-applet package (development files)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains the files necessary to develop plugins for the
+ applet.
+
 Package: dde-session-ui
 Architecture: amd64
 Version: 3.0.13-1
@@ -3753,28 +3676,47 @@ Homepage: https://github.com/ubuntu-mate/ubuntu-mate-settings
 Description: Default settings for Ubuntu MATE live CD
  Various system settings tailored for Ubuntu MATE live CD.
 
-Package: mate-hud
-Architecture: all
-Version: 17.10.8-0ubuntu1~16.04.york0
+Package: engrampa
+Architecture: amd64
+Version: 1.18.2-2ubuntu0~16.04.york0
 Priority: optional
 Section: x11
-Maintainer: Martin Wimpress <martin.wimpress@ubuntu.com>
-Installed-Size: 46
-Depends: gir1.2-gtk-3.0, mate-applet-appmenu, mate-desktop-common, python3 (>= 3.3), python3-dbus, python3-setproctitle, python3-xlib, rofi, dconf-gsettings-backend | gsettings-backend, python3-pkg-resources
-Filename: ./mate-hud_17.10.8-0ubuntu1~16.04.york0_all.deb
-Size: 9968
-MD5sum: ed55c83cfcb3db923a718ce201722c85
-SHA1: d48fd09ce773ae35e44e46b1d48f03b3722f5579
-SHA256: c97ff4cd945c0761238749ac04331201880870bcca55cdfac047a422763112cf
-SHA512: f803cad0a55bf5fd7d5e9f21ebdb22a57f69e84cffb8037ebf293c53f18df2ce5872afcfd1372dc66ef22b75ca8355d1e4bcb5f814ee2f59eccf9acb09ce13f4
-Homepage: https://github.com/ubuntu-mate/mate-hud/
-Description: Run menubar commands, much like the Unity 7 HUD
- A Heads-Up Display (HUD) allows you to search through an application's
- appmenu. So if you're trying to find that single filter in Gimp but
- can't remember which filter category it fits into or if you can't
- recall if preferences sits under File, Edit or Tools on your favourite
- browser, you can just search for it rather than hunting through the
- menus.
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 964
+Depends: bzip2 (>= 1.0.1), caja-common, engrampa-common (= 1.18.2-2ubuntu0~16.04.york0), gzip (>= 1.3.2), p7zip-full, tar (>= 1.13.25), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libcaja-extension1 (>= 1.6.3), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libjson-glib-1.0-0 (>= 0.12.0), libmagic1 (>= 5.12), libpango-1.0-0 (>= 1.14.0)
+Recommends: gvfs, mate-icon-theme, unzip, xz-utils, zip
+Suggests: arj, binutils, cpio, lha, lzip, lzma, lzop, ncompress, rar, rpm2cpio, rzip, sharutils, unace, unalz, unrar-free | unar | unrar | p7zip-rar, zoo
+Breaks: engrampa-common (<< 1.8.0)
+Filename: ./engrampa_1.18.2-2ubuntu0~16.04.york0_amd64.deb
+Size: 213574
+MD5sum: 37300603a04f8714557f9ec34c887a9d
+SHA1: c44900a5b6fbe1351f00974c7334a7f4849f8f19
+SHA256: dabcbe48d207d37398102b9b31d435e5829ca210871bcdda1e95b3c78b3df744
+SHA512: 608467a08d29e98f249c0763e632299dfb878437d789a1abd08cc85d6051f6826da4ffc12c15db6cd346f9d9d6459c145ed9bae6d99c6091ce682fe42523ddc5
+Homepage: http://www.mate-desktop.org/
+Description: archive manager for MATE
+ Engrampa is an archive manager for the MATE environment. It allows you to:
+ .
+  * Create and modify archives.
+  * View the content of an archive.
+  * View a file contained in an archive.
+  * Extract files from the archive.
+ .
+ Engrampa supports the following formats:
+  * Tar (.tar) archives, including those compressed with
+    gzip (.tar.gz, .tgz), bzip (.tar.bz, .tbz), bzip2 (.tar.bz2, .tbz2),
+    compress (.tar.Z, .taz), lzip (.tar.lz, .tlz), lzop (.tar.lzo, .tzo),
+    lzma (.tar.lzma) and xz (.tar.xz)
+  * Zip archives (.zip)
+  * Jar archives (.jar, .ear, .war)
+  * 7z archives (.7z)
+  * iso9660 CD images (.iso)
+  * Lha archives (.lzh)
+  * Single files compressed with gzip (.gz), bzip (.bz), bzip2 (.bz2),
+    compress (.Z), lzip (.lz), lzop (.lzo), lzma (.lzma) and xz (.xz)
+ .
+ Engrampa doesn't perform archive operations by itself, but relies on
+ standard tools for this.
 
 Package: flash-player-properties
 Architecture: amd64
@@ -4165,6 +4107,35 @@ SHA512: 73fee4f2da67c0c0598e57f5df7be8d416aa91a8569d274ced5892cf225b8dd5a2eb33b5
 Description: Deepin Account face Images
  This package is Deepin Account face Images
 
+Package: mate-screensaver
+Architecture: amd64
+Version: 1.18.1-2ubuntu0~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 482
+Depends: dbus-x11, mate-desktop-common, mate-screensaver-common (= 1.18.1-2ubuntu0~16.04.york0), mate-session-manager (>= 1.11.0), libc6 (>= 2.14), libcairo2 (>= 1.10.0), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libgdk-pixbuf2.0-0 (>= 2.22.0), libgl1-mesa-glx | libgl1, libglib2.0-0 (>= 2.39.91), libgtk-3-0 (>= 3.16.2), libmate-desktop-2-17 (>= 1.14.0), libmate-menu2 (>= 1.6.0), libmatekbd4 (>= 1.18), libnotify4 (>= 0.7.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.18.0), libsystemd0, libx11-6, libxext6, libxklavier16 (>= 5.0), libxss1, libxxf86vm1
+Recommends: mate-power-manager
+Suggests: rss-glx, xscreensaver-data
+Breaks: mate-screensaver-common (<< 1.9.0)
+Replaces: mate-screensaver-common (<< 1.9.0)
+Filename: ./mate-screensaver_1.18.1-2ubuntu0~16.04.york0_amd64.deb
+Size: 126142
+MD5sum: 6f4a6ac02105b383e5c88b8bcec8232a
+SHA1: ddb1ceaf889ce165e897f8f78602594da9a09435
+SHA256: 145e8a7c9278805ebd0d83e79bc74eac06fb9f137810149963d9688a9d20e5a4
+SHA512: d15c165058035ed3e7e158ac9a75fc6429d2d66d0a8b8c8ce20dadb89cdceda0f0996ca1e07bc92e3769b55355e81dcfc04878e676433484f0f852de91752252
+Homepage: http://www.mate-desktop.org/
+Description: MATE screen saver and locker
+ mate-screensaver is a screen saver and locker that aims to have simple,
+ sane and secure defaults, and be well integrated with the MATE desktop.
+ .
+ It is designed to support, among other things:
+ .
+  * the ability to lock down configuration settings
+  * translation into other languages
+  * user switching
+
 Package: mate-core
 Architecture: all
 Version: 1.18.0+1~16.04.york0
@@ -4324,6 +4295,31 @@ Description: power management tool for the MATE desktop (common files)
  .
  This package contains the architecture independent files.
 
+Package: mate-sensors-applet-common
+Architecture: all
+Version: 1.18.2-5ubuntu0~16.04.york0
+Priority: optional
+Section: x11
+Source: mate-sensors-applet
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 596
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-sensors-applet (<< 1.9.0)
+Replaces: mate-sensors-applet (<< 1.9.0)
+Filename: ./mate-sensors-applet-common_1.18.2-5ubuntu0~16.04.york0_all.deb
+Size: 91762
+MD5sum: 54071a55532a8557ccb5dddbc932d37e
+SHA1: 2e8459d5de338a2411ef0e307f3d446826ef4607
+SHA256: e1fe13fd2197ed345180e4c72f2a8986c82074bea7f20e8606744470e0c1ba29
+SHA512: 39a95123d0645a1adb48c918d6aeffb515c4175fadcafa2d64dda9e090394ec036d29daca8ffe9081048da013e180230d0a1a0ee7ebb530ce344d33aeb287064
+Homepage: http://www.mate-desktop.org/
+Description: Display readings from hardware sensors in your MATE panel (common files)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains the architecture independent files.
+
 Package: ubuntu-mate-icon-themes
 Architecture: all
 Version: 17.10.9~16.04.york0
@@ -4451,6 +4447,32 @@ Description: official text editor of the MATE desktop environment (documentation
  .
  This package contains the documentation files.
 
+Package: libmate-sensors-applet-plugin0
+Architecture: amd64
+Version: 1.18.2-5ubuntu0~16.04.york0
+Priority: optional
+Section: libs
+Source: mate-sensors-applet
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 33
+Depends: libc6 (>= 2.2.5), libglib2.0-0 (>= 2.12.0)
+Breaks: libmatesensorsappletplugin
+Replaces: libmatesensorsappletplugin
+Filename: ./libmate-sensors-applet-plugin0_1.18.2-5ubuntu0~16.04.york0_amd64.deb
+Size: 8166
+MD5sum: b610b6f19472428ea1f64092af2ef219
+SHA1: f26c4fa1497bc77881e27dece33c754ae512657b
+SHA256: 703874963d2c66edc81ff867ab365db4c14f1f02cb81618f129a4a8bb0b4a9a9
+SHA512: 43cd92f276d13716a3b737d146cee426cb2c072a1476715724c59a2ec703d3bff522538101550761f53dea2492fa752c38254b26998bdf202362ba205b34822d
+Homepage: http://www.mate-desktop.org/
+Description: Library for plugins for the mate-sensors-applet package
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains the library that is used to create plugins for
+ the applet.
+
 Package: deepin-file-manager-backend
 Architecture: amd64
 Version: 0.1.10-2.1
@@ -4546,6 +4568,31 @@ Description: Goroutine local storage
  Goroutine local storage
  .
  This package contains the source.
+
+Package: mate-menu
+Architecture: all
+Version: 17.10.8-0ubuntu1~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 1592
+Depends: python-pkg-resources, python:any (<< 2.8), python:any (>= 2.7.5-5~), dconf-gsettings-backend | gsettings-backend, gir1.2-mate-desktop (>= 1.18.0), gir1.2-mate-panel (>= 1.18), gir1.2-gtk-3.0, gvfs-bin, mate-menus (>= 1.18), mozo | menulibre, python (>= 2.4), python (<< 3), python-configobj, python-mate-menu, python-setproctitle, python-xdg, python-xlib, xdg-utils, libglib2.0-bin
+Suggests: software-center, synaptic
+Replaces: matemenu
+Filename: ./mate-menu_17.10.8-0ubuntu1~16.04.york0_all.deb
+Size: 171418
+MD5sum: a29e016056d547221329c8902dc5e9be
+SHA1: 8274e6b429ea273809d73211413a017e22f513fa
+SHA256: 02c3031e8892f92ba9be23d346c811512f39d6f8c21735a4822227daddf7ef2e
+SHA512: d95a2c651c899f7b93bc4c8fe23221109f3b5b17d3dc0226f87ce2b7322c5b824708e6a3b04357c5ea72760aa556cfdc22acbffca351309bf1025fb617b1849f
+Homepage: https://github.com/ubuntu-mate/mate-menu/
+Description: Advanced MATE menu
+ An advanced menu for MATE. Supports filtering, favorites,
+ easy-uninstallation, autosession, and many other features.
+ .
+ This menu originated in the Linux Mint distribution and has
+ been ported to other distros that ship the MATE Desktop
+ Environment.
 
 Package: python-xpyb
 Architecture: amd64
@@ -4650,33 +4697,28 @@ SHA256: 0f7cf59b030657df985d28dff69bec00c451f641b587abb210f401ae656e181c
 SHA512: dfb01ba13c687b10cd54dcddaf059f4844f7d34afcf2107a983eae86f21857c68c7c011186d9cd1451757113ef5ee11dfef9a77117b7cd769ae0f73982f7a487
 Description: Base files for Deepin Desktop
 
-Package: mate-tweak
+Package: mate-screensaver-common
 Architecture: all
-Version: 17.10.15-0ubuntu1~16.04.york0
+Version: 1.18.1-2ubuntu0~16.04.york0
 Priority: optional
-Section: admin
+Section: x11
+Source: mate-screensaver
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 1034
-Depends: dconf-cli, gir1.2-gtk-3.0, gir1.2-notify-0.7, mate-panel (>= 1.18.0), mesa-utils, python-gobject-2, python3 (>= 3.3), python3-gi, python3-psutil, python3-setproctitle, x11-xserver-utils, python3-pkg-resources
-Recommends: compton, mate-indicator-applet (>= 1.18.0)
-Suggests: indicator-application, indicator-messages, indicator-sounds, indicator-session, indicator-power, metacity, xcompmgr
-Filename: ./mate-tweak_17.10.15-0ubuntu1~16.04.york0_all.deb
-Size: 105484
-MD5sum: bd5c4db5703fd53cccab7da07f616858
-SHA1: 83105091a8e682dbecb8a6605d61a668786ffa2d
-SHA256: b1814cf91ccea008ca07954cec7cf273828e23edc933643a2adc4093301545ce
-SHA512: 774deeccbfd95c4c87535a4b8a8a134980e8665fa812b74779fb2d6dd7971990144236135ffa7ce1bb4d49429c5882ee75a884ab4e3c8b89e3454a12cdf24569
-Homepage: https://github.com.org/ubuntu-mate/mate-tweak
-Description: MATE desktop tweak tool
- Configures some aspects of the MATE desktop not exposed via the
- MATE Control Center applets.
+Installed-Size: 5813
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-screensaver (<< 1.5.2)
+Filename: ./mate-screensaver-common_1.18.1-2ubuntu0~16.04.york0_all.deb
+Size: 4537346
+MD5sum: 2e832c727acf81c2b282309c4fa9ea8a
+SHA1: 207767e55dab4f6e58a4c89e507b300c1dd60f58
+SHA256: 8fb9fff6d2b1186fbfc042f6ca15118d024b6d255900eb2ef1a30fdfa00c23a0
+SHA512: 6d501167e7d20757440d99c61983815e3bae82a7387b594721ee0dd7cf0bfb7419575c1ff45e277ab5dcf6701a4cc8a8b5e56a9540a8ec1a770f734cb232121b
+Homepage: http://www.mate-desktop.org/
+Description: MATE screen saver and locker (common files)
+ mate-screensaver is a screen saver and locker that aims to have simple,
+ sane and secure defaults, and be well integrated with the MATE desktop.
  .
- Settings that can be handled via MATE Tweak:
- .
-   - Show/hide standard desktop icons
-   - Panel fine-tuning (icon visibility, in menus and on buttons,
-     icon size, button labelling, contex menus, etc.)
-   - Window manager fine-tuning
+ This package contains the architecture independent files.
 
 Package: deepin-wm
 Architecture: amd64
@@ -5991,6 +6033,45 @@ Homepage: http://www.deepin.org/
 Description: Help files for dde
  Help files for dde.
 
+Package: mate-sensors-applet
+Architecture: amd64
+Version: 1.18.2-5ubuntu0~16.04.york0
+Priority: optional
+Section: x11
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Installed-Size: 243
+Depends: libmate-sensors-applet-plugin0 (= 1.18.2-5ubuntu0~16.04.york0), mate-sensors-applet-common (= 1.18.2-5ubuntu0~16.04.york0), libatasmart4 (>= 0.13), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libdbus-glib-1-2 (>= 0.78), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk-3-0 (>= 3.0.0), libmate-panel-applet-4-1 (>= 1.6.1), libnotify4 (>= 0.7.0), libsensors4 (>= 1:3.0.0)
+Recommends: hddtemp
+Suggests: mate-sensors-applet-nvidia
+Filename: ./mate-sensors-applet_1.18.2-5ubuntu0~16.04.york0_amd64.deb
+Size: 50950
+MD5sum: 54adf5be8a7eda182aa400c1053964ef
+SHA1: 519b689fce23ecfc21b8241ada5329d2ba344bf7
+SHA256: c89871375c80d1d5bba7f8e634548b1020ce7ed0f22b1c33425a643906a88046
+SHA512: 414d3565f58ed9a5a535a0cc743cd763b93087a5e7904fbfba75bb67bb0f5eeb75da0825483710dae3c790a2f51b8f010be1ee2e75eaa2eb7efd120082f6b628
+Homepage: http://www.mate-desktop.org/
+Description: Display readings from hardware sensors in your MATE panel
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ It can gather data from the following sources:
+  * ACPI thermal zones, via the Linux kernel ACPI modules
+  * Linux kernel i2c modules
+  * lm-sensors (libsensors)
+  * Linux kernel i8k module (for Dell Inspiron Laptops)
+  * Linux kernel ibm-acpi module
+  * Linux kernel PowerPC modules therm_adt746x and therm_windtunnel
+  * Linux kernel iMac G5 Windfarm module
+  * hddtemp daemon for reading temperatures from S.M.A.R.T. equipped hard disks
+  * Linux kernel Omnibook module
+  * NVIDIA graphics cards (supplied with mate-sensors-applet-nvidia package)
+  * Linux kernel sonypi module (for Sony Vaio laptops)
+ .
+ Alarms can be set for each sensor to notify the user once a certain high or
+ low value has been reached, and can be configured to execute a given command
+ at given repeated intervals.
+
 Package: libatrilview3
 Architecture: amd64
 Version: 1.18.1-1~16.04.york0
@@ -6204,87 +6285,6 @@ Description: GObject introspection data for mate-polkit
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
-
-Package: mate-sensors-applet
-Architecture: amd64
-Version: 1.18.2-1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 242
-Depends: libmate-sensors-applet-plugin0 (= 1.18.2-1~16.04.york0), mate-sensors-applet-common (= 1.18.2-1~16.04.york0), libatasmart4 (>= 0.13), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libdbus-glib-1-2 (>= 0.78), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk-3-0 (>= 3.0.0), libmate-panel-applet-4-1 (>= 1.6.1), libnotify4 (>= 0.7.0), libsensors4 (>= 1:3.0.0)
-Recommends: hddtemp
-Suggests: mate-sensors-applet-nvidia
-Filename: ./mate-sensors-applet_1.18.2-1~16.04.york0_amd64.deb
-Size: 50286
-MD5sum: 43ba433ff2f1d03b223baed817bc7d3b
-SHA1: 4a6b041a5de7f0089f0f59232d5ae7b09935926a
-SHA256: d8463879bdda8cbb30ec10f6309c7cec5a5a15bac68fcc5c308ae264792038ca
-SHA512: b014d6bf44ed712befe23527b339b6031b69f5eb25cce2fd5bce4e9e9873aaa4cb2871011651c084b8dd7840322befb866575afb72b6a0384a83d11f4f16d767
-Homepage: http://www.mate-desktop.org/
-Description: Display readings from hardware sensors in your MATE panel
- MATE Sensors Applet is an applet for the MATE panel that displays
- readings from hardware sensors, including temperatures, fan speeds and
- voltage readings.
- .
- It can gather data from the following sources:
-  * ACPI thermal zones, via the Linux kernel ACPI modules
-  * Linux kernel i2c modules
-  * lm-sensors (libsensors)
-  * Linux kernel i8k module (for Dell Inspiron Laptops)
-  * Linux kernel ibm-acpi module
-  * Linux kernel PowerPC modules therm_adt746x and therm_windtunnel
-  * Linux kernel iMac G5 Windfarm module
-  * hddtemp daemon for reading temperatures from S.M.A.R.T. equipped hard disks
-  * Linux kernel Omnibook module
-  * NVIDIA graphics cards (supplied with mate-sensors-applet-nvidia package)
-  * Linux kernel sonypi module (for Sony Vaio laptops)
- .
- Alarms can be set for each sensor to notify the user once a certain high or
- low value has been reached, and can be configured to execute a given command
- at given repeated intervals.
-
-Package: engrampa
-Architecture: amd64
-Version: 1.18.2-1~16.04.york0
-Priority: optional
-Section: x11
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Installed-Size: 964
-Depends: bzip2 (>= 1.0.1), caja-common, engrampa-common (= 1.18.2-1~16.04.york0), gzip (>= 1.3.2), p7zip-full, tar (>= 1.13.25), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libcaja-extension1 (>= 1.6.3), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.16.2), libjson-glib-1.0-0 (>= 0.12.0), libmagic1 (>= 5.12), libpango-1.0-0 (>= 1.14.0)
-Recommends: gvfs, mate-icon-theme, unzip, xz-utils, zip
-Suggests: arj, binutils, cpio, lha, lzip, lzma, lzop, ncompress, rar, rpm2cpio, rzip, sharutils, unace, unalz, unrar-free | unar | unrar | p7zip-rar, zoo
-Breaks: engrampa-common (<< 1.8.0)
-Filename: ./engrampa_1.18.2-1~16.04.york0_amd64.deb
-Size: 212344
-MD5sum: 2276bde0ec760b06dc405c9f7edf09d4
-SHA1: 0475760053600d16117a3f3356b25947ef767970
-SHA256: 1f3714685fe507d01fd417425d38a179adfe5d34b854e0819fbb29bb6ee37206
-SHA512: b2bef1f3c9baf2fc1b239daa1bd68393c103892fea05582a5d44a2b34ff2ff06c4abeebdc7c4259d95c0f5f8e8131ffe46fea4ea32ef1de36a10e9c62a6b853e
-Homepage: http://www.mate-desktop.org/
-Description: archive manager for MATE
- Engrampa is an archive manager for the MATE environment. It allows you to:
- .
-  * Create and modify archives.
-  * View the content of an archive.
-  * View a file contained in an archive.
-  * Extract files from the archive.
- .
- Engrampa supports the following formats:
-  * Tar (.tar) archives, including those compressed with
-    gzip (.tar.gz, .tgz), bzip (.tar.bz, .tbz), bzip2 (.tar.bz2, .tbz2),
-    compress (.tar.Z, .taz), lzip (.tar.lz, .tlz), lzop (.tar.lzo, .tzo),
-    lzma (.tar.lzma) and xz (.tar.xz)
-  * Zip archives (.zip)
-  * Jar archives (.jar, .ear, .war)
-  * 7z archives (.7z)
-  * iso9660 CD images (.iso)
-  * Lha archives (.lzh)
-  * Single files compressed with gzip (.gz), bzip (.bz), bzip2 (.bz2),
-    compress (.Z), lzip (.lz), lzop (.lzo), lzma (.lzma) and xz (.xz)
- .
- Engrampa doesn't perform archive operations by itself, but relies on
- standard tools for this.
 
 Package: dde-desktop
 Architecture: amd64
