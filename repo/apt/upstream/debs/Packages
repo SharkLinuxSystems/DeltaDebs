@@ -1651,6 +1651,28 @@ Description: Sqlite3 driver for GO
  .
  This package contains the source.
 
+Package: ubuntu-mate-core
+Architecture: amd64
+Version: 1.204~16.04.york0
+Priority: optional
+Section: metapackages
+Source: ubuntu-mate-meta
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 20
+Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-control-center-faces, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
+Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brltty-x11, caja-admin, caja-gtkhash, caja-open-terminal, caja-rename, caja-sendto, caja-wallpaper, caja-xattr-tags, cups, cups-bsd, cups-client, cups-filters, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, sane-utils, seahorse, sessioninstaller, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, tilda, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, usbmuxd, whoopsie, xcursor-themes, xdg-utils, xterm, xzoom
+Filename: ./ubuntu-mate-core_1.204~16.04.york0_amd64.deb
+Size: 15504
+MD5sum: b701f929db5ee22d803fdd32e6f09dba
+SHA1: 878e43090c63781534e33aca1c2a19afe95ab95b
+SHA256: 5f9d14a42b10faae0ee60c58c38cdf4077421de884be6c97454b25fb58856d11
+SHA512: cee309fae4719b4094bc7f1aefc3bccbeb64ca4c4138cdd959bf99b39b450b61279c2ce02311973dc267c39fef1b431caf761b38d8e0155fec35608fc50c8965
+Homepage: https://launchpad.net/ubuntu-mate/
+Description: Ubuntu MATE - core system
+ This package is the minimal MATE desktop as a Ubuntu environment.
+ .
+ It is safe to remove this package if some of these packages are not desired.
+
 Package: mate-optimus
 Architecture: all
 Version: 17.10.1-1ubuntu0~16.04.york0
@@ -2257,6 +2279,28 @@ Description: daemon handling the MATE session settings (development files)
  This package contains the development files for building
  mate-settings-daemon plugins.
 
+Package: ubuntu-mate-desktop
+Architecture: amd64
+Version: 1.204~16.04.york0
+Priority: optional
+Section: metapackages
+Source: ubuntu-mate-meta
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 20
+Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-control-center-faces, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-core, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
+Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brasero, brltty-x11, caja-admin, caja-gtkhash, caja-open-terminal, caja-rename, caja-sendto, caja-wallpaper, caja-xattr-tags, cheese, compiz, compiz-core, compiz-mate, compiz-plugins, compiz-plugins-default, cups, cups-bsd, cups-client, cups-filters, deja-dup, deja-dup-caja, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, folder-color-caja, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-disk-utility, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libreoffice-calc, libreoffice-gnome, libreoffice-impress, libreoffice-ogltrans, libreoffice-pdfimport, libreoffice-style-tango, libreoffice-writer, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, plank, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, redshift-gtk, rhythmbox, rhythmbox-plugin-alternative-toolbar, rhythmbox-plugin-cdrecorder, sane-utils, seahorse, sessioninstaller, shotwell, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, thunderbird, thunderbird-gnome-support, tilda, transmission-gtk, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, ubuntu-mate-guide, ubuntu-mate-welcome, usb-creator-gtk, usbmuxd, vlc, vlc-plugin-notify, vlc-plugin-samba, whoopsie, xcursor-themes, xdg-utils, xterm, xul-ext-calendar-timezones, xul-ext-gdata-provider, xul-ext-lightning, xzoom
+Filename: ./ubuntu-mate-desktop_1.204~16.04.york0_amd64.deb
+Size: 15744
+MD5sum: bf19754d23b0c7750a2816068b13eef0
+SHA1: 2d97ae3aab1e8630cd1acd44b13b924f2e27a71b
+SHA256: 6bae682d98e12ef85341733ab0fe3ee87eb195db8c6c637a82871e9922b6e994
+SHA512: 124435b2b61fb88afaa20c3b087dbd5ddbafc1b214e52ce05455a199dfea200252cbab35c1802bcdf597c1357a1e4520e3629607837f157c43a430a4abf4b199
+Homepage: https://launchpad.net/ubuntu-mate/
+Description: Ubuntu MATE - full desktop
+ This package is the Ubuntu MATE desktop environment.
+ .
+ It is safe to remove this package if some of these packages are not desired.
+
 Package: mate-panel-common
 Architecture: all
 Version: 1.18.4-2~16.04.york0
@@ -2522,28 +2566,6 @@ Homepage: https://godoc.org/golang.org/x/image
 Description: Supplementary Go image libraries
  Supplementary Go image libraries (golang.org/x/image) not included in the
  main distribution.
-
-Package: ubuntu-mate-core
-Architecture: amd64
-Version: 1.203~16.04.york0
-Priority: optional
-Section: metapackages
-Source: ubuntu-mate-meta
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 19
-Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-control-center-faces, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
-Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brltty-x11, caja-admin, caja-gtkhash, caja-open-terminal, caja-rename, caja-sendto, caja-wallpaper, caja-xattr-tags, cups, cups-bsd, cups-client, cups-filters, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, sane-utils, seahorse, sessioninstaller, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, tilda, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, usbmuxd, whoopsie, xcursor-themes, xdg-utils, xterm, xzoom
-Filename: ./ubuntu-mate-core_1.203~16.04.york0_amd64.deb
-Size: 15390
-MD5sum: 8b430a571a31d99701cebb20eb331f11
-SHA1: 47b82fe082fd3feb88bd18ea6c4b1c64239c51dc
-SHA256: ce434a242da3aa383b158bfc4978f2df48963e1297c04ff63018e59b76980a1d
-SHA512: 1348a36cf3cf2f9aeca263700c14c13a201152211e9c00720a3b61c9f5b7192038c3bd086368868471b46d929efa408629cf84e102ecaf35b9ddccd51af296af
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE - core system
- This package is the minimal MATE desktop as a Ubuntu environment.
- .
- It is safe to remove this package if some of these packages are not desired.
 
 Package: dde-api-dev
 Architecture: all
@@ -4919,28 +4941,6 @@ SHA512: 4eb0f75de08932a241b9728a51e4f342b8b8c437011701d35a3cd69e7a23e2a93b1c1070
 Homepage: https://github.com/ubuntu-mate/ubuntu-mate-artwork
 Description: Ubuntu MATE 17.10 Wallpapers
  Wallpapers from the Ubuntu MATE community for Ubuntu MATE 17.10
-
-Package: ubuntu-mate-desktop
-Architecture: amd64
-Version: 1.203~16.04.york0
-Priority: optional
-Section: metapackages
-Source: ubuntu-mate-meta
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 19
-Depends: alsa-base, alsa-utils, anacron, apturl, at-spi2-core, bc, ca-certificates, caja, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dmz-cursor-theme, fonts-dejavu-core, fonts-freefont-ttf, foomatic-db-compressed-ppds, genisoimage, ghostscript, ghostscript-x, gnome-control-center-faces, gnome-session-canberra, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gvfs-bin, inputattach, language-selector-gnome, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libmtp-runtime, libnotify-bin, libp11-kit-gnome-keyring, libsasl2-modules, marco, mate-applets, mate-desktop-environment-core, mate-icon-theme, mate-indicator-applet, mate-media, mate-menus, mate-notification-daemon, mate-polkit, mate-power-manager, mate-screensaver, mate-session-manager, mate-settings-daemon, mate-terminal, mate-utils, openprinting-ppds, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio, python3-aptdaemon.gtk3widgets, rfkill, software-properties-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-core, ubuntu-mate-default-settings, ubuntu-release-upgrader-gtk, ubuntu-sounds, unattended-upgrades, unzip, update-manager, update-notifier, wireless-tools, wpasupplicant, xdg-user-dirs, xdg-user-dirs-gtk, xkb-data, xorg, yelp, zenity, zip
-Recommends: a11y-profile-manager-indicator, acpi-support, apport, atril, avahi-autoipd, avahi-daemon, blueman, bluez, bluez-cups, brasero, brltty-x11, caja-admin, caja-gtkhash, caja-open-terminal, caja-rename, caja-sendto, caja-wallpaper, caja-xattr-tags, cheese, compiz, compiz-core, compiz-mate, compiz-plugins, compiz-plugins-default, cups, cups-bsd, cups-client, cups-filters, deja-dup, deja-dup-caja, engrampa, eom, exfat-fuse, ffmpegthumbnailer, firefox, folder-color-caja, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-liberation, fonts-lklug-sinhala, fonts-nanum, fonts-noto, fonts-opendyslexic, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fonts-tiresias, fwupd, fwupdate, fwupdate-signed, gdb, gdebi, gnome-disk-utility, gnome-keyring, gnome-orca, gnome-system-tools, gnupg-agent, gucharmap, gufw, gvfs-fuse, hplip, ideviceinstaller, ifuse, im-config, indicator-application, indicator-messages, indicator-power, indicator-session, indicator-sound, inxi, kerneloops, laptop-detect, libavahi-compat-libdnssd1, libgail-common, libimobiledevice-utils, libnss-mdns, libpam-gnome-keyring, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libreoffice-calc, libreoffice-gnome, libreoffice-impress, libreoffice-ogltrans, libreoffice-pdfimport, libreoffice-style-tango, libreoffice-writer, libwmf0.2-7-gtk, mate-accessibility-profiles, mate-applet-appmenu, mate-applet-brisk-menu, mate-calc, mate-dock-applet, mate-hud, mate-menu, mate-netbook, mate-optimus, mate-sensors-applet, mate-system-monitor, mate-themes, mate-tweak, mate-user-guide, memtest86+, menulibre, network-manager, network-manager-gnome, network-manager-openvpn-gnome, network-manager-pptp-gnome, onboard, packagekit, pcmciautils, pinentry-gnome3, plank, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, policykit-desktop-privileges, pppoeconf, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, pulseaudio-module-bluetooth, qt-at-spi, qt5-gtk-platformtheme, qt5-style-plugins, redshift-gtk, rhythmbox, rhythmbox-plugin-alternative-toolbar, rhythmbox-plugin-cdrecorder, sane-utils, seahorse, sessioninstaller, shotwell, simple-scan, slick-greeter, smbclient, snapd, sni-qt, speech-dispatcher, system-config-printer, thunderbird, thunderbird-gnome-support, tilda, transmission-gtk, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family, ubuntu-mate-guide, ubuntu-mate-welcome, usb-creator-gtk, usbmuxd, vlc, vlc-plugin-notify, vlc-plugin-samba, whoopsie, xcursor-themes, xdg-utils, xterm, xul-ext-calendar-timezones, xul-ext-gdata-provider, xul-ext-lightning, xzoom
-Filename: ./ubuntu-mate-desktop_1.203~16.04.york0_amd64.deb
-Size: 15638
-MD5sum: 4394c1699491909fd6362b3d1bff17ce
-SHA1: de10cce775d54c842cbfafaddb7b2774d097f29c
-SHA256: b3902e9057f0dc42a5e0085c9e826ee169d9fa4018d403b388109ed7657314d3
-SHA512: 3ce74c7e0c0bf790a1ca94dd57082aa361588f44af5e0044b7df8527c2424cbd4d49db5f85e03894bf2fe8c8053d88104ac80d09b68402d50a86f7704e88ac41
-Homepage: https://launchpad.net/ubuntu-mate/
-Description: Ubuntu MATE - full desktop
- This package is the Ubuntu MATE desktop environment.
- .
- It is safe to remove this package if some of these packages are not desired.
 
 Package: caja-admin
 Architecture: all
